@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Site Structure</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/brand.css">
+		<link rel="stylesheet" href="css/pattern-lib.css">
+		<link rel="stylesheet" href="css/fonticon.css">
+		<script src="js/lib/sinon.js"></script>
+		<script src="js/stubs/fake-server.js"></script>
+		<script data-main="js/app" src="js/lib/require.js"></script>
+		<script data-main="js/app" src="js/lib/iscroll.js"></script>
+		<script data-main="js/app" src="js/jquery-1.9.1.js"></script>
+		<script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="easybanking">
+			<div class="faq-page">
+				<div class="module_main_header">
+					<div class="module_header h_services">
+						<div class="module_header__inner">
+							<div class="h_col">
+								<h2 class="module_title">FAQ</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="module_content">
+					<div class="search_module">
+						<div class="search_block">
+							<div class="search_field f_left">
+								<div class="default_input_control">
+									<div class="default_input_field">
+										<input type="text" spellcheck="false">
+										<span class="fontcon-close search_wipe" style="display:block"></span>
+										<span class="search_icon">
+										<span class="fontcon-search"></span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="module_listitem">
+						<!-- For each topic -->
+						<div class="accordion_main">
+							<div class="accordion_header header_l1 dropdown_arrow" data-on-click="accordion:toggle">
+								<div class="accordion_l1__inner">
+									<h4>Topic main</h4>
+									<span>(30)</span>
+								</div>
+							</div>
+							<div class="accordion_content content_l1 in">
+								<!-- For each question -->
+								<div class="accordion_main content_l2_list_item">
+									<div class="list_wrapper header_l2">
+										<div class="accordion_l2__inner">
+											<h3>What does "by BNP Paribas Fortis" mean?</h3>
+										</div>
+									</div>
+									<div class="accordion_content content_l2">
+										<div class="list_wrapper">
+											<div class="faq_answer rich_text">
+												<div class="region">
+													<div class="section level1">
+														<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+													</div>
+												</div>
+											</div>
+											<div class="action_group">
+												<div class="action_icons">
+													<a href="#" class="action_icons__global fontcon-print"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/reset.css" type="text/css" >
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/fonticon.css" type="text/css">
+		<script src="js/jquery1.9.1.js"></script>
+		<script src="js/contract.js"></script>
+	</head>
+	<body>
+        <div class="ls-canvas easybanking login_bg">
+          <!-- Authentication IA -->
+            <div class="authentication">
+                <div class="authentication__inner">
+                	<!-- Box 1 -->
+                    <div class="authentication__information">
+                    	<div class="identification__inner">
+                             <!-- User information -->
+                            <div class="information information__text">
+                                <p>It seems like this is your first visit. Please sign in, 
+                                to activate your Easy banking Contact and Create a user profile</p>
+                            </div>
+                            <!-- Help URL -->
+                            <div class="information information__url"> <a href="#">Need more help?</a> </div>
+                        </div>
+                    </div>
+                    <!-- Box 2 -->
+                    <div class="authentication__identification new_profile">
+                    	<div class="identification_content">
+                        	<div class="identification__inner">
+                            	<!-- Error summary standard component-->
+                                <div class="error_summary">
+                                    <p>Please correct the following fields</p>
+                                    <ul class="error_summary_items">
+                                        <li>Client number</li>
+                                        <li>Card number</li>
+                                    </ul>
+                                </div>
+                                <!-- Header title -->
+                                <div class="identification_header">
+                                    <p>Create a new profile</p>
+                                </div>
+                                <!-- Client number -->
+                                <div class="identification_fields">
+                                    <div class="identification_labels">
+                                        <label>Client number</label><span>:</span> 
+                                    </div>
+                                    <div class="default_input_control">
+                                        <p class="field_error_message">Please type in a correct client number</p>
+                                        <div class="identification_details">
+                                            <div class="default_input_field">
+                                                <input type="text"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <!-- Card number -->
+                                <div class="identification_fields">
+                                    <div class="identification_labels">
+                                        <label>Card number</label><span>:</span> 
+                                    </div>
+                                    <div class="default_input_control">
+                                        <p class="field_error_message">Please type in a correct card number</p>
+                                        <div class="identification_details">
+                                            <div class="default_input_field">
+                                                <input type="text"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <!-- Save data -->
+                                <div class="save_profile">
+                                    <input class="save_profile__check" type="checkbox"/>
+                                    <label  class="save_profile__text">Save the data for the next login</label>
+                                </div >
+                                <!-- Choose alias -->
+                                <div class="identification_fields_alias">
+                                    <div class="identification_labels">
+                                        <label>Choose an alias</label>
+                                        <span> *:</span> 
+                                    </div>
+                                    <div class="default_input_control">
+                                        <p class="field_error_message">Please choose valid alias</p>
+                                        <div class="bnpp_identification_details">
+                                            <div class="default_input_field">
+                                                <input type="text"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navigation btn -->
+                        <div class="identification__navigation">
+                            <div class="navigation_btns">
+                                <div class="right_navigation f_right">
+                                    <button class="btn_default identification_btn identification_btn_active">Card reader (UCR)</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+	</body>
+</html>

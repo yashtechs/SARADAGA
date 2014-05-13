@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Sepa Transfer</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/fonticon.css">
+		<link rel="stylesheet" href="css/brand.css">
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/datepicker.css">
+		<link rel="stylesheet" href="css/pattern-lib.css">
+		<script src="js/lib/sinon.js"></script>
+		<script src="js/stubs/fake-server.js"></script>
+        <script  src="js/lib/iscroll.js"></script>
+		<script data-main="js/app" src="js/lib/require.js"></script>
+		<script data-main="js/app" src="js/jquery-1.9.1.js"></script>
+		<script data-main="js/app" src="js/tabs.js"></script>
+		<script data-main="js/app" src="js/lib/underscore.js"></script>
+		<script data-main="js/app" src="js/lib/backbone.js"></script>
+        <script data-main="js/app" src="js/custom.js"></script>
+		<script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+        <script src="js/modrenizr.js"></script>
+        <script src="js/jQuery.print.js"></script>
+         <script src="js/mask.js"></script>
+        <script language="javascript" type="text/javascript">
+		
+    </script>
+	</head>
+	<body>
+    	<div class="easybanking">
+            <div class="trnsfr">
+                <div class="trnsfr_inner">
+                    <!-- Sepa Header -->
+                    <div class="module_main_header">
+						<div class="module_header h_functions">
+							<div class="module_header__inner">
+								<div class="h_col">
+                                	<div class="module_hcontent f_left">
+                                        <h2 class="module_title">Send money</h2>
+                                    </div>
+								</div>
+								<div class="steps yashraja" id="steps" >
+									<div class="module_steps active_step">
+                                    	<ul class="module_steps_block">
+                                        	<li>
+                                            	<span class="module_steps__digit active">1</span>
+                                                <span class="module_steps__text active">Details</span>
+                                            </li>
+                                            <li>
+                                            	<span class="module_steps__digit">2</span>
+                                                <span class="module_steps__text">Bevestigen</span>
+                                            </li>
+                                            <li>
+                                            	<span class="module_steps__digit">3</span>
+                                                <span class="module_steps__text">Resultaat</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+                    <!-- Sepa Content -->
+                    <div class="form_container trnsfr_content">
+                        <!-- Sepa Enter details -->
+                            <div class="form_inner">
+                                <h5><span>*</span><span>Mandatory fields</span></h5>
+                                <div class="error_summary">
+                                    <p class="field_error_message" style="display:block;">Please select the valid Account</p>
+                                </div>
+                                <div class="form_fields from_field field_error">
+                                    <div class="form_labels">
+                                        <label for="select-account">From</label>
+                                        <span>*</span>
+                                    </div>
+                                    <div class="form_details">
+                                        <p class="field_error_message">Please select the valid Account</p>
+                                        <div class="selectize_field">
+                                            <select  class="select-account" placeholder="Choose your own account...">
+                                            </select>
+                                        </div>
+                                        <div class="selected-item"> <span class="iban-label"></span> <span>-</span> <span class="amount-label"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="form_fields text_input amount_field field_error">
+                                    <div class="form_labels">
+                                        <label for="select-account" >Amount</label>
+                                        *
+                                    </div>
+                                    <div class="form_details">
+                                        <p class="field_error_message">Please enter valid amount</p>
+                                        <div class="form_input default_input_control">
+                                            <div class="default_input_field ">
+                                                <input type="text" pattern ="\d\.*"/>
+                                                <span>EUR</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_fields optgroup_field to_field field_error">
+                                    <div class="form_labels">
+                                        <label for="select-account">To</label>
+                                        <span style="margin-left:4px">beneficiary*</span>
+                                        </label>
+                                    </div>
+                                    <div class="form_details beneficiary">
+                                        <!-- Tabs -->
+                                        <div class="eb_tabs" data-tabtoggle="tab.current">
+                                            <div class="eb_tab_txt tab_fst active default_tab" data-tab-index="1">
+                                                <div class="eb_tab_txt__inner">
+                                                <span>known</span><span>(2)</span>
+                                                </div>
+                                            </div>
+                                            <div class="eb_tab_txt default_tab" data-tab-index="2">
+                                                <div class="eb_tab_txt__inner">
+                                                <span>unknown</span><span>(2)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs_eb_content_container">
+                                            <div class="eb_tab_content" data-show="tab.current | eq 1">
+                                                <div class="eb_tab_content__inner">
+                                                    <p class="field_error_message">Please select the valid account</p>
+                                                    <div class="details_content">
+                                                        <select  class="select-account" placeholder="Type in alias, ...">
+                                                        </select>
+                                                    </div>
+                                                    <div class="selected-item"><span class="iban-label"></span><span>-</span><span class="amount-label"></span> </div>
+                                                </div>
+                                            </div>
+                                            <div class="eb_tab_content" data-show="tab.current | eq 2">
+                                                <div class="info_message">
+                                                    <p class="info_message__text">Informational Message Informational Message Informational Message Informational Message Informational Message Informational Message Informational Message Informational Message</p>
+                                                    <span class="fontcon-close">x</span> 
+                                                </div>
+                                                <div class="eb_tab_content__inner">
+                                                    <div class="eb_unknown_content">
+                                                        <div class="eb_unknown_input">
+                                                            <div class="unknown_name">
+                                                                <label class="unknown_labels">Name</label>
+                                                                <p class="field_error_message">Please select the valid account</p>
+                                                                <div class="default_input_field unknown_input">
+                                                                    <input type="text"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="eb_unknown_input">
+                                                            <div class="unknown_iban">
+                                                                <label class="unknown_labels">IBAN</label>
+                                                                <p class="field_error_message">Please select the valid account</p>
+                                                                <div class="default_input_field unknown_input">
+                                                                    <input type="text"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="save_benefeciary">
+                                                    	<label>
+                                                        <input type="checkbox" class="save_benefeciary__check"/>
+                                                        <span class="save_benefeciary__text">Save beneficiary</span> 
+                                                        </label>
+                                                    </div>
+                                                    <div class="eb_unknown_alias unknown_alias">
+                                                        <label class="unknown_labels">Alias name</label>
+                                                        <p class="field_error_message">Please select the valid account</p>
+                                                        <div class="default_input_field unknown_input">
+                                                            <input type="text"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Tabs --> 
+                                    </div>
+                                </div>
+                                <div class="form_fields date_picker field_error">
+                                        <div class="form_labels">
+                                            <label for="select-account">Date</label>
+                                        </div>
+                                        <div class="form_details">
+                                            <p class="field_error_message">Please select the valid date</p>
+                                            <div class="default_input_control">
+                                                <div class="default_input_field input_dropdown">
+                                                    <input type="text"  class="yash" value="" placeholder="DD/MM/YYYY"/>
+                                                    <span class="trig_datepicker" data-provide="datepicker-inline">
+                                                    	<span class="fontcon-calendar"></span>
+                                                    </span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="form_fields message_field select_message field_error">
+                                        <div class="form_labels">
+                                            <label for="select-message">Message</label>
+                                        </div>
+                                        <div class="form_details">
+                                            <!-- Input -->
+                                           <div class="details_content select_message__type yashraja">
+                                                <select class="select-message" style="border:0; background-color:transparent;">
+                                                    <option value="1" selected="selected">yash</option>
+                                                    <option value="1" selected="selected">raj</option>
+                                                    <option value="1" selected="selected">yash</option>
+                                                    <option value="1" selected="selected">yash</option>
+                                                </select>
+                                            </div>
+                                            <!-- Struct Message -->
+                                            <div class="select_message__structured show_active">
+                                                <p class="field_error_message struct_error">Please enter valid structured message</p>
+                                                <div class="default_input_field">
+                                                <p class="lstruct_pattern">+++</p>
+                                                <input type="text" placeholder="--- / ---- / -----" class="mask_pattern"/>
+                                                <p class="rstruct_pattern">+++</p>
+                                                </div>
+                                            </div>
+                                            <!-- free Message -->
+                                            <div class="default_text_area select_message__freetext show_active">
+                                                <p class="field_error_message freemessage_error">Please enter valid free message( only text)</p>
+                                                <textarea maxlength="140"></textarea>
+                                                <span class="message_lenghth" style="float:right"><span class="text_count">characters left<span class="freetext_remaining">23</span></span></span> 
+                                            </div>
+                                            <!-- Euro Message -->
+                                            <div class="default_text_area select_message__eurostructured">
+                                                <p class="field_error_message struct_error">Please enter valid euro message.</p>
+                                                <textarea maxlength="23"></textarea>
+                                                <span class="message_length"><span class="text_count">characters left</span><span class="eurostructured_remaining">23</span></span></span> 
+                                            </div>
+                                        </div>
+                                    </div> 
+                            </div>
+                            <div class="form_inner form_btns action_btns">
+                                <div class="navigation_btns">
+                                    <div class="right_navigation_btn f_right">
+                                        <button class="btn_default btn_primary btn_arrow_right">
+                                            <span>Next</span>
+                                            <i class="fontcon-arrow-right arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,418 @@
+input:focus, textarea:focus, button {
+        outline: none !important;
+        height: auto;
+}
+/** Standard UI Elements **/
+/* Standard Btns */
+.bnppf_btn {
+        padding: 14px 20px;
+        cursor: pointer;
+        height: 44px;
+}
+/* Standard Primary & Secondary Btns */
+.btn_primary {
+        background: #009966;
+        color: #ffffff;
+}
+.btn_primary .icon-arrow-right {
+        position: relative;
+        top: 2px;
+}
+/* Primary & Secondary Arrow Btns */
+.bnppf_btn_arrow_right, .arrow-left {
+        padding-right: 11px;
+}
+/* Btn Right & Left Alignment */
+.navigation_btns {
+        width: 100%;
+        display: table;
+}
+.right_navigation_btn, .left_navigation_btn {
+        display: table;
+}
+/* standard Links Model */
+.lnk_primary {
+        margin-right: 40px;
+        cursor: pointer;
+}
+/* Show Class */
+.show_active {
+        display: block !important;
+}
+/** Dropdown, Inputbox & Textarea **/
+.bnppf_input_field {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        padding: 11px 12px;
+        overflow: hidden;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        cursor: pointer;
+        height: 44px;
+}
+.bnppf_input_field > * {
+        display: -moz-inline-stack;
+        display: inline-block;
+ *display: inline;
+        vertical-align: baseline;
+        zoom: 1;
+}
+.bnppf_input_control .bnppf_input_field, .bnppf_input_control .bnppf_input_field input {
+        cursor: pointer;
+}
+.bnppf_input_control .bnppf_input_field.focus, .bnppf_input_control .bnppf_input_field.focus input {
+        cursor: text;
+}
+.bnppf_input_field.disabled, .bnppf_input_field.disabled * {
+        cursor: default !important;
+}
+/* Slectize dropdown select box with arrow down & Up */
+.bnppf_input_field.dropdown-active:after {
+        margin-top: -4px;
+        border-width: 0 5px 5px 5px;
+}
+.bnppf_input_field::after {
+        display: block;
+        clear: left;
+        content: ' ';
+}
+.bnppf_input_field.dropdown-active::before {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        height: 1px;
+        content: ' ';
+}
+.bnppf_input_field > input {
+        max-width: 100% !important;
+        max-height: none !important;
+        min-height: 0 !important;
+        padding: 0 !important;
+        margin: 0 1px !important;
+        text-indent: 0 !important;
+        background: none !important;
+        border: 0 none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        -webkit-user-select: auto !important;
+        height: 22px;
+}
+.bnppf_input_field span {
+        float: right;
+        padding-left: 12px;
+        position: absolute;
+        right: 12px;
+        top: 9px;
+        z-index: -999;
+}
+/* Drop box */
+.bnppf_dropdown_box {
+        position: absolute;
+        z-index: 10;
+        margin: -1px 0 0 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+.bnppf_dropdown_content {
+        max-height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto;
+}
+.bnppf_dropdown_box [data-selectable] {
+        overflow: hidden;
+        cursor: pointer;
+        padding: 8px 12px;
+}
+.dropdown_arrow:after {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        display: block;
+        width: 0;
+        height: 0;
+        margin-top: -3px;
+        border-style: solid;
+        border-width: 5px 5px 0 5px;
+        content: ' ';
+}
+/* Drop box groups */
+.bnppf_dropdown_box .main-group {
+        padding: 8px 12px 6px 12px;
+}
+.optgroup:first-child {
+        padding-top: 3px;
+        border-top: 0 none;
+}
+.optgroup-header {
+        cursor: default;
+        padding: 5px 8px;
+}
+.optgroup-amount {
+        float: right;
+        display: inline-block;
+}
+.optgroup-amount .highlight {
+        padding: 0;
+}
+.optgroup-amount span {
+        padding: 0 3px;
+}
+.optgroup-name {
+        display: inline-block;
+}
+/* Specific to TO field SEPA */
+.to_field .optgroup {
+        padding: 0;
+}
+.to_field .optgroup-header, .to_field .bnppf_dropdown_box [data-selectable] {
+        padding-left: 24px;
+}
+/* Text area */
+.bnppf_text_area {
+        width: 100%;
+}
+.bnppf_text_area textarea {
+        width: 100%;
+        resize: vertical;
+        padding: 6px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-appearance: none;
+}
+.bnppf_text_area .message_length{ float:right;}
+.bnppf_text_area .text_count {
+		margin-right:4px;
+        padding: 6px 0;
+}
+.bnppf_text_area .text_count span {
+        padding-left: 4px;
+}
+/** SEPA Styles **/
+/* SEPA Header */ 
+.bnppf_sendmoney_header {
+        width: 100%;
+}
+.bnppf_sendmoney_header_inner {
+        position: relative;
+        padding: 30px 30px 20px 30px;
+}
+.top {
+        width: 100%;
+        display: block;
+}
+.bnppf_sendmoney_header strong {
+        float: left;
+        min-width: 212px;
+        white-space: nowrap;
+}
+.icon_sendmoney {
+        padding: 8px 23px;
+        margin-left: 20px;
+}
+.sepa_steps {
+        float: right;
+        display: block;
+}
+.sepa_steps__digit li {
+        text-align: center;
+        display: inline-block;
+        padding: 0.66em 0.9em;
+        margin-left: 28px;
+        -webkit-border-radius: 2.14em;
+        -moz-border-radius: 2.14em;
+        -o-border-radius: 2.14em;
+        border-top-left-radius: 2.14em;
+        border-top-right-radius: 2.14em;
+        border-bottom-left-radius: 2.14em;
+        border-bottom-right-radius: 2.14em;
+}
+.sepa_steps__text {
+        margin-top: 10px;
+}
+.sepa_steps__text li {
+        display: block;
+        float: left;
+        text-align: center;
+        margin-left: 35px;
+}/* Error messages styles */
+.error_summary {
+        width: 80%;
+        margin-left: 20%;
+}
+.field_error_message {
+        padding-bottom: 12px;
+        display: none;
+}
+.field_error .field_error_message, .error_summary .field_error_message {
+        display: block;
+}
+.field_error .sepa_labels {
+        margin-top: 35px;
+}
+.message_field.field_error .sepa_labels {
+        margin-top: 0px;
+}/* SEPA Content */
+.bnppf_sendmoney_content {
+        width: 100%;
+}
+.bnppf_sendmoney_content__inner {
+        padding: 30px;
+}
+.bnppf_sendmoney_content__inner h5 {
+        text-align: right;
+        width: 80%;
+        padding: 0 0 30px 0;
+}
+.sepa_fields {
+        width: 100%;
+        display: table;
+        padding-bottom: 30px;
+}
+.sepa_labels {
+        width: 20%;
+        padding: 10px 0;
+        float: left;
+}
+.sendmoney_details {
+        float: left;
+        width: 60%;
+}
+.selected-item {
+        padding-top: 12px;
+        display: none;
+}
+.amount_field .bnppf_input_field input {
+        width: 100%;
+}
+.amount_field .bnppf_input_field span {
+        padding-top: 3px;
+}
+.sepa_fields.to_field {
+        padding-bottom: 0;
+}
+.to_field .show_active {
+        display: inline-block!important;
+}
+.to_field .selected_amount {
+        display: none;
+}
+.sepa_fields.message_field {
+        padding-bottom: 0;
+}
+.message_field .bnppf_input_field input {
+        width: 100%;
+}
+.select_message__type input[type="text"] {
+        display: none;
+}
+.select_message__structured, .select_message__freetext, .select_message__eurostructured {
+        margin-top: 30px;
+}
+.select_message__struct input {
+        height: 44px;
+}
+/* Confirm Screen */
+.sepa_confirm_labels {
+        width: 20%;
+        float: left;
+}
+.sepa_confirm_fields {
+        width: 100%;
+        display: table;
+        padding: 20px 0;
+}
+.confirm_content p, .confirm_content span {
+        display: table;
+        word-break: break-word;
+}
+.confirm_content span {
+        margin-right: 4px;
+}
+.confirm_amount span {
+        margin-left: 4px;
+}
+.confirmation_details {
+        float: left;
+        width: 60%;
+}
+.sendmoney_confirmation .sepa_confirm_fields:nth-child(1) {
+        padding-top: 10px;
+}
+.easybanking  .sepa_confirm_fields.confirm_lastchild {
+        padding-bottom: 0;
+        border: none;
+}
+@media all and (max-width: 767px) {
+.lnk_primary {
+        margin-right: 20px;
+}
+.bnppf_sendmoney_header_inner {
+        padding: 20px 10px;
+}
+.sepa_steps__digit {
+        float: right;
+}
+.sepa_steps__text li {
+        position: absolute;
+        top: 40px;
+        left: 10px;
+        margin: 0;
+        display: none;
+}
+.sepa_steps__text li.active_step_text {
+        display: block;
+}
+.icon_sendmoney {
+        display: none;
+}
+.error_summary {
+        margin: 0;
+}
+.bnppf_sendmoney_content__inner {
+        padding: 10px;
+}
+.bnppf_sendmoney_content__inner h5 {
+        width: 100%;
+}
+.bnppf_sendmoney_content__inner h5 {
+        padding: 0;
+}
+.sendmoney_details {
+        width: 100%;
+}
+.field_error, .field_error .sepa_labels {
+        margin: 0;
+}
+.sepa_fields {
+        padding-bottom: 20px;
+}
+.sepa_labels {
+        padding: 0 0 8px 0;
+}
+.date_picker .bnppf_input_field {
+        width: 100%;
+}
+.date_picker .bnppf_input_field > input {
+        width: 100%;
+}
+.sepa_confirm_labels {
+        width: 30%;
+}
+.select_type {
+        padding-bottom: 20px;
+}
+.confirmation_details {
+        width: 70%;
+}
+}
+
+@import"partials/datepicker";

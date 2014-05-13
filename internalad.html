@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Site Structure</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/pattern-lib.css">
+		<link rel="stylesheet" href="css/fonticon.css">
+		<script data-main="js/app" src="js/jquery-1.9.1.js"></script>
+		<script data-main="js/app" src="js/custom.js"></script>
+		<script data-main="js/app" src="js/affix.js"></script>
+		<script>
+			$( document ).ready(function() {
+			
+				$(".margin_ad").mouseover(function() {
+					$(".hover_content").stop().animate({'top':'-170px'});
+				});
+				
+				$(".margin_ad").mouseout(function() {
+					$(".hover_content").stop().animate({'top':'0px'});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="ls-canvas easybanking">
+			<div class="ls-row margin_col">
+				<div class="ls-lqr">
+					<div class="ls-area">
+						<div class="ls-area-body">
+							<!-- Type video tutorial -->
+							<div class="ls-cmp-wrap">
+								<div class="iw_component">
+									<div class="wcm-video">
+										<div class="video_link">
+											<div class="video_streaming">
+												<!-- Video should be embed here -->
+											</div>
+											<div class="video_link_content">
+												<ul class="headline_linklist">
+													<li>
+														<a href="#">
+														<span class="fontcon-arrow-right headline_arrow"></span>
+														<span class="headline_link">Open the tutorial on www.bnpparibasfortis.com</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Type 2-->
+							<div class="ls-cmp-wrap">
+								<div class="iw_component">
+									<div class="wcm-headline">
+										<div class="margin_headline">
+											<!-- Headline image -->
+											<div class="headline_picture">
+												<img src="css/images/headline_img.png" title="headline image"/>
+											</div>
+											<!-- headline content wrapper -->
+											<div class="margin_headline_content">
+												<!-- Headline heading -->
+												<div class="headline_heading">
+													<h2>BNPP Sans 18/24px lorem lpsum dolor sit amet</h2>
+												</div>
+                                                <div class="headline_heading_link">
+                                                    <a href="#">
+                                                        <h2>BNPP Sans 18/24px lorem lpsum dolor sit amet<span class="fontcon-arrow-right headline_link_arrow"></span></h2>
+                                                    </a>                   
+                                                </div>
+												<!-- headline content -->
+												<div class="headline_content">
+													<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+												</div>
+												<!-- headline bulletlist -->
+												<ul class="headline_bulletlist">
+													<li><a href="">lorem lpsum dolor</a></li>
+													<li><a href="">lorem lpsum dolor</a></li>
+													<li><a href="">lorem lpsum dolor</a></li>
+													<li><a href="">lorem lpsum dolor</a></li>
+												</ul>
+												<!-- headline link list -->
+												<ul class="headline_linklist">
+													<li>
+														<span class="fontcon-arrow-right headline_arrow"></span>
+														<a href="#" class="headline_link">lorem lpsum dolor</a>
+													</li>
+													<li>
+														<span class="fontcon-arrow-right headline_arrow"></span>
+														<a href="#" class="headline_link">lorem lpsum dolor</a>
+													</li>
+												</ul>
+												<!-- Social icons -->
+												<ul class="headline_social">
+													<li>
+														<a href="#">
+														<span class="fontcon-twitter socialad_icon twitter_icon"></span>
+														</a>
+														<a href="#">
+														<span class="headline_sociallink">lorem lpsum dolor</span>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+														<span class="fontcon-facebook socialad_icon facebook_icon"></span>
+														</a>
+														<a href="#">
+														<span class="headline_sociallink">lorem lpsum dolor</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Type hover ad -->
+							<div class="ls-cmp-wrap">
+								<div class="iw_component">
+									<div class="wcm-internalad">
+										<div class="margin_ad">
+											<div class="headline_picture">
+												<img src="css/images/headline_img.png" title="headline image"/>
+											</div>
+											<div class="hover_content">
+												<a href="#">
+													<div class="hover_content_inner">
+														<p>Lorem Ipsum is simply dummy text of the printing</p>
+														<span class="fontcon-link-intern-teaser hoverteaser_icon"></span>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

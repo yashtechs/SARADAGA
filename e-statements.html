@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Sepa Transfer</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/fonticon.css">
+		<link rel="stylesheet" href="css/brand.css">
+		<link rel="stylesheet" href="css/pattern-lib.css">
+		<link rel="stylesheet" href="css/datepicker.css">
+		<script src="js/lib/sinon.js"></script>
+		<script src="js/stubs/fake-server.js"></script>
+		<script data-main="js/app" src="js/lib/require.js"></script>
+		<script data-main="js/app" src="js/lib/iscroll.js"></script>
+		<script data-main="js/app" src="js/jquery-1.9.1.js"></script>
+		<script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="easybanking">
+			<div class="estatements">
+				<div class="accordion">
+					<div class="accordion_main">
+						<!-- Level1 Header Clickable with right arrow -->
+						<div class="accordion_header header_l1 dropdown_arrow" data-on-click="accordion:toggle">
+							<div class="accordion_l1__inner">
+								<h4>2013</h4>
+							</div>
+						</div>
+						<div class="accordion_content content_l1 collapse">
+							<div class="accordion_main content_l2_list_item">
+								<!-- Level2 Header Clickable without right arrow -->
+								<div class="list_wrapper accordion_header header_l2" data-on-click="accordion:toggle">
+									<div class="accordion_l2__inner">
+										<h3>May</h3>
+										<span>(3)</span>
+									</div>
+								</div>
+								<div class="accordion_content content_l2 collapse">
+									<div class="accordion_list">
+                                    <!-- List item 1 -->
+										<div class="list_group">
+											<div class="list_item accordion_main">
+												<div class="list_wrapper">
+													<div class="list_wrapper_inner">
+														<!-- Level3 Header Clickable -->
+														<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
+															<span class="list_icon fontcon-download"></span>
+															<div class="list_content_col1">
+																<h3>Fiscal certificates</h3>
+																<p>
+																	<span>PDF</span>
+																	<span> - </span>
+																	<span>63KB</span>
+																</p>
+															</div>
+															<div class="list_content_col2">
+																<h3>No. 6 of year 2013</h3>
+																<p><span>04.05.13</span><span> - </span><span>18.05.2013</span></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+                                        
+                                        <div class="list_group">
+											<div class="list_item accordion_main">
+												<div class="list_wrapper">
+													<div class="list_wrapper_inner">
+														<!-- Level3 Header Clickable -->
+														<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
+															<span class="list_icon fontcon-download"></span>
+															<div class="list_content_col1">
+																<h3>Fiscal certificates</h3>
+																<p>
+																	<span>PDF</span>
+																	<span> - </span>
+																	<span>63KB</span>
+																</p>
+															</div>
+															<div class="list_content_col2">
+																<h3>No. 6 of year 2013</h3>
+																<p><span>04.05.13</span><span> - </span><span>18.05.2013</span></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+                                        
+                                        <div class="list_group">
+											<div class="list_item accordion_main">
+												<div class="list_wrapper">
+													<div class="list_wrapper_inner">
+														<!-- Level3 Header Clickable -->
+														<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
+															<span class="list_icon fontcon-download"></span>
+															<div class="list_content_col1">
+																<h3>Fiscal certificates</h3>
+																<p>
+																	<span>PDF</span>
+																	<span> - </span>
+																	<span>63KB</span>
+																</p>
+															</div>
+															<div class="list_content_col2">
+																<h3>No. 6 of year 2013</h3>
+																<p><span>04.05.13</span><span> - </span><span>18.05.2013</span></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- l2 2 -->
+							<div class="accordion_main estatements_list_item">
+								<!-- Level2 Header Clickable without right arrow -->
+								<div class="list_wrapper accordion_header header_l2" data-on-click="accordion:toggle">
+									<div class="accordion_l2__inner">
+										<h3>May</h3>
+										<span>(3)</span>
+									</div>
+								</div>
+								<div class="accordion_content content_l2 collapse">
+									<div class="accordion_list">
+										<div class="list_group">
+											<!-- List item 1 -->
+											<div class="list_item accordion_main">
+												<div class="list_wrapper">
+													<div class="list_wrapper_inner">
+														<!-- Level3 Header Clickable -->
+														<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
+															<span class="list_icon fontcon-download"></span>
+															<div class="list_content_col1">
+																<h3>Fiscal certificates</h3>
+																<p>
+																	<span>PDF</span>
+																	<span> - </span>
+																	<span>63KB</span>
+																</p>
+															</div>
+															<div class="list_content_col2">
+																<h3>No. 6 of year 2013</h3>
+																<p><span>04.05.13</span><span> - </span><span>18.05.2013</span></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- List item 2 -->
+											<div class="list_item accordion_main">
+												<div class="list_wrapper">
+													<div class="list_wrapper_inner">
+														<!-- Level3 Header Clickable -->
+														<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
+															<span class="list_icon fontcon-download"></span>
+															<div class="list_content_col1">
+																<h3>Fiscal certificates</h3>
+																<p>
+																	<span>PDF</span>
+																	<span> - </span>
+																	<span>63KB</span>
+																</p>
+															</div>
+															<div class="list_content_col2">
+																<h3>No. 6 of year 2013</h3>
+																<p><span>04.05.13</span><span> - </span><span>18.05.2013</span></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- List item 3 -->
+											<div class="list_item accordion_main">
+												<div class="list_wrapper">
+													<div class="list_wrapper_inner">
+														<!-- Level3 Header Clickable -->
+														<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
+															<span class="list_icon fontcon-download"></span>
+															<div class="list_content_col1">
+																<h3>Fiscal certificates</h3>
+																<p>
+																	<span>PDF</span>
+																	<span> - </span>
+																	<span>63KB</span>
+																</p>
+															</div>
+															<div class="list_content_col2">
+																<h3>No. 6 of year 2013</h3>
+																<p><span>04.05.13</span><span> - </span><span>18.05.2013</span></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- -->
+                             <!-- Show all month -->
+                           <div class="list_wrapper showall_months">
+                                <p>Show all months</p>
+                           </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

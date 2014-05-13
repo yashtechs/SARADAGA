@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Sepa Transfer</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/fonticon.css">
+		<link rel="stylesheet" href="css/brand.css">
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/pattern-lib.css">
+		<link rel="stylesheet" href="css/datepicker.css">
+		<script src="js/lib/sinon.js"></script>
+		<script src="js/stubs/fake-server.js"></script>
+		<script data-main="js/app" src="js/lib/require.js"></script>
+		<script data-main="js/app" src="js/lib/iscroll.js"></script>
+		<script data-main="js/app" src="js/jquery-1.9.1.js"></script>
+		<script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+			
+			$( ".current_overlay" )
+			 .filter( ":odd" )
+			   .hide()
+			 .end()
+			 .filter( ":even" )
+			   .hover(function() {
+			     $(this)
+			       .toggleClass( "currency_overlay-active" )
+			       .next()
+			         .stop( true, true )
+			         
+			   });
+			$( ".savings_overlay" )
+			 .filter( ":odd" )
+			   .hide()
+			 .end()
+			 .filter( ":even" )
+			   .hover(function() {
+			     $(this)
+			       .toggleClass( "currency_overlay-active" )
+			       .next()
+			         .stop( true, true )
+			         
+			   });
+			});
+			   
+		</script>
+	</head>
+	<body>
+		<div class="easybanking">
+			<div class="laccounts">
+				<div class="viewport_header accounts">
+					<div class="viewport_header_inner">
+						<span class="viewport_icon">
+                        	<span class="fontcon-calendar-arrow-left"></span>
+                        </span>
+						<h4>ACCOUNTS</h4>
+					</div>
+				</div>
+				<div class="accordion">
+					<div class="accordion_main">
+						<!-- Level1 Header Clickable with right arrow -->
+						<div class="accordion_header header_l1 dropdown_arrow" data-on-click="accordion:toggle">
+							<div class="accordion_l1__inner">
+								<h4>OWN PRIVATE ACCOUNTS</h4>
+							</div>
+						</div>
+						<div class="accordion_content content_l1 collapse">
+							<div class="product_groups current_accounts">
+								<div class="list_wrapper">
+									<!-- Products groups -->
+									<div class="item_group clearfix">
+										<div class="item_group__inner">
+											<div class="group_colone">
+												<span class="group_icons fontcon-current-account"></span>
+												<h4>Current Accounts</h4>
+											</div>
+											<div class="group_coltwo current_overlay">
+												<div class="currency_header">
+													<h4>28.928.774,00</h4>
+													<span>USD</span>
+												</div>
+												<div class="currency_overlay">
+													<div class="currency_inner">
+														<div class="currency_header">
+															<h4>28.928.774,00</h4>
+															<span>USD</span>
+														</div>
+														<h3>Total balance per currency</h3>
+														<p><span>300</span><span>EUR</span></p>
+														<p><span>20</span><span>USD</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_group">
+									<!-- List item 1 -->
+									<div class="list_item accordion_main">
+										<div class="list_wrapper">
+											<div class="list_wrapper_inner">
+												<!-- Level3 Header Clickable -->
+												<div class="list_item__header  clearfix accordion_header header_l3">
+													<div class="list_content_col1">
+														<div class="listiban_group">
+															<h3>BE12 3456 7890 1234</h3>
+															<span class="hello_icon"></span>
+														</div>
+														<div class="listiban_detail">
+															<span class="long_account_type">Easy Pack yash</span>
+                                                            <span class="short_account_type">Easy Pack</span>
+															<span> - </span>
+															<span>Yashwanth Kanna</span>
+														</div>
+													</div>
+													<div class="list_content_col2">
+														<h3><span>200,00</span><span>USD</span></h3>
+														<p><span>85</span><span>EUR</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product_groups savings_accounts">
+								<div class="list_wrapper">
+									<!-- Products groups -->
+									<div class="item_group clearfix">
+										<div class="item_group__inner">
+											<div class="group_colone">
+												<span class="group_icons fontcon-savings-account"></span>
+												<h4>Savings Accounts</h4>
+											</div>
+											<div class="group_coltwo savings_overlay">
+												<div class="currency_header">
+													<h4>28.928.774,00</h4>
+													<span>USD</span>
+												</div>
+												<div class="currency_overlay">
+													<div class="currency_inner">
+														<div class="currency_header">
+															<h4>28.928.774,00</h4>
+															<span>USD</span>
+														</div>
+														<h3>Total balance per currency</h3>
+														<p><span>300</span><span>EUR</span></p>
+														<p><span>20</span><span>USD</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion_main">
+									<div class="accordion_content ">
+										<div class="accordion_list">
+											<div class="list_group">
+												<!-- List item 1 -->
+												<div class="list_item accordion_main">
+													<div class="list_wrapper">
+														<div class="list_wrapper_inner">
+															<!-- Level3 Header Clickable -->
+															<div class="list_item__header  clearfix accordion_header header_l3">
+																<div class="list_content_col1">
+																	<div class="listiban_group">
+																		<h3>BE12 3456 7890 1234</h3>
+																	</div>
+																	<div class="listiban_detail">
+																		<span>Easy Pack</span>
+																		<span> - </span>
+																		<span>Yashwanth Kanna</span>
+																	</div>
+																</div>
+																<div class="list_content_col2">
+																	<h3><span>200,00</span><span>USD</span></h3>
+																	<p><span>85</span><span>EUR</span></p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+                                            <div class="list_group">
+												<!-- List item 1 -->
+												<div class="list_item accordion_main">
+													<div class="list_wrapper">
+														<div class="list_wrapper_inner">
+															<!-- Level3 Header Clickable -->
+															<div class="list_item__header  clearfix accordion_header header_l3">
+																<div class="list_content_col1">
+																	<div class="listiban_group">
+																		<h3>BE12 3456 7890 1234</h3>
+																	</div>
+																	<div class="listiban_detail">
+																		<span>Easy Pack</span>
+																		<span> - </span>
+																		<span>Yashwanth Kanna</span>
+																	</div>
+																</div>
+																<div class="list_content_col2">
+																	<h3><span>200,00</span><span>USD</span></h3>
+																	<p><span>85</span><span>EUR</span></p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion_main">
+						<!-- Level1 Header Clickable with right arrow -->
+						<div class="accordion_header header_l1 dropdown_arrow" data-on-click="accordion:toggle">
+							<div class="accordion_l1__inner">
+								<h4>OWN PRIVATE ACCOUNTS</h4>
+							</div>
+						</div>
+						<div class="accordion_content content_l1 collapse">
+							<div class="product_groups current_accounts">
+								<div class="list_wrapper">
+									<!-- Products groups -->
+									<div class="item_group clearfix">
+										<div class="item_group__inner">
+											<div class="group_colone">
+												<span class="group_icons fontcon-current-account"></span>
+												<h4>Current Accounts</h4>
+											</div>
+											<div class="group_coltwo current_overlay">
+												<div class="currency_header">
+													<h4>28.928.774,00</h4>
+													<span>USD</span>
+												</div>
+												<div class="currency_overlay">
+													<div class="currency_inner">
+														<div class="currency_header">
+															<h4>28.928.774,00</h4>
+															<span>USD</span>
+														</div>
+														<h3>Total balance per currency</h3>
+														<p><span>300</span><span>EUR</span></p>
+														<p><span>20</span><span>USD</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion_main">
+									<div class="accordion_content ">
+										<div class="accordion_list">
+											<div class="list_group">
+												<!-- List item 1 -->
+												<div class="list_item accordion_main">
+													<div class="list_wrapper">
+														<div class="list_wrapper_inner">
+															<!-- Level3 Header Clickable -->
+															<div class="list_item__header  clearfix accordion_header header_l3">
+																<div class="list_content_col1">
+																	<div class="listiban_group">
+																		<h3>BE12 3456 7890 1234</h3>
+																		<span class="hello_icon"></span>
+																	</div>
+																	<div class="listiban_detail">
+																		<span>Easy Pack</span>
+																		<span> - </span>
+																		<span>Yashwanth Kanna</span>
+																	</div>
+																</div>
+																<div class="list_content_col2">
+																	<h3><span>200,00</span><span>USD</span></h3>
+																	<p><span>85</span><span>EUR</span></p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product_groups savings_accounts">
+								<div class="list_wrapper">
+									<!-- Products groups -->
+									<div class="item_group clearfix">
+										<div class="item_group__inner">
+											<div class="group_colone">
+												<span class="group_icons fontcon-savings-account"></span>
+												<h4>Savings Accounts</h4>
+											</div>
+											<div class="group_coltwo savings_overlay">
+												<div class="currency_header">
+													<h4>28.928.774,00</h4>
+													<span>USD</span>
+												</div>
+												<div class="currency_overlay">
+													<div class="currency_inner">
+														<div class="currency_header">
+															<h4>28.928.774,00</h4>
+															<span>USD</span>
+														</div>
+														<h3>Total balance per currency</h3>
+														<p><span>300</span><span>EUR</span></p>
+														<p><span>20</span><span>USD</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion_main">
+									<div class="accordion_content ">
+										<div class="accordion_list">
+											<div class="list_group">
+												<!-- List item 1 -->
+												<div class="list_item accordion_main">
+													<div class="list_wrapper">
+														<div class="list_wrapper_inner">
+															<!-- Level3 Header Clickable -->
+															<div class="list_item__header  clearfix accordion_header header_l3">
+																<div class="list_content_col1">
+																	<div class="listiban_group">
+																		<h3>BE12 3456 7890 1234</h3>
+																	</div>
+																	<div class="listiban_detail">
+																		<span>Easy Pack</span>
+																		<span> - </span>
+																		<span>Yashwanth Kanna</span>
+																	</div>
+																</div>
+																<div class="list_content_col2">
+																	<h3><span>200,00</span><span>USD</span></h3>
+																	<p><span>85</span><span>EUR</span></p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+                                            <div class="list_group">
+												<!-- List item 1 -->
+												<div class="list_item accordion_main">
+													<div class="list_wrapper">
+														<div class="list_wrapper_inner">
+															<!-- Level3 Header Clickable -->
+															<div class="list_item__header  clearfix accordion_header header_l3">
+																<div class="list_content_col1">
+																	<div class="listiban_group">
+																		<h3>BE12 3456 7890 1234</h3>
+																	</div>
+																	<div class="listiban_detail">
+																		<span>Easy Pack</span>
+																		<span> - </span>
+																		<span>Yashwanth Kanna</span>
+																	</div>
+																</div>
+																<div class="list_content_col2">
+																	<h3><span>200,00</span><span>USD</span></h3>
+																	<p><span>85</span><span>EUR</span></p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
