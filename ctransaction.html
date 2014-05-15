@@ -31,7 +31,7 @@
 						<div class="module_header h_cards">
 							<div class="module_header__inner">
 								<div class="h_col">
-									<div class="flyout_selection f_left">
+									<div class="flyout_selection f_left flyout_active">
 										<div class="flyout_container">
 											<div class="selected_details hello_account">
 												<div class="selected_details__account dropdown_arrow">
@@ -97,8 +97,8 @@
 									<div class="module_hcontent f_right">
 										<div class="module_row">
 											<div class="module_slected_value">
-												<span>23.214,00</span>
-												<span>USD</span>
+												<span></span>
+												<span></span>
 											</div>
 										</div>
 										<div class="module_semirow">
@@ -175,7 +175,7 @@
                                                 <div class="filter_link dropdown_arrow">
                                                   <p>Last 6 months</p>
                                                 </div>
-                                                <div class="filter_option option_period" style="display:block">
+                                                <div class="filter_option ">
                                                   <div class="filter_option_value">
                                                     <p>Last week</p>
                                                   </div>
@@ -248,6 +248,58 @@
                                               </div>
                                             </div>
                                             </div>
+                                        </div>
+                                         <div class="filterPopup">
+                                        	<div class="filter_option option_period">
+                                                    <div class="filter_option_value">
+                                                        <p>Last week</p>
+                                                    </div>
+                                                    <div class="filter_option_value">
+                                                        <p>Last 2 weeks</p>
+                                                    </div>
+                                                    <div class="filter_option_value">
+                                                        <p>Last 3 weeks</p>
+                                                    </div>
+                                                    <div class="filter_option_value">
+                                                        <p>Last month</p>
+                                                    </div>
+                                                    <div class="filter_option_value disabled">
+                                                        <p>Last 6 months</p>
+                                                    </div>
+                                                    <div class="filter_option_value custom">
+                                                        <p>Custom range...</p>
+                                                    </div>
+                                                </div>
+                                            <div class="filter_option option_amount">
+                                                    <div class="filter_option_value">
+                                                        <p>Any amount</p>
+                                                    </div>
+                                                    <div class="filter_option_value">
+                                                        <p>Specific amount</p>
+                                                    </div>
+                                                    <div class="filter_option_value">
+                                                        <p>Custom range...</p>
+                                                    </div>
+                                                </div>
+                                            <div class="filter_option option_transaction">
+                                                    <div class="filter_option_value">
+                                                        <p>Any transaction</p>
+                                                    </div>
+                                                    <div class="filter_option_value">
+                                                        <p>Incoming transactions</p>
+                                                    </div>
+                                                    <div class="filter_option_value">
+                                                        <p>Outgoing transactions</p>
+                                                    </div>
+                                                </div> 
+                                            <div class="filter_option option_account">
+                                                    <div class="filter_option_value">
+                                                        <p>Any account</p>
+                                                    </div>
+                                                    <div class="filter_option_value">
+                                                        <p>IBAN</p>
+                                                    </div>
+                                                </div>   
                                         </div>
                                          <div class="scroll_btn right inactive">
                                             <div class="outer_wrapper">
@@ -907,7 +959,7 @@
 						<div class="filter_popup">
 							<div class="filter_popup__inner">
 								<form>
-									<div class="filter_popup__content">
+									<div class="filter_popup__content" >
 										<div class="filter_content_inner">
 											<span class="fontcon-close popup_close"></span>
 											<!-- Period range -->

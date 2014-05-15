@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	
+	//alert(document.getElementsByTagName("html")[0].className);
 	 //require(['lib/rivetsconfig'], function(rivets) {
 //					 var Tab = Backbone.Model.extend({
 //			  defaults: {
@@ -18,8 +18,14 @@ $(document).ready(function () {
 //			  tab: tab
 //			});
 //				 });
-				
-				
+iCheck();
+function iCheck(){
+	var isiPhone = navigator.userAgent.match(/iPhone/i) != null;
+	if(isiPhone)
+	{
+	  $('.number-type').attr('type','number');
+	}
+}	
 	//new IScroll('.dropdown_wrapper', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
 	//$('.select_message__structured input').mask('000 / 0000 / 00000')
 	$('.yashraja').focus(function(){
