@@ -91,7 +91,7 @@ a.btn_default{ display:inline-block;}
 .btn_default_bg:hover{background:rgba(255,255,255,0.9);}
 
 /* Links */
-.lnk_primary {font-size:1em;color: #009966;margin-right: 1.250em;cursor: pointer;font-family: 'BnppSans-r', arial; display:table-cell; vertical-align:middle;}
+.lnk_primary {font-size:1em;color: #009966;padding-right: 0.93em;cursor: pointer;font-family: 'BnppSans-r', arial; display:table-cell; vertical-align:middle;}
 .lnk_primary:hover {color: #008578;text-decoration: underline;}
 .login_bg .lnk_primary{ color:#ffffff;display:block;}
 .login_bg .lnk_primary:hover{color:#ffffff;}
@@ -1128,14 +1128,14 @@ input.mask_pattern{ width:125px; padding:11px 0; display:inline-block;}
 
 /* Media queries */
 @media all and (max-width: 319px) {
-	html,body, .easybanking{ width:319px;}
-	.siteheader{ width:319px;}
+html,body, .easybanking{ width:319px;}
+.siteheader{ width:319px;}
 }
 
 @media all and (max-width: 479px) {
 
 /* dropdown custom */
-.default_input_field.custom_dropdown > input{ max-width:240px;}
+.default_input_field.custom_dropdown > input{ max-width:234px;}
 
 /* Stand buttons */
 .right_navigation_btn, .right_navigation_btn .btn_default{ width:100%; margin:0;}
@@ -1214,6 +1214,7 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .ucr_action_content{width:86%;}
 .widget{ right:0px !important;}
 
+.dropdown_seleted_item{ max-width:210px; overflow:hidden; text-overflow: ellipsis; white-space:nowrap;}
 /* Static content pages Xopus */
 .table { width:280px; overflow:scroll; margin:auto;}
 .table table{ width:600px;}
