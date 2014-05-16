@@ -1049,15 +1049,16 @@ input.mask_pattern{ width:125px; padding:11px 0; display:inline-block;}
 .ok_icon::after{ content:'OK'; font-size:15px; position:absolute;font-family: 'BnppSans-r', arial; color:#ffffff; top:0.64em; left:0.38em;}
 .pin_ok{ position:absolute; top:45px;}
 .last_ok{ margin:0;}
-.challenge_ok{ top:72px; position:absolute;}
+.challenge_ok{ top:2.4em; position:absolute;}
 
 /* Customised UCR for other languages */
-.de .challenge_ok{ top:62px;}
 .de .ucr_action_content:first-child, .fr .ucr_action_content:first-child{ width:70%;}
+.de .login_bg .ucr_action_content:first-child, .fr .login_bg .ucr_action_content:first-child{ width:94%;}
 .de .ucr_img, .fr .ucr_img{ top:1.125em;}
 .de .m2_icon, .fr .m2_icon{ top:1.2em;}
 .de .ucr_challenge__code{ display:inline-block;}
 .fr .ucr_challenge__code{ float:left; width:100%;}
+.fr .login_bg .ucr_challenge__code{ float:none; width:auto;}
 
 /* Customised UCR for Login */
 .login_bg .ucr_code{ float:none;}
