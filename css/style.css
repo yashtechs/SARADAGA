@@ -755,7 +755,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 
 /* Details screen */
 .details{ width:100%; background:#ffffff;}
-.details_inner{ padding:40px 30px; display:table; width:100%;}
+.details_inner{ padding:30px; display:table; width:100%;}
 .details_title{ padding-bottom:25px; font-size:2em; line-height:1em}
 .detail_group{ padding:30px 0; border-top: 1px solid #d8dbde;}
 .detail_group_title{font-family: 'BnppSans-r', arial; font-size:18px;}
@@ -944,7 +944,8 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .showall_months h3{ padding:30px 0;border-top:1px solid #d8dbde; }
 
 /* Form Standards */
-.form_container {width: 100%;} 
+.form_container {width: 100%;}
+.form_title{ font-size:1.5em; padding-bottom:0.4em;} 
 .form_container .error_summary{margin-left: 20%; width:80%;}
 .form_inner {padding: 30px;}
 .form_inner h5 {text-align: right;width: 80%;padding: 0 0 30px 0;font-family: 'BnppSans-l', arial;font-size: 14px; }
@@ -1266,6 +1267,7 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .two_column .content_column, .three_column .content_column{ width:100%; padding:0 !important;}
 
 /* Detials */
+.details_title, .form_title {font-size: 1.14em;}
 .details_inner{ padding:10px;}
 .listitem_details{ width:100%; padding-top:12px;}
 .details_label{ width:100%;}
@@ -1473,7 +1475,6 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .refresh_txt{ display:none;}
 .refresh{ padding:0; z-index:9999;}
 .icon_refresh{ font-size:0.875em; padding:0 0 0 6px;}
-.zoomit .details_title{ font-size:1.14em;}
 
 /*Button Component alignments*/
 .content_btns{ margin:0;}
