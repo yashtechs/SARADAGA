@@ -256,7 +256,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .link_list a{ color:#ffffff;}
 .extsocial_icons{ padding-bottom:0;}
 .social_icon{ font-size:2.19em;}
-.social_icon li{ float:left; margin-right:1.25em;}
+.social_icon li{ float:left; margin-right:0.85em;}
 .legal_msg{color:#d2d8e1; float:left; font-size:12px; letter-spacing:1px;}
 .legal_lnks{ float:right;}
 .legal_lnks li{ float:left; margin-left:1.56em;}
@@ -549,7 +549,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .meta_name{font-family: 'BnppSans-r', arial; margin-left:0.145em;}
 
 /* Hello icon */
-.hello_icon{ background: url(images/sprite.svg) no-repeat; padding:0.56em; background-position:-190px -3px; margin:0 0 0 0.31em;display:none;float:left;}
+.hello_icon{ background: url(images/sprite.svg) no-repeat; padding:9px; background-position:-190px -3px; margin:0 0 0 5px;display:none;float:left;}
 .no-svg .hello_icon{ background: url(images/sprite.png) no-repeat;background-position:-190px -3px;}
 
 /* Common Accordion WCM and IA */
@@ -917,8 +917,8 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .viewport_header{ width:100%; color:#ffffff; padding:15px 0; display:none;}
 .viewport_header.accounts{ background:#729f08;}
 .viewport_header.cards{ background:#009e83;}
-.viewport_icon{ display:inline-block; padding:9px 25px 4px 25px; margin-right:20px; font-size:12px; border-right: 1px dotted #ffffff; cursor:pointer;}
-.viewport_header h4{ display:inline-block; font-size:18px; text-transform:uppercase;}
+.viewport_icon{ display:inline-block; padding:9px 25px 4px 25px; margin-right:20px; font-size:12px; border-right: 1px dotted #ffffff; cursor:pointer; float:left;}
+.viewport_header h4{ display:inline-block; font-size:18px; text-transform:uppercase; padding-top:0.5em;}
 .viewport_header .fontcon-calendar-arrow-left{display:inline-block}
 
 /* Products Currency Overlay */
@@ -988,9 +988,8 @@ input.mask_pattern{ width:125px; padding:11px 0; display:inline-block;}
 .eb_tab_content {border: 1px solid #d2d8e1;}
 .eb_tab_content__inner {padding: 20px 10px;}
 .eb_unknown_content {display: table;width: 100%;}
-.eb_unknown_input {width: 50%;float: left;}
-.unknown_name {margin-right: 8px;}
-.unknown_iban {margin-left: 8px;}
+.eb_unknown_input{ padding-top:0.62em;}
+.eb_unknown_input:first-child{ padding-top:0;}
 .unknown_alias {width: 100%;}
 .unknown_input input {width: 100%;}
 .save_benefeciary {padding: 10px 0;}
@@ -1007,7 +1006,7 @@ input.mask_pattern{ width:125px; padding:11px 0; display:inline-block;}
 .confirm_amount .amount_highlight{margin-right:0px;}
 .alias_name{ color:#76767b; display:table; padding-top:4px;}
 .alias_name label{ float:left;}
-.result_content .hello_icon{ position:relative;top:4px;float:none;}
+.result_content .hello_icon{ position:relative;top:0.81em;float:none; margin-right:0.125em;}
 .space_right{margin-right:4px;}
 .space_left{ margin-left:4px;}
 
@@ -1406,7 +1405,7 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .content_block #accountList, .content_block #cardList{ margin:0;}
 
 /* Products viewport */
-.viewport_header{ display:block;}
+.viewport_header{ display:inline-block;}
 
 /* Products Overlay */
 .currency_overlay{ top:50px;}
@@ -1435,7 +1434,7 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 /* SEPA */
 .acknowledge_info h2 {font-size: 18px;line-height: 18px;}
 .acknowledge_blocks {width: 100%;}
-.form_details,.eb_unknown_input {width: 100%; }
+.form_details{width: 100%; }
 
 /*Confirm Screen*/
 .trnsfr .details_label{ width:30%;}
@@ -1446,8 +1445,6 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .resultfrom_info {margin: 0;line-height: 22px;}
 .resultfrom_info label {width: 25%;float: left;}
 .resultfrom_content {width: 60%;float: left;}/**/
-.unknown_name, .unknown_iban {margin: 0;}
-.unknown_iban label {padding-top: 10px;}
 .result_personicon {float: right;font-size: 40px;}
 .fontcon-send-money-icon {position: absolute;right: 0.5em;font-size: 40px;}
 .done_icon {float: right;font-size: 25px;top: 20px;right: 0px;}
