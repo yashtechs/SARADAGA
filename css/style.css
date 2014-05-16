@@ -802,6 +802,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .filter_option_value{border-bottom: 1px solid #D8DBDE;padding: 14px 13px 13px;white-space: nowrap;}
 .filter_option_value:last-child{ border:0;}
 .filter_btn{ padding:30px;}
+.menu_options{color: #009966;cursor: pointer;}
 
 /* Filter Overlay Popup */
 .filter_popup{ width: 100%; height: 100%; position: absolute; text-align: center; z-index:200; background-color: rgba(255, 255, 255, 0.8); top:0; display:none;}
@@ -837,12 +838,10 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 
 /* Navigation UI steps */
 .module_steps {float: right;display: block;}
-.module_steps_block li{ float:left; text-align:center; margin-left:18px;}
+.module_steps_block li{ float:left; text-align:center; margin-left:0.62em;}
 .module_steps_block li:first-child{ margin:0;}
 .module_steps__digit{color: #ffffff;font-size: 1.25em;font-family: 'BnppSans-r', arial;border: 2px solid #ffffff;text-align: center;display: inline-block;padding: 14px 18px;-webkit-border-radius: 2.14em;-moz-border-radius: 2.14em;-o-border-radius: 2.14em;border-top-left-radius: 2.14em;border-top-right-radius: 2.14em;border-bottom-left-radius: 2.14em;border-bottom-right-radius: 2.14em;}
-.module_steps__text {color: #ffffff;font-family: 'BnppSans-r', arial;font-size: 1em;display: block;text-align: center;margin-top: 10px; max-width:90px; white-space:nowrap; overflow:hidden;text-overflow: ellipsis;}
 .module_steps__digit.active{color: #861a61;background:#ffffff;}
-.module_steps__text.active {color: #ffffff;}
 
 /* Identification */
 
@@ -1370,10 +1369,8 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 
 /* page navigation steps */
 .module_steps__block {float: right; }
-.module_steps__block li {margin-left: 10px;}
 .module_steps__digit{padding: 8px 14px;font-size: 14px;}
 .module_steps__text{position: absolute;top: 40px;left: 10px;margin: 0;display: none; }
-.module_steps__text.active{display: block; }
 
 /* Accordion */
 .accordion_l1__inner{ padding:15px 10px;}
