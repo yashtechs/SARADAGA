@@ -68,7 +68,7 @@ font-smoothing: antialiased;
 /* Btn Alignment */
 .navigation_btns {width: 100%;display: table;}
 .right_navigation_btn{text-align:right;}
-.right_navigation_btn, .left_navigation_btn {display: table;}
+.right_navigation_btn, .left_navigation_btn, .right_navigation {display: table;}
 
 /* Button */
 .btn_default {font-size:1em; font-family: 'BnppSans-r', arial;line-height: 1em;padding: 1em 1.25em;cursor: pointer;height: 2.75em;margin:0 0 0 0.565em;min-width:5.625em; text-align:center;}
