@@ -544,7 +544,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .margin_col .ls-cmp-wrap:first-child .iw_component, .margin_col .ls-cmp-wrap:nth-child(2) .iw_component, .margin_headline:first-child{margin:0;}
 
 /* User Meta name */
-.user_message{ padding:1.08em 1.08em 0 1.08em;font-size:1.75em;display:none;}
+.user_message{ padding:1.08em 1.08em 0 1.08em;font-size:1.4em;display:none;}
 .home .user_message{ display:block;}
 .meta_name{font-family: 'BnppSans-r', arial; margin-left:0.145em;}
 
@@ -1116,6 +1116,7 @@ input.mask_pattern{ width:125px; padding:11px 0; display:inline-block;}
 .print .module_row{ color:#252429 !important;}
 .print .module_row label{ float:left; margin:9px 5px 0 0; font-size:16px;}
 .print .flyout_selection{ width:380px;}
+.print .flyout_selection .dropdown_arrow:after{ border:none;}
 .print .selected_details__account .hello_icon{ padding:0; margin-top:5px;}
 .print .hello_icon:after{ content:url('images/hello_icon.png');}
 .print .print_footer{ padding-top:20px; border-top:1px solid #d8dbde; font-size:8px; line-height:1.4;}
@@ -1136,7 +1137,7 @@ html,body, .easybanking{ width:319px;}
 @media all and (max-width: 479px) {
 
 /* dropdown custom */
-.default_input_field.custom_dropdown > input{ max-width:234px;}
+.default_input_field.custom_dropdown > input{ max-width:234px; min-width:200px;}
 
 /* Stand buttons */
 .right_navigation_btn, .right_navigation_btn .btn_default{ width:100%; margin:0;}
@@ -1212,8 +1213,6 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .login_bg .widget{ margin-top:-20px;}
 }
 @media all and (min-width: 320px) and (max-width: 479px) {
-	
-.default_input_field.custom_dropdown > input{ width:auto; padding:0; height: 1.375em;line-height: 1.375em;max-width: 17.5em;min-width: 15em;}
 
 .ucr_action_content{width:86%;}
 .widget{ right:0px !important;}
@@ -1463,7 +1462,7 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .result_personicon {float: right;font-size: 40px;}
 .fontcon-send-money-icon {position: absolute;right: 0.5em;font-size: 40px;}
 .done_icon {float: right;font-size: 25px;top: 20px;right: 0px;}
-.date_picker .default_input_field {width: 100%;}
+.date_picker .default_input_field {width: 100% !important;}
 .date_picker .default_input_field > input {width: 100%; }
 
 /* UCR */
