@@ -484,7 +484,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 
 /* Link Teaser */
 .margin_teaser_link{background:#861a61;min-height:10.62em; padding:1.56em 0.94em;cursor:pointer; position:relative; width:10.62em; float:left;}
-.link_senstive{background:#ffffff; min-height:10.62em;margin-left:10.625em;}
+.link_senstive{background:#ffffff; height:10.62em;margin-left:10.625em;}
 .link_senstive .region .section{ padding:1.44em 0 1.44em 1.44em; border-bottom:1px solid #d8dbde; cursor:pointer;}
 .link_senstive a:last-child .section{ border:none; padding-bottom:1.5em;}
 .link_senstive .section h4{ color:#6e154f; text-transform:uppercase; font-size:1.12em;}
@@ -541,7 +541,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 
 /* Margin module spacings */
 .margin_col .ls-cmp-wrap .iw_component, .margin_headline{ margin-top:1.25em;}
-.margin_col .ls-cmp-wrap:first-child .iw_component, .margin_headline:first-child{margin:0;}
+.margin_col .ls-cmp-wrap:first-child .iw_component, .margin_col .ls-cmp-wrap:nth-child(2) .iw_component, .margin_headline:first-child{margin:0;}
 
 /* User Meta name */
 .user_message{ padding:1.08em 1.08em 0 1.08em;font-size:1.75em;display:none;}
@@ -818,7 +818,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .filter_from{ padding-right:15px;}
 .filter_to{ padding-left:15px;}
 .filter_calendar{ padding-top:15px;}
-.filter_popup .filter_btn{ padding:30px 0;}
+.filter_popup .filter_btn{ padding:30px 0 0 0;}
 .msie .filter_popup .default_input_field{ display:inline-block;}
 
 /* Scroll Menus */
@@ -1212,6 +1212,9 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .login_bg .widget{ margin-top:-20px;}
 }
 @media all and (min-width: 320px) and (max-width: 479px) {
+	
+.default_input_field.custom_dropdown > input{ width:auto; padding:0; height: 1.375em;line-height: 1.375em;max-width: 17.5em;min-width: 15em;}
+
 .ucr_action_content{width:86%;}
 .widget{ right:0px !important;}
 
