@@ -62,7 +62,7 @@ user-select: none;
 font-smoothing: antialiased;		
 }
 .no_scroll, .no_scroll body{ overflow:hidden; width:100%; height:100%;}
-.no_hscroll{ overflow-x:hidden;}
+.no_hscroll,.no_hscroll .easybanking{ overflow-x:hidden;}
 
 /** Standard Elements - Buttons, links, inputs, select, dropdown, dropdown arrow **/
 /* Btn Alignment */
@@ -364,7 +364,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .contact_us a[href^=tel]{ pointer-events:auto;}
 .contactus_content { width:100%; background:#fff; }
 .contactus_content_inner { padding:1.88em; }
-.contactus_block { border-bottom:1px solid #BEC6D0; display:table; padding:1.88em 0 1.125e; width:100%; }
+.contactus_block { border-bottom:1px solid #BEC6D0; display:table; padding:1.88em 0 1.125em; width:100%; }
 .contactus_block:first-child { padding-top:0; }
 .contactus_block:last-child { border:0; padding-bottom:0; }
 .module_block { float:left; width:80%; }
@@ -819,6 +819,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .filter_to{ padding-left:15px;}
 .filter_calendar{ padding-top:15px;}
 .filter_popup .filter_btn{ padding:30px 0;}
+.msie .filter_popup .default_input_field{ display:inline-block;}
 
 /* Scroll Menus */
 .scroll_menu {overflow: hidden;padding-left: 32px;padding-right: 32px;}
@@ -877,7 +878,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .selected_profile_details{ padding:5px 0; width:100%; display:table; }
 .profile_label{ float:left; margin-right:4px; display:inline;}
 .selected_profile_info .profile_label{font-family: 'BnppSans-r',arial; color:#ffffff;}
-.profile_info{ display:inline-block; margin-left:6px;}
+.profile_info{ display:inline-block; margin-left:4px;}
 .selected_profile_info .profile_info{ color:#ffffff; margin-left:0;}
 .known_dropbox{ width:100%; top:65px; }
 .select_profile .selected_profile_details{ padding:0; font-size:14px;}
@@ -1214,10 +1215,13 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .ucr_action_content{width:86%;}
 .widget{ right:0px !important;}
 
-.dropdown_seleted_item{ max-width:210px; overflow:hidden; text-overflow: ellipsis; white-space:nowrap;}
 /* Static content pages Xopus */
-.table { width:280px; overflow:scroll; margin:auto;}
-.table table{ width:600px;}
+.table { width:17.5em; overflow:scroll; margin:auto;}
+.table table{ width:37.5em;}
+}
+@media all and (min-width: 320px) and (max-width: 379px) {
+.dropdown_seleted_item, .known_placeholder{ max-width:14em; overflow:hidden; text-overflow: ellipsis; white-space:nowrap;}
+.fr .eb_tab_txt__inner{ padding-left:1.4em;}
 }
 @media all and (max-width: 767px) {
 /* Alignments */

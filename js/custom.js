@@ -24,6 +24,8 @@ function iCheck(){
 	if(isiPhone)
 	{
 	  $('.number-type').attr('type','number');
+	  alert("HI");
+	   $('.number-type').val('10.45');
 	}
 }	
 	//new IScroll('.dropdown_wrapper', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
