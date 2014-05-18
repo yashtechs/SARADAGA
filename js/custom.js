@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	//alert(document.getElementsByTagName("html")[0].className);
+	alert(document.getElementsByTagName("html")[0].className);
 	 //require(['lib/rivetsconfig'], function(rivets) {
 //					 var Tab = Backbone.Model.extend({
 //			  defaults: {
@@ -29,7 +29,7 @@ function iCheck(){
 	}
 }	
 	//new IScroll('.dropdown_wrapper', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
-	//$('.select_message__structured input').mask('000 / 0000 / 00000')
+	$('.select_message__structured input').mask('000 / 0000 / 00000')
 	$('.yashraja').focus(function(){
 		$('input').blur();
 	});
