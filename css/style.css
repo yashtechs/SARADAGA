@@ -71,7 +71,7 @@ font-smoothing: antialiased;
 .right_navigation_btn, .left_navigation_btn, .right_navigation {display: table;}
 
 /* Button */
-.btn_default {font-size:1em; font-family: 'BnppSans-r', arial;line-height: 1em;padding: 1em 1.25em;cursor: pointer;height: 2.75em;margin:0 0 0 0.565em;min-width:5.625em; text-align:center;}
+.btn_default {font-size:1em; font-family: 'BnppSans-r', arial;line-height: 0.8em;padding: 0.8em 1.25em;cursor: pointer;height: 2.75em;margin:0 0 0 0.565em;min-width:5.625em; text-align:center;}
 .btn_default:first-child{ margin:0;}
 a.btn_default{ display:inline-block;}
 
@@ -114,12 +114,13 @@ a.btn_default{ display:inline-block;}
 input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;}
 /* Custom Dropdown field */
 .default_input_field.has-options.has-items > input{ width: 0.125em !important; max-width:0.125em !important; min-width:0.125em !important;}
-.default_input_field.custom_dropdown{padding: 0.750em;}
+.default_input_field.custom_dropdown{padding: 0.65em;}
 .default_input_field.custom_dropdown > input{ width:auto; padding:0; height: 1.375em;line-height: 1.375em;max-width: 18.75em;min-width: 16.25em;}
 .default_input_field.dropdown_arrow {background: url(./images/dropdown_strip.png) no-repeat right center, #ffffff; padding-right: 2.5em;}
 .dropdown_arrow:after, .widget .header_l2:after{border-color: #252429 transparent transparent transparent;position: absolute;top: 50%;right: 0.94em;display: block;width: 0;height: 0;margin-top: -0.188em;border-style: solid;border-width: 5px 5px 0 5px;content:' ';}
 .dropdown-active:after, .widget .header_l2.dropdown-active:after {border-color: transparent transparent #252429 transparent;margin-top: -0.250em;border-width: 0 5px 5px 5px;}
 .dropdown-active::before {position: absolute;right: 0;bottom: 0;left: 0;display: block;height: 0.063em;content: ' ';}
+.dropdown_seleted_item{ padding-top:0.25em;}
 
 /* Custom Dropdown box */
 .default_dropdown_box {background: #ffffff;border: 1px solid #d0d0d0;-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);margin: -0.063em 0 0 0;color: #76767b;line-height: 1.375em;position:absolute;z-index:999;}
@@ -979,6 +980,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .lstruct_pattern{ padding-left:12px;}
 .rstruct_pattern{ padding-right:12px; margin-left:-3px;}
 input.mask_pattern{ width:134px; padding:11px 0; display:inline-block;}
+input.mask_pattern::-ms-clear {display: none;}
 
 /* Unwanted */
 .to_field .show_active {display: inline-block !important; }
@@ -1057,9 +1059,8 @@ input.mask_pattern{ width:134px; padding:11px 0; display:inline-block;}
 .de .login_bg .ucr_action_content:first-child, .fr .login_bg .ucr_action_content:first-child{ width:94%;}
 .de .ucr_img, .fr .ucr_img{ top:1.125em;}
 .de .m2_icon, .fr .m2_icon{ top:1.2em;}
-.de .ucr_challenge__code{ display:inline-block;}
-.fr .ucr_challenge__code{ float:left; width:100%;}
-.fr .login_bg .ucr_challenge__code{ float:none; width:auto;}
+.de .ucr_contentone, .fr .ucr_contentone{ width:100%;}
+.fr .login_bg .ucr_contentone{width:auto;}
 
 /* Customised UCR for Login */
 .login_bg .ucr_code{ float:none;}
