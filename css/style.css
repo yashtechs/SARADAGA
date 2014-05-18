@@ -194,7 +194,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 
 /* Navigation header */
 .site_header, #siteHeaderError{ width:100%; height:5em; position:fixed; top:0; left:0;z-index:9999;-webkit-transition: all 200ms linear 0s;-moz-transition: all 200ms linear 0s;-ms-transition: all 200ms linear 0s;transition: all 200ms linear 0s;}
-.site_header__inner, #siteHeaderErrorInner{ padding: 1.25em 1.875em;background:#ffffff;}
+.site_header__inner, #siteHeaderErrorInner{ padding: 1.25em 1.875em;background:#ffffff;box-shadow: 0 4px 4px -6px #000000;-webkit-box-shadow: 0 4px 4px -6px #000000;-moz-box-shadow: 0 4px 4px -6px #000000;-ms-box-shadow: 0 4px 4px -6px #000000;}
 #siteHeaderError a{ display:block; height:40px;}
 
 .nav-up {top: -5em; opacity:0;}
@@ -1060,6 +1060,7 @@ input.mask_pattern::-ms-clear {display: none;}
 .de .ucr_img, .fr .ucr_img{ top:1.125em;}
 .de .m2_icon, .fr .m2_icon{ top:1.2em;}
 .de .ucr_contentone, .fr .ucr_contentone{ width:100%;}
+.de .ucr_challange__content .ok_icon:nth-child(3){margin-left: 0px}
 .fr .login_bg .ucr_contentone{width:auto;}
 
 /* Customised UCR for Login */
@@ -1501,7 +1502,7 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .site_header__inner{ padding:10px;}
 .brand_logo, #brandLogo{width:42px; height:40px;}
 .menu_nav_small{ display:block; cursor:pointer; margin-left:20px; padding:12px 0; font-size:18px; text-transform:uppercase;}
-.navigation{ position: absolute;top: 60px;left: 0; width:100%;z-index:9999; float:none;box-shadow: 0 4px 7px -6px #000000;}
+.navigation{ position: absolute;top: 60px;left: 0; width:100%;z-index:9999; float:none;box-shadow: 0 4px 7px -6px #000000;-webkit-box-shadow: 0 4px 7px -6px #000000;-moz-box-shadow: 0 4px 7px -6px #000000;-ms-box-shadow: 0 4px 7px -6px #000000;}
 .navigation_inner{ padding:0 10px;background:#ffffff;}
 .navigation_control {width: 100%; padding:0;display:none; position:relative;}
 .navigation_control li{ width:100%; padding:15px 0;border-top:1px dotted #d2d8e1; border-left:none;}
