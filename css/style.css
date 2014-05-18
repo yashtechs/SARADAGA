@@ -73,7 +73,7 @@ font-smoothing: antialiased;
 /* Button */
 .btn_default {font-size:1em; font-family: 'BnppSans-r', arial;line-height: 0.8em;padding: 0.8em 1.25em;cursor: pointer;height: 2.75em;margin:0 0 0 0.565em;min-width:5.625em; text-align:center;}
 .btn_default:first-child{ margin:0;}
-a.btn_default{ display:inline-block;}
+a.btn_default{ display:inline-block; padding:1em 1.25em;}
 
 /* Primary and secondary */
 .btn_primary {background: #009966;color: #ffffff; }
@@ -1225,7 +1225,7 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 }
 @media all and (min-width: 320px) and (max-width: 379px) {
 .dropdown_seleted_item, .known_placeholder{ max-width:14em; overflow:hidden; text-overflow: ellipsis; white-space:nowrap;}
-.fr .eb_tab_txt__inner{ padding-left:1.4em;}
+.fr .eb_tab_txt__inner{ padding-left:1em;}
 }
 @media all and (max-width: 767px) {
 /* Alignments */
