@@ -386,7 +386,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .login_bg .module_title{ color:#252429;}
 .login_bg .contact_us, .login_bg .faq-page{ width:45.66em; margin:6.25em auto 0 auto;}
 .login_bg .contact_us.attempt_fail{ margin-top:0;}
-.login_bg .contact_us .lnk_primary{ color: #009966;}
+.login_bg .contact_us .lnk_primary{ color: #009966; padding:0;}
 .login_bg .contact_us .lnk_primary:hover{text-decoration: underline; color:#008578;}
 
 /* Logout */
@@ -1310,9 +1310,10 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .module_contact { width:40%; }
 .module_heading,.module_list { width:100%; }
 .contactus_block { padding:20px 0 8px; }
-.module_contact p span { font-size:17px; }
 .module_list p { font-size:15px; padding:0 0 8px; }
 .module_contact { padding:1px 0 0; }
+.module_contact p{ font-size:1em;}
+.module_contact p span { font-size:17px; }
 .module_contact .contact_date span { font-size:12px; }
 
 /* Static content pages Xopus */

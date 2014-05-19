@@ -24,7 +24,7 @@
         <script src="js/modrenizr.js"></script>
         <script src="js/jQuery.print.js"></script>
          <script src="js/jquery.browser.min.js"></script>
-         <script src="js/mask.js"></script>
+         <!--<script src="js/mask.js"></script>-->
 	</head>
 	<body>
     	<div class="easybanking">
@@ -204,6 +204,14 @@
                                                 </select>
                                             </div>
                                             <!-- Struct Message -->
+                                             <div class="free_text show_active">
+                                                <p class="field_error_message struct_error">Please enter valid structured message</p>
+                                                <div class="default_input_field">
+                                                
+                                                <input type="tel" class="mask_pattern"/>
+                                               
+                                                </div>
+                                            </div>
                                             <div class="select_message__structured show_active">
                                                 <p class="field_error_message struct_error">Please enter valid structured message</p>
                                                 <div class="default_input_field">
@@ -223,6 +231,14 @@
                                                 <p class="field_error_message struct_error">Please enter valid euro message.</p>
                                                 <textarea maxlength="23"></textarea>
                                                 <span class="message_length"><span class="text_count">characters left</span><span class="eurostructured_remaining">23</span></span></span> 
+                                            </div>
+                                            <div class="free_text show_active">
+                                                <p class="field_error_message struct_error">Please enter valid structured message</p>
+                                                <div class="default_input_field">
+                                                <p class="lstruct_pattern">+++</p>
+                                                <input type="text" class="mask_pattern"/>
+                                                <p class="rstruct_pattern">+++</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div> 
