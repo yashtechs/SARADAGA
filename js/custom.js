@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	alert(document.getElementsByTagName("html")[0].className);
+	//alert(document.getElementsByTagName("html")[0].className);
 	 //require(['lib/rivetsconfig'], function(rivets) {
 //					 var Tab = Backbone.Model.extend({
 //			  defaults: {
@@ -29,16 +29,10 @@ function iCheck(){
 	}
 }	
 	//new IScroll('.dropdown_wrapper', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
-	require(["mask"], function(Mask) {
-		$('.select_message__structured input').mask('000 / 0000 / 00000')
+	//$('.select_message__structured input').mask('000 / 0000 / 00000')
 	$('.yashraja').focus(function(){
 		$('input').blur();
 	});
-	$('.free_text input').mask('00000 00000');
-		
-	});
-	
-	
 	
 	//alert($.browser.name);alert($.browser.version);alert($.browser.versionNumber);alert($.os.name); 
 	

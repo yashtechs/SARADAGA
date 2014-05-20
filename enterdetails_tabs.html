@@ -24,7 +24,7 @@
         <script src="js/modrenizr.js"></script>
         <script src="js/jQuery.print.js"></script>
          <script src="js/jquery.browser.min.js"></script>
-         <!--<script src="js/mask.js"></script>-->
+         
 	</head>
 	<body>
     	<div class="easybanking">
@@ -59,6 +59,7 @@
 						
 					</div>
                     <!-- Sepa Content -->
+                    <form novalidate>
                     <div class="form_container trnsfr_content">
                         <!-- Sepa Enter details -->
                             <div class="form_inner">
@@ -208,7 +209,7 @@
                                                 <p class="field_error_message struct_error">Please enter valid structured message</p>
                                                 <div class="default_input_field">
                                                 
-                                                <input type="tel" class="mask_pattern"/>
+                                                <input type="tel" pattern="[0-9]*" class="mask_pattern" />
                                                
                                                 </div>
                                             </div>
@@ -255,6 +256,8 @@
                                 </div>
                             </div>
                     </div>
+                    
+                   </form>
                 </div>
             </div>
         </div>

@@ -54,7 +54,7 @@
         jMask.init = function() {
             options = options || {};
 
-            jMask.byPassKeys = [8 ,9, 16, 17, 18, 36, 37, 38, 39, 40, 91];
+            jMask.byPassKeys = [8, 9, 16, 17, 18, 36, 37, 38, 39, 40, 91];
             jMask.translation = {
                 '0': {pattern: /\d/},
                 '9': {pattern: /\d/, optional: true},
@@ -136,6 +136,7 @@
                     el.data("changeCalled", true);
                 });
                 el.on("blur.mask", function(e){
+					console.log(e.type);
                     var el = $(e.target);
                     if (el.prop("defaultValue") !== el.val()) {
                         el.prop("defaultValue", el.val());
@@ -147,7 +148,8 @@
                 });
 
                 // clear the value if it not complete the mask
-                el.on("focusout.mask", function() {
+                el.on("focusout.mask", function(e) {
+					console.log(e.type);
                     if (options.clearIfNotMatch && p.val().length < mask.length) {
                        p.val('');
                    }
@@ -157,10 +159,14 @@
                 el.off('keydown.mask keyup.mask paste.mask drop.mask change.mask blur.mask focusout.mask').removeData("changeCalled");
             },
             val: function(v) {
+				/*
                 var isInput = el.is('input');
                 return arguments.length > 0 
                     ? (isInput ? el.val(v) : el.text(v)) 
                     : (isInput ? el.val() : el.text());
+				//*/
+				
+				return (v) ? el.val(v) : el.val(); 
             },
             getMaskCharactersBeforeCount: function(index, onCleanVal) {
                 for (var count = 0, i = 0, maskL = mask.length; i < maskL && i < index; i++) {
@@ -180,7 +186,8 @@
             behaviour: function(e) {
                 e = e || window.event;
                 var keyCode = e.keyCode || e.which;
-
+					console.log(e.type + el.val() + keyCode);
+					
                 if ($.inArray(keyCode, jMask.byPassKeys) === -1) {
 
                     var caretPos = p.getCaret(),
@@ -190,8 +197,7 @@
                         newVal = p.getMasked(),
                         newValL = newVal.length,
                         maskDif = p.getMaskCharactersBeforeCount(newValL - 1) - p.getMaskCharactersBeforeCount(currValL - 1);
-						console.log(p.getMaskCharactersBeforeCount(newValL - 1));
-                   
+                   		//console.log(p.getMaskCharactersBeforeCount(newValL - 1));
                     if (newVal !== currVal) {
                         p.val(newVal);
                     }
@@ -282,6 +288,7 @@
             callbacks: function (e) {
                 var val = p.val(),
                     changed = p.val() !== old_value;
+					//console.log(p.val());
                 if (changed === true) {
                     if (typeof options.onChange === "function") {
                         options.onChange(val, e, el, options);

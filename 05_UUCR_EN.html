@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/reset.css" type="text/css" >
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/fonticon.css" type="text/css">
+		<script src="js/jquery1.9.1.js"></script>
+		<script src="js/contract.js"></script>
+	</head>
+	<body>
+		<div class="ls-canvas easybanking login_bg">
+			<!-- Authentication IA -->
+			<div class="authentication">
+				<div class="authentication__inner">
+					<!-- Box 1 -->
+					<div class="authentication__details">
+						<div class="identification__inner">
+							<!-- User information -->
+							<div class="selected_profile_info">
+								<div class="selected_profile_details">
+									<div class="profile_label user_label ">
+										<label>Alias</label>
+										<span>:</span>
+									</div>
+									<p class="profile_info ">Sreeyashu</p>
+								</div>
+								<div class="selected_profile_details">
+									<div class="profile_label user_label">
+										<label>Client number</label>
+										<span>:</span>
+									</div>
+									<p class="profile_info">12345 67890</p>
+								</div>
+								<div class="selected_profile_details">
+									<div class="profile_label user_label">
+										<label>Card number</label>
+										<span>:</span>
+									</div>
+									<p class="profile_info">1234 5678 9012 3456 7</p>
+								</div>
+							</div>
+							<!-- Help URL -->
+						</div>
+					</div>
+					<!-- Box 2 -->
+					<div class="identification_ucr">
+						<div class="identification_content">
+							<div class="identification__inner">
+								<!-- Error summary standard component-->
+								<h4 class="ucr_title">Sign</h4>
+								<div class="ucr_details">
+									<span class="ucr_details__numbering">1.</span>
+									<div class="ucr_details__content">
+                                         <p class="ucr_action_content">
+                                         	<span>
+                                                <span>Put your bank card in the cardreader and press</span>
+                                                <span class="fontcon-m1 m1_icon"></span>
+                                            <span>
+                                        </p>
+									</div>
+								</div>
+								<div class="ucr_details">
+									<span class="ucr_details__numbering">2.</span>
+									<div class="ucr_details__content">
+										<p class="ucr_action_content">'CHALLENGE?' is displayed</p>
+										<div class="ucr_content__challenge">
+											<span class="f_left ucr_contentone">Enter the code</span>
+                                            <div class="ucr_challenge__code">
+                                                <div class="ucr_code">
+                                                    <p class="default_input_field ucr_code__input">12345 78901</p>
+                                                </div>
+                                            </div>
+											<p class="ucr_challenge__content">
+												
+												<span class="ucr_contenttwo">and press</span>
+												<span class="fontcon-ucr-ok ok_icon challenge_ok"></span>
+											</p>
+										</div>
+									</div>
+								</div>
+                                <div class="ucr_details">
+									<span class="ucr_details__numbering">3.</span>
+									<div class="ucr_details__content">
+										<p class="ucr_action_content">'PIN?' is displayed</p>
+                                        <p>
+                                        <span>
+                                            <span>Enter your personal PIN code and press</span>
+                                            <span class="fontcon-ucr-ok ok_icon pin_ok"></span>
+                                        </span>
+                                        </p>
+									</div>
+								</div>
+								<div class="ucr_details last-child">
+									<span class="ucr_details__numbering">4.</span>
+									<div class="ucr_details__content">
+										<p class="ucr_action_content">The electronic signature is displayed</p>
+										<span class="f_left ucr_content">Enter your electronic signature</span>
+										<div class="ucr_signature">
+											<p class="field_error_message" style="display:block">Please enter valid amount</p>
+											<div class="default_input_field ucr_signature__input">
+												<input type="text"/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Navigation btn -->
+						<div class="identification__navigation">
+							<div class="navigation_btns">
+								<div class="left_navigation_btn f_left left_btn_navigation"> 
+									<span class="lnk_primary">Back</span>				  
+								</div>
+								<div class="right_navigation f_right">
+									<button class="btn_default ucr_btn identification_btn_active">Submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

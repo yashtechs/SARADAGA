@@ -26,7 +26,12 @@ define(['selectize', 'underscore','picker.date', 'rivets','iScroll','transition'
 
             }
         };
+		//
 		//*
+		console.log(1);
+		require(['mask'],function(Mask) {
+			$('.mask_pattern').mask('00000 00000');
+		});
 		$(".amount_field input").on("blur", function(e) {
 			console.log(e.type);
 		});
@@ -44,15 +49,15 @@ define(['selectize', 'underscore','picker.date', 'rivets','iScroll','transition'
             for (var i = 0; i < 100000; i++) {
                 s = i + 1;
             }
-            console.log(i);
-            console.log(this);
+            //console.log(i);
+            //console.log(this);
         });
         $('.accordion_content_detail').on('shown.bs.collapse', function() {
             for (var i = 0; i < 1000; i++) {
 
             }
-            console.log(i);
-            console.log(this);
+            //console.log(i);
+            //console.log(this);
         })
             _.map(xhr.value.originatorAccounts.ownOriginatorAccounts,
                 function(accountType) {
@@ -60,14 +65,14 @@ define(['selectize', 'underscore','picker.date', 'rivets','iScroll','transition'
                         items.push(data);
                     });
                 });
-            console.log(items);
+            //console.log(items);
             /*$('.select-account').selectize({
                 options: items,
                 optgroups:
             });*/
             var types = _.unique(_.map(items,function(item){return item.type;}));
             types = _.map(types,function(type) {return {value:type,label:type}});
-            console.log(types);
+            //console.log(types);
 
             var $select = $('.select-account').selectize({
                 options: items,

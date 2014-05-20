@@ -11,7 +11,8 @@ requirejs.config({
       "login":"../login",
       "sepa":"../sepa",
       "stubs":"../stubs",
-	  "iScroll":"iscroll"
+	  "iScroll":"iscroll",
+	  "mask":"../mask"
      
     },
     "shim": {

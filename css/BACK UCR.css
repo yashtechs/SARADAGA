@@ -1031,32 +1031,42 @@ input.mask_pattern::-ms-clear {display: none;}
 .ucr_comp {background: #f4f5f6;width: 100%;}
 .ucr_title {font-size: 24px;padding-bottom: 12px;line-height: 24px; text-transform:uppercase;}
 .ucr_img{ background: url(images/ucr_img.png) no-repeat; width:85px; height:80px;position:absolute; right:80px; top:-10px;}
-.ucr_details {font-size: 16px;border-bottom: 1px solid #d8dbde;width: 100%;display: table;padding: 15px 0;position: relative; line-height:1.80em;}
+.ucr_details {font-size: 16px;border-bottom: 1px solid #d8dbde;width: 100%;display: table;padding: 20px 0;position: relative; line-height:1.80em;}
 .ucr_details:last-child{ border:none;}
 .ucr_details__numbering {width: 16px;float: left;font-family: 'BnppSans-r', arial;}
 .ucr_details__content {width: 94%;display: table;}
 .ucr_details__content p:first-child {font-family: 'BnppSans-r', arial;}
 .ucr_code {display: table;float: left;text-align: center;}
-.ucr_code p:nth-child(2) {font-size: 12px;line-height: 12px; text-align:left; padding:0px 0 0 12px;}
+.ucr_code p:nth-child(2) {font-size: 12px;line-height: 12px; text-align:left; padding:12px 0 0 12px;}
 .ucr_contentone {padding: 10px 0; margin-right:10px;}
 .ucr_contenttwo{ margin-left:10px;}
+.ucr_action_content{ width:94%;}
 .ucr_code__input {width: auto;display: inline-block;width: auto !important;color: #186495 !important;padding: 9px 12px 0; cursor:default;}
 .ucr_signature {display: inline-block;}
 .default_input_field.ucr_signature__input {width: 250px;}
 .ucr_content__challenge {display: inline-block;width: 100%;padding-top: 10px; position:relative;}
-.m1_icon{color: #e53012;font-size: 36px;position: relative; margin:0 5px;display:inline-block; vertical-align:middle;}
+.m1_icon{color: #e53012;font-size: 36px;position: absolute;top: 45px; margin:0 5px;}
 .m1_icon::after{ content:'M1'; font-size:14px; position:absolute; left:0.48em; top:0.8em; color:#ffffff;font-family: 'BnppSans-r', arial;}
-.m2_icon{color: #186495; position:relative;font-size:36px; display:inline-block; margin:0 5px; vertical-align:middle;}
-.ok_icon{font-size:30px;position:relative;color:#138e57; margin:0 5px; display:inline-block; vertical-align:middle;}
+.m2_icon{color: #186495; position:absolute; top: 16px;font-size:36px; display:inline-block; margin:0 5px;}
+.ok_icon{font-size:30px;position:relative;top:8px;color:#138e57; margin:0 5px;}
 .ok_icon::after{ content:'OK'; font-size:15px; position:absolute;font-family: 'BnppSans-r', arial; color:#ffffff; top:0.64em; left:0.38em;}
+.pin_ok{ position:absolute; top:45px;}
 .last_ok{ margin:0;}
-.centered_ok{ float:left; margin:8px 5px;}
+.challenge_ok{ top:2.4em; position:absolute;}
 
 /* Customised UCR for other languages */
+.de .ucr_action_content:first-child, .fr .ucr_action_content:first-child{ width:70%;}
+.de .login_bg .ucr_action_content:first-child, .fr .login_bg .ucr_action_content:first-child{ width:94%;}
+.de .ucr_img, .fr .ucr_img{ top:1.125em;}
+.de .m2_icon, .fr .m2_icon{ top:1.2em;}
+.de .ucr_contentone, .fr .ucr_contentone{ width:100%;}
+.de .ucr_challange__content .ok_icon:nth-child(3){margin-left: 0px}
+.fr .login_bg .ucr_contentone{width:auto;}
 
 /* Customised UCR for Login */
-.login_bg .ucr_code{ float:none; display:inline-block;}
-.login_bg .ucr_contenttwo{ margin:0;}
+.login_bg .ucr_code{ float:none;}
+.login_bg .ucr_contenttwo{ margin:0; float:left;}
+.login_bg .pin_ok{ top:75px;}
 .login_bg .ucr_challenge__code{ display:inline-block;}
 .login_bg .default_input_field.ucr_signature__input{ margin:0;}
 
@@ -1165,6 +1175,10 @@ html,body, .easybanking{ width:319px;}
 /* SEPA CT Form */
 .selected-item { font-size:12px;}
 
+/* UCR */
+.m2_icon{ top:44px;}
+.pin_ok{ top:74px;}
+.fr .m1_icon, .fr .m2_icon{ top:70px;}
 }
 @media all and (min-width: 480px) and (max-width: 640px) {
 /* Teaser with Link */
@@ -1202,7 +1216,7 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 }
 @media all and (min-width: 320px) and (max-width: 479px) {
 
-
+.ucr_action_content{width:86%;}
 .widget{ right:0px !important;}
 
 /* Static content pages Xopus */
@@ -1456,6 +1470,8 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 
 /* UCR */
 .ucr_signature {width: 100%;}
+.ucr_challenge__code{ display:inline-block; width:100%;}
+.ucr_contentone, .ucr_contenttwo{ padding:0; margin:0;}
 .ucr_img{ display:none;}
 .selected_profile_details{font-size:14px;}
 .default_input_field.ucr_signature__input{ margin:0;}
