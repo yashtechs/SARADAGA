@@ -1155,7 +1155,7 @@ html,body, .easybanking{ width:319px;}
 .show_filters p{ width:110px;}
 
 /* Non 100% buttons */
-.zoomit_map .right_navigation_btn, .zoomit_map .right_navigation_btn button, .trnsfr_confirm .right_navigation_btn, .trnsfr_confirm .right_navigation_btn button{ width:auto;}
+.zoomit_map .right_navigation_btn, .zoomit_map .right_navigation_btn button{ width:auto;}
 
 /* Login buttons & text */
 .intermediate_btns .plain_text{ width:100%; display:block; margin:0 0 8px 0;}
