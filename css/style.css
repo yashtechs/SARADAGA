@@ -536,7 +536,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .headline_social{ padding-top:1.25em;}
 .headline_social li{ display:table; border-bottom:1px dotted #d8dbde; width:100%; padding-bottom:0.62em; margin-bottom:0.62em;}
 .headline_social li:last-child{ border-bottom:none;}
-.socialad_icon{ font-size:2.19; float:left;}
+.socialad_icon{ font-size:2.19em; float:left;}
 .headline_sociallink{ float:left; padding:0.56em 0 0.56em 0.56em; color:#009966;}
 .headline_sociallink:hover{ text-decoration:underline !important;}
 
