@@ -23,6 +23,15 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.fontcon-reload:before {
+	content: "\e618";
+}
+.fontcon-done:before {
+	content: "\e620";
+}
+.fontcon-add-benf:before {
+	content: "\e634";
+}
 .fontcon-pdf:before {
 	content: "\e60d";
 }
