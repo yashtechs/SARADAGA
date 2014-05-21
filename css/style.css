@@ -730,11 +730,11 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .flyout_list_items .list_content_col2{padding-top: 0.62em}
 .flyout_list_items .listiban_detail{ font-size:0.87em !important;}
 .flyout_list_items .item_list{height:18.75em; overflow:hidden; padding:0 20px 0px 20px; position:relative;pointer-events: auto; -ms-touch-action: none;}
-.flyout_selection .dropdown_arrow:after {border-color: #ffffff transparent transparent transparent;top: 14px; right:70px;}
+.flyout_selection .dropdown_arrow:after {border-color: #ffffff transparent transparent transparent;top: 0.87em; right:4.37em;}
 .flyout_selection .dropdown-active:after {border-color: transparent transparent #252429 transparent; right:48px; top:34px;}
-.hello_account .hello_icon{ display:inline-block; margin:5px 0 0 2px;}
-.hello_account.dropdown_arrow:after{ right:54px;}
-.hello_account.dropdown-active:after{ right:32px;}
+.hello_account .hello_icon{ display:inline-block; margin:0.31em 0 0 0.12em;}
+.hello_account.dropdown_arrow:after{ right:3.37em;}
+.hello_account.dropdown-active:after{ right:2em;}
 
 /* Right aligned Flyout */
 .right_col .selected_details__account{ float:right;}
@@ -1010,7 +1010,6 @@ input.mask_pattern::-ms-clear {display: none;}
 .confirm_amount .amount_highlight{margin-right:0px;}
 .alias_name{ color:#76767b; display:table; padding-top:4px;}
 .alias_name label{ float:left;}
-.result_content .hello_icon{ position:relative;top:0.81em;float:none; margin-right:0.125em;}
 .space_right{margin-right:4px;}
 .space_left{ margin-left:4px;}
 .exp_btn{ margin-right:10px;}
@@ -1018,17 +1017,19 @@ input.mask_pattern::-ms-clear {display: none;}
 
 /* Result screen */
 .border_none {border:none !important;}
-.acknowledge_info h2 {font-size: 36px;display: inline-table;line-height: 36px;}
+.acknowledge_info h2 {font-size: 2.25em;display: inline-table;line-height:1em;}
 .acknowledge_info p {font-size: 1em;margin-top: 4px;}
 .acknowledge_content_inner {width: 100%;display: inline-table; padding-bottom:50px;}
 .acknowledge_blocks {width: 33.333333%;float: left;}
-.result_content {padding: 14px 15px;text-align: center;border-right: 1px dotted #d8dbde;}/*Change*/
+.result_content {padding: 14px 15px;text-align: center;border-right: 1px dotted #d8dbde;}
+.result_content .hello_icon{ position:relative;top:0.31em;float:none; margin-right:0.125em;}
 .result_personicon, .fontcon-send-money-icon {font-size: 60px;color: #d2d8e1;display: inline-block;}
 .done_icon {font-size: 30px;color: #85b909;position: relative;top: 3px;right: 13px;}
 .resultfrom_info {margin-top: 25px;font-size: 1em;line-height: 26px;}
 .resultfrom_info label {font-family: 'BnppSans-r', arial;display: block;}
 .result_navigation {display: inline-block;width: 100%;}
 .resultfrom__iban p{ display:inline-block;}
+
 
 /* UCR */
 .ucr_comp {background: #f4f5f6;width: 100%;}
@@ -1040,7 +1041,7 @@ input.mask_pattern::-ms-clear {display: none;}
 .ucr_details__content {width: 94%;display: table;}
 .ucr_details__content p:first-child {font-family: 'BnppSans-r', arial;}
 .ucr_code {display: table;float: left;text-align: center;}
-.ucr_code p:nth-child(2) {font-size: 12px;line-height: 12px; text-align:left; padding-left:1em;}
+.ucr_code p:nth-child(2) {font-size: 12px;line-height: 12px; text-align:left; padding-left:1em; margin-top:9px;}
 .ucr_contentone {padding: 8px 0; margin-right:10px;}
 .ucr_code__input {width: auto;display: inline-block;width: auto !important;color: #186495 !important;padding: 9px 12px 0; cursor:default;}
 .ucr_challenge__content{ display:inline-block}
@@ -1048,7 +1049,7 @@ input.mask_pattern::-ms-clear {display: none;}
 .challenge_part2{ float:left; display:table;margin-right:10px; }
 .challenge_part3{ display:inline-block; padding:7px 0; float:left;}
 .ucr_signature {display: inline-block;}
-.default_input_field.ucr_signature__input {width: 250px;}
+.default_input_field.ucr_signature__input {width: 15.62em;}
 .ucr_content__challenge {width: 100%;padding-top: 10px; position:relative;}
 .m1_icon{color: #e53012;font-size: 36px;position: relative; margin:0 5px;display:inline-block; vertical-align:middle;}
 .m1_icon::after{ content:'M1'; font-size:14px; position:absolute; left:0.48em; top:0.8em; color:#ffffff;font-family: 'BnppSans-r', arial;}
