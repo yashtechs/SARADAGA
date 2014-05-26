@@ -1,0 +1,114 @@
+@media all and (max-width: 319px) {
+  html, body, .easybanking, .siteheader {
+    width: 19.94em;
+  }
+}
+
+@media all and (max-width: 479px) {
+	/* dropdown custom */
+	.default_input_field.custom_dropdown > input {
+	  max-width: 240px;
+	}
+	
+  /* Stand buttons */
+  .right_navigation_btn {
+    width: 100%;
+    margin: 0;
+    .btn_default {
+      width: 100%;
+      margin: 0;
+      &:first-child {
+        margin-bottom: 0.63em;
+      }
+    }
+  }
+  .identification_ucr .right_navigation_btn, .identification_contract .right_navigation_btn {
+    width: auto;
+  }
+  /* layout */
+  .margin_col .ls-cmp-wrap {
+    width: 100% !important;
+  }
+  /* Static pages */
+  .login_bg .content_page {
+    margin: 1.25em auto 1.88em;
+  }
+  /* Log out */
+  #logoutMsg {
+    width: 100%;
+    border-bottom: none;
+    margin-top: 20%;
+    h1 {
+      font-size: 1.13em;
+      font-family: 'BnppSans-r', arial;
+    }
+  }
+  /* Filter */
+  .filter_content_inner {
+    padding: 0.63em;
+  }
+  .filter_content__range, .filter_popup .datepicker {
+    width: 17.50em;
+  }
+  .filter_content__specific, .filter_content__range {
+    padding-top: 1.2em;
+  }
+  
+  .show_filters p{ width:110px;}
+  
+  /* Non 100% buttons */
+  .zoomit_map .right_navigation_btn, .sendmoney_confirmation .right_navigation_btn {
+    width: auto;
+    button {
+      width: auto;
+    }
+  }
+  /* Login buttons & text */
+  .intermediate_btns .plain_text {
+    width: 100%;
+    display: block;
+    margin: 0 0 8px 0;
+  }
+  /* Identification alignments */
+  .authentication, .authentication__identification, .identification_contract, .authentication__details, .identification_ucr, .login_bg #metaInfo, .wcm-authentication {
+    width: 18.75em !important;
+  }
+  .login_bg {
+    .severity_message .alert_messages {
+      width: 18.75em !important;
+    }
+    .alert_message_content {
+      width: 80%;
+      padding-right: 0.88em;
+    }
+  }
+  /* SEPA CT Form */
+  .selected-item {
+    font-size: 0.75em;
+  }
+  /* UCR */
+  .m2_icon {
+    top: 1.22em;
+  }
+  .pin_ok {
+    top: 2.47em;
+  }
+  .fr {
+    .m1_icon, .m2_icon {
+      top: 1.95em;
+    }
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 640px) {
+  /* Teaser with Link */
+  .link_senstive {
+    margin-left: 7.5em;
+  }
+  .margin_teaser_link {
+    width: 120px;
+    .module_icon {
+      display: none;
+    }
+  }
+}

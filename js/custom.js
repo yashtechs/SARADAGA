@@ -18,6 +18,10 @@ $(document).ready(function () {
 //			  tab: tab
 //			});
 //				 });
+
+$('.fav_icon').click(function(){
+	$('.fav_icon').toggleClass('fontcon-fav-select fav_icon_select');
+})
 iCheck();
 function iCheck(){
 	var isiPhone = navigator.userAgent.match(/iPhone/i) != null;

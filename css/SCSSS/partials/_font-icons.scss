@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'bnpiconfont';
-	src:url('fonts/bnpiconfont.eot?');
+	src:url('fonts/bnpiconfont.eot');
 	src:url('fonts/bnpiconfont.eot?#iefix') format('embedded-opentype'),
-		url('fonts/bnpiconfont.woff?') format('woff'),
-		url('fonts/bnpiconfont.ttf?') format('truetype'),
-		url('fonts/bnpiconfont.svg?#bnpiconfont') format('svg');
+		url('fonts/bnpiconfont.woff') format('woff'),
+		url('fonts/bnpiconfont.ttf') format('truetype'),
+		url('fonts/bnpiconfont.svg#bnpiconfont') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,21 +23,6 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.fontcon-fav-default:before {
-	content: "\e635";
-}
-.fontcon-fav-select:after {
-	content: "\e626";
-}
-.fontcon-reload:before {
-	content: "\e618";
-}
-.fontcon-done:before {
-	content: "\e620";
-}
-.fontcon-add-benf:before {
-	content: "\e634";
-}
 .fontcon-pdf:before {
 	content: "\e60d";
 }
@@ -55,6 +40,9 @@
 }
 .fontcon-timeout:before {
 	content: "\e632";
+}
+.fontcon-favourite:before {
+	content: "\e626";
 }
 .fontcon-not-executed:before {
 	content: "\e631";

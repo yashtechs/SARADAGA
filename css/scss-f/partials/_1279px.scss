@@ -1,0 +1,92 @@
+@media all and (max-width: 1279px) {
+  /* Layout */
+  .main_wrapper .wcm-service-nav {
+    display: none;
+  }
+  .linux.safari4 .login_bg {
+    background-attachment: local;
+  }
+  /* Meta data */
+  .meta_navigation {
+    padding: 0.71em 0;
+  }
+  .meta_nav_service {
+    margin-right: 0.75em;
+    line-height: 0;
+  }
+  .meta_icons_s {
+    display: block;
+  }
+  .meta_icons_l {
+    padding-right: 0.14em;
+  }
+  .meta_logout {
+    display: none;
+  }
+  .meta_nav_logout {
+    float: left;
+    line-height: 0;
+  }
+  .meta_icon {
+    color: $default-clr-icon;
+    font-size: 1.43em;
+  }
+  /* FAQ Widget */
+  .wcm-faq {
+    left: 0;
+  }
+  .login_bg {
+    .wcm-faq {
+      right: 0.88em;
+      top: 0;
+      position: absolute;
+    }
+    .widget {
+      right: -0.88em !important;
+      top: 5.0em !important;
+    }
+  }
+}
+
+@media all and (min-width: 1280px) {
+  body, .site_header__inner,#siteHeaderErrorInner {
+    max-width: 80em;
+    margin: 0 auto;
+  }
+  /* layout */
+  .content_col {
+    margin-right: -26.25em;
+  }
+  .fluid {
+    margin-right: 26.25em;
+  }
+  .meta_nav_user {
+    display: block;
+  }
+  .linux.safari4 .login_bg {
+    background-attachment: local;
+  }
+  /* severity */
+  .warning_area .severity_message {
+    width: 1280px;
+  }
+  /* FAQ widget */
+  .login_bg {
+    .wcm-faq {
+      top: 0;
+    }
+    .widget {
+      top: 5.00em !important;
+    }
+  }
+  .widget_open {
+    margin-left: 0;
+    width: 76.6%;
+  }
+  .body {
+    -webkit-box-shadow: 0px 0px 1px 0px #999;
+    -moz-box-shadow: 0px 0px 1px 0px #999;
+    box-shadow: 0px 0px 1px 0px #999;
+    display: table;
+  }
+}

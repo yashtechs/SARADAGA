@@ -1,0 +1,44 @@
+@media all and (min-width: 480px) and (max-width: 767px) {
+  /* Static pages */
+  .login_bg {
+    .content_page {
+      margin: 1.25em auto 1.88em;
+    }
+    .severity_message .alert_messages {
+     width: 22.83em;
+     margin: 1.25em auto 0 auto;
+    }
+  }
+  /* Identification alignments */
+  .wcm-authentication, .login_bg #metaInfo {
+    width: 22.81em;
+    margin: 1.25em auto 0 auto; 
+  }
+  /* Internal ad and headline */
+  .home .margin_col .ls-cmp-wrap {
+    &:nth-child(odd) {
+      padding-left: 0.31em;
+      padding-right: 0.63em;
+    }
+    &:nth-child(even) {
+      padding-right: 0.31em;
+      padding-left: 0.63em;
+    }
+  }
+  .margin_col .ls-cmp-wrap {
+    &:nth-child(odd) {
+      padding-right: 0.31em;
+    }
+    &:nth-child(even) {
+      padding-left: 0.31em;
+    }
+  }
+  /* Log out */
+  #logoutMsg {
+    width: 100%;
+    h1 {
+      font-size: 1.13em;
+      font-family: 'BnppSans-r', arial;
+    }
+  }
+}
