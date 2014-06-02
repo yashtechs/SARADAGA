@@ -349,7 +349,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .content_block #accountList, .content_block #cardList{ margin-left:9.38em;}
 .content_menu { float:left;}
 .content_menu_items{width:9.375em; height:9.375em; cursor:pointer;margin-bottom:0; }
-.content_menu__links{padding:0.94em; height:9.375em; position:relative; -webkit-transition:all .6s ease-in-out; -moz-transition:all .6s ease-in-out; -o-transition:all .6s ease-in-out; transition:all .6s ease-in-out;}
+.content_menu__links{padding:1.875em 0.94em; height:9.375em; position:relative; -webkit-transition:all .6s ease-in-out; -moz-transition:all .6s ease-in-out; -o-transition:all .6s ease-in-out; transition:all .6s ease-in-out;}
 .content_menu_items p{font-size: 1.25em;color: #ffffff;line-height: 1; text-transform:uppercase; padding:0; text-align:left;}
 
 /* Content menu Customised for Home */
