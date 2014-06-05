@@ -1,0 +1,17 @@
+
+.yash{ position:fixed; top:0; left:0; right:0; bottom:0; width: 265px;}
+.rasa{ width:auto;}
+.cover {
+display: none;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(255,255,255,0);
+z-index: 600;
+}
+
+.main_wrapper, .login_bg{ display:table;}
+
+.icon{ z-index: 22; position: absolute; top: 12px; left: 0;font-size: 26px;color: #333; padding:4px 0; width:74px; }

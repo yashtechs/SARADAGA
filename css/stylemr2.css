@@ -41,7 +41,7 @@ a[href^=tel], .win .footer a[href^=tel], .win .contact_us a[href^=tel] { pointer
 }
 
 html{width: 100%;height:auto; background: #eef1f5;}
-body {width: 100%;height:auto; background: #eef1f5; position:relative;}
+body {width: 100%;height:auto; background: #eef1f5; position:relative; }
 .easybanking {
 width: 100%;
 height: 100%;
@@ -60,7 +60,7 @@ user-select: none;
 -ms-text-size-adjust: none;
 -moz-text-size-adjust: none;
 -webkit-font-smoothing: antialiased;
-font-smoothing: antialiased;		
+font-smoothing: antialiased;	
 }
 .no_scroll, .no_scroll body{ overflow:hidden; width:100%; height:100%;}
 .no_hscroll,.no_hscroll .easybanking{ overflow-x:hidden;}
@@ -225,16 +225,38 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 
 /* Navigation Control*/
 .menu_navigation, .navigation{ float:left;}
-.menu_nav_small{ display:none; float:left;}
+.menu_nav_small{ display:none; cursor:pointer; padding:14px;font-size:1.12em; text-transform:uppercase; float:left}
 .navigation_inner{ padding-top:1.125em;}
 .navigation_control{padding-left:3.75em;}
 .navigation_control li{ box-sizing:border-box; float:left; font-size:1.12em; text-transform:uppercase; padding:0 1.1em; border-left:1px dotted #d8dbde; position: relative;}
-.navigation_control li ul{ display:none;}
-.navigation_control li a{ position:relative;padding-bottom:0.83em;border-bottom:5px solid transparent;-webkit-transition: all .4s ease-in-out;-moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
-.navigation_control li a.selected-page{ border-bottom:5px solid #252429;}
-.navigation_control li a:hover{ border-bottom:5px solid #008578; color:#008578;}
+.navigation_control li .touch-button{ display:none;}
+.navigation_control li a{ position:relative;padding-bottom:1em; z-index:2;}
+.navigation_control li a.selected-page{color:#008578;}
+.navigation_control li a:hover{ border-bottom:none;color:#008578;}
 .navigation_control li:nth-child(1){ border:none;}
-.indicator_icon{position:absolute; top:-0.4em;color:#e53012; right:-1.2em; display:none;}
+.navigation_control li ul{position: absolute;top: 40px;left: 0;background: white;box-shadow: 0 3px 6px -1px #d1d1d1;-webkit-box-shadow: 0 3px 6px -1px #d1d1d1;-moz-box-shadow: 0 3px 6px -1px #d1d1d1;padding: 10px 0;}
+.navigation_control li ul li{width: 100%;border: none;padding: 6px 15px;text-transform: capitalize;white-space: nowrap;}
+.navigation_control li ul li a{ font-size:18px; display:block; padding-bottom:0;}
+.navigation_control li ul li a:hover{ text-decoration:underline;}
+.navigation_control li ul li > ul {margin-left: 100%;top: -10px;box-shadow: 0 4px 6px -4px #d1d1d1;-webkit-box-shadow: 0 4px 6px -4px #d1d1d1;-moz-box-shadow: 0 4px 6px -4px #d1d1d1;}
+.navigation_control li ul li .touch-button {position: absolute;z-index: 999;top: 6px;right: 10px;display: inline-block;text-align: center; font-size:16px;}
+
+
+/* Hamburger */
+.navigation_block {color: #cbc4c5; z-index: 1; width: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background:#ffffff; padding:14px; }
+.navigation_block ul.navigation_control { padding: 0; margin: 0;position: relative;}
+.navigation_block ul.navigation_control li{font-size: 1.12em; position: relative;float:none; padding:10px 0; border:none;}
+.navigation_block ul.navigation_control li a{ padding:0; background-color: transparent; display:block; border-bottom:1px solid #d8dbde; padding:14px 0; font-family: 'BnppSans-r', arial}
+.navigation_block .navigation_control li ul li a{ font-family: 'BnppSans-l', arial; padding-left:14px }
+.navigation_block .navigation_control li ul{ position:relative; top:0; background-color:transparent;box-shadow: none; padding:0;}	
+.navigation_block .navigation_control li ul li > ul{ margin:0;box-shadow: none;}
+.canvas_opened .container{box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1em;}
+.canvas_opened .easybanking{ overflow:hidden;}
+.container {background-color: #F9F9F9;margin: 0;position: relative;z-index: 2;}
+.navigation_block ul.navigation_control li { padding:0;}
+
+
+.indicator_icon{position:absolute; top:14px;color:#e53012; right:0; display:none; font-size:1.12em}
 .menu_icon{ font-size:0.625em; position:relative; top:-0.2em; margin-right:0.5em;}
 
 /*Meta Navigation*/
@@ -1364,7 +1386,7 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .list_content_col2 h3{ font-size:1em;}
 .list_item__details{ padding-left:2.12em;}
 .extra_contentdetails ul{ padding:0.12em 0;}
-.list_content_details{ width:90%;}
+.list_content_details{ width:80%;}
 .list_header h2{ padding:0.31em 0.62em;}
 .group_colone { width:100%;}
 .action_group, .fontcon-print{ display:none;}/*Can be handled differently when PDF is there*/
@@ -1462,23 +1484,17 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 
 /* Navigation Header */
 .site_header{ height:3.75em;}
-.site_header__inner{ padding:0.6em;}
+.site_header__inner{ padding:0.6em; padding-left:0;}
 .brand_logo, #brandLogo{width:2.62em; height:2.5em;}
-.menu_nav_small{ display:block; cursor:pointer; margin-left:1em; padding:0.65em 0; font-size:1.12em; text-transform:uppercase;}
-.navigation{ position: absolute;top: 60px;left: 0; width:100%;z-index:9999; float:none;box-shadow: 0 4px 7px -6px #000000;-webkit-box-shadow: 0 4px 7px -6px #000000;-moz-box-shadow: 0 4px 7px -6px #000000;-ms-box-shadow: 0 4px 7px -6px #000000;}
-.navigation_inner{ padding:0 10px;background:#ffffff;}
-.navigation_control {width: 100%; padding:0;display:none; position:relative;}
-.navigation_control li{ width:100%; padding:0.94em 0;border-top:1px dotted #d2d8e1; border-left:none;}
-.navigation_control li:nth-child(1){border-top:1px dotted #d2d8e1;}
-.navigation_control li a, .navigation_control li a:hover{ border:none;}
-.navigation_control li a.selected-page{ color:#009966; border:none;}
-.menu-show .navigation_control{ display:inline-block;}
-.menu-show { display:inline-block;}
+
+/* Ham */
+.menu_nav_small{ display:block;}
 .menu_indicator{ top:0.25em; left:4.12em;}
+.menu_navigation{ display:none;}
 
 /* layout */
 .content_col, .fluid{ margin-right:0;}
-.main_wrapper, .login_bg{ padding-top:3.75em;}
+.main_wrapper, .login_bg{ padding-top:3.75em; display:table;}
 .warning_area{ top:3.75em;}
 
 /* Margin modules alignment Layout */
