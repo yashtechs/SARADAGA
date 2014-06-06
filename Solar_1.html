@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Sepa Transfer</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/fonticon.css">
+		<link rel="stylesheet" href="css/brand.css">
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/datepicker.css">
+		<link rel="stylesheet" href="css/pattern-lib.css">
+		<script src="js/lib/sinon.js"></script>
+		<script src="js/stubs/fake-server.js"></script>
+        <script  src="js/lib/iscroll.js"></script>
+		<script data-main="js/app" src="js/lib/require.js"></script>
+		<script data-main="js/app" src="js/jquery-1.9.1.js"></script>
+		<script data-main="js/app" src="js/tabs.js"></script>
+		<script data-main="js/app" src="js/lib/underscore.js"></script>
+		<script data-main="js/app" src="js/lib/backbone.js"></script>
+        <script data-main="js/app" src="js/custom.js"></script>
+		<script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+        <script src="js/modrenizr.js"></script>
+        <script src="js/jQuery.print.js"></script>
+         <script src="js/jquery.browser.min.js"></script>
+         <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+         
+	</head>
+	<body>
+    	<div class="easybanking">
+            <div class="trnsfr">
+                <div class="trnsfr_inner">
+                    <!-- Sepa Header -->
+                    <div class="module_main_header">
+						<div class="module_header h_functions">
+							<div class="module_header__inner">
+								<div class="h_col">
+                                	<div class="module_hcontent f_left">
+                                        <h2 class="module_title">Mortage loan simulation</h2>
+                                    </div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+                    <!-- Sepa Content -->
+                    <form novalidate>
+                    <div class="form_container trnsfr_content">
+                        <!-- Sepa Enter details -->
+                            <div class="form_inner">
+                                <p style="font-size:1em; line-height:1.25em; padding-bottom:20px;">If you are buying your first home, moving your mortage or moving your house, you can use our simulation to check mortage rates and see how much it will cost you.Fields marked with * mandatory fields</p>
+                                <div class="error_summary">
+                                    <p class="field_error_message" style="display:block;">Please select the valid Account</p>
+                                </div>
+                                <div class="form_fields from_field">
+                                    <div class="form_labels">
+                                        <label for="select-account">What would you like to do:</label>
+                                    </div>
+                                    <div class="form_details">
+                                        <p class="field_error_message">Please select the valid Account</p>
+                                        <div class="default_input_control">
+                                            <div class="default_dropdown_box">
+                                            	<!-- For dropdown component -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_fields text_input">
+                                    <div class="form_labels">
+                                        <label for="select-account" >What is the value of the property</label><span>*</span>
+                                        <p style="font-size:14px; color:#aeb8c4;">(without costs)</p>
+                                    </div>
+                                    <div class="form_details">
+                                        <p class="field_error_message">Please enter valid amount</p>
+                                        <div class="form_input default_input_control">
+                                            <div class="default_input_field ">
+                                                <input type="tel"/>
+                                                <span>EUR</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_fields text_input to_field">
+                                    <div class="form_labels">
+                                        <label for="select-account">Amount you would like to borrow</label><span>*</span>
+                                    </div>
+                                    <div class="form_details"> 
+                                    	<div class="form_input default_input_control">
+                                            <div class="default_input_field ">
+                                                <input type="tel"/>
+                                                <span>EUR</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right_navigation_btn f_left" style="margin-left:20px;">
+                                        <button class="btn_default btn_primary">Help me calculate</button>
+                                    </div>
+                                </div>
+                                <div class="form_fields">
+                                    <div class="form_labels">
+                                        <label for="select-account">Your deposit:</label>
+                                    </div>
+                                </div>
+                                 <div class="form_fields">
+                                    <div class="form_labels" style="padding:0;">
+                                        <label for="select-account">Is this a single mortage:</label>
+                                    </div>
+                                     <div class="form_details"> 
+                                    	<div class="form_input">
+                                            <div class="" style="float:left;">
+                                            	<input type="radio"/>
+                                                <span style="margin-left:4px;">Yes, it's just me</span>
+                                            </div>
+                                            <div class="" style="float:left; margin-left:20px;">
+                                            	<input type="radio"/>
+                                                <span style="margin-left:4px;">No, joint mortage</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_fields">
+                                    <div class="form_labels">
+                                        <label for="select-account" >First name:</label>
+                                    </div>
+                                    <div class="form_details">
+                                        <p class="field_error_message">Please enter valid amount</p>
+                                        <div class="form_input default_input_control">
+                                            <div class="default_input_field ">
+                                                <input type="text"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_fields">
+                                    <div class="form_labels">
+                                        <label for="select-account" >Family name:</label>
+                                    </div>
+                                    <div class="form_details">
+                                        <p class="field_error_message">Please enter valid amount</p>
+                                        <div class="form_input default_input_control">
+                                            <div class="default_input_field ">
+                                                <input type="text"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_inner form_btns action_btns">
+                                <div class="navigation_btns">
+                                    <div class="right_navigation_btn f_right">
+                                        <button class="btn_default btn_primary">
+                                            <span>Make simulation</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                   </form>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

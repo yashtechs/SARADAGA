@@ -248,7 +248,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .navigation_block ul.navigation_control li{font-size: 1.12em; position: relative;float:none; padding:10px 0; border:none;}
 .navigation_block ul.navigation_control li a{ padding:0; background-color: transparent; display:block; border-bottom:1px solid #d8dbde; padding:14px 0; font-family: 'BnppSans-r', arial}
 .navigation_block .navigation_control li ul li a{ font-family: 'BnppSans-l', arial; padding-left:14px }
-.navigation_block .navigation_control li ul{ position:relative; top:0; background-color:transparent;box-shadow: none; padding:0;}	
+.navigation_block .navigation_control li ul{ position:relative; top:0; background-color:transparent;box-shadow: none; padding:0;display: block !important;}	
 .navigation_block .navigation_control li ul li > ul{ margin:0;box-shadow: none;}
 .canvas_opened .container{box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1em;}
 .canvas_opened .easybanking{ overflow:hidden;}
