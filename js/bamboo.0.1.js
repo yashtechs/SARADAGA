@@ -10,8 +10,8 @@ var Bamboo = (function (window, document) {
 	var
 
 	// objects
-	openButton = $('.open'),
-	container = $('.container'),
+	openButton = $('.menu_icon'),
+	container = $('.canvas_container'),
 	cover = null,
 	
 	// Browser checks
@@ -30,7 +30,7 @@ var Bamboo = (function (window, document) {
 		    menu: true,
 		    swipeToOpen: true,
 		    breakpoint: 1024,
-		    menuWidth: 265,
+		    menuWidth: 300,
 		    headerHeight: 50,
 		    snapThreshold: null,
 		    resize: null,
@@ -44,7 +44,7 @@ var Bamboo = (function (window, document) {
 		this.resizeSite();
 
 		// add required html
-		cover = $('<div class="cover" />');
+		cover = $('<div id="cover"/>');
 		container.find('.main_wrapper').append(cover);
 
 		// resize listeners
@@ -225,9 +225,9 @@ var Bamboo = (function (window, document) {
 			}
 
 			// open button
-			if (this.dx === 0 && nx === 0 && this.tgt.is('.open')) {
+			if (this.dx === 0 && nx === 0 && this.tgt.is('.menu_icon')) {
 				this._animateTo(this.options.menuWidth, this.options.menuWidth);
-				$('body').addClass('canvas_opened');
+				$('body').addClass('canvas_opened').removeClass('canvas_closed');
 			}
 
 			this.ox = null;
@@ -241,7 +241,7 @@ var Bamboo = (function (window, document) {
 				'transition-duration' : Math.floor(100 * x / this.snapThreshold) + 'ms',
 				'transform' : 'translate(' + to + 'px,0)' + translateZ
 			});
-			$('body').removeClass('canvas_opened');
+			$('body').removeClass('canvas_opened').addClass('canvas_closed');
 			// hide / show cover
 			this._toggleCover(to);
 		},

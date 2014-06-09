@@ -4,7 +4,7 @@
 	src:url('fonts/bnpiconfont.eot?#iefix') format('embedded-opentype'),
 		url('fonts/bnpiconfont.woff') format('woff'),
 		url('fonts/bnpiconfont.ttf') format('truetype'),
-		url('fonts/bnpiconfont.svg?#bnpiconfont') format('svg');
+		url('fonts/bnpiconfont.svg#bnpiconfont') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -26,147 +26,150 @@
 .fontcon-menu-icon:before {
 	content: "\e600";
 }
+.fontcon-arrow-right:before {
+	content: "\e612";
+}
+.fontcon-arrow-left:before {
+	content: "\e630";
+}
 .fontcon-fav-default:before {
 	content: "\e607";
 }
 .fontcon-fav-select:before {
-	content: "\e619";
-}
-.fontcon-reload:before {
-	content: "\e618";
-}
-.fontcon-done:before {
-	content: "\e620";
-}
-.fontcon-pdf:before {
-	content: "\e60d";
-}
-.fontcon-current-account:before {
-	content: "\e60c";
-}
-.fontcon-download:before {
-	content: "\e61b";
-}
-.fontcon-print:before {
-	content: "\e62e";
-}
-.fontcon-attention:before {
-	content: "\e633";
-}
-.fontcon-timeout:before {
-	content: "\e632";
-}
-.fontcon-not-executed:before {
-	content: "\e631";
-}
-.fontcon-expire:before {
-	content: "\e630";
-}
-.fontcon-executed:before {
-	content: "\e62f";
-}
-.fontcon-calendar-arrow-right:before {
-	content: "\e62d";
-}
-.fontcon-calendar-arrow-left:before {
-	content: "\e62c";
-}
-.fontcon-personage:before {
-	content: "\e62b";
-}
-.fontcon-add-benf:before {
-	content: "\e634";
-}
-.fontcon-arrow-left:before {
-	content: "\e62a";
-}
-.fontcon-warning_active:before {
-	content: "\e602";
-}
-.fontcon-ucr-ok:before {
-	content: "\e604";
-}
-.fontcon-transaction-out:before {
-	content: "\e605";
-}
-.fontcon-transaction-in:before {
-	content: "\e608";
-}
-.fontcon-send-money-icon:before {
-	content: "\e609";
-}
-.fontcon-search:before {
-	content: "\e60a";
-}
-.fontcon-savings-account:before {
-	content: "\e60b";
-}
-.fontcon-refresh:before {
-	content: "\e60e";
-}
-.fontcon-m2:before {
-	content: "\e60f";
-}
-.fontcon-m1:before {
-	content: "\e610";
-}
-.fontcon-logout:before {
-	content: "\e611";
-}
-.fontcon-link-intern-teaser:before {
-	content: "\e613";
-}
-.fontcon-information:before {
-	content: "\e615";
-}
-.fontcon-information-active:before {
-	content: "\e616";
-}
-.fontcon-expand:before {
-	content: "\e61c";
-}
-.fontcon-csv:before {
-	content: "\e61d";
-}
-.fontcon-contactus:before {
-	content: "\e61f";
-}
-.fontcon-header-contactus:before {
-	content: "\e621";
-}
-.fontcon-header-faq:before {
-	content: "\e61a";
-}
-.fontcon-facebook:before {
-	content: "\e61e";
-}
-.fontcon-twitter:before {
-	content: "\e603";
-}
-.fontcon-youtube2:before {
 	content: "\e601";
 }
-.fontcon-close:before {
-	content: "\e623";
+.fontcon-reload:before {
+	content: "\e602";
 }
-.fontcon-collapse:before {
+.fontcon-done:before {
+	content: "\e603";
+}
+.fontcon-pdf:before {
+	content: "\e604";
+}
+.fontcon-current-account:before {
+	content: "\e605";
+}
+.fontcon-download:before {
+	content: "\e606";
+}
+.fontcon-print:before {
+	content: "\e608";
+}
+.fontcon-attention:before {
+	content: "\e609";
+}
+.fontcon-timeout:before {
+	content: "\e60a";
+}
+.fontcon-not-executed:before {
+	content: "\e60b";
+}
+.fontcon-expire:before {
+	content: "\e60c";
+}
+.fontcon-executed:before {
+	content: "\e60d";
+}
+.fontcon-calendar-arrow-right:before {
+	content: "\e60e";
+}
+.fontcon-calendar-arrow-left:before {
+	content: "\e60f";
+}
+.fontcon-personage:before {
+	content: "\e610";
+}
+.fontcon-add-benf:before {
+	content: "\e611";
+}
+.fontcon-warning_active:before {
+	content: "\e613";
+}
+.fontcon-ucr-ok:before {
+	content: "\e614";
+}
+.fontcon-transaction-out:before {
+	content: "\e615";
+}
+.fontcon-transaction-in:before {
+	content: "\e616";
+}
+.fontcon-send-money-icon:before {
+	content: "\e617";
+}
+.fontcon-search:before {
+	content: "\e618";
+}
+.fontcon-savings-account:before {
+	content: "\e619";
+}
+.fontcon-refresh:before {
+	content: "\e61a";
+}
+.fontcon-m2:before {
+	content: "\e61b";
+}
+.fontcon-m1:before {
+	content: "\e61c";
+}
+.fontcon-logout:before {
+	content: "\e61d";
+}
+.fontcon-link-intern-teaser:before {
+	content: "\e61e";
+}
+.fontcon-information:before {
+	content: "\e61f";
+}
+.fontcon-information-active:before {
+	content: "\e620";
+}
+.fontcon-expand:before {
+	content: "\e621";
+}
+.fontcon-csv:before {
 	content: "\e622";
 }
-.fontcon-circle-done:before {
+.fontcon-contactus:before {
+	content: "\e623";
+}
+.fontcon-header-contactus:before {
 	content: "\e624";
 }
-.fontcon-cards:before {
+.fontcon-faq:before {
 	content: "\e625";
 }
-.fontcon-calendar:before {
+.fontcon-header-faq:before {
 	content: "\e626";
 }
-.fontcon-right-in-arrow:before {
+.fontcon-facebook:before {
 	content: "\e627";
 }
-.fontcon-arrow-right:before {
+.fontcon-twitter:before {
 	content: "\e628";
 }
-.fontcon-add:before {
+.fontcon-youtube:before {
 	content: "\e629";
+}
+.fontcon-close:before {
+	content: "\e62a";
+}
+.fontcon-collapse:before {
+	content: "\e62b";
+}
+.fontcon-circle-done:before {
+	content: "\e62c";
+}
+.fontcon-cards:before {
+	content: "\e62d";
+}
+.fontcon-calendar:before {
+	content: "\e62e";
+}
+.fontcon-right-in-arrow:before {
+	content: "\e62f";
+}
+.fontcon-add:before {
+	content: "\e631";
 }

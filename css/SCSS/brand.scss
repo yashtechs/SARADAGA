@@ -136,6 +136,7 @@ a.btn_default {
 	display: inline-block;
 	padding: 1em 1.25em;
 }
+.btn_disabled{cursor: auto; -moz-opacity: 0.6;-webkit-opacity: 0.6;  opacity: 0.6;}
 /* Primary and secondary */
 
 .btn_primary {
@@ -169,6 +170,7 @@ a.btn_default {
 	position: relative;
 	top: 0.13em;
 }
+.btn_arrow_left{ padding-right:0.75em}
 /* Alternative BTNS on dark backgrounds */
 
 .btn_default_bg {
@@ -2178,7 +2180,7 @@ span {
 /* List item content C3 */
 
 .list_item__details {
-	padding-left: 3.13em;
+	padding-left: 1.75em;
 }
 .content_details {
  width: $default-width;
@@ -2193,27 +2195,7 @@ span {
  width: $default-width;
  border-top: 1px solid $default-border-clr;
  border-bottom: 1px solid $default-border-clr;
- ul {
- padding: 0.13em 2.81em;
- position: relative;
- width: $default-width;
-}
-li {
-	display: table;
-	position: relative;
- width: $default-width;
-	padding: 0.62em 0;
-}
-label {
-	width: 40%;
-	float: left;
-}
-p {
-	width: 50%;
-	float: left;
-	line-height: 1.2;
-	margin-left: 1.57em;
-}
+ .detail_group{ padding:0 0 20px 0;}
 }
 /* L4 */
 
@@ -2424,7 +2406,7 @@ p {
 
 .module_header {
  width: $default-width;
-	min-height: 8.5em;
+	min-height: 8.75em;
 	padding: 1.87em;
 	top: 0;
 	position: relative;
@@ -2500,7 +2482,7 @@ background: $h-function-bg;
 .h_services {
 background-color:$h-services-bg;
 }
-.login_bg .h_services {
+.login_bg .h_services, .module_bg {
  background: unquote($white-bg);
 }
 /* Flyout */
@@ -2695,32 +2677,37 @@ background-color:$h-services-bg;
  background: unquote($white-bg);
 }
 .details_inner {
-	padding: 30px;
+	padding: 1.87em;
 	display: table;
  width:$default-width;
 }
 .details_title {
-	padding-bottom: 25px;
+	padding:0.9em 0.9em 0 0.9em;
 	font-size: 2em;
 	line-height: 1em;
 }
 .detail_group {
-	padding: 30px 0;
+	padding: 1.87em 0;
  border-top: 1px solid $default-border-clr;
 }
 .detail_group_title {
  @include BnppSans-r;
-	font-size: 18px;
+	font-size: 1.2em;
 }
-.details .detail_group:nth-child(2) {
-	padding: 0 0 1.87em 0;
-	border: none;
+.details{ 
+	.detail_group:nth-child(1) {
+		padding: 0 0 1.87em 0;
+		border: none;
+	}
+	.detail_group:last-child{ 
+	  padding-bottom:0;
+	  }
 }
 .details_label {
-	width: 20%;
+	width: 30%;
 	float: left;
  @include BnppSans-r;
-	margin-right: 25px;
+	margin-right: 1.56em;
 }
 .list_details {
  width: $default-width;
@@ -2731,7 +2718,7 @@ background-color:$h-services-bg;
 }
 }
 .listitem_details {
-	width: 75%;
+	width: 65%;
 	float: left;
 	line-height: 1.25em;
 	word-break: break-all;
@@ -3570,11 +3557,6 @@ text-decoration: underline;
 }
 /* Customized for SEPA */ 
 
-  
-
-.trnsfr {
- background: unquote($white-bg);
-}
 .form_fields {
  &.to_field {
  border-bottom: 1px solid #d8dbde;
@@ -3874,7 +3856,7 @@ p {
 	vertical-align: middle;
  &::after {
  content: 'M1';
- font-size: 0.87em;
+ font-size: 14px;
  position: absolute;
  left: 0.48em;
  top: 0.8em;

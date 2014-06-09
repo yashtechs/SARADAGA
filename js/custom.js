@@ -3,7 +3,7 @@ $(document).ready(function () {
 	$(".flexnav").flexNav();
 	
 	var offCanvas = $('.flexnav').html();
-	$('.navigation_block').html(offCanvas);
+	$('.offcanvas_menu').html(offCanvas);
 	//alert(document.getElementsByTagName("html")[0].className);
 	 //require(['lib/rivetsconfig'], function(rivets) {
 //					 var Tab = Backbone.Model.extend({

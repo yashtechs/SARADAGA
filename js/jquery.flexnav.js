@@ -16,7 +16,7 @@
   $.fn.flexNav = function(options) {
     var $nav, $top_nav_items, breakpoint, count, nav_percent, nav_width, resetMenu, resizer, settings, showMenu, toggle_selector, touch_selector;
     settings = $.extend({
-      'animationSpeed': 250,
+      'animationSpeed': 350,
       'transitionOpacity': true,
       'buttonSelector': '.menu-button',
       'hoverIntent': false,
@@ -89,7 +89,7 @@
           $top_nav_items.css('width', nav_percent);
         }
         $nav.removeClass('flexnav-show').find('.item-with-ul').on();
-        $('.item-with-ul').find('ul').removeClass('flexnav-show');
+        $('.item-with-ul').find('ul').removeClass('flexnav-show').css('display','none');
         resetMenu();
         if (settings.hoverIntent === true) {
           return $('.item-with-ul').hoverIntent({

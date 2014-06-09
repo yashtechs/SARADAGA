@@ -1,0 +1,13 @@
+
+/*Direct Debit*/
+.list_icon_status{ font-size:30px; margin-right:0px; margin-top:-4px; }/**/
+.fontcon-not-executed:before { color: #e53012;}/*to be removed and follow diferent approch*/
+.fontcon-expire:before { color: #f66900; }/*to be removed and follow diferent approch*/
+.fontcon-executed:before { color: #85B909;}/*to be removed and follow diferent approch*/
+.service_btn{ padding: 10px 0 30px 0;}
+.status_error { color: #E53012}
+
+/*Reject & Mandate*/
+.back_link { display: table; clear: both; cursor:pointer; }/**/
+.module_operation_heading {   color: #ffffff;  width: 100%;  clear: both;}/**/
+

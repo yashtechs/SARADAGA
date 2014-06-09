@@ -35,9 +35,15 @@
   width: auto;
 }
   /* layout */
-  .margin_col .ls-cmp-wrap {
+  .margin_col {
+  .ls-cmp-wrap {
     width: 100% !important;
+	.iw_component{
+		margin-top:1.25em !important;
+	}
   }
+  }
+.margin_headline{ margin-top:1.25em !important;}
   
   /* Log out */
   #logoutMsg {
