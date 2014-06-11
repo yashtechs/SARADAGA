@@ -2105,12 +2105,14 @@ p {
 }
 }
 /* In and Out icon */
-
-.list_icon {
-	font-size: 1.12em;
-	float: left;
-	margin-right: 0.62em;
-	line-height: 0.75em;
+.l_icon{
+	&.list_icon {
+	left: 2px; position: absolute; top: 14px; left:-30px;font-size:1.25em;
+	&.clk{ cursor:pointer}
+	}
+	&.list_wrapper_inner{
+		 margin-left:35px;
+	}
 }
 /* List items */
 
@@ -2119,6 +2121,7 @@ p {
 }
 .list_wrapper_inner {
  border-top: 1px solid $default-border-clr;
+ position:relative;
 }
 .list_item__header {
 	padding: 0.94em 0 0.56em 0;
@@ -2138,7 +2141,7 @@ p {
 }
 .list_content_col1 {
 	float: left;
- h3 {
+ .listheader_title {
  @include BnppSans-r;
  color: $header-link;
  font-size: 1.1em;
@@ -2147,7 +2150,7 @@ p {
  text-transform: uppercase;
 }
 }
-.list_item__header:hover .list_content_col1 h3 {
+.list_item__header:hover .listheader_title {
 	text-decoration: underline;
 }
 .list_content_col1 p {
@@ -2178,10 +2181,6 @@ span {
 	float: left;
 }
 /* List item content C3 */
-
-.list_item__details {
-	padding-left: 1.75em;
-}
 .content_details {
  width: $default-width;
  p {
@@ -3988,7 +3987,7 @@ p {
 .hello_icon {
 	background-position: -210px -3px;
 }
- &:hover, .list_item__header:hover .list_content_col1 h3 {
+ &:hover, .list_item__header:hover .listheader_title {
  text-decoration: none !important;
 }
 .dropdown_arrow:after {
