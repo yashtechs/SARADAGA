@@ -627,7 +627,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .content_details{ width:100%;}
 .content_details p{ padding:0.31em 0 1.25em 0; text-transform:uppercase; line-height:1.37em; white-space:pre-line;}
 .extra_contentdetails{ width:100%; border-top:1px solid #d8dbde;border-bottom:1px solid #d8dbde; padding-bottom:20px;}
-.extra_contentdetails .detail_group{ padding:0 0 20px 0;}
+.extra_contentdetails.details{ padding-top:0.62em;}
 
 /* L4 */
 .view_more{ position:relative; padding:1.25em 0;}

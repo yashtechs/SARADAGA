@@ -1,6 +1,6 @@
 
 /*Direct Debit*/
-.list_icon_status{ font-size:30px; margin-right:0px; margin-top:-4px; }/**/
+.list_icon_status{ font-size:30px; margin-right:0px; margin-top:-4px; }/*It can be aslo removed as per the discussion for all module*/
 .fontcon-not-executed:before { color: #e53012;}/*to be removed and follow diferent approch*/
 .fontcon-expire:before { color: #f66900; }/*to be removed and follow diferent approch*/
 .fontcon-executed:before { color: #85B909;}/*to be removed and follow diferent approch*/
@@ -8,6 +8,6 @@
 .status_error { color: #E53012}
 
 /*Reject & Mandate*/
-.back_link { display: table; clear: both; cursor:pointer; }/**/
-.module_operation_heading {   color: #ffffff;  width: 100%;  clear: both;}/**/
+.back_link { display: table; clear: both; cursor:pointer; }/*This one should be modified and can be made reusable component*/
+.module_operation_title {   color: #ffffff;  width: 100%;  clear: both;}/**/
 

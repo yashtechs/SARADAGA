@@ -2195,7 +2195,7 @@ span {
  width: $default-width;
  border-top: 1px solid $default-border-clr;
  border-bottom: 1px solid $default-border-clr;
- .detail_group{ padding:0 0 20px 0;}
+ &.details{ padding-top:12px;}
 }
 /* L4 */
 
