@@ -2141,7 +2141,7 @@ p {
 }
 .list_content_col1 {
 	float: left;
- .listheader_title {
+ .list_header_title {
  @include BnppSans-r;
  color: $header-link;
  font-size: 1.1em;
@@ -2150,7 +2150,7 @@ p {
  text-transform: uppercase;
 }
 }
-.list_item__header:hover .listheader_title {
+.list_item__header:hover .list_header_title {
 	text-decoration: underline;
 }
 .list_content_col1 p {
@@ -2495,6 +2495,9 @@ background-color:$h-services-bg;
 }
 .selected_details__account {
 	display: table;
+	width:316px;
+	z-index:2;
+	position:relative;
 }
 .accounts_title, .cards_title, .functions_title {
 	font-size: 1.88em;
@@ -2614,6 +2617,7 @@ background-color:$h-services-bg;
 .right_col {
  .selected_details__account {
  float: right;
+ width:auto;
 }
 .selected_details.dropdown_arrow {
 	padding-right: 1.25em;
@@ -3987,7 +3991,7 @@ p {
 .hello_icon {
 	background-position: -210px -3px;
 }
- &:hover, .list_item__header:hover .listheader_title {
+ &:hover, .list_item__header:hover .list_header_title {
  text-decoration: none !important;
 }
 .dropdown_arrow:after {

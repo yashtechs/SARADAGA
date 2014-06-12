@@ -615,8 +615,8 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .listiban_group{ display:table;}
 .listiban_detail {color: #252429;font-size: 0.87em;padding-top: 0.22em;line-height: 1.49em;}
 .list_content_col1{ float:left;}
-.listheader_title{font-family: 'BnppSans-r', arial; color:#009966;font-size:1.1em; line-height:1.18em; float:left;text-transform:uppercase;}
-.list_item__header:hover .listheader_title{ text-decoration:underline;}
+.list_header_title{font-family: 'BnppSans-r', arial; color:#009966;font-size:1.1em; line-height:1.18em; float:left;text-transform:uppercase;}
+.list_item__header:hover .list_header_title{ text-decoration:underline;}
 .list_content_col1 p{ color:#252429; font-size:0.87em; padding-top:0.5em; line-height:1em;}
 .list_content_col2{ float:right; max-width:50%; text-align:right;}
 .list_content_col2 h3{font-size:1.12em; line-height:1em;}
@@ -714,7 +714,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 /* Flyout */
 .flyout_selection{ width:23em; position: relative;}
 .selected_details{width:100%;}
-.selected_details__account{ display:table;}
+.selected_details__account{ display:table; width:316px; z-index:2; position:relative;}
 .accounts_title, .cards_title, .functions_title{font-size: 1.875em;text-transform: uppercase;color: white;line-height: 1.14em; cursor:pointer; float:left; white-space:nowrap; min-width:7.87em;}
 .flyout_active .flyout_container{ width:100%;background:#ffffff; height:25em; position:absolute; z-index:999;-webkit-transition: height .4s ease-in-out;-moz-transition: height .4s ease-in-out;-o-transition: height .4s ease-in-out;transition: height .4s ease-in-out; top:-1.25em;left:-1.25em;border:1px solid #d8dbde;}
 .flyout_active .selected_details{ padding:1.25em 2.5em 1.25em 1.25em;}
@@ -732,14 +732,14 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .flyout_list_items .list_content_col2{padding-top: 0.62em}
 .flyout_list_items .listiban_detail{ font-size:0.87em !important;}
 .flyout_list_items .item_list{height:18.75em; overflow:hidden; padding:0 20px 0px 20px; position:relative;pointer-events: auto; -ms-touch-action: none;}
-.flyout_selection .dropdown_arrow:after {border-color: #ffffff transparent transparent transparent;top: 0.87em; right:4.37em;}
+.flyout_selection .dropdown_arrow:after {border-color: #ffffff transparent transparent transparent;top: 0.87em; right:4.37em; z-index:1;}
 .flyout_selection .dropdown-active:after {border-color: transparent transparent #252429 transparent; right:48px; top:34px; }
 .hello_account .hello_icon{ display:inline-block; margin:0.31em 0 0 0.12em;}
 .hello_account.dropdown_arrow:after{ right:3.37em;}
 .hello_account.dropdown-active:after{ right:2em;}
 
 /* Right aligned Flyout */
-.right_col .selected_details__account{ float:right;}
+.right_col .selected_details__account{ float:right; width:auto;}
 .right_col .selected_details.dropdown_arrow{padding-right:1.25em;}
 .right_col .flyout_active .selected_details.dropdown_arrow{ padding-right:2.5em;}
 .right_col .selected_details__info{ text-align:right;width:100%;}
@@ -1088,7 +1088,7 @@ input.mask_pattern::-ms-clear {display: none;}
 .show_table{ display:table;}
 .disabled, .disabled .list_content_col1 h3, .disabled .listiban_detail, .disabled .lnk_primary{ color:#76767b !important; cursor:default;}
 .disabled .hello_icon{ background-position:-210px -3px;}
-.disabled:hover, .disabled .list_item__header:hover .listheader_title{ text-decoration:none !important;}
+.disabled:hover, .disabled .list_item__header:hover .list_header_title{ text-decoration:none !important;}
 .disabled .dropdown_arrow:after{border-color:#76767b;}
 
 /*Print Styles */
@@ -1336,12 +1336,13 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .functions_title, .cards_title, .accounts_title{ font-size:1em;}
 .flyout_selection .hello_icon{ margin-top:0;}
 .selected_details__info p{ font-size:0.75em;}
-.flyout_selection .dropdown_arrow:after{ top:0.56em; right:1.56em;}
-.flyout_selection .dropdown-active:after{ top:1.75em; right:4em;}
+.flyout_selection .dropdown_arrow:after{ top:0.56em; right:2.5em;}
+.flyout_selection .dropdown-active:after{ top:1.75em; right:5em;}
 .flyout_active .selected_details{ padding:1.25em 0.62em 0.62em;}
 .flyout_list_items{ top:5.62em;}
 .flyout_active .flyout_container{ left:-0.62em;}
 .flyout_selection .item_list{ padding:0 0.62em 0 0.62em;}
+.selected_details__account{ width:200px;}
 
 /* Flyout for Cards */
 .card_transactions .flyout_selection .hello_account .dropdown_arrow:after{ right:0.87em;}

@@ -378,12 +378,12 @@
 
     .flyout_selection .dropdown_arrow:after {
         top: 0.56em;
-        right: 1.56em;
+        right: 2.5em;
     }
 
     .flyout_selection .dropdown-active:after {
         top: 1.75em;
-        right: 4em;
+        right: 5em;
     }
 
     .flyout_active .selected_details {
@@ -401,7 +401,7 @@
     .flyout_selection .item_list {
         padding: 0 0.62em 0 0.62em;
     }
-
+	.selected_details__account{ width:200px;}
 /* Flyout for Cards */
     .card_transactions .flyout_selection .hello_account .dropdown_arrow:after {
         right: 0.87em;
