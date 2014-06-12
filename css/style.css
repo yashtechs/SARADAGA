@@ -75,7 +75,7 @@ font-smoothing: antialiased;
 .btn_default {font-size:1em; font-family: 'BnppSans-r', arial;line-height: 1em;padding: 1em 1.25em;cursor: pointer;height: 2.75em;margin:0 0 0 0.565em;min-width:5.625em; text-align:center;}
 .btn_default:first-child{ margin:0;}
 a.btn_default{ display:inline-block; padding:1em 1.25em;}
-.btn_disabled{cursor: auto; -moz-opacity: 0.6;-webkit-opacity: 0.6;  opacity: 0.6;}
+.btn_disabled{cursor: auto; -moz-opacity: 0.6;-webkit-opacity: 0.6;opacity: 0.6;}
 
 /* Primary and secondary */
 .btn_primary {background: #009966;color: #ffffff; }
