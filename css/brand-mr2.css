@@ -1160,7 +1160,7 @@ input.mask_pattern::-ms-clear {display: none;}
 /*Reject & Mandate*/
 .module_operation_title{color: #ffffff;width: 100%;clear: both;}
 .list_detail_header.exp{ padding:1.87em 1.87em 0 1.87em;}
-.back_link { display: table; clear: both; cursor:pointer; }
+.back_link { display: table; clear: both; cursor:pointer; padding:9px 0;}
 
 
 /* Media queries */
@@ -1520,6 +1520,7 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); border-top:3px solid #009966;}
 .site_header__inner{ padding:0.6em;}
 .brand_logo, #brandLogo{width:2.62em; height:2.5em;}
 .menu_nav_small{ display:block;}
+.menu_navigation{ display:none;}
 
 /* layout */
 .content_col, .fluid{ margin-right:0;}
