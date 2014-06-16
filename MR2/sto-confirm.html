@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Site Structure</title>
+		<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/brand-mr2.css">
+<link rel="stylesheet" href="../css/pattern-lib.css">
+<link rel="stylesheet" href="../css/fonticon.css">
+	
+	</head>
+<body>
+
+    <link rel="stylesheet" href="BE_FORTIS_DBPL-pr01-style-2.0-SNAPSHOT.css">
+<div class="easybanking">
+<div class="wrapper">
+
+<div class="sendmoney" id="sepa" data-url-context="/server/"><div class="standing_order" data-rv-on-click="current:hideAccountList | current">
+	<div class="standing_order_inner" style="display: none;">
+	<!--Error  message handling-->
+	<div class="ia_alert">
+		<div class="alert_messages fade in show_active">
+			<!-- rivets: each-error -->
+		</div>
+	</div>
+	<!--Error messages End-->
+	<div class="module_main_header">
+			<div class="module_header h_functions standing_order_header">
+				<div class="module_header__inner">
+					<div class="h1_col">
+						<h2 class="module_title clearfix">Standing Orders</h2>
+					</div>
+					 <div class="h1_col right_col">
+						<div class="flyout_selection f_right">
+							<div class="flyout_container">
+								<div class="selected_details dropdown_arrow">
+									<div class="selected_details__account clearfix  dropdown_arrow hello_account" data-rv-on-click="current:allAccountClicked | current">
+										<h2 class="functions_title" data-rv-text="accountListModel.AccNumber|formatIBAN">GB82 3456 9876 5432 </h2>
+										<span class="hello_icon"></span>
+									</div>
+									<div class="selected_details__info functions_info f_right">
+										<p class="long_account_type" data-rv-text="accountListModel.AccType">OWN_CURRENT</p>
+										<p data-rv-text="accountListModel.AccAlias">Sliop Leile</p>
+									</div>
+								</div>
+								<div class="flyout_list_items" data-rv-show="accountListModel.allAccountsClicked" style="display: none;">
+									<div class="item_list">
+									<div class="item_list_inner">
+										<div class="accordion_list">
+											<div class="accordion_header header_l1" data-rv-hide="accountListModel.ownHide">
+												<div class="accordion_l1__inner" data-rv-on-click="current:preventDefault">
+													<h4>OWN PRIVATE ACCOUNTS</h4>
+												</div>
+											</div>
+											<div class="product_groups current_accounts" data-rv-hide="accountListModel.ownHide">
+												<div class="item_group clearfix">
+													<div class="item_group__inner" data-rv-on-click="current:preventDefault">
+														<div class="group_colone">
+															<span class="group_icons fontcon-current-account"></span>
+															<h4>Current Accounts</h4>
+														</div>
+													</div>
+												</div>
+												<div class="list_group">
+													<!-- rivets: each-account --><div class="list_item list_wrapper_inner list_item_selected" data-rv-on-click="accountListView:chooseAccount| view">
+														<div class="list_item__header clearfix header_l3" data-rv-on-click="accountListView:greyOut| view">
+															<div class="list_content_col1">
+																<div class=" list_content_details">
+																	<div class="listiban_group">
+																		<h3 data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">GB82 3456 9876 5432 </h3>
+																		<span class="hello_icon show_hello" data-rv-class-show_hello="account.isBlue"></span>
+																	</div>
+																	<div class="listiban_detail">
+																		<span class="long_account_type" data-rv-text="account.AccType">OWN_CURRENT</span>
+																		<span data-rv-showhide="account.AccAlias"> - </span>
+																		<span data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">Sliop Leile</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><div class="list_item list_wrapper_inner" data-rv-on-click="accountListView:chooseAccount| view">
+														<div class="list_item__header clearfix header_l3" data-rv-on-click="accountListView:greyOut| view">
+															<div class="list_content_col1">
+																<div class=" list_content_details">
+																	<div class="listiban_group">
+																		<h3 data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">GB82 3456 9876 5529 </h3>
+																		<span class="hello_icon" data-rv-class-show_hello="account.isBlue"></span>
+																	</div>
+																	<div class="listiban_detail">
+																		<span class="long_account_type" data-rv-text="account.AccType">OWN_CURRENT</span>
+																		<span data-rv-showhide="account.AccAlias"> - </span>
+																		<span data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">Bigitte Erinn</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><div class="list_item list_wrapper_inner" data-rv-on-click="accountListView:chooseAccount| view">
+														<div class="list_item__header clearfix header_l3" data-rv-on-click="accountListView:greyOut| view">
+															<div class="list_content_col1">
+																<div class=" list_content_details">
+																	<div class="listiban_group">
+																		<h3 data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">GB82 3456 9876 5626 </h3>
+																		<span class="hello_icon show_hello" data-rv-class-show_hello="account.isBlue"></span>
+																	</div>
+																	<div class="listiban_detail">
+																		<span class="long_account_type" data-rv-text="account.AccType">OWN_CURRENT</span>
+																		<span data-rv-showhide="account.AccAlias"> - </span>
+																		<span data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">Lijla Mejidi</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="accordion_list">
+											<div class="accordion_header header_l1" data-rv-hide="accountListModel.otherHide" style="display: none;">
+												<div class="accordion_l1__inner" data-rv-on-click="current:preventDefault">
+													<h4>Other Private ACCOUNTS</h4>
+												</div>
+											</div>
+											<div class="product_groups current_accounts" data-rv-hide="accountListModel.otherHide" style="display: none;">
+												<div class="item_group clearfix" data-rv-on-click="current:preventDefault">
+													<div class="item_group__inner">
+														<div class="group_colone">
+															<span class="group_icons fontcon-current-account"></span>
+															<h4>Current Accounts</h4>
+														</div>
+													</div>
+												</div>
+												<div class="list_group">
+													<!-- rivets: each-account -->
+												</div>
+											</div>
+											
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div>
+				<div class="add_function_btn">
+						<div class="right_navigation_btn f_right">
+							<button class="extra_button">
+								<div class="add_function_btn_icon">
+									<span class="fontcon-add"></span>
+								</div>
+								<span class="add_function_btn_content">Add new standing order</span>
+							</button>
+						</div>
+					</div>	
+					
+				</div>
+			</div>
+			
+		</div>
+	
+		<div class="module_content">
+			<!-- rivets: each-page --><div class="module_tab_content">
+				<div class="module_listitem">
+					<div class=" main_list">
+						<div class="accordion_content content_l2">
+							<div class="accordion_list">
+								<div class="list_group">
+									<div class="list_item">
+										<div class="list_wrapper list_wrapper_align">
+											<!-- rivets: each-detail --><div class="list_wrapper_inner" data-rv-on-click="accountListView:chooseOrder| view">
+												<!-- Level3 Header Clickable -->
+												
+												<div class="list_item__header  clearfix accordion_header header_l3">
+													<div class="list_content_col1">
+														<div class=" list_content_details">
+															<div class="listiban_group">
+																<h3 class="lnk_primary" data-rv-text="detail.beneficiaryAlias">AYESHA</h3>
+															</div>
+														</div>
+													</div>
+													<div class="list_content_col2">
+                                                        <h3> 
+                                                               <span data-rv-text="detail.amountType">All above</span>
+																<span data-rv-text="detail.amount|currency">100,00</span>
+																<span data-rv-text="detail.currency">EUR</span>
+                                                        </h3> 
+                                                        <p data-rv-text="detail.frequency">MONTHLY</p>                                                          
+
+													</div>
+												</div>
+												
+												
+											</div><div class="list_wrapper_inner" data-rv-on-click="accountListView:chooseOrder| view">
+												<!-- Level3 Header Clickable -->
+												
+												<div class="list_item__header  clearfix accordion_header header_l3">
+													<div class="list_content_col1">
+														<div class=" list_content_details">
+															<div class="listiban_group">
+																<h3 class="lnk_primary" data-rv-text="detail.beneficiaryAlias">DE MOOIJYZ</h3>
+															</div>
+														</div>
+													</div>
+													<div class="list_content_col2">
+                                                        <h3> 
+                                                               <span data-rv-text="detail.amountType"></span>
+																<span data-rv-text="detail.amount|currency">100,00</span>
+																<span data-rv-text="detail.currency">EUR</span>
+                                                        </h3> 
+                                                        <p data-rv-text="detail.frequency">MONTHLY</p>                                                          
+
+													</div>
+												</div>
+												
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--Load More-->
+					<div class="load_more" data-rv-hide="page.isListComplete">
+						<div class="load_btn">
+							<button class="btn_default btn_primary sto_load_more">Load more</button>
+						</div>
+					</div>
+					 <div class="nomore_transactions" data-rv-show="page.isListComplete" style="display: none;">
+						<p>No More details avaliable</p>
+					</div>
+				<!--Load More End-->
+				</div>
+		</div>
+	</div>
+<div><div class="standing_order">
+	<!--Error  message handling-->
+	<div class="ia_alert">
+		<div class="alert_messages fade in show_active">
+			<!-- rivets: each-error -->
+		</div>
+	</div>
+	<!--Error messages End-->
+	<div class="module_main_header noPrint">
+		<div class="module_header h_functions">
+			<div class="module_header__inner">
+				<div class="title_column">
+					<div class="module_hcontent f_left">
+						<h2 class="module_title clearfix">Standing order</h2>
+						<div class="module_operation_title clearfix">
+							<p>Create new standing order</p>
+						</div>
+					</div>
+				</div>
+				<div class="header_steps">
+					<div class="module_steps">
+						<ul class="module_steps_block">
+							<li><span class="module_steps__digit detail">1</span> 
+							</li><li><span class="module_steps__digit confirm active">2</span></li>
+							<li><span class="module_steps__digit result">3</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="stocreate_content"> <div style="display: none;"><form class="enterdetails">
+   <div class="form_inner">
+		<h4 class="form_title">Detail</h4>
+      <h5>*mandatory fields</h5>
+      <div class="error_summary" data-rv-class-show_active="violations.errorSummaryHeader">
+         <p class="field_error_message">Please correct following fields</p>
+         <ul class="error_summary_items">
+            <!-- rivets: if violations.fromFieldError -->
+            <!-- rivets: if violations.fromAccountFormat -->
+            <!-- rivets: if violations.amountInvalid -->
+            <!-- rivets: if violations.pleaseEnterTheAmount -->
+            <!-- rivets: if violations.creditorACcNumbeInvalid -->
+            <!-- rivets: if violations.CreditAccEmpty -->
+            <!-- rivets: if violations.recipientInvalidFormat -->
+            <!-- rivets: if violations.recipientNameEmpty -->
+            <!-- rivets: if violations.recipientAliasFormat -->
+            <!-- rivets: if violations.flagChecked -->
+            <!-- rivets: if violations.communicationMsgEmpty -->
+            <!-- rivets: if violations.communicationInvalid -->
+         </ul>
+      </div>
+      <div class="form_fields from_field" data-rv-class-field_error="violations.from">
+         <div class="form_labels">
+            <label for="select-account">From</label><span>*</span>
+         </div>
+         <div class="form_details">
+            <p class="field_error_message" data-rv-class-show_active="violations.fromFieldError">the field from cannot be empty</p>
+            <p class="field_error_message" data-rv-class-show_active="violations.fromAccountFormat">The format of the 'From' account number is invalid</p>
+            <div class="details_content fromAccount">
+               <select class="select-account fromHolder selectized" placeholder="Choose your own account..." tabindex="-1" style="display: none;"><option value="GB82 34 5698 7655 29" selected="selected"></option></select><div class="default_input_control select-account fromHolder single"><div class="default_input_field items custom_dropdown dropdown_arrow input_dropdown has-options full has-items"><div data-value="GB82 34 5698 7655 29" class="dropdown_seleted_item">Bigitte Erinn</div><input type="text" autocomplete="off" spellcheck="false" maxlength="35" tabindex="" style="width: 233px; opacity: 0; position: absolute; left: -10000px;"></div><div class="default_dropdown_box select-account fromHolder single" style="display: none; visibility: visible; width: 852px; top: 407.4757080078125px; left: 321.7187805175781px;"><div class="dropdown_wrapper"><div class="dropdown_content" style="-webkit-transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1); transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1); -webkit-transform: translate(0px, 0px) translateZ(0px);"><div data-group="OWN_CURRENT" class="optgroup"><div class="optgroup-header">CURRENT ACCOUNTS</div><div data-value="GB82 34 5698 7654 32" data-selectable="" class="list_item"><div class="list_item__header optgroup-option"><div class="list_content_col1"> <div class="listiban_group"><h3 class="optgroup-iban">GB82 3456 9876 5432 </h3><span class="hello_icon show_hello"></span></div><div class="listiban_detail"><span class="optgroup-name">Sliop Leile</span></div></div><div class=" list_content_col2 optgroup-amount"><h3><span>3.233,21</span><span>EUR</span></h3></div></div></div><div data-value="GB82 34 5698 7655 29" data-selectable="" class="list_item selected"><div class="list_item__header optgroup-option"><div class="list_content_col1"> <div class="listiban_group"><h3 class="optgroup-iban">GB82 3456 9876 5529 </h3></div><div class="listiban_detail"><span class="optgroup-name">Bigitte Erinn</span></div></div><div class=" list_content_col2 optgroup-amount"><h3><span>99,00</span><span>EUR</span></h3></div></div></div><div data-value="GB82 34 5698 7656 26" data-selectable="" class="list_item"><div class="list_item__header optgroup-option"><div class="list_content_col1"> <div class="listiban_group"><h3 class="optgroup-iban">GB82 3456 9876 5626 </h3><span class="hello_icon show_hello"></span></div><div class="listiban_detail"><span class="optgroup-name">Lijla Mejidi</span></div></div><div class=" list_content_col2 optgroup-amount"><h3><span>37,66</span><span>EUR</span></h3></div></div></div></div></div></div></div></div>
+            </div>
+            <div class="selected-item show_active"><span class="selected_iban"><span class="iban-label">GB82 3456 9876 5529 </span> <span class="hello_icon"></span></span><span class="selected_amount"><span class="space_left">- </span><span data-rv-text="config.app.message.Label.sepa.EnterDetails.Balance"> Balance</span><span class="amount-label">99,00</span> <span>EUR</span> </span></div>
+         </div>
+      </div>
+      <div class="form_fields to_field">
+         <div class="form_labels">
+            <label for="select-account">To</label><span>*</span>
+         </div>
+         <div class="form_details">
+            <!-- Tabs -->
+            <div class="eb_tabs" data-rv-tabtoggle="sepa.benType">
+               <div class="eb_tab_txt tab_fst default_tab" data-tab-index="known">
+                  <div class="eb_tab_txt__inner" data-rv-class-disabled="sepa.disableUnknownText">
+                     <span>Known Beneficary</span>
+                  </div>
+               </div>
+               <div class="eb_tab_txt tab_right default_tab active" data-tab-index="unknown">
+                  <div class="eb_tab_txt__inner" data-rv-class-disabled="sepa.disableUnknown">
+                     <span>unknown Beneficary</span>
+                  </div>
+               </div>
+            </div>
+            <div class="tabs_eb_content_container">
+               <div class="eb_tab_content known_tab" data-rv-show="sepa.benType | type known" data-rv-class-field_error="violations.creditAccountNumber" style="display: none;">
+                  <div class="eb_tab_content__inner">
+                     <p class="field_error_message" data-rv-class-show_active="violations.CreditAccEmpty">The credit account number is empty</p>
+                     <div class="details_content toAccount">
+                        <select class="select-beneficiary toHolder selectized" placeholder="Type in alias, name or IBAN..." style="display: none;" tabindex="-1"><option value="" selected="selected"></option></select><div class="default_input_control select-beneficiary toHolder selectized single plugin-capture_on_close"><div class="default_input_field items custom_dropdown dropdown_arrow input_dropdown not-full has-options"><input type="text" autocomplete="off" spellcheck="false" maxlength="35" tabindex="" placeholder="Type in alias, name or IBAN..." style="width: 251px;"></div><div class="default_dropdown_box select-beneficiary toHolder selectized single plugin-capture_on_close" style="display: none; width: 826px; top: 614.420166015625px; left: 335.2257080078125px;"><div class="dropdown_wrapper"><div class="dropdown_content"></div></div></div></div>
+                     </div>
+                     <div class="selected-item"><span><span class="iban-label"></span><span class="hello_icon"></span></span><span class="selected_amount"><span class="space_left">- </span><span data-rv-text="config.app.message.Label.sepa.EnterDetails.Balance"> Balance</span><span class="amount-label"></span><span class="space_left">EUR</span></span></div>
+                  </div>
+               </div>
+               <div class="eb_tab_content unknown_tab" data-rv-show="sepa.benType | type unknown">
+                  <div class="ia_alert">
+                     <div class="alert_messages fade alert_messages_information" data-rv-class-show_active="sepa.disableBenficiary" data-rv-class-in="sepa.disableBenficiary">
+                        <div class="alert_messages__inner clearfix">
+                           <p>This IBAN is one of your known beneficiaries</p>
+                           <span class="fontcon-close icon_dismiss"> </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="eb_tab_content__inner">
+                     <div class="eb_unknown_content">
+                        <div class="eb_unknown_input" data-rv-class-field_error="violations.unknownRecipientName">
+                           <div class="unknown_name">
+                              <label class="unknown_labels">Name</label>
+                              <p class="field_error_message" data-rv-class-show_active="violations.recipientNameEmpty">The recipient name is empty</p>
+                              <p class="field_error_message" data-rv-class-show_active="violations.recipientInvalidFormat">The recipient name format is invalid</p>
+                              <div class="default_input_field unknown_input">
+                                 <input type="text" maxlength="35" data-rv-value="sepa.unknownRecipientName" data-rv-class-disabled="sepa.disableUnknownText" spellcheck="false">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="eb_unknown_input" data-rv-class-field_error="violations.unknownCreditAccountNumber">
+                           <div class="unknown_iban">
+                              <label class="unknown_labels">IBAN</label>
+                              <p class="field_error_message" data-rv-class-show_active="violations.creditorACcNumbeInvalid">The credit account number format is invalid</p>
+                              <div class="default_input_field unknown_input">
+                                 <input type="text" maxlength="34" data-rv-value="sepa.unknownCreditAccountNumber" data-rv-class-disabled="sepa.disableUnknownText" spellcheck="false">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="save_benefeciary" data-rv-class-disabled="sepa.disableBenficiary">
+                        <input type="checkbox" tabindex="-1" class="save_benefeciary__check" data-rv-checked="sepa.saveBeneficiaryFlag" data-rv-disabled="sepa.disableBenficiary">
+                        <span class="save_benefeciary__text">Save beneficiary</span> 
+                     </div>
+                     <div class="eb_unknown_alias unknown_alias" data-rv-show="sepa.saveBeneficiaryFlag" data-rv-class-field_error="violations.unknownRecipientAlias">
+                        <label class="unknown_labels">Alias name</label>
+                        <p class="field_error_message" data-rv-class-show_active="violations.recipientAliasFormat">The recipient alias format is invalid</p>
+                        <p class="field_error_message" data-rv-class-show_active="violations.flagChecked">The recipient alias is empty (but the savebeneficiaryflag is checked)</p>
+                        <div class="default_input_field unknown_input">
+                           <input type="text" maxlength="35" data-rv-value="sepa.unknownRecipientAlias" spellcheck="false">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Tabs --> 
+         </div>
+      </div>
+      <div class="form_fields amount_field" data-rv-class-field_error="violations.amount">
+         <div class="form_labels">
+            <label for="select-account">Amount</label><span>*</span>
+         </div>
+         <div class="form_details">
+            <p class="field_error_message" data-rv-class-show_active="violations.amountInvalid">The amount has an invalid format</p>
+            <p class="field_error_message" data-rv-class-show_active="violations.pleaseEnterTheAmount">The amount is invalid. It is either empty</p>
+            <div class="default_input_control">
+               <div class="default_input_field">
+                  <input type="text" class="amount" data-rv-value="sepa.amount" spellcheck="false" maxlength="18" autocomplete="off">
+                  <span>EUR</span> 
+               </div>
+            </div>
+         </div>
+      </div>
+   
+         
+         <div class="form_fields ">
+            <div class="form_labels"><label for="select-account">First Execution
+               </label>
+            </div>
+            <div class="form_details">
+               <p class="field_error_message"></p>
+               <div class="form_details_drop_box firstExecution">
+                  <div class="default_input_control">
+                     <div class="identification_details input_known_profile">
+                        <div class="default_input_field custom_dropdown dropdown_arrow ">
+                           <span class="known_placeholder">Last day of the month</span>
+                           <p class="selected_saved_data"></p>
+                        </div>
+                     </div>
+                  </div>
+				   <div class="default_dropdown_container collapse">
+					  <div class="default_dropdown_box ">
+						 <div class="dropdown_wrapper ">
+							<div class="dropdown_content">
+								<div class="option" data-selectable="">Specific date</div>
+								<div class="option" data-selectable="">Last day of the month</div>
+							</div>
+						 </div>
+					  </div>
+				   </div>
+               </div>
+				<div class="form_details pad_top specificDate hide" data-rv-class-field_error="violations.date" data-rv-class-show_active="violations.validDate"> 
+					<p class="field_error_message" data-rv-text="config.app.message.Label.standingOrder.StandingOrderCreate.validDate"> Please enter a valid date</p>
+					<div class="form_input default_input_control"> 
+						<div class="default_input_field input_dropdown"> 
+							<input type="tel" autocomplete="off" spellcheck="false" data-rv-value="sepa.date" placeholder="DD.MM.YYYY" maxlength="14" value="" class="input_date"> 
+							<span class="trig_datepicker"> 
+								<span class="fontcon-calendar"></span> 
+							</span> 
+						</div> 
+					</div> 
+				</div> 
+
+               <!--<div class="date_picker pad_top specificDate  hide" data-rv-class-field_error="violations.date" data-rv-class-show_active="violations.validDate">
+                  <p class="field_error_message" data-rv-text="config.app.message.Label.standingOrder.StandingOrderCreate.validDate" >Please enter a valid date</p>
+                  <div class="default_input_control" style="position: relative">
+                     <div class="default_input_field input_dropdown"><input type="text"
+                        class="input_date" value="" maxlength=10 placeholder="DD.MM.YYYY"
+                        spellcheck="false" /> <span class="trig_datepicker fontcon-calendar"></span></div>
+                  </div>
+               </div>-->
+			   <div class="default_dropdown_container pad_top lastDayOfMonths show_active">
+					 <div class="form_details_drop_box  ">
+					  <div class="default_input_control">
+						 <div class="identification_details input_known_profile">
+							<div class="default_input_field custom_dropdown dropdown_arrow ">
+							   <span class="known_placeholder">June 2014</span>
+							   <p class="selected_saved_data"></p>
+							</div>
+						 </div>
+					  </div>
+					  <div class="default_dropdown_container collapse">
+						  <div class="default_dropdown_box">
+							 <div class="dropdown_wrapper">
+								<div class="dropdown_content"><div class="option" data-selectable="">June 2014</div><div class="option" data-selectable="">July 2014</div><div class="option" data-selectable="">August 2014</div><div class="option" data-selectable="">September 2014</div><div class="option" data-selectable="">October 2014</div><div class="option" data-selectable="">November 2014</div><div class="option" data-selectable="">December 2014</div><div class="option" data-selectable="">January 2015</div><div class="option" data-selectable="">February 2015</div><div class="option" data-selectable="">March 2015</div><div class="option" data-selectable="">April 2015</div><div class="option" data-selectable="">May 2015</div></div>
+								
+							 </div>
+						  </div>
+					  </div>
+				   </div>
+			   </div>
+            </div>
+         </div>
+         <div class="form_fields ">
+            <div class="form_labels"><label for="select-account">Frequency
+               *</label>
+            </div>
+            <div class="form_details">
+               <p class="field_error_message"></p>
+               <div class="form_details_drop_box frequency">
+                  <div class="default_input_control">
+                     <div class="identification_details input_known_profile">
+                        <div class="default_input_field custom_dropdown dropdown_arrow ">
+                           <span class="known_placeholder">Monthly</span>
+                           <p class="selected_saved_data"></p>
+                        </div>
+                     </div>
+                  </div>
+				  <div class="default_dropdown_container collapse">
+                  	<div class="default_dropdown_box">
+                     <div class="dropdown_wrapper ">
+                        <div class="dropdown_content">
+                            <div class="option" data-selectable="">Monthly</div>
+                            <div class="option" data-selectable="">Quarterly</div>
+                            <div class="option" data-selectable="">Half-yearly</div>
+                            <div class="option" data-selectable="">Annually</div>
+                        </div>
+                     </div>
+                  </div>
+				 </div>
+               </div>
+            </div>
+         </div>
+         <div class="form_fields ">
+            <div class="form_labels"><label for="select-account">Number
+               of execution*</label>
+            </div>
+            <div class="form_details">
+               <p class="field_error_message"></p>
+               <div class="form_details_drop_box numberOfExecution">
+                  <div class="default_input_control">
+                     <div class="identification_details input_known_profile">
+                        <div class="default_input_field custom_dropdown dropdown_arrow ">
+                           <span class="known_placeholder">Unlimited</span>
+                           <p class="selected_saved_data"></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="default_dropdown_container collapse">
+					  <div class="default_dropdown_box">
+						 <div class="dropdown_wrapper ">
+							<div class="dropdown_content">
+								<div class="option" data-selectable="">Unlimeted</div>
+								<div class="option" data-selectable="">Limited</div>
+							</div>
+						 </div>
+					  </div>
+				  </div>
+               </div>
+            </div>
+           </div>
+            <div class="form_fields ">
+               <div class="form_labels"><label for="select-account">Number
+                  of transfer</label>
+               </div>
+               <div class="form_details">
+                  <p class="field_error_message" data-rv-class-show_active="violations.frequencyEmpty">Please enter the no of transfers</p>
+                  <div class="default_input_control noOfTransfers">
+                     <div class="default_input_field">
+                        <input class="transfersEntered" type="text" maxlength="2" disabled="">
+                     </div>
+                  </div>
+               </div>
+               <!--
+                  <div class="details_content noOfTransfers"> 
+                     <input type="text" maxlength=2 disabled/>
+                  </div>
+                  -->
+            </div>
+            <div class="form_fields ">
+               <div class="form_labels"><label for="select-account">Final
+                  execution date</label>
+               </div>
+               <div class="form_details">
+                  <p class="field_error_message"></p>
+                  <div class="details_content lastExecution">
+                     <p data-rv-text="sepa.lastExecutionDate"></p>
+                  </div>
+               </div>
+            </div>
+            <div class="form_fields ">
+               <div class="form_labels"><label for="select-account">Debit advice</label></div>
+               <div class="form_details">
+                  <div class="switch_container"><span class=" switch_btn_align f_left yes switch_highlight">Yes</span> <span class="switch_btn_align no f_left">No</span></div>
+               </div>
+            </div>
+      
+      <div class="form_fields message_field select_message">
+         <div class="form_labels "><label for="select-account">Communication</label></div>
+         <div class="form_details">
+            <!-- Input -->
+            <div class="details_content select_message__type">
+               <select class="select-message communication selectized" data-rv-value="message.option" tabindex="-1" style="display: none;"><option value="nomessage" selected="selected"></option></select><div class="default_input_control select-message communication single"><div class="default_input_field items custom_dropdown dropdown_arrow input_dropdown has-options full has-items"><div data-value="nomessage" class="dropdown_seleted_item">No Message</div><input type="text" autocomplete="off" spellcheck="false" maxlength="35" tabindex="" style="width: 4px; opacity: 0; position: absolute; left: -10000px;"></div><div class="default_dropdown_box select-message communication single" style="display: none;"><div class="dropdown_wrapper"><div class="dropdown_content"><div data-value="nomessage" data-selectable="" class="option selected">No Message</div><div data-value="structured" data-selectable="" class="option">Structured Message</div><div data-value="freetext" data-selectable="" class="option">Free Text</div></div></div></div></div>
+            </div>
+            <!-- Struct Message -->
+            <div class="select_message__structured" data-rv-class-field_error="violations.structured" data-rv-show="message.option | type structured" style="display: none;">
+               <p class="field_error_message struct_error" data-rv-text="config.app.message.Label.standingOrder.StandingOrderCreate.communicationMsgEmpty" data-rv-class-show_active="violations.communicationMsgEmpty">The communication message is empty</p>
+               <!-- rivets: if violations.communicationInvalid -->
+               <div class="default_input_field">
+                  <p class="lstruct_pattern">+++</p>
+                  <input class="struct_msg mask_pattern" placeholder="--- / ---- / -----" type="tel" data-rv-value="message.structured" spellcheck="false" maxlength="18" autocomplete="off">
+                  <p class="rstruct_pattern">+++</p>
+               </div>
+               <!--
+                  <p class="lstruct_pattern">+++</p>
+                  <input class="default_input_field" placeholder="--- / ---- / ----- " type="text" data-rv-value="message.structured" spellcheck="false">
+                        	<p class="lstruct_pattern">+++</p>
+                        -->
+            </div>
+            <!-- free Message -->
+            <div class="select_message__freetext default_text_area" data-rv-class-field_error="violations.freetext" data-rv-show="message.option | type freetext" style="display: none;">
+               <p class="field_error_message struct_error" data-rv-text="config.app.message.Label.standingOrder.StandingOrderCreate.communicationMsgEmpty" data-rv-class-show_active="violations.communicationMsgEmpty">The communication message is empty</p>
+               <!-- rivets: if violations.communicationInvalid -->
+               <textarea maxlength="140" data-rv-value="message.freetext" spellcheck="false"></textarea>
+               <span class="message_length"><span class="text_count">characters left</span><span class="freetext_remaining">140</span></span> 
+            </div>
+            <!-- Euro Message -->
+            <div class="default_text_area select_message__eurostructured" data-rv-class-field_error="violations.eurostructured" data-rv-show="message.option | type eurostructured" style="display: none;">
+               <p class="field_error_message struct_error" data-rv-text="config.app.message.Label.standingOrder.StandingOrderCreate.communicationMsgEmpty" data-rv-class-show_active="violations.communicationMsgEmpty">The communication message is empty</p>
+               <!-- rivets: if violations.communicationInvalid -->
+               <textarea maxlength="31" data-rv-value="message.eurostructured" spellcheck="false"></textarea>
+               <span class="message_length"><span class="text_count">characters left</span><span class="eurostructured_remaining"></span></span> 
+            </div>
+         </div>
+      </div>
+     </div>
+   <div class="action_btns">
+   <div class="navigation_btns">
+      <div class="right_navigation f_right"><span class="lnk_primary">Cancel</span>
+         <button class="btn_default btn_primary btn_arrow_right btn_create_next"><span>Next</span><i class="fontcon-arrow-right arrow-right"></i></button>
+      </div>
+   </div>
+</div></form></div><div><div class="trnsfr_confirm">
+
+	<div class="details_inner">
+		<h4 class="form_title">Confirm</h4>
+		<div class="list_details border_list">
+			<label class="details_label">To</label>
+			<div class="listitem_details">
+				<div class="confirmation_details__amount">
+					<!-- rivets: if sepa.saveBeneficiaryFlag --><p data-rv-text="sepa.unknownRecipientName">ytter</p>
+					<!-- rivets: unless sepa.saveBeneficiaryFlag -->
+					<span class="space_right">,</span>
+					<!-- rivets: unless sepa.amountChallenge -->
+					<!-- rivets: if sepa.amountChallenge --><p>
+						<span data-rv-text="sepa.creditAccountNumber | formatIBAN | substring 0 2">BE</span>
+						<span class="amount_highlight" data-rv-text="sepa.creditAccountNumber | formatIBAN | substring 2 13 ">20 0013 3179 </span>
+						<span>&nbsp;</span>
+						<span data-rv-text="sepa.creditAccountNumber | formatIBAN | substring 15 ">6256 </span>
+					</p>
+					<span class="hello_icon" data-rv-class-show_hello="sepa.isBlueCreditAccount"></span>
+				</div>
+				<!--<div class="alias_name" data-rv-if="sepa.saveBeneficiaryFlag">
+					<label>Alias:</label>
+					<p data-rv-text= "sepa.recipientAlias"></p>
+				</div>-->
+				<!-- rivets: if sepa.saveBeneficiaryFlag --><div class="alias_save">
+					<span class="fontcon-done f_left done_align"></span>
+					<div class="alias_save_detail">
+						<p data-rv-text="sepa.recipientAlias">ytter</p>
+						
+					</div>
+				</div>
+				<div class="alias_save_detail_content">
+							<div class="f_left alias_save_detail_label">
+							<label class="f_left">Alias</label>
+							<span>:</span>
+							</div>
+							<p>Maxxwell</p>
+						</div>
+
+			</div>
+		</div>
+		<div class="list_details border_list">
+			<label class="details_label">Amount</label>
+			<div class="listitem_details">
+				<!-- rivets: unless sepa.amountChallenge -->
+				<!-- rivets: if sepa.amountChallenge --><p class="amount_highlight" data-rv-text="sepa.amount | formatAmount">345.634,00</p>
+				<span class="space_left">EUR</span>
+			</div>
+		</div>
+		<div class="show_collection collapse">
+			<div class="list_details border_list">
+				<label class="details_label">First execution date</label>
+				<div class="listitem_details">
+					<p data-rv-text="sepa.firstExecution"></p>
+				</div>
+			</div>
+			<div class="list_details border_list">
+				<label class="details_label">Frequency</label>
+				<div class="listitem_details">
+					<p data-rv-text="sepa.frequency"></p>
+				</div>
+			</div>
+			<div class="list_details border_list ">
+				<label class="details_label">Number of execution</label>
+				<div class="listitem_details">
+					<p data-rv-text="sepa.noOfExecution"></p>
+				</div>
+			</div>
+			<div class="list_details border_list ">
+				<label class="details_label" data-rv-show="sepa.lastExecutionDate" style="display: none;">Final execution date</label>
+				<div class="listitem_details">
+					<p data-rv-text="sepa.lastExecutionDate"></p>
+				</div>
+			</div>
+			<div class="list_details border_list ">
+				<label class="details_label">Debit advice</label>
+				<div class="listitem_details">
+					<p data-rv-text="sepa.debitAdvice">Yes</p>
+				</div>
+			</div>
+			<div class="list_details border_list" data-rv-show="sepa.messageType | notEqual nomessage" style="display: none;">
+				<label class="details_label">Communication</label>
+				<div class="listitem_details">
+					<p data-rv-text="sepa.message"></p>
+				</div>
+			</div>
+		</div>
+		<div class="view_more accordion_header header_l4">
+			<span class="icon_arrow dropdown_arrow"></span>
+			<p>Show more standing order details</p>
+		</div>
+	</div>
+	<!--  Sepa UCR -->
+	<form class="signature_challenge">
+		<!-- rivets: if sepa.amountChallenge --><div class="ucr_comp">
+			<div class="form_inner">
+				<h4 class="ucr_title">SIGN IN</h4>
+				<div class="ucr_details">
+					<span class="ucr_details__numbering">1.</span>
+					<div class="ucr_details__content">
+						<p class="ucr_action_content">
+							<span>
+							<span>Put your bank card in the card reader and press</span>
+							<span class="fontcon-m2 m2_icon"></span>
+							</span>
+						</p>
+					</div>
+					<span class="ucr_img"></span>
+				</div>
+				<div class="ucr_details">
+					<span class="ucr_details__numbering">2.</span>
+					<div class="ucr_details__content">
+						<p class="ucr_action_content">"Pin?" will appear</p>
+						<p class="ucr_action_content">
+							<span>
+							<span>Put your bank card in the card reader and press</span>
+							<span class="fontcon-ucr-ok ok_icon"></span>
+							</span>
+						</p>
+					</div>
+				</div>
+				<div class="ucr_details">
+					<span class="ucr_details__numbering">3.</span>
+					<div class="ucr_details__content">
+						<p class="ucr_action_content">"CHALLENGE?" will appear</p>
+						<div class="ucr_content__challenge">
+							<span class="f_left challenge_part1">Enter the code</span>
+							<div class="ucr_challange__content">
+								<div class="ucr_challenge__code challenge_part2">
+									<div class="ucr_code">
+										<p class="default_input_field ucr_code__input" data-rv-text="sepa.amountChallenge | formatUcrAmount">1 05</p>
+										<p>Amount</p>
+									</div>
+									<span class="fontcon-ucr-ok ok_icon ucr_code_ok"></span>
+									<div class="ucr_code">
+										<p class="default_input_field ucr_code__input" data-rv-text="sepa.ibanChallenge | formatUcrIBAN">7630 0030</p>
+										<p>IBAN Numbers</p>
+									</div>
+								</div>
+								<div class="challenge_part3">
+									<span>and press</span>
+									<span class="fontcon-ucr-ok ok_icon"></span>
+									<span class="fontcon-ucr-ok ok_icon last_ok"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ucr_details last-child">
+					<span class="ucr_details__numbering">4.</span>
+					<div class="ucr_details__content">
+						<p class="ucr_action_content">The electronic signature appear</p>
+						<span class="f_left ucr_content ucr_contentone">Enter your electronic signature</span>
+						<div class="ucr_signature" data-rv-class-field_error="violations.signatureError">
+							<p class="field_error_message" data-rv-class-show_active="violations.signatureError"></p>
+							<div class="default_input_field ucr_signature__input">
+								<input type="text" class="sign_input" data-location="5,10" max-length="8" maxlength="9" oncopy="return false;" onpaste="return false;" oncut="return false;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	<div class="action_btns">
+		<div class="navigation_btns">
+			<div class="right_navigation_btn f_right">
+				<button class="btn_default btn_primary f_right">
+				<!-- rivets: unless sepa.amountChallenge -->
+				<!-- rivets: if sepa.amountChallenge --><span>Submit</span>
+				</button>
+				<button class="btn_default btn_secondary exp_btn">Edit</button>
+			</div>
+			<div class="right_navigation_btn f_left">
+				
+				<span class="lnk_primary exp_lnk">Cancel</span>
+			</div>
+		</div>
+	</div>
+</div></div></div>
+</div></div></div></div>
+   
+ 
+ </div>
+ 
+</div>
+
+
+
+
+
+</body>
+</html>

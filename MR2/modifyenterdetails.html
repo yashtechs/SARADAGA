@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Site Structure</title>
+		<link rel="stylesheet" href="css/reset.css">
+		
+		<link rel="stylesheet" href="css/brand.css">
+		<link rel="stylesheet" href="css/brand_mr2.css">
+		<link rel="stylesheet" href="css/pattern-lib.css">
+		<link rel="stylesheet" href="css/fonticon.css">
+	
+	</head>
+<body>
+<div class="easybanking">
+	<div class="wrapper">
+		<div class="bnppf_ben" id="beneficiary" data-url-context="/BE_FORTIS_PFPL-pr01-war/"><div><div class="beneficiary beneficiary_Modify_enterdetails service details">
+  <div class="beneficiary_modify_details_inner">
+    <!-- Sepa Header -->
+    <div class="module_main_header noPrint">
+      <div class="ia_alert">
+        <!-- rivets: each-error -->
+      </div>
+      <div class="module_header h_functions">
+        <div class="module_header__inner">
+          <div class="title_column">
+            <div class="module_hcontent f_left">
+              <h2 class="module_title clearfix" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.beneficiaries">Beneficiaries</h2>
+              <div class="module_operation_title clearfix">
+                <p data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.modifyBeneficiaryTitle">Modify beneficiary</p>
+              </div>
+            </div>
+          </div>
+          <div class="header_steps">
+            <div class="module_steps">
+              <ul class="module_steps_block beneficiary_header">
+                <li>
+                  <span class="module_steps__digit active">1</span>
+                </li>
+                <li>
+                  <span class="module_steps__digit">2</span>
+                </li>
+                <li>
+                  <span class="module_steps__digit">3</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form_container trnsfr_content">
+      <div>
+        <form class="modifyEnterdetails steps">
+          <div class="form_inner">
+            <h4 class="form_title" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.enterDetails">Enter details</h4>
+            <h5>*Mandatory input</h5>
+            <div class="error_summary" data-rv-class-show_active="violations.errorSummaryHeader">
+              <p class="field_error_message" data-rv-class-show_active="violations.errorSummaryHeader">Please correct the following fields.</p>
+              <ul class="error_summary_items">
+                <li data-rv-show="violations.ibanError" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.IBAN" style="display: none; ">IBAN</li>
+                <li data-rv-show="violations.nameError" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.beneficiaryName" style="display: none; ">Name</li>
+                <li data-rv-show="violations.aliasError" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.beneficiaryAlias" style="display: none; ">Alias</li>
+              </ul>
+            </div>
+            <div class="form_fields from_field" data-rv-class-field_error="violations.ibanError">
+              <div class="form_labels">
+                <label for="select-account" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.IBAN">IBAN</label>
+                <span>*</span>
+              </div>
+              <div class="form_details">
+                <p class="field_error_message" data-rv-class-show_active="violations.ibanError" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.errorIBAN">Enter a valid IBAN</p>
+                <p class="field_error_message" data-rv-class-show_active="violations.PEW0047" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0047">The account number has an invalid format</p>
+                <p class="field_error_message" data-rv-class-show_active="violations.PEW0048" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0048">The account number cannot be empty</p>
+                <div class="form_input default_input_control text_input">
+                  <div class="default_input_field">
+                    <input type="text" class="beneficiary_enter_iban" maxlength="34" data-rv-value="beneficiaryDetails.beneficiaryIban|formatUcrIBAN">
+                  </div>
+                </div>
+                <div class="selected-item"> <span class="iban-label"></span> <span>-</span> <span class="amount-label"></span> </div>
+              </div>
+            </div>
+            <div class="form_fields from_field" data-rv-class-field_error="violations.countryError">
+              <div class="form_labels">
+                <label for="select-account" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.bankCountryLabel">Country of the bank</label>
+              </div>
+              <div class="form_details">
+                <p class="field_error_message" data-rv-class-show_active="violations.countryError" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.errorBankCountry">The country is no part of SEPA</p>
+                <p class="field_error_message" data-rv-class-show_active="violations.PEW0053" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0053">The bank country has an invalid format</p>
+                <p class="field_error_message" data-rv-class-show_active="violations.PEW0054" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0054">The bank country cannot be empty</p>
+                <div class="form_labels">
+                  <label for="select-account" data-rv-text="beneficiaryDetails.bankCountry">Romania</label>
+                </div>
+              </div>
+            </div>
+            <div class="form_fields from_field" data-rv-class-field_error="violations.nameError">
+              <div class="form_labels">
+                <label for="select-account" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.beneficiaryName">Name</label>
+                <span>*</span>
+              </div>
+              <div class="form_details">
+                <p class="field_error_message" data-rv-class-show_active="violations.nameError" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.errorBeneficiaryName">Please enter a valid name</p>
+                <p class="field_error_message" data-rv-class-show_active="violations.PEW0049" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0049">The name has an invalid format</p>
+                <p class="field_error_message" data-rv-class-show_active="violations.PEW0050" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0050">The name cannot be empty</p>
+                <div class="form_input default_input_control text_input">
+                  <div class="default_input_field">
+                    <input type="text" class="beneficiary_enter_name" maxlength="35" data-rv-value="beneficiaryDetails.beneficiaryName">
+                  </div>
+                </div>
+                <div class="selected-item"> <span class="iban-label"></span> <span>-</span> <span class="amount-label"></span> </div>
+              </div>
+            </div>
+            <div class="form_fields from_field" data-rv-class-field_error="violations.aliasError">
+              <div class="form_labels">
+                <label for="select-account" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.beneficiaryAlias">Alias</label>
+                <span>*</span>
+              </div>
+              <div class="form_details">
+                <p class="field_error_message" data-rv-class-show_active="violations.aliasError" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.errorBeneficiaryAlias">Enter a valid alias</p>
+                <p class="field_error_message" data-rv-class-show_active="violations.PEW0036" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0036"></p>
+                <p class="field_error_message" data-rv-class-show_active="violations.PEW0037" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0037">The alias has an invalid format</p>
+                <div class="form_input default_input_control text_input">
+                  <div class="default_input_field">
+                    <input type="text" class="beneficiary_enter_alias" maxlength="35" data-rv-value="beneficiaryDetails.beneficiaryAlias">
+                  </div>
+                </div>
+                <div class="selected-item"> <span class="iban-label"></span> <span>-</span> <span class="amount-label"></span> </div>
+              </div>
+            </div>
+            <div class="form_fields from_field" data-rv-class-field_error="violations.PEW0042">
+              <div class="form_labels">
+                <label for="select-account" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.address">Address</label>
+              </div>
+              <div class="form_details">
+                <p class="field_error_message" data-rv-class-show_active="violations.PEW0042" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0053">The bank country has an invalid format</p>
+                <div class="form_input default_input_control text_input">
+                  <div class="default_input_field">
+                    <input type="text" class="beneficiary_enter_address" maxlength="24" data-rv-value="beneficiaryDetails.address">
+                  </div>
+                </div>
+                <div class="selected-item"> <span class="iban-label"></span> <span>-</span> <span class="amount-label"></span> </div>
+              </div>
+            </div>
+            <div class="form_fields from_field" data-rv-class-field_error="violations.PEW0043">
+              <div class="form_labels">
+                <label for="select-account" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.postalCode">Postcode</label>
+              </div>
+              <div class="form_details">
+                <p class="field_error_message" data-rv-class-show_active="violations.PEW0043" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0043">The postal code has an invalid format</p>
+                <div class="form_input default_input_control text_input">
+                  <div class="default_input_field">
+                    <input type="text" class="beneficiary_enter_postalcode" maxlength="7" data-rv-value="beneficiaryDetails.postalCode">
+                  </div>
+                </div>
+                <div class="selected-item"> <span class="iban-label"></span> <span>-</span> <span class="amount-label"></span> </div>
+              </div>
+            </div>
+            <div class="form_fields from_field" data-rv-class-field_error="violations.PEW0044">
+              <div class="form_labels">
+                <label for="select-account" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.city">Residence</label>
+              </div>
+              <div class="form_details">
+                <p class="field_error_message" data-rv-class-show_active="violations.PEW0044" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0044">The city has an invalid format</p>
+                <div class="form_input default_input_control text_input">
+                  <div class="default_input_field">
+                    <input type="text" class="beneficiary_enter_city" maxlength="24" data-rv-value="beneficiaryDetails.city">
+                  </div>
+                </div>
+                <div class="selected-item"> <span class="iban-label"></span> <span>-</span> <span class="amount-label"></span> </div>
+              </div>
+            </div>
+            <div class="form_fields from_field" data-rv-class-field_error="violations.PEW0044">
+              <div class="form_labels">
+                <label for="select-account" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.beneficiaryCountry">Country</label>
+              </div>
+              <div class="form_details select_message__type">
+                <select class="select_beneficiary_country selectized" data-rv-value="beneficiaryDetails.countryCode" tabindex="-1" style="display: none; "><option value="" selected="selected"></option></select><div class="default_input_control select_beneficiary_country single" style=""><div class="default_input_field items custom_dropdown dropdown_arrow input_dropdown not-full has-options"><input type="text" autocomplete="off" spellcheck="false" maxlength="35" tabindex="" style="width: 4px; "></div><div class="default_dropdown_box select_beneficiary_country single" style="display: none; "><div class="dropdown_wrapper"><div class="dropdown_content"></div></div></div></div>
+              </div>
+            </div>
+            <div class="form_fields from_field">
+              <div class="form_labels">
+                <label for="select-account" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.communication">Communication</label>
+              </div>
+              <div class="form_details">
+                <!--
+                  <!-- Input -->
+                <div class="details_content select_message__type">
+                  <select class="select-message selectized" data-rv-value="beneficiaryDetails.option" tabindex="-1" style="display: none; "><option value="freetext" selected="selected"></option></select><div class="default_input_control select-message single" style=""><div class="default_input_field items custom_dropdown dropdown_arrow input_dropdown has-options full has-items"><div data-value="freetext" class="dropdown_seleted_item">Free communication</div><input type="text" autocomplete="off" spellcheck="false" maxlength="35" tabindex="" style="width: 4px; opacity: 0; position: absolute; left: -10000px; "></div><div class="default_dropdown_box select-message single" style="display: none; "><div class="dropdown_wrapper"><div class="dropdown_content"><div data-value="nomessage" data-selectable="" class="option">No communication</div><div data-value="structured" data-selectable="" class="option">Belgian structured communication</div><div data-value="freetext" data-selectable="" class="option selected">Free communication</div><div data-value="eurostructured" data-selectable="" class="option">European structured communication</div></div></div></div></div>
+                </div>
+                <!-- Struct Message -->
+                <!-- rivets: if beneficiaryDetails.option| type structured -->
+                <!-- free Message -->
+                <!-- rivets: if beneficiaryDetails.option | type freetext --><div class="select_message__freetext default_text_area" data-rv-class-field_error="violations.freetextError">
+                  <p class="field_error_message struct_error" data-rv-class-show_active="violations.PEW0022" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0022">The communication message cannot be empty</p>
+                  <p class="field_error_message struct_error" data-rv-class-show_active="violations.PEW0021" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0021">The communication has an invalid format. You are only allowed to use the following characters: a-z A-Z 0-9 - . : ? , / ( ) +</p>
+                  <textarea maxlength="140" class="beneficiary_enter_freetext free_text" data-rv-value="beneficiaryDetails.freetext" spellcheck="false"></textarea>
+                  <span class="message_length"><span class="text_count freetext_remaining">135</span><span data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.charactersLeft">character(s) left</span></span> 
+                </div>
+                <!-- Euro Message -->
+                <!-- rivets: if beneficiaryDetails.option | type eurostructured -->
+              </div>
+            </div>
+            <div class="form_fields from_field">
+              <div class="form_labels">
+                <label for="select-account" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.personalComment">Notes</label>
+              </div>
+              <div class="form_details">
+                <div class="default_text_area show_active">
+                  <p class="field_error_message field_error " data-rv-class-show_active="violations.PEW0046" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.PEW0046">The comment has an invalid format</p>
+                  <textarea maxlength="250" class="beneficiary_enter_personalcomment font_text" data-rv-value="beneficiaryDetails.comment"></textarea>
+                </div>
+                <div class="selected-item"> <span class="iban-label"></span> <span>-</span> <span class="amount-label"></span> </div>
+              </div>
+            </div>
+            <div class="action_btns form_btns">
+              <div class="navigation_btns">
+                <div class="right_navigation_btn f_right">
+                  <span class="lnk_primary" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.cancel" data-rv-on-click="enterDetails:redirectPage|view">Cancel</span>
+                  <button class="btn_default btn_primary btn_arrow_right btn_beneficiary_next" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryEnterDetails.next">Next</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div></div></div>
+		<script>
+			require([ './app-wcm-config' ], function() {
+				require([ 'beneficiary' ], function(beneficiaryApp) {
+					new beneficiaryApp('#beneficiary');
+				});
+			});
+		</script>
+		<!--   <div class="sendmoney" id="sepa" data-url-context="/BE_FORTIS_PFPL-pr01-war/"></div>
+    <script>
+        require(['./app-wcm-config'], function() {
+            require(['sepa'], function (sepaApp) {
+                new sepaApp('#sepa');
+            });
+        });
+    </script>
+   
+  
+     <div class="bnppf_sendmoney" id="zoomit" data-url-context="/PFPL-pr01/"></div>
+    <script>
+        require(['./app-wcm-config'], function() {
+            require(['zoomit'], function (zoomitApp) {
+                new zoomitApp('#zoomit','sepa.paynow');
+            });
+        });
+    </script>  -->
+
+		<!-- <div class="bnppf_accounts" id="accountList" data-url-context="/PFPL-pr01/"></div>
+        <script>
+         require(['./app-wcm-config'], function() {
+            require(['accountlist'], function (accountListApp) {
+                new accountListApp('#accountList');
+            });
+        });
+    </script> -->
+
+
+		<!--  <div class="bnppf_accounts" id="accountDetail" data-url-context="/PFPL-pr01/"></div>
+        <script>
+         require(['./app-wcm-config'], function() {
+            require(['accountdetail'], function (accountListApp) {
+                new accountListApp('#accountDetail');
+            });
+        });
+    </script> -->
+	</div>
+
+</div>
+
+
+
+<script type="text/javascript" src="js/wcm-hostpage.js"></script>
+
+
+
+</body>
+</html>

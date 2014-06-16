@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Site Structure</title>
+		<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/brand-mr2.css">
+<link rel="stylesheet" href="../css/pattern-lib.css">
+<link rel="stylesheet" href="../css/fonticon.css">
+	
+	</head>
+<body>
+
+    <link rel="stylesheet" href="BE_FORTIS_DBPL-pr01-style-2.0-SNAPSHOT.css">
+<div class="easybanking">
+<div class="wrapper">
+
+<div class="sendmoney" id="sepa" data-url-context="/server/"><div class="standing_order" data-rv-on-click="current:hideAccountList | current">
+	<div class="standing_order_inner" style="display: none;">
+	<!--Error  message handling-->
+	<div class="ia_alert">
+		<div class="alert_messages fade in show_active">
+			<!-- rivets: each-error -->
+		</div>
+	</div>
+	<!--Error messages End-->
+	<div class="module_main_header">
+			<div class="module_header h_functions standing_order_header">
+				<div class="module_header__inner">
+					<div class="h1_col">
+						<h2 class="module_title clearfix">Standing Orders</h2>
+					</div>
+					 <div class="h1_col right_col">
+						<div class="flyout_selection f_right">
+							<div class="flyout_container">
+								<div class="selected_details dropdown_arrow">
+									<div class="selected_details__account clearfix  dropdown_arrow hello_account" data-rv-on-click="current:allAccountClicked | current">
+										<h2 class="functions_title" data-rv-text="accountListModel.AccNumber|formatIBAN">GB82 3456 9876 5432 </h2>
+										<span class="hello_icon"></span>
+									</div>
+									<div class="selected_details__info functions_info f_right">
+										<p class="long_account_type" data-rv-text="accountListModel.AccType">OWN_CURRENT</p>
+										<p data-rv-text="accountListModel.AccAlias">Sliop Leile</p>
+									</div>
+								</div>
+								<div class="flyout_list_items" data-rv-show="accountListModel.allAccountsClicked" style="display: none;">
+									<div class="item_list">
+									<div class="item_list_inner">
+										<div class="accordion_list">
+											<div class="accordion_header header_l1" data-rv-hide="accountListModel.ownHide">
+												<div class="accordion_l1__inner" data-rv-on-click="current:preventDefault">
+													<h4>OWN PRIVATE ACCOUNTS</h4>
+												</div>
+											</div>
+											<div class="product_groups current_accounts" data-rv-hide="accountListModel.ownHide">
+												<div class="item_group clearfix">
+													<div class="item_group__inner" data-rv-on-click="current:preventDefault">
+														<div class="group_colone">
+															<span class="group_icons fontcon-current-account"></span>
+															<h4>Current Accounts</h4>
+														</div>
+													</div>
+												</div>
+												<div class="list_group">
+													<!-- rivets: each-account --><div class="list_item list_wrapper_inner list_item_selected" data-rv-on-click="accountListView:chooseAccount| view">
+														<div class="list_item__header clearfix header_l3" data-rv-on-click="accountListView:greyOut| view">
+															<div class="list_content_col1">
+																<div class=" list_content_details">
+																	<div class="listiban_group">
+																		<h3 data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">GB82 3456 9876 5432 </h3>
+																		<span class="hello_icon show_hello" data-rv-class-show_hello="account.isBlue"></span>
+																	</div>
+																	<div class="listiban_detail">
+																		<span class="long_account_type" data-rv-text="account.AccType">OWN_CURRENT</span>
+																		<span data-rv-showhide="account.AccAlias"> - </span>
+																		<span data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">Sliop Leile</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><div class="list_item list_wrapper_inner" data-rv-on-click="accountListView:chooseAccount| view">
+														<div class="list_item__header clearfix header_l3" data-rv-on-click="accountListView:greyOut| view">
+															<div class="list_content_col1">
+																<div class=" list_content_details">
+																	<div class="listiban_group">
+																		<h3 data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">GB82 3456 9876 5529 </h3>
+																		<span class="hello_icon" data-rv-class-show_hello="account.isBlue"></span>
+																	</div>
+																	<div class="listiban_detail">
+																		<span class="long_account_type" data-rv-text="account.AccType">OWN_CURRENT</span>
+																		<span data-rv-showhide="account.AccAlias"> - </span>
+																		<span data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">Bigitte Erinn</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><div class="list_item list_wrapper_inner" data-rv-on-click="accountListView:chooseAccount| view">
+														<div class="list_item__header clearfix header_l3" data-rv-on-click="accountListView:greyOut| view">
+															<div class="list_content_col1">
+																<div class=" list_content_details">
+																	<div class="listiban_group">
+																		<h3 data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">GB82 3456 9876 5626 </h3>
+																		<span class="hello_icon show_hello" data-rv-class-show_hello="account.isBlue"></span>
+																	</div>
+																	<div class="listiban_detail">
+																		<span class="long_account_type" data-rv-text="account.AccType">OWN_CURRENT</span>
+																		<span data-rv-showhide="account.AccAlias"> - </span>
+																		<span data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">Lijla Mejidi</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="accordion_list">
+											<div class="accordion_header header_l1" data-rv-hide="accountListModel.otherHide" style="display: none;">
+												<div class="accordion_l1__inner" data-rv-on-click="current:preventDefault">
+													<h4>Other Private ACCOUNTS</h4>
+												</div>
+											</div>
+											<div class="product_groups current_accounts" data-rv-hide="accountListModel.otherHide" style="display: none;">
+												<div class="item_group clearfix" data-rv-on-click="current:preventDefault">
+													<div class="item_group__inner">
+														<div class="group_colone">
+															<span class="group_icons fontcon-current-account"></span>
+															<h4>Current Accounts</h4>
+														</div>
+													</div>
+												</div>
+												<div class="list_group">
+													<!-- rivets: each-account -->
+												</div>
+											</div>
+											
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div>
+				<div class="add_function_btn">
+						<div class="right_navigation_btn f_right">
+							<button class="extra_button">
+								<div class="add_function_btn_icon">
+									<span class="fontcon-add"></span>
+								</div>
+								<span class="add_function_btn_content">Add new standing order</span>
+							</button>
+						</div>
+					</div>	
+					
+				</div>
+			</div>
+			
+		</div>
+	
+		<div class="module_content">
+			<!-- rivets: each-page --><div class="module_tab_content">
+				<div class="module_listitem">
+					<div class=" main_list">
+						<div class="accordion_content content_l2">
+							<div class="accordion_list">
+								<div class="list_group">
+									<div class="list_item">
+										<div class="list_wrapper list_wrapper_align">
+											<!-- rivets: each-detail --><div class="list_wrapper_inner" data-rv-on-click="accountListView:chooseOrder| view">
+												<!-- Level3 Header Clickable -->
+												
+												<div class="list_item__header  clearfix accordion_header header_l3">
+													<div class="list_content_col1">
+														<div class=" list_content_details">
+															<div class="listiban_group">
+																<h3 class="lnk_primary" data-rv-text="detail.beneficiaryAlias">AYESHA</h3>
+															</div>
+														</div>
+													</div>
+													<div class="list_content_col2">
+                                                        <h3> 
+                                                               <span data-rv-text="detail.amountType">All above</span>
+																<span data-rv-text="detail.amount|currency">100,00</span>
+																<span data-rv-text="detail.currency">EUR</span>
+                                                        </h3> 
+                                                        <p data-rv-text="detail.frequency">MONTHLY</p>                                                          
+
+													</div>
+												</div>
+												
+												
+											</div><div class="list_wrapper_inner" data-rv-on-click="accountListView:chooseOrder| view">
+												<!-- Level3 Header Clickable -->
+												
+												<div class="list_item__header  clearfix accordion_header header_l3">
+													<div class="list_content_col1">
+														<div class=" list_content_details">
+															<div class="listiban_group">
+																<h3 class="lnk_primary" data-rv-text="detail.beneficiaryAlias">DE MOOIJYZ</h3>
+															</div>
+														</div>
+													</div>
+													<div class="list_content_col2">
+                                                        <h3> 
+                                                               <span data-rv-text="detail.amountType"></span>
+																<span data-rv-text="detail.amount|currency">100,00</span>
+																<span data-rv-text="detail.currency">EUR</span>
+                                                        </h3> 
+                                                        <p data-rv-text="detail.frequency">MONTHLY</p>                                                          
+
+													</div>
+												</div>
+												
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--Load More-->
+					<div class="load_more" data-rv-hide="page.isListComplete">
+						<div class="load_btn">
+							<button class="btn_default btn_primary sto_load_more">Load more</button>
+						</div>
+					</div>
+					 <div class="nomore_transactions" data-rv-show="page.isListComplete" style="display: none;">
+						<p>No More details avaliable</p>
+					</div>
+				<!--Load More End-->
+				</div>
+		</div>
+	</div>
+<div><div class="standing_order">
+	<!--Error  message handling-->
+	<div class="ia_alert">
+		<div class="alert_messages fade in show_active">
+			<!-- rivets: each-error -->
+		</div>
+	</div>
+	<!--Error messages End-->
+	<div class="module_main_header noPrint">
+		<div class="module_header h_functions">
+			<div class="module_header__inner">
+				<div class="title_column">
+					<div class="module_hcontent f_left">
+						<h2 class="module_title clearfix">Standing order</h2>
+						<div class="module_operation_title clearfix">
+							<p>Create new standing order</p>
+						</div>
+					</div>
+				</div>
+				<div class="header_steps">
+					<div class="module_steps">
+						<ul class="module_steps_block">
+							<li><span class="module_steps__digit detail">1</span> 
+							</li><li><span class="module_steps__digit confirm">2</span></li>
+							<li><span class="module_steps__digit result active">3</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="stocreate_content"> <div><div class="standing_result">
+<div class="acknowledge_page">
+  <div class="acknowledge_info form_inner">
+      		<div class="acknowledge_result__info acknowledge_content__inner clearfix">
+					<div class="acknowledge_result__heading f_left">
+						<h4 class="form_title limited" style="display: none;">The standing order is created and will be </h4>
+						<h4 class="unlimited" style="display: block;">The standing order will start from </h4>
+						<p>
+							
+							<span class="limited" data-rv-text="sepa.noOfExecution" style="display: none;"></span>
+							<span class="limited" style="display: none;">Times executed, starting from</span>
+							<span class="unlimited execute" data-rv-text="sepa.firstExecution" style="display: inline;"></span>
+							<span class="limited" style="display: none;">untill</span>
+							<span class="limited" data-rv-text="sepa.lastExecutionDate" style="display: none;"></span>
+							<span class="unlimited execute" style="display: inline;">with an unlimited number of executions</span>
+					</p>
+					</div>
+					<div class="action_icons">
+						<div class="navigation_btns">
+							<div class="right_navigation_btn action_icons f_right">
+								<span class="action_icons__global fontcon-pdf"></span> 
+								<span class="action_icons__global fontcon-print"></span> 
+							</div>
+						</div>
+					</div>
+
+				</div>
+	    </div>
+        <div class="acknowledge_content">
+            <div class="acknowledge_content">
+                <div class="acknowledge_blocks">
+                    <div class="result_content">
+                        <p class="fontcon-personage result_personicon"></p>
+                        <div class="resultfrom_info">
+                            <label>From</label>
+                            <div class="resultfrom_content">
+                                <p data-rv-text="sepa.debitAccountName">Bigitte Erinn</p>
+                                <div class="resultfrom__iban">
+                                	<p data-rv-text="sepa.debitAccountNumber | formatIBAN">GB82 3456 9876 5529 </p>
+                                	<span class="hello_icon" data-rv-class-show_hello="sepa.isBlueDebitAccount"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acknowledge_blocks">
+                    <div class="result_content">
+                        <p class="fontcon-send-money-icon"></p>
+                        <span class="fontcon-reload reload_align"></span>
+                        <div class="resultfrom_info">
+                            <label>Amount</label>
+                            <div class="resultfrom_content">
+<span data-rv-text="sepa.amount | formatAmount">345.634,00</span>
+                                <span>EUR</span>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acknowledge_blocks">
+                    <div class="result_content border_none">
+                        <p class="fontcon-personage result_personicon"></p>
+                        <div class="resultfrom_info">
+                            <label>To</label>
+                            <div class="resultfrom_content">
+                               <p data-rv-text="sepa.recipientAlias">ytter</p>
+                               <div class="resultfrom__iban">
+                                	<p data-rv-text="sepa.creditAccountNumber | formatIBAN">BE20 0013 3179 6256 </p>
+                                	<span class="hello_icon" data-rv-class-show_hello="sepa.isBlueCreditAccount"></span>
+                                </div>
+								<div class="alias_save alias_save_result">
+									<span class="fontcon-done f_left done_align"></span>
+									<div class="alias_save_detail">
+										<p>Save in my beneficary list as<span data-rv-text="sepa.unknownRecipientAlias" style="display: inline;">ytter</span></p>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<div class="action_btns">
+			<div class="navigation_btns">
+				<div class="right_navigation_btn f_right">
+					<button class="btn_default btn_primary f_right sto_list"><span>Standing order list</span></button>
+					<button class="btn_default btn_secondary f_left exp_btn create_sto"><span>Create new standing order</span></button>
+				</div>
+			</div>
+		</div>
+		
+		
+           </div>
+	</div>
+</div></div>
+</div></div></div></div>
+    </div>
+ 
+</div>
+
+
+
+
+
+<div id="standingOrder"></div></body>
+</html>

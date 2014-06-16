@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Site Structure</title>
+		<link rel="stylesheet" href="css/reset.css">
+		
+		<link rel="stylesheet" href="css/brand.css">
+		<link rel="stylesheet" href="css/brand_mr2.css">
+		<link rel="stylesheet" href="css/pattern-lib.css">
+		<link rel="stylesheet" href="css/fonticon.css">
+	
+	</head>
+<body>
+
+    
+<div class="easybanking">
+	<div class="wrapper">
+		<div class="upcoming_details" data-rv-class-hide="transactions.showdeleteView"><div class="upcoming_delete_inner service service_function details">
+<!-- Alert messages placeholder & Struct -->
+   <!--Error  message handling-->
+   <div class="ia_alert hide">
+         <!-- rivets: each-error -->
+       </div>
+   <div class="module_main_header">
+      <div class="module_header h_functions">
+         <div class="module_header__inner">
+            <div class="h_col">
+               	 <h2 class="module_title clearfix" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.upcomingTransfer">TBD Upcoming transactions</h2>
+              <div class="module_operation_title clearfix">
+      <p data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.delete">Delete</p>
+     </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+
+            <div class="details_inner">
+               <div class="list_details">
+                  <label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.iban">IBAN</label>
+                  <div class="listitem_details">
+                     <p>
+                     <span class="no_space" data-rv-text="transactions.ibanNumber | formatIBAN | substring 0 2">BE</span>
+					<span class="amount_highlight" data-rv-text="transactions.ibanNumber | formatIBAN | substring 2 13 ">16 0011 0303 </span>
+					<span> </span>
+					<span data-rv-text="transactions.ibanNumber | formatIBAN | substring 15 ">3274 </span>
+					</p>
+                  </div>
+               </div>
+               <div class="list_details">
+                  <label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.amount">Amount</label>
+                  <div class="listitem_details">
+                     <span data-rv-text="transactions.amountValue">67100</span>
+                     <span data-rv-text="transactions.currencyValue">EUR</span>
+                  </div>
+               </div>
+               <div class="show_collection collapse">
+               <div class="list_details" data-rv-showhide="transactions.exeDate">
+                  <label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.date">Date</label>
+                  <div class="listitem_details">
+                     <div class="confirmation_details__amount">
+                        <p data-rv-text="transactions.exeDate">15.10.2014</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="list_details" data-rv-showhide="transactions.beneficiaryName">
+                  <label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.name">Name</label>
+                  <div class="listitem_details">
+                     <div class="confirmation_details__amount">
+                        <p data-rv-text="transactions.beneficiaryName">Marie Elisa</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="list_details" data-rv-showhide="transactions.accountNumber">
+                  <label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.accountNumber">Account number</label>
+                  <div class="listitem_details">
+                     <div class="confirmation_details__amount">
+                        <p data-rv-text="transactions.accountNumber|formatIBAN">BE16 0011 0303 3274 </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="list_details border_list" data-rv-showhide="transactions.transferType">
+                  <label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.transferType">Transaction type</label>
+                  <div class="listitem_details">
+                     <div class="confirmation_details__amount">
+                        <p data-rv-text="transactions.transferType">SEPA Credit Transfer</p>
+                     </div>
+                  </div>
+               </div>
+               </div>
+               <div class="view_more accordion_header header_l4" data-rv-on-click="deleteView:toggleDetails|view">
+                  <span class="icon_arrow dropdown_arrow"></span>
+                  <p data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.showMoreDetails">View more details</p>
+               </div>
+            </div>
+            
+            <form class="signature_challenge">
+            <div class="ucr_comp">
+               <div class="form_inner" data-rv-class-hide="transactions.showUcr">
+                  <h4 class="ucr_title" data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.sign">Sign</h4>
+                  <div class="ucr_details">
+                     <span class="ucr_details__numbering">1.</span>
+                     <div class="ucr_details__content">
+                     <p class="ucr_action_content">
+                     	<span>
+                        <span class="ucr_action_content" data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.putBankcardInReader">Put your bank card in the cardreader and press</span>
+                        <span class="fontcon-m2 m2_icon"></span>
+                        </span></p>
+                     </div>
+                     <span class="ucr_img"></span>
+                  </div>
+                  <div class="ucr_details">
+                     <span class="ucr_details__numbering">2.</span>
+                     <div class="ucr_details__content">
+                        <p class="ucr_action_content ucr_contentone " data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.pinAppear">'PIN?' is displayed</p>
+						<p class="ucr_action_content">
+						<span>
+                        <span data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.enterPersonalPincode">Enter your personal PIN code and press</span>
+                        <span class="fontcon-ucr-ok ok_icon"></span>
+                        </span>
+						</p>
+                     </div>
+                  </div>
+                  <div class="ucr_details">
+                     <span class="ucr_details__numbering">3.</span>
+                     <div class="ucr_details__content">
+                        <p class="ucr_action_content" data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.challengeAppear">'CHALLENGE?' will appear</p>
+                        <div class="ucr_content__challenge">
+                           <span class="f_left challenge_part1" data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.enterCode">Enter the code</span>
+                           <div class="ucr_challenge__content">
+                              <div class="ucr_challenge__code challenge_part2">
+                                 <div class="ucr_code">
+                                    <p class="default_input_field ucr_code__input" data-rv-text="transactions.challengeVal">105</p>
+                                    <p data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.amount">Amount</p>
+                                 </div>
+                                 <span class="fontcon-ucr-ok ok_icon f_left"></span>
+                                
+                                 <div class="ucr_code ucr_code_align">
+                                    <p class="default_input_field ucr_code__input" data-rv-text="transactions.ibanMiddleValue | formatIBAN">1600 1103 03</p>
+                                    <p data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.ibanNumber">IBAN</p>
+                                 </div>
+                              </div>
+                              <div class="challenge_part3">
+                              <span data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.andPress">and press</span>
+                              <span class="fontcon-ucr-ok ok_icon"></span>
+                              <span class="fontcon-ucr-ok ok_icon"></span>
+                             </div> 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ucr_details last-child">
+                     <span class="ucr_details__numbering">4.</span>
+                     <div class="ucr_details__content">
+                        <p class="ucr_action_content" data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.elecSignAppear">The electronic signature will appear</p>
+                        <span class="f_left ucr_content ucr_contentone " data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.enterElecSign">Enter your electronic signature</span>
+                        <div class="ucr_signature" data-rv-class-field_error="violations.signatureError">
+                           <p class="field_error_message" data-rv-class-show_active="violations.signatureError">Please enter valid amount</p>
+                           <div class="default_input_field ucr_signature__input">
+                              <input type="text" maxlength="9" oncopy="return false;" onpaste="return false;" oncut="return false;" autocomplete="off">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+			<div class="action_btns">
+					<div class="navigation_btns">
+						<div class="right_navigation_btn f_right">
+							
+							<button class="btn_default btn_primary exp_btn">
+								<span class="beneficiary_confirm_btn" data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.sign">Sign</span>
+						
+							</button>
+						</div>
+								<div class="right_navigation_btn f_left"> 
+									<span class="lnk_primary exp_lnk" data-rv-on-click="deleteView:backToUpcomingView |view" data-rv-text="config.app.message.Label.accounttransactions.upcomingDelete.cancel">Cancel</span>
+					
+								</div>
+		</div>
+	</div>
+         </form>
+      
+</div></div>
+   <div class="accounts_transactions__inner hide" data-rv-class-hide="transactions.showtransactionsView">
+      <div class="module_content c_transactions">
+         <div class="module_tab_content">
+            <!--Error  message handling-->
+            <div class="ia_alert">
+               <!-- rivets: each-error -->
+            </div>
+              <div class="ia_alert upcoming" data-rv-class-show_active="transactions.showmessage">
+			  <div class="alert_messages alert_messages_information refund_info fade in" data-rv-class-show_active="transactions.showmessage">
+					<div class="alert_messages__inner clearfix">
+						<p>The upcoming transfer was successfully deleted</p>
+						<span class="fontcon-close icon_dismiss" data-rv-on-click="view:hideConfirmationMsg|view"></span>
+					</div>
+				</div>
+			</div>
+            <!--Error messages End-->
+            <div class="search_module" style="display: none; ">
+               <div class="search_block">
+                  <div class="search_field f_left">
+                     <div class="default_input_control">
+                        <p class="field_error_message" data-rv-showactive="view:searchLengthAgree" data-rv-text="config.app.message.Label.accounttransactions.account_transactions.searcherrormsg"></p>
+                        <div class="default_input_field" data-rv-on-keyup="view:showCrossImage">
+                           <input type="text" class="search_input" spellcheck="false">
+                           <span class="fontcon-close search_wipe"></span>
+                           <span class="search_icon">
+                           <span class="fontcon-search"></span>
+                           </span> 
+                        </div>
+                     </div>
+                  </div>
+                  <div class="search_filter f_right">
+                     <div class="show_filters dropdown_arrow">
+                        <p data-rv-text="config.app.message.Label.accounttransactions.account_transactions.showfilters">Show filters</p>
+                     </div>
+                  </div>
+                  <div class="search_counter">
+                     <span data-rv-text="config.app.message.Label.accounttransactions.account_transactions.morethan">More than</span>
+                     <span class="space_left"></span>
+                     <span data-rv-text="config.app.message.Label.accounttransactions.account_transactions.searchresults">search results.</span>
+                     <span data-rv-text="config.app.message.Label.accounttransactions.account_transactions.yoursearchdidnotmatchanytransactions">Your search does not match any transaction.</span>
+                  </div>
+               </div>
+               <div class="filter_block"><div class="scroll_menu">
+	<div class="scroll_btn left inactive">
+		<div class="outer_wrapper">
+			<div class="inner_wrapper">
+				<span class="fontcon-calendar-arrow-left scroll_menu_icon"></span>
+			</div>
+		</div>
+	</div>
+	<div class="scroll_container momentum">
+		<div class="filter_inner_block menu_links">
+			<div class="filter_values filter_period scroll_item">
+				<div class="filter_link filterDropdown dropdown_arrow">
+					<p data-rv-text="config.app.message.Label.accounttransactions.filters.last6months">Last 6 months</p>
+				</div>
+			</div>
+			<div class="filter_values filter_respond filter_amount scroll_item">
+				<div class="filter_link filterDropdown dropdown_arrow">
+					<p data-rv-text="config.app.message.Label.accounttransactions.filters.anyamount">Any amount</p>
+				</div>
+			</div>
+			<div class="filter_values filter_transaction scroll_item">
+				<div class="filter_link filterDropdown dropdown_arrow">
+					<p data-rv-text="config.app.message.Label.accounttransactions.filters.anytransaction">Any transaction</p>
+				</div>
+			</div>
+			<div class="filter_values filter_respond filter_account scroll_item">
+				<div class="filter_link filterDropdown dropdown_arrow">
+					<p data-rv-text="config.app.message.Label.accounttransactions.filters.anyaccount">Any account</p>
+				</div>
+			</div>
+			<div class="filter_values reset_filter scroll_item">
+				<div class="filter_link">
+					<p data-rv-text="config.app.message.Label.accounttransactions.filters.resetfilters">Reset filters</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="filter_optionvalue menu_options">
+		<div class="filter_option option_period">
+			<div class="filter_option_value">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.lastweek">Last week</p>
+			</div>
+			<div class="filter_option_value">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.last2weeks">Last 2 weeks</p>
+			</div>
+			<div class="filter_option_value">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.last3weeks">Last 3 weeks</p>
+			</div>
+			<div class="filter_option_value">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.lastmonth">Last month</p>
+			</div>
+			<div class="filter_option_value disabled">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.last6months">Last 6 months</p>
+			</div>
+			<div class="filter_option_value custom">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.customrangeperiod"></p>
+			</div>
+		</div>
+		<div class="filter_option option_amount">
+			<div class="filter_option_value disabled filter_anyamount">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.anyamount">Any amount</p>
+			</div>
+			<div class="filter_option_value custom">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.equalto">Equal to</p>
+			</div>
+			<div class="filter_option_value custom">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.customrangeamount"></p>
+			</div>
+		</div>
+		<div class="filter_option option_transaction">
+			<div class="filter_option_value disabled" data-transactiontype="ALL">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.anytransaction">Any transaction</p>
+			</div>
+			<div class="filter_option_value" data-transactiontype="CREDIT">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.incomingtransaction">Incoming transactions</p>
+			</div>
+			<div class="filter_option_value" data-transactiontype="DEBIT">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.outgoingtransaction">Outgoing transactions</p>
+			</div>
+		</div>
+		<div class="filter_option option_account">
+			<div class="filter_option_value disabled filter_anyaccount" data-accounttype="ALL">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.anyaccount">Any account</p>
+			</div>
+			<div class="filter_option_value custom">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.iban">IBAN</p>
+			</div>
+			<div class="filter_option_value custom">
+				<p data-rv-text="config.app.message.Label.accounttransactions.filters.bban">BBAN</p>
+			</div>
+		</div>
+	</div>
+	<div class="scroll_btn right inactive">
+		<div class="outer_wrapper">
+			<div class="inner_wrapper">
+				<span class="fontcon-calendar-arrow-right scroll_menu_icon"></span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="filter_btn">
+	<div class="navigation_btns">
+		<div class="right_navigation f_right">
+			<button class="btn_default btn_primary apply_filter" data-rv-text="config.app.message.Label.accounttransactions.filters.applyfilter">Apply filters</button>
+		</div>
+	</div>
+</div></div>
+            </div>
+            <div class="module_listitem">
+               <div class="accordion_main upcoming">
+                  <!-- Level1 Header Clickable with right arrow -->
+                  <div class="accordion_header header_l1 dropdown_arrow dropdown-active" data-rv-on-click="accordion:accToggle">
+                     <div class="accordion_l1__inner">
+                        <h4 data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.upcomingTransfer">TBD Upcoming transactions</h4>
+                        <span class="space_left">(</span><span class="upcomingcount">11</span><span>)</span>
+                     </div>
+                  </div>
+                  <div class="accordion_content content_l2 upcoming_transactions collapse in" style="height: auto; "><div class="accordion_list upcoming_detail">
+   <!-- rivets: each-upcomingmovements --><div class="list_group first_list_item" data-rv-showstatus="upcomingmovements.executionDate" data-rv-showoptions="upcomingmovements.transferType"><div class="list_header"><h2>26.08.2014</h2></div>
+      <!--  --div class="list_header">
+         <h2 data-rv-text="upcomingmovements.period"></h2>
+         </div--->
+      <!-- List item 1 -->
+      <div class="list_item accordion_main">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  <!--  span class="list_icon fontcon-transaction-in"></span>-->
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3><span></span></h3>
+                           <!--  --span class="hello_icon" ></span-->
+                        </div>
+                        <div class="upcoming_case listiban_detail">
+                           <span class="trans_text"></span> <span data-rv-text="upcomingmovements.beneficiary.name">Luppens Philose</span> 
+                           <span data-rv-text="upcomingmovements.beneficiary.accountNumber|formatIBAN">BE16 0011 0303 3274 </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span data-rv-text="upcomingmovements.amount.amount">1003.1</span><span data-rv-text="upcomingmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 collapse">
+                 <!--   <div class="extra_contentdetails upcoming_details upcoming_border">
+                     <ul>
+                        <li>
+                           <label data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message"></label>
+                           <p data-rv-text ="upcomingmovements.communication.message"></p>
+                        </li>
+                     </ul>
+                  </div>-->
+		          <div class="extra_contentdetails details border_none">
+					<div class="detail_group">
+					<div class="list_details">
+						<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message">Communication</label>
+					<div class="listitem_details">
+							<p data-rv-text="upcomingmovements.communication.message">transfer funds</p>
+						</div>
+						</div>
+					</div>	
+						
+					</div>
+                  <div class="right_navigation_btn upcoming_btn f_right">
+                     <button class="btn_default btn_primary delete_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.delete">Delete</button>
+                     <button class="btn_default btn_primary modify_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.modify">Modify</button>
+                     <button class="btn_default btn_primary detail_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.goToDetails">Details</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div><div class="list_group" data-rv-showstatus="upcomingmovements.executionDate" data-rv-showoptions="upcomingmovements.transferType">
+      <!--  --div class="list_header">
+         <h2 data-rv-text="upcomingmovements.period"></h2>
+         </div--->
+      <!-- List item 1 -->
+      <div class="list_item accordion_main">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  <!--  span class="list_icon fontcon-transaction-in"></span>-->
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3><span></span></h3>
+                           <!--  --span class="hello_icon" ></span-->
+                        </div>
+                        <div class="upcoming_case listiban_detail">
+                           <span class="trans_text"></span> <span data-rv-text="upcomingmovements.beneficiary.name">Wilkinson</span> 
+                           <span data-rv-text="upcomingmovements.beneficiary.accountNumber|formatIBAN">BE16 0011 0303 3274 </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span data-rv-text="upcomingmovements.amount.amount">4000</span><span data-rv-text="upcomingmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 collapse" style="height: 0px; ">
+                 <!--   <div class="extra_contentdetails upcoming_details upcoming_border">
+                     <ul>
+                        <li>
+                           <label data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message"></label>
+                           <p data-rv-text ="upcomingmovements.communication.message"></p>
+                        </li>
+                     </ul>
+                  </div>-->
+		          <div class="extra_contentdetails details border_none">
+					<div class="detail_group">
+					<div class="list_details">
+						<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message">Communication</label>
+					<div class="listitem_details">
+							<p data-rv-text="upcomingmovements.communication.message">transfer funds</p>
+						</div>
+						</div>
+					</div>	
+						
+					</div>
+                  <div class="right_navigation_btn upcoming_btn f_right">
+                     <button class="btn_default btn_primary delete_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.delete">Delete</button>
+                     <button class="btn_default btn_primary modify_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.modify">Modify</button>
+                     <button class="btn_default btn_primary detail_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.goToDetails">Details</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div><div class="list_group first_list_item" data-rv-showstatus="upcomingmovements.executionDate" data-rv-showoptions="upcomingmovements.transferType"><div class="list_header"><h2>20.08.2014</h2></div>
+      <!--  --div class="list_header">
+         <h2 data-rv-text="upcomingmovements.period"></h2>
+         </div--->
+      <!-- List item 1 -->
+      <div class="list_item accordion_main">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  <!--  span class="list_icon fontcon-transaction-in"></span>-->
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3><span>Standing order</span></h3>
+                           <!--  --span class="hello_icon" ></span-->
+                        </div>
+                        <div class="upcoming_case listiban_detail">
+                           <span class="trans_text">in favour of</span> <span data-rv-text="upcomingmovements.beneficiary.name">Fred</span> 
+                           <span data-rv-text="upcomingmovements.beneficiary.accountNumber|formatIBAN">BE16 0011 0303 3274 </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span data-rv-text="upcomingmovements.amount.amount">120000</span><span data-rv-text="upcomingmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 collapse in" style="height: auto; ">
+                 <!--   <div class="extra_contentdetails upcoming_details upcoming_border">
+                     <ul>
+                        <li>
+                           <label data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message"></label>
+                           <p data-rv-text ="upcomingmovements.communication.message"></p>
+                        </li>
+                     </ul>
+                  </div>-->
+		          <div class="extra_contentdetails details border_none">
+					<div class="detail_group">
+					<div class="list_details">
+						<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message">Communication</label>
+					<div class="listitem_details">
+							<p data-rv-text="upcomingmovements.communication.message">transfer funds</p>
+						</div>
+						</div>
+					</div>	
+						
+					</div>
+                  <div class="right_navigation_btn upcoming_btn f_right">
+                     <button class="btn_default btn_primary delete_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.delete">Delete</button>
+                     <button class="btn_default btn_primary modify_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.modify">Modify</button>
+                     <button class="btn_default btn_primary detail_btn" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.goToDetails">Details</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div><div class="list_group first_list_item" data-rv-showstatus="upcomingmovements.executionDate" data-rv-showoptions="upcomingmovements.transferType"><div class="list_header"><h2>22.09.2014</h2></div>
+      <!--  --div class="list_header">
+         <h2 data-rv-text="upcomingmovements.period"></h2>
+         </div--->
+      <!-- List item 1 -->
+      <div class="list_item accordion_main">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  <!--  span class="list_icon fontcon-transaction-in"></span>-->
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3><span>SEPA direct debit</span></h3>
+                           <!--  --span class="hello_icon" ></span-->
+                        </div>
+                        <div class="upcoming_case listiban_detail">
+                           <span class="trans_text">of</span> <span data-rv-text="upcomingmovements.beneficiary.name">Fred</span> 
+                           <span data-rv-text="upcomingmovements.beneficiary.accountNumber|formatIBAN">BE16 0011 0303 3274 </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span data-rv-text="upcomingmovements.amount.amount">50990</span><span data-rv-text="upcomingmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 collapse">
+                 <!--   <div class="extra_contentdetails upcoming_details upcoming_border">
+                     <ul>
+                        <li>
+                           <label data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message"></label>
+                           <p data-rv-text ="upcomingmovements.communication.message"></p>
+                        </li>
+                     </ul>
+                  </div>-->
+		          <div class="extra_contentdetails details border_none">
+					<div class="detail_group">
+					<div class="list_details">
+						<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message">Communication</label>
+					<div class="listitem_details">
+							<p data-rv-text="upcomingmovements.communication.message">transfer funds</p>
+						</div>
+						</div>
+					</div>	
+						
+					</div>
+                  <div class="right_navigation_btn upcoming_btn f_right">
+                     <button class="btn_default btn_primary delete_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.delete">Delete</button>
+                     <button class="btn_default btn_primary modify_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.modify">Modify</button>
+                     <button class="btn_default btn_primary detail_btn" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.goToDetails">Details</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div><div class="list_group" data-rv-showstatus="upcomingmovements.executionDate" data-rv-showoptions="upcomingmovements.transferType">
+      <!--  --div class="list_header">
+         <h2 data-rv-text="upcomingmovements.period"></h2>
+         </div--->
+      <!-- List item 1 -->
+      <div class="list_item accordion_main">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  <!--  span class="list_icon fontcon-transaction-in"></span>-->
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3><span></span></h3>
+                           <!--  --span class="hello_icon" ></span-->
+                        </div>
+                        <div class="upcoming_case listiban_detail">
+                           <span class="trans_text"></span> <span data-rv-text="upcomingmovements.beneficiary.name">Marie Elisa</span> 
+                           <span data-rv-text="upcomingmovements.beneficiary.accountNumber|formatIBAN">BE16 0011 0303 3274 </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span data-rv-text="upcomingmovements.amount.amount">67100</span><span data-rv-text="upcomingmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 collapse">
+                 <!--   <div class="extra_contentdetails upcoming_details upcoming_border">
+                     <ul>
+                        <li>
+                           <label data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message"></label>
+                           <p data-rv-text ="upcomingmovements.communication.message"></p>
+                        </li>
+                     </ul>
+                  </div>-->
+		          <div class="extra_contentdetails details border_none">
+					<div class="detail_group">
+					<div class="list_details">
+						<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message">Communication</label>
+					<div class="listitem_details">
+							<p data-rv-text="upcomingmovements.communication.message">transfer funds</p>
+						</div>
+						</div>
+					</div>	
+						
+					</div>
+                  <div class="right_navigation_btn upcoming_btn f_right">
+                     <button class="btn_default btn_primary delete_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.delete">Delete</button>
+                     <button class="btn_default btn_primary modify_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.modify">Modify</button>
+                     <button class="btn_default btn_primary detail_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.goToDetails">Details</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div><div class="list_group first_list_item" data-rv-showstatus="upcomingmovements.executionDate" data-rv-showoptions="upcomingmovements.transferType"><div class="list_header"><h2>15.10.2014</h2></div>
+      <!--  --div class="list_header">
+         <h2 data-rv-text="upcomingmovements.period"></h2>
+         </div--->
+      <!-- List item 1 -->
+      <div class="list_item accordion_main">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  <!--  span class="list_icon fontcon-transaction-in"></span>-->
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3><span>SEPA transfer</span></h3>
+                           <!--  --span class="hello_icon" ></span-->
+                        </div>
+                        <div class="upcoming_case listiban_detail">
+                           <span class="trans_text">in favour of</span> <span data-rv-text="upcomingmovements.beneficiary.name">Marie Elisa</span> 
+                           <span data-rv-text="upcomingmovements.beneficiary.accountNumber|formatIBAN">BE16 0011 0303 3274 </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span data-rv-text="upcomingmovements.amount.amount">67100</span><span data-rv-text="upcomingmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 collapse in" style="height: auto; ">
+                 <!--   <div class="extra_contentdetails upcoming_details upcoming_border">
+                     <ul>
+                        <li>
+                           <label data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message"></label>
+                           <p data-rv-text ="upcomingmovements.communication.message"></p>
+                        </li>
+                     </ul>
+                  </div>-->
+		          <div class="extra_contentdetails details border_none">
+					<div class="detail_group">
+					<div class="list_details">
+						<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message">Communication</label>
+					<div class="listitem_details">
+							<p data-rv-text="upcomingmovements.communication.message">transfer funds</p>
+						</div>
+						</div>
+					</div>	
+						
+					</div>
+                  <div class="right_navigation_btn upcoming_btn f_right">
+                     <button class="btn_default btn_primary delete_btn" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.delete">Delete</button>
+                     <button class="btn_default btn_primary modify_btn" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.modify">Modify</button>
+                     <button class="btn_default btn_primary detail_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.goToDetails">Details</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div><div class="list_group" data-rv-showstatus="upcomingmovements.executionDate" data-rv-showoptions="upcomingmovements.transferType">
+      <!--  --div class="list_header">
+         <h2 data-rv-text="upcomingmovements.period"></h2>
+         </div--->
+      <!-- List item 1 -->
+      <div class="list_item accordion_main">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  <!--  span class="list_icon fontcon-transaction-in"></span>-->
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3><span></span></h3>
+                           <!--  --span class="hello_icon" ></span-->
+                        </div>
+                        <div class="upcoming_case listiban_detail">
+                           <span class="trans_text"></span> <span data-rv-text="upcomingmovements.beneficiary.name">Augustin Ruben</span> 
+                           <span data-rv-text="upcomingmovements.beneficiary.accountNumber|formatIBAN">BE16 0011 0303 3274 </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span data-rv-text="upcomingmovements.amount.amount">5768100</span><span data-rv-text="upcomingmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 collapse">
+                 <!--   <div class="extra_contentdetails upcoming_details upcoming_border">
+                     <ul>
+                        <li>
+                           <label data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message"></label>
+                           <p data-rv-text ="upcomingmovements.communication.message"></p>
+                        </li>
+                     </ul>
+                  </div>-->
+		          <div class="extra_contentdetails details border_none">
+					<div class="detail_group">
+					<div class="list_details">
+						<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message">Communication</label>
+					<div class="listitem_details">
+							<p data-rv-text="upcomingmovements.communication.message">transfer fundes</p>
+						</div>
+						</div>
+					</div>	
+						
+					</div>
+                  <div class="right_navigation_btn upcoming_btn f_right">
+                     <button class="btn_default btn_primary delete_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.delete">Delete</button>
+                     <button class="btn_default btn_primary modify_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.modify">Modify</button>
+                     <button class="btn_default btn_primary detail_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.goToDetails">Details</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div><div class="list_group first_list_item" data-rv-showstatus="upcomingmovements.executionDate" data-rv-showoptions="upcomingmovements.transferType"><div class="list_header"><h2>24.11.2014</h2></div>
+      <!--  --div class="list_header">
+         <h2 data-rv-text="upcomingmovements.period"></h2>
+         </div--->
+      <!-- List item 1 -->
+      <div class="list_item accordion_main">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  <!--  span class="list_icon fontcon-transaction-in"></span>-->
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3><span>SEPA transfer</span></h3>
+                           <!--  --span class="hello_icon" ></span-->
+                        </div>
+                        <div class="upcoming_case listiban_detail">
+                           <span class="trans_text">in favour of</span> <span data-rv-text="upcomingmovements.beneficiary.name">Augustin Ruben</span> 
+                           <span data-rv-text="upcomingmovements.beneficiary.accountNumber|formatIBAN">BE16 0011 0303 3274 </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span data-rv-text="upcomingmovements.amount.amount">678100</span><span data-rv-text="upcomingmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 collapse">
+                 <!--   <div class="extra_contentdetails upcoming_details upcoming_border">
+                     <ul>
+                        <li>
+                           <label data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message"></label>
+                           <p data-rv-text ="upcomingmovements.communication.message"></p>
+                        </li>
+                     </ul>
+                  </div>-->
+		          <div class="extra_contentdetails details border_none">
+					<div class="detail_group">
+					<div class="list_details">
+						<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message">Communication</label>
+					<div class="listitem_details">
+							<p data-rv-text="upcomingmovements.communication.message">transfer fundes</p>
+						</div>
+						</div>
+					</div>	
+						
+					</div>
+                  <div class="right_navigation_btn upcoming_btn f_right">
+                     <button class="btn_default btn_primary delete_btn" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.delete">Delete</button>
+                     <button class="btn_default btn_primary modify_btn" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.modify">Modify</button>
+                     <button class="btn_default btn_primary detail_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.goToDetails">Details</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div><div class="list_group" data-rv-showstatus="upcomingmovements.executionDate" data-rv-showoptions="upcomingmovements.transferType">
+      <!--  --div class="list_header">
+         <h2 data-rv-text="upcomingmovements.period"></h2>
+         </div--->
+      <!-- List item 1 -->
+      <div class="list_item accordion_main">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  <!--  span class="list_icon fontcon-transaction-in"></span>-->
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3><span>Standing order</span></h3>
+                           <!--  --span class="hello_icon" ></span-->
+                        </div>
+                        <div class="upcoming_case listiban_detail">
+                           <span class="trans_text">in favour of</span> <span data-rv-text="upcomingmovements.beneficiary.name">Matthieu Julian</span> 
+                           <span data-rv-text="upcomingmovements.beneficiary.accountNumber|formatIBAN">BE16 0011 0303 3274 </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span data-rv-text="upcomingmovements.amount.amount">678100</span><span data-rv-text="upcomingmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 collapse">
+                 <!--   <div class="extra_contentdetails upcoming_details upcoming_border">
+                     <ul>
+                        <li>
+                           <label data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message"></label>
+                           <p data-rv-text ="upcomingmovements.communication.message"></p>
+                        </li>
+                     </ul>
+                  </div>-->
+		          <div class="extra_contentdetails details border_none">
+					<div class="detail_group">
+					<div class="list_details">
+						<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message">Communication</label>
+					<div class="listitem_details">
+							<p data-rv-text="upcomingmovements.communication.message">transfer funds</p>
+						</div>
+						</div>
+					</div>	
+						
+					</div>
+                  <div class="right_navigation_btn upcoming_btn f_right">
+                     <button class="btn_default btn_primary delete_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.delete">Delete</button>
+                     <button class="btn_default btn_primary modify_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.modify">Modify</button>
+                     <button class="btn_default btn_primary detail_btn" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.goToDetails">Details</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div><div class="list_group" data-rv-showstatus="upcomingmovements.executionDate" data-rv-showoptions="upcomingmovements.transferType">
+      <!--  --div class="list_header">
+         <h2 data-rv-text="upcomingmovements.period"></h2>
+         </div--->
+      <!-- List item 1 -->
+      <div class="list_item accordion_main">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  <!--  span class="list_icon fontcon-transaction-in"></span>-->
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3><span>SEPA direct debit</span></h3>
+                           <!--  --span class="hello_icon" ></span-->
+                        </div>
+                        <div class="upcoming_case listiban_detail">
+                           <span class="trans_text">of</span> <span data-rv-text="upcomingmovements.beneficiary.name">Matthieu Julian</span> 
+                           <span data-rv-text="upcomingmovements.beneficiary.accountNumber|formatIBAN">BE16 0011 0303 3274 </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span data-rv-text="upcomingmovements.amount.amount">676100</span><span data-rv-text="upcomingmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 collapse">
+                 <!--   <div class="extra_contentdetails upcoming_details upcoming_border">
+                     <ul>
+                        <li>
+                           <label data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message"></label>
+                           <p data-rv-text ="upcomingmovements.communication.message"></p>
+                        </li>
+                     </ul>
+                  </div>-->
+		          <div class="extra_contentdetails details border_none">
+					<div class="detail_group">
+					<div class="list_details">
+						<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message">Communication</label>
+					<div class="listitem_details">
+							<p data-rv-text="upcomingmovements.communication.message">transfer funds</p>
+						</div>
+						</div>
+					</div>	
+						
+					</div>
+                  <div class="right_navigation_btn upcoming_btn f_right">
+                     <button class="btn_default btn_primary delete_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.delete">Delete</button>
+                     <button class="btn_default btn_primary modify_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.modify">Modify</button>
+                     <button class="btn_default btn_primary detail_btn" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.goToDetails">Details</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div><div class="list_group first_list_item" data-rv-showstatus="upcomingmovements.executionDate" data-rv-showoptions="upcomingmovements.transferType"><div class="list_header"><h2>12.12.2014</h2></div>
+      <!--  --div class="list_header">
+         <h2 data-rv-text="upcomingmovements.period"></h2>
+         </div--->
+      <!-- List item 1 -->
+      <div class="list_item accordion_main">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  <!--  span class="list_icon fontcon-transaction-in"></span>-->
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3><span>SEPA direct debit</span></h3>
+                           <!--  --span class="hello_icon" ></span-->
+                        </div>
+                        <div class="upcoming_case listiban_detail">
+                           <span class="trans_text">of</span> <span data-rv-text="upcomingmovements.beneficiary.name">Matthieu Julian</span> 
+                           <span data-rv-text="upcomingmovements.beneficiary.accountNumber|formatIBAN">BE16 0011 0303 3274 </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span data-rv-text="upcomingmovements.amount.amount">678100</span><span data-rv-text="upcomingmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 collapse">
+                 <!--   <div class="extra_contentdetails upcoming_details upcoming_border">
+                     <ul>
+                        <li>
+                           <label data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message"></label>
+                           <p data-rv-text ="upcomingmovements.communication.message"></p>
+                        </li>
+                     </ul>
+                  </div>-->
+		          <div class="extra_contentdetails details border_none">
+					<div class="detail_group">
+					<div class="list_details">
+						<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.message">Communication</label>
+					<div class="listitem_details">
+							<p data-rv-text="upcomingmovements.communication.message">transfer funds</p>
+						</div>
+						</div>
+					</div>	
+						
+					</div>
+                  <div class="right_navigation_btn upcoming_btn f_right">
+                     <button class="btn_default btn_primary delete_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.delete">Delete</button>
+                     <button class="btn_default btn_primary modify_btn hide" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.modify">Modify</button>
+                     <button class="btn_default btn_primary detail_btn" data-rv-on-click="upcomingView:getUpcomingData|view" data-rv-text="config.app.message.Label.accounttransactions.upcomingMovements.goToDetails">Details</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Load more-->
+   <div class="upcoming_btn load_more">
+      <div class="load_btn">
+         <button class="btn_default btn_primary" data-rv-text="config.app.message.Label.accounttransactions.account_transactions.loadmore">More results</button>
+      </div>
+   </div>
+    <div class="upcoming_complete_transaction nomore_transactions hide">
+       <p data-rv-text="config.app.message.Label.accounttransactions.account_transactions.nomoretransactionhistoryavailable">All available results are displayed.</p>
+    </div>
+</div></div>
+               </div>
+               <div class="accordion_main invoices">
+                  <!-- Level1 Header Clickable with right arrow -->
+                  <div class="accordion_header header_l1 dropdown_arrow" data-rv-on-click="accordion:accToggle">
+                     <div class="accordion_l1__inner">
+                        <h4 data-rv-text="config.app.message.Label.accounttransactions.account_transactions.pendingtransactions">In execution</h4>
+                        <span class="space_left">(</span><span data-rv-text="transactions.numberPending">6</span><span>)</span>
+                     </div>
+                  </div>
+                  <div class="accordion_content content_l2 pending_transactions collapse">
+                     <div class="accordion_list"></div>
+                  </div>
+               </div>
+               <div class="accordion_main rejected">
+                  <!-- Level1 Header Clickable with right arrow -->
+                  <div class="accordion_header header_l1 dropdown_arrow" data-rv-on-click="accordion:accToggle">
+                     <div class="accordion_l1__inner">
+                        <h4 data-rv-text="config.app.message.Label.accounttransactions.rejectedMovements.rejectedTransactions">Rejected transactions</h4>
+                        <span class="space_left">(</span><span class="rejectedcount">3</span><span>)</span>
+                        <span class="number_rejected fontcon-expire escalmation_icon hide" data-rv-class-show_active="transactions.showexclamation"></span>
+                     </div>
+                  </div>
+                  <div class="accordion_content content_l2 rejected_transactions collapse" style="height: 0px; "><div class="accordion_list rejected_detail">
+   <!-- rivets: each-rejectedmovements --><div class="list_group first_list_item" data-rv-showstatus="rejectedmovements.rejectionDate"><div class="list_header"><h2>28.02.2014</h2></div>
+      <!-- List item 1 -->
+      <div class="list_item ">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  	<span class="list_icon fontcon-transaction-in fontcon-transaction-out" data-rv-arrowdirection="rejectedmovements.amount.amount"></span>
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3 class="service_highlight" data-rv-text="rejectedmovements.rejectedText">Insufficient balance</h3>
+                           <span class="list_icon escalmation_icon" data-rv-displayexclamation="rejectedmovements.rejectionDate" displayexclamation="28.02.2014"></span>
+                        </div>
+                        <div class="listiban_detail">
+                           <span data-rv-text="rejectedmovements.rejectedDescription|replaceValue">VAN ANEJAXYZ CHRISINA\r\nVIA PC BANKING\r\nBE14 2100 7659 4383\r\nMEDEDELING :\r\n</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span class="service_highlight" data-rv-text="rejectedmovements.amount.amount">-9.89</span><span class="service_highlight" data-rv-text="rejectedmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 upcoming_col1 collapse" style="height: 0px; ">
+			   <div class="list_item__details">
+
+                  <div class=" list_content_details">
+                     <div class="listiban_detail upcoming_reject">
+                        <p data-rv-text="rejectedmovements.rejectedDescription|replaceCharacter">VAN ANEJAXYZ CHRISINA\r\nVIA PC BANKING\r\nBE14 2100 7659 4383\r\nMEDEDELING :\r\n</p>
+                     </div>
+                  </div>
+                 
+					<div class="extra_contentdetails border_none">
+               <ul>
+                <li>
+                 <label data-rv-text="config.app.message.Label.accounttransactions.rejectedMovements.refusalDate">Rejection date</label>
+                 <p data-rv-text="rejectedmovements.rejectionDate">28.02.2014</p>
+                </li>
+                <li>
+                 <label data-rv-text="config.app.message.Label.accounttransactions.rejectedMovements.refusalMotive">Reason for rejection</label>
+                 <p data-rv-text="rejectedmovements.refusalMotive">Insufficient balance</p>
+                </li>
+               
+               </ul>
+              </div>
+				</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div><div class="list_group" data-rv-showstatus="rejectedmovements.rejectionDate">
+      <!-- List item 1 -->
+      <div class="list_item ">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  	<span class="list_icon fontcon-transaction-in" data-rv-arrowdirection="rejectedmovements.amount.amount"></span>
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3 class="service_highlight" data-rv-text="rejectedmovements.rejectedText">Insufficient balance</h3>
+                           <span class="list_icon escalmation_icon" data-rv-displayexclamation="rejectedmovements.rejectionDate" displayexclamation="28.02.2014"></span>
+                        </div>
+                        <div class="listiban_detail">
+                           <span data-rv-text="rejectedmovements.rejectedDescription|replaceValue">VAN ANEJAXYZ CHRISINA\r\nVIA PC BANKING\r\nBE14 2100 7659 4383\r\nMEDEDELING :\r\n</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span class="service_highlight" data-rv-text="rejectedmovements.amount.amount">990</span><span class="service_highlight" data-rv-text="rejectedmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 upcoming_col1 collapse">
+			   <div class="list_item__details">
+
+                  <div class=" list_content_details">
+                     <div class="listiban_detail upcoming_reject">
+                        <p data-rv-text="rejectedmovements.rejectedDescription|replaceCharacter">VAN ANEJAXYZ CHRISINA\r\nVIA PC BANKING\r\nBE14 2100 7659 4383\r\nMEDEDELING :\r\n</p>
+                     </div>
+                  </div>
+                 
+					<div class="extra_contentdetails border_none">
+               <ul>
+                <li>
+                 <label data-rv-text="config.app.message.Label.accounttransactions.rejectedMovements.refusalDate">Rejection date</label>
+                 <p data-rv-text="rejectedmovements.rejectionDate">28.02.2014</p>
+                </li>
+                <li>
+                 <label data-rv-text="config.app.message.Label.accounttransactions.rejectedMovements.refusalMotive">Reason for rejection</label>
+                 <p data-rv-text="rejectedmovements.refusalMotive">Insufficient balance</p>
+                </li>
+               
+               </ul>
+              </div>
+				</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div><div class="list_group first_list_item" data-rv-showstatus="rejectedmovements.rejectionDate"><div class="list_header"><h2>29.02.2014</h2></div>
+      <!-- List item 1 -->
+      <div class="list_item ">
+         <div class="list_wrapper">
+            <div class="list_wrapper_inner">
+               <!-- Level3 Header Clickable -->
+               <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                  <div class="list_content_col1">
+                  	<span class="list_icon fontcon-transaction-in" data-rv-arrowdirection="rejectedmovements.amount.amount"></span>
+                     <div class=" list_content_details">
+                        <div class="listiban_group">
+                           <h3 class="service_highlight" data-rv-text="rejectedmovements.rejectedText">Insufficient balance</h3>
+                           <span class="list_icon escalmation_icon" data-rv-displayexclamation="rejectedmovements.rejectionDate" displayexclamation="29.02.2014"></span>
+                        </div>
+                        <div class="listiban_detail">
+                           <span data-rv-text="rejectedmovements.rejectedDescription|replaceValue">VAN ANEJAXYZ CHRISINA\r\nVIA PC BANKING\r\nBE14 2100 7659 4383\r\nMEDEDELING :\r\n</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list_content_col2">
+                     <h3><span class="service_highlight" data-rv-text="rejectedmovements.amount.amount">990</span><span class="service_highlight" data-rv-text="rejectedmovements.amount.currency">EUR</span></h3>
+                  </div>
+               </div>
+               <div class="list_item__content accordion_content content_l3 upcoming_col1 collapse">
+			   <div class="list_item__details">
+
+                  <div class=" list_content_details">
+                     <div class="listiban_detail upcoming_reject">
+                        <p data-rv-text="rejectedmovements.rejectedDescription|replaceCharacter">VAN ANEJAXYZ CHRISINA\r\nVIA PC BANKING\r\nBE14 2100 7659 4383\r\nMEDEDELING :\r\n</p>
+                     </div>
+                  </div>
+                 
+					<div class="extra_contentdetails border_none">
+               <ul>
+                <li>
+                 <label data-rv-text="config.app.message.Label.accounttransactions.rejectedMovements.refusalDate">Rejection date</label>
+                 <p data-rv-text="rejectedmovements.rejectionDate">29.02.2014</p>
+                </li>
+                <li>
+                 <label data-rv-text="config.app.message.Label.accounttransactions.rejectedMovements.refusalMotive">Reason for rejection</label>
+                 <p data-rv-text="rejectedmovements.refusalMotive">Insufficient balance</p>
+                </li>
+               
+               </ul>
+              </div>
+				</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div></div>
+               </div>
+               <div class="accordion_main direct_debit">
+                  <!-- Level1 Header Clickable with right arrow -->
+                  <div class="accordion_header header_l1 dropdown_arrow" data-rv-on-click="accordion:accToggle">
+                     <div class="accordion_l1__inner">
+                        <h4 data-rv-text="config.app.message.Label.accounttransactions.account_transactions.bookedtransactions">Executed</h4>
+                        <span></span>
+                     </div>
+                  </div>
+                  <div class="accordion_content content_l1 booked_transaction collapse" style="height: 1px; ">
+                     <div class="list_wrapper">
+                        <!-- Action icons groups -->
+                        <div class="action_group">
+                           <div class="action_icons" data-rv-checkprint="config.app.message.Label.accounttransactions.account_transactions.bookedtransactions">
+                              <!--<span class="action_icons__global fontcon-print"></span>
+                                 <span class="action_icons__global fontcon-pdf"></span>-->
+                              <span class="action_icons__global fontcon-print global_print"></span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion_list">
+                        <!-- rivets: each-movements --><div class="list_group first_list_item" data-rv-period="movements.period" data-rv-showstatus="movements.executionDate" period="TODAY"><div class="list_header"><h2>Today</h2></div>
+                           <!-- List item 1 -->
+                           <div class="list_item" data-location="movements.period">
+                              <div class="list_wrapper">
+                                 <div class="list_wrapper_inner">
+                                    <!-- Level3 Header Clickable -->
+                                    <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                                       <div class="list_content_col1">
+                                          <span class="list_icon fontcon-transaction-in" data-rv-arrowdirection="movements.amount"></span>
+                                          <div class=" list_content_details">
+                                             <div class="listiban_group">
+                                                <h3 data-rv-text="movements.movementText">Transfer from Lecoq</h3>
+                                             </div>
+                                             <div class="listiban_detail">
+                                                <span data-rv-addnewline="movements.description1"></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="list_content_col2">
+                                          <h3><span data-rv-text="movements.amount">100.24</span><span data-rv-text="movements.currency">EUR</span></h3>
+                                          <!-- <p data-rv-showconverted="movements:amount"> <span>85</span><span>EUR</span></p> -->
+                                       </div>
+                                    </div>
+                                    <div class="list_item__content accordion_content content_l3 collapse">
+                                       <div class="list_item__details">
+                                          <div class="content_details">
+                                             <p data-rv-addnewline="movements.description2"></p>
+                                          </div>
+                                          <div class="extra_contentdetails">
+                                             <ul>
+                                                <li data-rv-checkobject="movements.executionDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.executiondate">Execution date</label>
+                                                   <p data-rv-text="movements.executionDate|date">30.12.2013</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.valueDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.valuedate">Value date</label>
+                                                   <p data-rv-text="movements.valueDate|date">27.01.2014</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.sequenceNb">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.sequencenumber">Sequence number</label>
+                                                   <p data-rv-text="movements.sequenceNb">001</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <!-- rivets: if movements.detailPresent --><div class="accordion_main">
+                                          <div class="view_more view_det accordion_header header_l4 collapsed" data-rv-on-click="accordion:toggleMore" data-rv-data-location="movements.operationId" data-location="45">
+                                             <span class="icon_arrow dropdown_arrow"></span>
+                                             <p data-rv-text="config.app.message.Label.accounttransactions.account_transactions.viewmoredetails">View more details</p>
+                                          </div>
+                                          <div class="view_more__content accordion_content content_l4 collapse">
+                                          </div>
+                                       </div>
+                                       <div class="action_group" data-rv-checkprint="config.app.message.Label.accounttransactions.account_transactions.bookedtransactions">
+                                          <div class="action_icons">
+                                             <!--<span class="action_icons__global fontcon-print"></span>
+                                                <span class="action_icons__global fontcon-pdf"></span>-->
+                                             <span class="action_icons__global fontcon-print innerPrint"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div><div class="list_group first_list_item" data-rv-period="movements.period" data-rv-showstatus="movements.executionDate" period="YESTERDAY"><div class="list_header"><h2>Yesterday</h2></div>
+                           <!-- List item 1 -->
+                           <div class="list_item" data-location="movements.period">
+                              <div class="list_wrapper">
+                                 <div class="list_wrapper_inner">
+                                    <!-- Level3 Header Clickable -->
+                                    <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                                       <div class="list_content_col1">
+                                          <span class="list_icon fontcon-transaction-in" data-rv-arrowdirection="movements.amount"></span>
+                                          <div class=" list_content_details">
+                                             <div class="listiban_group">
+                                                <h3 data-rv-text="movements.movementText">Transfer from Lecoq</h3>
+                                             </div>
+                                             <div class="listiban_detail">
+                                                <span data-rv-addnewline="movements.description1"></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="list_content_col2">
+                                          <h3><span data-rv-text="movements.amount">106.24</span><span data-rv-text="movements.currency">EUR</span></h3>
+                                          <!-- <p data-rv-showconverted="movements:amount"> <span>85</span><span>EUR</span></p> -->
+                                       </div>
+                                    </div>
+                                    <div class="list_item__content accordion_content content_l3 collapse">
+                                       <div class="list_item__details">
+                                          <div class="content_details">
+                                             <p data-rv-addnewline="movements.description2"></p>
+                                          </div>
+                                          <div class="extra_contentdetails">
+                                             <ul>
+                                                <li data-rv-checkobject="movements.executionDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.executiondate">Execution date</label>
+                                                   <p data-rv-text="movements.executionDate|date">26.01.2014</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.valueDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.valuedate">Value date</label>
+                                                   <p data-rv-text="movements.valueDate|date">15.02.2011</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.sequenceNb">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.sequencenumber">Sequence number</label>
+                                                   <p data-rv-text="movements.sequenceNb">001</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <!-- rivets: if movements.detailPresent --><div class="accordion_main">
+                                          <div class="view_more view_det accordion_header header_l4 collapsed" data-rv-on-click="accordion:toggleMore" data-rv-data-location="movements.operationId" data-location="45">
+                                             <span class="icon_arrow dropdown_arrow"></span>
+                                             <p data-rv-text="config.app.message.Label.accounttransactions.account_transactions.viewmoredetails">View more details</p>
+                                          </div>
+                                          <div class="view_more__content accordion_content content_l4 collapse">
+                                          </div>
+                                       </div>
+                                       <div class="action_group" data-rv-checkprint="config.app.message.Label.accounttransactions.account_transactions.bookedtransactions">
+                                          <div class="action_icons">
+                                             <!--<span class="action_icons__global fontcon-print"></span>
+                                                <span class="action_icons__global fontcon-pdf"></span>-->
+                                             <span class="action_icons__global fontcon-print innerPrint"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div><div class="list_group first_list_item" data-rv-period="movements.period" data-rv-showstatus="movements.executionDate" period="PREVIOUS"><div class="list_header"><h2>1-.-0.2014</h2></div>
+                           <!-- List item 1 -->
+                           <div class="list_item" data-location="movements.period">
+                              <div class="list_wrapper">
+                                 <div class="list_wrapper_inner">
+                                    <!-- Level3 Header Clickable -->
+                                    <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                                       <div class="list_content_col1">
+                                          <span class="list_icon fontcon-transaction-out" data-rv-arrowdirection="movements.amount"></span>
+                                          <div class=" list_content_details">
+                                             <div class="listiban_group">
+                                                <h3 data-rv-text="movements.movementText">Transfer from Lecoq</h3>
+                                             </div>
+                                             <div class="listiban_detail">
+                                                <span data-rv-addnewline="movements.description1"></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="list_content_col2">
+                                          <h3><span data-rv-text="movements.amount">-78.24</span><span data-rv-text="movements.currency">EUR</span></h3>
+                                          <!-- <p data-rv-showconverted="movements:amount"> <span>85</span><span>EUR</span></p> -->
+                                       </div>
+                                    </div>
+                                    <div class="list_item__content accordion_content content_l3 collapse">
+                                       <div class="list_item__details">
+                                          <div class="content_details">
+                                             <p data-rv-addnewline="movements.description2"></p>
+                                          </div>
+                                          <div class="extra_contentdetails">
+                                             <ul>
+                                                <li data-rv-checkobject="movements.executionDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.executiondate">Execution date</label>
+                                                   <p data-rv-text="movements.executionDate|date">25.01.2014</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.valueDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.valuedate">Value date</label>
+                                                   <p data-rv-text="movements.valueDate|date">15.02.2011</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.sequenceNb">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.sequencenumber">Sequence number</label>
+                                                   <p data-rv-text="movements.sequenceNb">001</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <!-- rivets: if movements.detailPresent --><div class="accordion_main">
+                                          <div class="view_more view_det accordion_header header_l4 collapsed" data-rv-on-click="accordion:toggleMore" data-rv-data-location="movements.operationId" data-location="45">
+                                             <span class="icon_arrow dropdown_arrow"></span>
+                                             <p data-rv-text="config.app.message.Label.accounttransactions.account_transactions.viewmoredetails">View more details</p>
+                                          </div>
+                                          <div class="view_more__content accordion_content content_l4 collapse">
+                                          </div>
+                                       </div>
+                                       <div class="action_group" data-rv-checkprint="config.app.message.Label.accounttransactions.account_transactions.bookedtransactions">
+                                          <div class="action_icons">
+                                             <!--<span class="action_icons__global fontcon-print"></span>
+                                                <span class="action_icons__global fontcon-pdf"></span>-->
+                                             <span class="action_icons__global fontcon-print innerPrint"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div><div class="list_group first_list_item" data-rv-period="movements.period" data-rv-showstatus="movements.executionDate" period="LAST WEEK"><div class="list_header"><h2>1-.-0.2014</h2></div>
+                           <!-- List item 1 -->
+                           <div class="list_item" data-location="movements.period">
+                              <div class="list_wrapper">
+                                 <div class="list_wrapper_inner">
+                                    <!-- Level3 Header Clickable -->
+                                    <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                                       <div class="list_content_col1">
+                                          <span class="list_icon fontcon-transaction-out" data-rv-arrowdirection="movements.amount"></span>
+                                          <div class=" list_content_details">
+                                             <div class="listiban_group">
+                                                <h3 data-rv-text="movements.movementText">Transfer from Lecoq</h3>
+                                             </div>
+                                             <div class="listiban_detail">
+                                                <span data-rv-addnewline="movements.description1"></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="list_content_col2">
+                                          <h3><span data-rv-text="movements.amount">-98.00</span><span data-rv-text="movements.currency">EUR</span></h3>
+                                          <!-- <p data-rv-showconverted="movements:amount"> <span>85</span><span>EUR</span></p> -->
+                                       </div>
+                                    </div>
+                                    <div class="list_item__content accordion_content content_l3 collapse">
+                                       <div class="list_item__details">
+                                          <div class="content_details">
+                                             <p data-rv-addnewline="movements.description2"></p>
+                                          </div>
+                                          <div class="extra_contentdetails">
+                                             <ul>
+                                                <li data-rv-checkobject="movements.executionDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.executiondate">Execution date</label>
+                                                   <p data-rv-text="movements.executionDate|date">20.01.2014</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.valueDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.valuedate">Value date</label>
+                                                   <p data-rv-text="movements.valueDate|date">15.02.2011</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.sequenceNb">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.sequencenumber">Sequence number</label>
+                                                   <p data-rv-text="movements.sequenceNb">001</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <!-- rivets: if movements.detailPresent --><div class="accordion_main">
+                                          <div class="view_more view_det accordion_header header_l4 collapsed" data-rv-on-click="accordion:toggleMore" data-rv-data-location="movements.operationId" data-location="45">
+                                             <span class="icon_arrow dropdown_arrow"></span>
+                                             <p data-rv-text="config.app.message.Label.accounttransactions.account_transactions.viewmoredetails">View more details</p>
+                                          </div>
+                                          <div class="view_more__content accordion_content content_l4 collapse">
+                                          </div>
+                                       </div>
+                                       <div class="action_group" data-rv-checkprint="config.app.message.Label.accounttransactions.account_transactions.bookedtransactions">
+                                          <div class="action_icons">
+                                             <!--<span class="action_icons__global fontcon-print"></span>
+                                                <span class="action_icons__global fontcon-pdf"></span>-->
+                                             <span class="action_icons__global fontcon-print innerPrint"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div><div class="list_group first_list_item" data-rv-period="movements.period" data-rv-showstatus="movements.executionDate" period="LAST WEEK"><div class="list_header"><h2>1-.-0.2014</h2></div>
+                           <!-- List item 1 -->
+                           <div class="list_item" data-location="movements.period">
+                              <div class="list_wrapper">
+                                 <div class="list_wrapper_inner">
+                                    <!-- Level3 Header Clickable -->
+                                    <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                                       <div class="list_content_col1">
+                                          <span class="list_icon fontcon-transaction-in" data-rv-arrowdirection="movements.amount"></span>
+                                          <div class=" list_content_details">
+                                             <div class="listiban_group">
+                                                <h3 data-rv-text="movements.movementText">Transfer from Lecoq</h3>
+                                             </div>
+                                             <div class="listiban_detail">
+                                                <span data-rv-addnewline="movements.description1"></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="list_content_col2">
+                                          <h3><span data-rv-text="movements.amount">100.24</span><span data-rv-text="movements.currency">EUR</span></h3>
+                                          <!-- <p data-rv-showconverted="movements:amount"> <span>85</span><span>EUR</span></p> -->
+                                       </div>
+                                    </div>
+                                    <div class="list_item__content accordion_content content_l3 collapse">
+                                       <div class="list_item__details">
+                                          <div class="content_details">
+                                             <p data-rv-addnewline="movements.description2"></p>
+                                          </div>
+                                          <div class="extra_contentdetails">
+                                             <ul>
+                                                <li data-rv-checkobject="movements.executionDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.executiondate">Execution date</label>
+                                                   <p data-rv-text="movements.executionDate|date">19.01.2014</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.valueDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.valuedate">Value date</label>
+                                                   <p data-rv-text="movements.valueDate|date">15.02.2011</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.sequenceNb">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.sequencenumber">Sequence number</label>
+                                                   <p data-rv-text="movements.sequenceNb">001</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <!-- rivets: if movements.detailPresent --><div class="accordion_main">
+                                          <div class="view_more view_det accordion_header header_l4 collapsed" data-rv-on-click="accordion:toggleMore" data-rv-data-location="movements.operationId" data-location="45">
+                                             <span class="icon_arrow dropdown_arrow"></span>
+                                             <p data-rv-text="config.app.message.Label.accounttransactions.account_transactions.viewmoredetails">View more details</p>
+                                          </div>
+                                          <div class="view_more__content accordion_content content_l4 collapse">
+                                          </div>
+                                       </div>
+                                       <div class="action_group" data-rv-checkprint="config.app.message.Label.accounttransactions.account_transactions.bookedtransactions">
+                                          <div class="action_icons">
+                                             <!--<span class="action_icons__global fontcon-print"></span>
+                                                <span class="action_icons__global fontcon-pdf"></span>-->
+                                             <span class="action_icons__global fontcon-print innerPrint"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div><div class="list_group" data-rv-period="movements.period" data-rv-showstatus="movements.executionDate" period="LAST WEEK">
+                           <!-- List item 1 -->
+                           <div class="list_item" data-location="movements.period">
+                              <div class="list_wrapper">
+                                 <div class="list_wrapper_inner">
+                                    <!-- Level3 Header Clickable -->
+                                    <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                                       <div class="list_content_col1">
+                                          <span class="list_icon fontcon-transaction-out" data-rv-arrowdirection="movements.amount"></span>
+                                          <div class=" list_content_details">
+                                             <div class="listiban_group">
+                                                <h3 data-rv-text="movements.movementText">Transfer from Lecoq</h3>
+                                             </div>
+                                             <div class="listiban_detail">
+                                                <span data-rv-addnewline="movements.description1"></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="list_content_col2">
+                                          <h3><span data-rv-text="movements.amount">-24.00</span><span data-rv-text="movements.currency">EUR</span></h3>
+                                          <!-- <p data-rv-showconverted="movements:amount"> <span>85</span><span>EUR</span></p> -->
+                                       </div>
+                                    </div>
+                                    <div class="list_item__content accordion_content content_l3 collapse">
+                                       <div class="list_item__details">
+                                          <div class="content_details">
+                                             <p data-rv-addnewline="movements.description2"></p>
+                                          </div>
+                                          <div class="extra_contentdetails">
+                                             <ul>
+                                                <li data-rv-checkobject="movements.executionDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.executiondate">Execution date</label>
+                                                   <p data-rv-text="movements.executionDate|date">19.01.2014</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.valueDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.valuedate">Value date</label>
+                                                   <p data-rv-text="movements.valueDate|date">15.02.2011</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.sequenceNb">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.sequencenumber">Sequence number</label>
+                                                   <p data-rv-text="movements.sequenceNb">001</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <!-- rivets: if movements.detailPresent --><div class="accordion_main">
+                                          <div class="view_more view_det accordion_header header_l4 collapsed" data-rv-on-click="accordion:toggleMore" data-rv-data-location="movements.operationId" data-location="45">
+                                             <span class="icon_arrow dropdown_arrow"></span>
+                                             <p data-rv-text="config.app.message.Label.accounttransactions.account_transactions.viewmoredetails">View more details</p>
+                                          </div>
+                                          <div class="view_more__content accordion_content content_l4 collapse">
+                                          </div>
+                                       </div>
+                                       <div class="action_group" data-rv-checkprint="config.app.message.Label.accounttransactions.account_transactions.bookedtransactions">
+                                          <div class="action_icons">
+                                             <!--<span class="action_icons__global fontcon-print"></span>
+                                                <span class="action_icons__global fontcon-pdf"></span>-->
+                                             <span class="action_icons__global fontcon-print innerPrint"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div><div class="list_group" data-rv-period="movements.period" data-rv-showstatus="movements.executionDate" period="LAST WEEK">
+                           <!-- List item 1 -->
+                           <div class="list_item" data-location="movements.period">
+                              <div class="list_wrapper">
+                                 <div class="list_wrapper_inner">
+                                    <!-- Level3 Header Clickable -->
+                                    <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                                       <div class="list_content_col1">
+                                          <span class="list_icon fontcon-transaction-out" data-rv-arrowdirection="movements.amount"></span>
+                                          <div class=" list_content_details">
+                                             <div class="listiban_group">
+                                                <h3 data-rv-text="movements.movementText">Transfer from Lecoq</h3>
+                                             </div>
+                                             <div class="listiban_detail">
+                                                <span data-rv-addnewline="movements.description1"></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="list_content_col2">
+                                          <h3><span data-rv-text="movements.amount">-9.89</span><span data-rv-text="movements.currency">EUR</span></h3>
+                                          <!-- <p data-rv-showconverted="movements:amount"> <span>85</span><span>EUR</span></p> -->
+                                       </div>
+                                    </div>
+                                    <div class="list_item__content accordion_content content_l3 collapse">
+                                       <div class="list_item__details">
+                                          <div class="content_details">
+                                             <p data-rv-addnewline="movements.description2"></p>
+                                          </div>
+                                          <div class="extra_contentdetails">
+                                             <ul>
+                                                <li data-rv-checkobject="movements.executionDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.executiondate">Execution date</label>
+                                                   <p data-rv-text="movements.executionDate|date">19.01.2014</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.valueDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.valuedate">Value date</label>
+                                                   <p data-rv-text="movements.valueDate|date">15.02.2011</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.sequenceNb">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.sequencenumber">Sequence number</label>
+                                                   <p data-rv-text="movements.sequenceNb">001</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <!-- rivets: if movements.detailPresent --><div class="accordion_main">
+                                          <div class="view_more view_det accordion_header header_l4 collapsed" data-rv-on-click="accordion:toggleMore" data-rv-data-location="movements.operationId" data-location="45">
+                                             <span class="icon_arrow dropdown_arrow"></span>
+                                             <p data-rv-text="config.app.message.Label.accounttransactions.account_transactions.viewmoredetails">View more details</p>
+                                          </div>
+                                          <div class="view_more__content accordion_content content_l4 collapse">
+                                          </div>
+                                       </div>
+                                       <div class="action_group" data-rv-checkprint="config.app.message.Label.accounttransactions.account_transactions.bookedtransactions">
+                                          <div class="action_icons">
+                                             <!--<span class="action_icons__global fontcon-print"></span>
+                                                <span class="action_icons__global fontcon-pdf"></span>-->
+                                             <span class="action_icons__global fontcon-print innerPrint"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div><div class="list_group first_list_item" data-rv-period="movements.period" data-rv-showstatus="movements.executionDate" period="LAST WEEK"><div class="list_header"><h2>1-.-0.2014</h2></div>
+                           <!-- List item 1 -->
+                           <div class="list_item" data-location="movements.period">
+                              <div class="list_wrapper">
+                                 <div class="list_wrapper_inner">
+                                    <!-- Level3 Header Clickable -->
+                                    <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                                       <div class="list_content_col1">
+                                          <span class="list_icon fontcon-transaction-in" data-rv-arrowdirection="movements.amount"></span>
+                                          <div class=" list_content_details">
+                                             <div class="listiban_group">
+                                                <h3 data-rv-text="movements.movementText">Transfer from Lecoq</h3>
+                                             </div>
+                                             <div class="listiban_detail">
+                                                <span data-rv-addnewline="movements.description1"></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="list_content_col2">
+                                          <h3><span data-rv-text="movements.amount">80.76</span><span data-rv-text="movements.currency">EUR</span></h3>
+                                          <!-- <p data-rv-showconverted="movements:amount"> <span>85</span><span>EUR</span></p> -->
+                                       </div>
+                                    </div>
+                                    <div class="list_item__content accordion_content content_l3 collapse">
+                                       <div class="list_item__details">
+                                          <div class="content_details">
+                                             <p data-rv-addnewline="movements.description2"></p>
+                                          </div>
+                                          <div class="extra_contentdetails">
+                                             <ul>
+                                                <li data-rv-checkobject="movements.executionDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.executiondate">Execution date</label>
+                                                   <p data-rv-text="movements.executionDate|date">18.01.2014</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.valueDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.valuedate">Value date</label>
+                                                   <p data-rv-text="movements.valueDate|date">15.02.2011</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.sequenceNb">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.sequencenumber">Sequence number</label>
+                                                   <p data-rv-text="movements.sequenceNb">001</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <!-- rivets: if movements.detailPresent --><div class="accordion_main">
+                                          <div class="view_more view_det accordion_header header_l4 collapsed" data-rv-on-click="accordion:toggleMore" data-rv-data-location="movements.operationId" data-location="45">
+                                             <span class="icon_arrow dropdown_arrow"></span>
+                                             <p data-rv-text="config.app.message.Label.accounttransactions.account_transactions.viewmoredetails">View more details</p>
+                                          </div>
+                                          <div class="view_more__content accordion_content content_l4 collapse">
+                                          </div>
+                                       </div>
+                                       <div class="action_group" data-rv-checkprint="config.app.message.Label.accounttransactions.account_transactions.bookedtransactions">
+                                          <div class="action_icons">
+                                             <span class="action_icons__global fontcon-print innerPrint"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div><div class="list_group" data-rv-period="movements.period" data-rv-showstatus="movements.executionDate" period="LAST WEEK">
+                           <!-- List item 1 -->
+                           <div class="list_item" data-location="movements.period">
+                              <div class="list_wrapper">
+                                 <div class="list_wrapper_inner">
+                                    <!-- Level3 Header Clickable -->
+                                    <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                                       <div class="list_content_col1">
+                                          <span class="list_icon fontcon-transaction-in" data-rv-arrowdirection="movements.amount"></span>
+                                          <div class=" list_content_details">
+                                             <div class="listiban_group">
+                                                <h3 data-rv-text="movements.movementText">Transfer from Lecoq</h3>
+                                             </div>
+                                             <div class="listiban_detail">
+                                                <span data-rv-addnewline="movements.description1"></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="list_content_col2">
+                                          <h3><span data-rv-text="movements.amount">100.24</span><span data-rv-text="movements.currency">EUR</span></h3>
+                                          <!-- <p data-rv-showconverted="movements:amount"> <span>85</span><span>EUR</span></p> -->
+                                       </div>
+                                    </div>
+                                    <div class="list_item__content accordion_content content_l3 collapse">
+                                       <div class="list_item__details">
+                                          <div class="content_details">
+                                             <p data-rv-addnewline="movements.description2"></p>
+                                          </div>
+                                          <div class="extra_contentdetails">
+                                             <ul>
+                                                <li data-rv-checkobject="movements.executionDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.executiondate">Execution date</label>
+                                                   <p data-rv-text="movements.executionDate|date">18.01.2014</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.valueDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.valuedate">Value date</label>
+                                                   <p data-rv-text="movements.valueDate|date">15.02.2011</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.sequenceNb">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.sequencenumber">Sequence number</label>
+                                                   <p data-rv-text="movements.sequenceNb">001</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <!-- rivets: if movements.detailPresent --><div class="accordion_main">
+                                          <div class="view_more view_det accordion_header header_l4 collapsed" data-rv-on-click="accordion:toggleMore" data-rv-data-location="movements.operationId" data-location="45">
+                                             <span class="icon_arrow dropdown_arrow"></span>
+                                             <p data-rv-text="config.app.message.Label.accounttransactions.account_transactions.viewmoredetails">View more details</p>
+                                          </div>
+                                          <div class="view_more__content accordion_content content_l4 collapse">
+                                          </div>
+                                       </div>
+                                       <div class="action_group" data-rv-checkprint="config.app.message.Label.accounttransactions.account_transactions.bookedtransactions">
+                                          <div class="action_icons">
+                                             <!--<span class="action_icons__global fontcon-print"></span>
+                                                <span class="action_icons__global fontcon-pdf"></span>-->
+                                             <span class="action_icons__global fontcon-print innerPrint"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div><div class="list_group first_list_item" data-rv-period="movements.period" data-rv-showstatus="movements.executionDate" period="LAST WEEK"><div class="list_header"><h2>1-.-0.2014</h2></div>
+                           <!-- List item 1 -->
+                           <div class="list_item" data-location="movements.period">
+                              <div class="list_wrapper">
+                                 <div class="list_wrapper_inner">
+                                    <!-- Level3 Header Clickable -->
+                                    <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
+                                       <div class="list_content_col1">
+                                          <span class="list_icon fontcon-transaction-out" data-rv-arrowdirection="movements.amount"></span>
+                                          <div class=" list_content_details">
+                                             <div class="listiban_group">
+                                                <h3 data-rv-text="movements.movementText">Cheque Number 1458793</h3>
+                                             </div>
+                                             <div class="listiban_detail">
+                                                <span data-rv-addnewline="movements.description1"></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="list_content_col2">
+                                          <h3><span data-rv-text="movements.amount">-450</span><span data-rv-text="movements.currency">EUR</span></h3>
+                                          <!-- <p data-rv-showconverted="movements:amount"> <span>85</span><span>EUR</span></p> -->
+                                       </div>
+                                    </div>
+                                    <div class="list_item__content accordion_content content_l3 collapse">
+                                       <div class="list_item__details">
+                                          <div class="content_details">
+                                             <p data-rv-addnewline="movements.description2"></p>
+                                          </div>
+                                          <div class="extra_contentdetails">
+                                             <ul>
+                                                <li data-rv-checkobject="movements.executionDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.executiondate">Execution date</label>
+                                                   <p data-rv-text="movements.executionDate|date">17.01.2014</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.valueDate">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.valuedate">Value date</label>
+                                                   <p data-rv-text="movements.valueDate|date">01.01.2011</p>
+                                                </li>
+                                                <li data-rv-checkobject="movements.sequenceNb">
+                                                   <label data-rv-text="config.app.message.Label.accounttransactions.account_transactions.sequencenumber">Sequence number</label>
+                                                   <p data-rv-text="movements.sequenceNb">001</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <!-- rivets: if movements.detailPresent --><div class="accordion_main">
+                                          <div class="view_more view_det accordion_header header_l4 collapsed" data-rv-on-click="accordion:toggleMore" data-rv-data-location="movements.operationId" data-location="46">
+                                             <span class="icon_arrow dropdown_arrow"></span>
+                                             <p data-rv-text="config.app.message.Label.accounttransactions.account_transactions.viewmoredetails">View more details</p>
+                                          </div>
+                                          <div class="view_more__content accordion_content content_l4 collapse">
+                                          </div>
+                                       </div>
+                                       <div class="action_group" data-rv-checkprint="config.app.message.Label.accounttransactions.account_transactions.bookedtransactions">
+                                          <div class="action_icons">
+                                             <!--<span class="action_icons__global fontcon-print"></span>
+                                                <span class="action_icons__global fontcon-pdf"></span>-->
+                                             <span class="action_icons__global fontcon-print innerPrint"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Load more-->
+                     <div class="booked_btn load_more">
+                        <div class="load_btn">
+                           <button class="btn_default btn_primary" data-rv-text="config.app.message.Label.accounttransactions.account_transactions.loadmore">More results</button>
+                        </div>
+                     </div>
+                     <div class="complete_transaction notavailable hide">
+                        <p data-rv-text="config.app.message.Label.accounttransactions.account_transactions.nomoretransactionhistoryavailable">All available results are displayed.</p>
+                     </div>
+                  </div>
+                  <!--  Filter popup  -->
+                  <div class="filter_popup"><div class="filter_popup__inner">
+    <form>
+       <div class="filter_popup__content">
+          <div class="filter_content_inner">
+             <span class="fontcon-close popup_close"></span> 
+             <!-- -Period range --> 
+             <div class="filter_content__range period_range">                      
+                 <h6 class="filter_content_heading" data-rv-text="config.app.message.Label.accounttransactions.filters.customrangeperiod"></h6>
+                 <p class="field_error_message" data-rv-showactive="violationsObj.dateRange" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.thestartdatemustbenolaterthantheenddate">The start date must be no later than the end date.</p>                         
+                 <p class="field_error_message" data-rv-showactive="violationsObj.fromCheck" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.fromdateconditioncheck"></p>
+                 <p class="field_error_message" data-rv-showactive="violationsObj.toCheck" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.todateconditioncheck"></p>
+                 <p class="field_error_message" data-rv-showactive="violationsObj.fromInvalid" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.fromdateinvalid"></p>
+                 <p class="field_error_message" data-rv-showactive="violationsObj.toInvalid" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.todateinvalid"></p>
+                 <p class="field_error_message" data-rv-showactive="violationsObj.toEmpty" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.todateempty"></p>
+                 <p class="field_error_message" data-rv-showactive="violationsObj.fromEmpty" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.fromdateempty"></p>
+                <div class="filter_content_details">
+                   <div class="filter_inputs clearfix">
+                      <div class="filter_inputs_col filter_from">
+                         <label data-rv-text="config.app.message.Label.accounttransactions.filter_popup.from">From</label>
+                         <div class="default_input_field">
+                            <input class="trig_from_period" type="tel" spellcheck="false" placeholder="DD.MM.YYYY" maxlength="10" autocomplete="off">
+                         </div>
+                      </div>
+                      <div class="filter_inputs_col filter_to">
+                         <label data-rv-text="config.app.message.Label.accounttransactions.filter_popup.to">To</label>
+                         <div class="default_input_field">
+                            <input class="trig_to_period" type="tel" spellcheck="false" placeholder="DD.MM.YYYY" maxlength="10" autocomplete="off">
+                         </div>
+                      </div>
+                   </div>
+                   <div class="filter_calendar"> </div>
+                   <div class="filter_btn">
+                      <div class="navigation_btns">
+                         <div class="right_navigation f_right">
+                            <button class="btn_default btn_primary btn_confirm" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.confirm">Confirm</button>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+              <!-- -amount specific  -->
+             <div class="filter_content__specific specific_amount">
+                <div class="filter_content_details">
+                   <div class="filter_inputs clearfix">
+                   <p class="field_error_message" data-rv-showactive="violationsObj.amountEmpty" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.toamountempty"></p>
+                      <div class="filter_inputs_row">
+                         <label data-rv-text="config.app.message.Label.accounttransactions.filter_popup.specificamount">Specific amount</label>
+            	            <!-- <p class="field_error_message" data-rv-showactive="violationsObj.amountEqual">Invalid Amount</p>  -->                    
+                         <div class="default_input_field">
+                            <input class="amount_value" type="tel" spellcheck="false" maxlength="18" autocomplete="off">
+                         </div>
+                      </div>
+                   </div>
+                   <div class="filter_btn">
+                      <div class="navigation_btns">
+                         <div class="right_navigation_btn f_right">
+                            <button class="btn_default btn_primary btn_confirm" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.confirm">Confirm</button>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+            <!--  Amount range --> 
+             <div class="filter_content__range amount_range">
+                <h6 class="filter_content_heading" data-rv-text="config.app.message.Label.accounttransactions.filters.customrangeamount"></h6>
+                                      
+                <div class="filter_content_details">
+                   <div class="filter_inputs clearfix">
+                   <p class="field_error_message" data-rv-showactive="violationsObj.amountRange" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.theenteredrangeisnotcorrect">The entered range is not correct.</p>
+                   <p class="field_error_message" data-rv-showactive="violationsObj.toAmountEmpty" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.toamountempty"></p>
+                   <p class="field_error_message" data-rv-showactive="violationsObj.fromAmountEmpty" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.toamountempty"></p>                 
+                      <div class="filter_inputs_col filter_from">
+                         <label data-rv-text="config.app.message.Label.accounttransactions.filter_popup.from">From</label>
+                         <div class="default_input_field">
+                            <input class="amount_from" type="tel" spellcheck="false" maxlength="18" autocomplete="off">
+                         </div>
+                      </div>
+                      <div class="filter_inputs_col filter_to">
+                         <label data-rv-text="config.app.message.Label.accounttransactions.filter_popup.to">To</label>
+                         <div class="default_input_field">
+                            <input class="amount_to" type="tel" spellcheck="false" maxlength="18" autocomplete="off">
+                         </div>
+                      </div>
+                   </div>
+                   <div class="filter_btn">
+                      <div class="navigation_btns">
+                         <div class="right_navigation_btn f_right">
+                            <button class="btn_default btn_primary btn_confirm" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.confirm">Confirm</button>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <!--Iban   --> 
+             <div class="filter_content__specific iban_input">
+                <div class="filter_content_details">
+                   <div class="filter_inputs clearfix">
+                      <div class="filter_inputs_row">
+                         <label data-rv-text="config.app.message.Label.accounttransactions.filters.iban">IBAN</label>
+                         <p class="field_error_message" data-rv-showactive="violationsObj.BAN" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.enteredbannotcorrect"></p>                   
+                         <div class="default_input_field">
+                            <input class="ban_number" type="text" spellcheck="false" maxlength="34">
+                         </div>
+                      </div>
+                   </div>
+                   <div class="filter_btn">
+                      <div class="navigation_btns">
+                         <div class="right_navigation_btn f_right">
+                            <button class="btn_default btn_primary btn_confirm" data-rv-text="config.app.message.Label.accounttransactions.filter_popup.confirm">Confirm</button>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>             
+          </div>
+       </div>
+    </form>
+ </div></div>
+                  <!--  Popup end -->
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+	</div>
+
+</div>
+
+
+
+<script type="text/javascript" src="js/wcm-hostpage.js"></script>
+
+
+
+</body>
+</html>

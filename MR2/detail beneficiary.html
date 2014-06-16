@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Site Structure</title>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/brand-mr2.css">
+<link rel="stylesheet" href="../css/pattern-lib.css">
+<link rel="stylesheet" href="../css/fonticon.css">
+</head>
+<body>
+<div class="easybanking">
+  <div class="wrapper">
+    <div class="bnppf_ben" id="beneficiary" data-url-context="/BE_FORTIS_PFPL-pr01-war/">
+      <div>
+        <div class="beneficiary_list_screen hide">
+          <div class="beneficiary_list_screen_inner"> 
+            <!-- -->
+            <div class="module_main_header">
+              <div class="ia_alert"> 
+                <!-- rivets: each-error --> 
+              </div>
+              <div class="ia_alert">
+                <div class="alert_messages alert_messages_information fade in show_active">
+                  <div class="alert_messages__inner clearfix beneficiary_delete_info  hide" data-rv-on-click="accordion:showCross">
+                    <p data-rv-text="config.app.message.label.beneficiary.beneficiaryList.beneficiaryDeleteInformationMessage">The Beneficiary was successfully Deleted</p>
+                    <span class="fontcon-close icon_dismiss" data-rv-on-click="accordion:showCross"> </span> </div>
+                </div>
+              </div>
+              <div class="module_header h_functions">
+                <div class="module_header__inner">
+                  <div class="h_col">
+                    <h2 class="module_title" data-rv-text="config.app.message.label.beneficiary.beneficiaryList.beneficiaries">Beneficiaries</h2>
+                  </div>
+                  <div class="h_col">
+                    <div class="beneficiary_add_btn">
+                      <div class="f_right">
+                        <button class="extra_button" data-rv-on-click="accordion:addBeneficiary | view">
+                        <div class="add_function_btn_icon"> <span class="fontcon-add"></span> </div>
+                        <span class="add_function_btn_content" data-rv-text="config.app.message.label.beneficiary.beneficiaryList.addNewBeneficiary">Add beneficiary</span> </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="module_content">
+              <div class="module_tab_content no_ben_list hide">
+                <div class="information_content info_beneficiary">
+                  <div class="infomation_list" data-rv-text="config.app.message.label.beneficiary.beneficiaryList.noBeneficiaryDefined">*Vous n'avez encore cr�� aucun b�n�ficaire.*</div>
+                  <div class="information_content_inner">
+                    <div class="information_heading">
+                      <h1> Did you know.. </h1>
+                    </div>
+                    <div class="information_description">
+                      <p data-rv-text="config.app.message.label.beneficiary.beneficiaryList.introBeneficiary">TBD Did you know Introduction about beneficiary...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="module_tab_content ben_list">
+                <div class="search_module">
+                  <div class="search_block">
+                    <div class="search_field f_left">
+                      <div class="default_input_control">
+                        <p class="field_error_message">*Veuillez encoder au moins 3 caract?res.*</p>
+                        <div class="default_input_field">
+                          <input type="text" maxlength="35" data-rv-on-keyup="accordion:showCrossImage" placeholder="Type beneficiary alias or IBAN to search" spellcheck="false">
+                          <span class="fontcon-close search_wipe" data-rv-on-click="accordion:clearInputText| view"> </span> <span class="search_icon"> <span class="fontcon-search" data-rv-on-click="accordion:searchBeneficiary | view"> </span> </span> </div>
+                      </div>
+                    </div>
+                    <div class="search_filter f_right" data-rv-on-click="accordion:showFilter | view">
+                      <div class="show_filters dropdown_arrow">
+                        <p data-rv-text="config.app.message.label.beneficiary.beneficiaryList.showFilters">Show filters</p>
+                      </div>
+                    </div>
+                    <div class="search_counter"> <span> 0 results found </span> <span class="space_left"></span> </div>
+                  </div>
+                  <div class="filter_block">
+                    <div class="scroll_menu show_buttons">
+                      <div class="scroll_btn left inactive">
+                        <div class="outer_wrapper">
+                          <div class="inner_wrapper"><span class="fontcon-calendar-arrow-left scroll_menu_icon"></span></div>
+                        </div>
+                      </div>
+                      <div class="scroll_container momentum">
+                        <div class="filter_inner_block menu_links">
+                          <div class="filter_values scroll_item filter_country">
+                            <div class="filter_link filterDropdown dropdown_arrow" data-rv-on-click="filters:showFilterOptions | view">
+                              <p data-rv-text="config.app.message.label.beneficiary.beneficiaryFilters.selectBankCountry">Country of the bank</p>
+                            </div>
+                          </div>
+                          <div class="filter_values filter_favourites scroll_item">
+                            <div class="filter_link filterDropdown dropdown_arrow" data-rv-on-click="filters:showFilterOptions | view">
+                              <p data-rv-text="config.app.message.label.beneficiary.beneficiaryFilters.selectFavouriteStatus">Select beneficiary</p>
+                            </div>
+                          </div>
+                          <div class="filter_values reset_filter scroll_item" data-rv-on-click="filters:resetAllFilters| view">
+                            <div class="filter_link">
+                              <p data-rv-text="config.app.message.label.beneficiary.beneficiaryFilters.resetFilters">Reset filters</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter_optionvalue menu_options">
+                        <div class="filter_option option_country"> 
+                          <!-- rivets: each-country -->
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Belgium</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Bulgaria</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Czech Republic</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Denmark</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Germany</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Estonia</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Ireland</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Greece</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Spain</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">France</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Croatia</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Italy</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Cyprus</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Latvia</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Lithuania</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Luxemberg</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Hungary</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Malta</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Netherlands</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Austria</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Poland</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Portugal</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Romania</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="country.bankCountry.name">Slovenia</p>
+                          </div>
+                        </div>
+                        <div class="filter_option option_favourites">
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="config.app.message.label.beneficiary.beneficiaryFilters.showAllBeneficiaries">All beneficiaries</p>
+                          </div>
+                          <div class="filter_option_value" data-rv-on-click="filters:changeSelectedOption|view">
+                            <p data-rv-text="config.app.message.label.beneficiary.beneficiaryFilters.showOnlyFavourites">All favourites</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="scroll_btn right inactive">
+                        <div class="outer_wrapper">
+                          <div class="inner_wrapper"><span class="fontcon-calendar-arrow-right scroll_menu_icon"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter_btn">
+                      <div class="navigation_btns">
+                        <div class="right_navigation f_right">
+                          <button class="btn_default btn_primary apply_filter" data-rv-text="config.app.message.label.beneficiary.beneficiaryFilters.applyFilters" data-rv-on-click="filters:applyAllFilters | view">Apply filters</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="module_listitem">
+                  <div class="accordion_content content_l1">
+                    <div class="accordion_list"> 
+                      <!-- rivets: each-beneficiary -->
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite active_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Amanda Bynes</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE19 4292 1439 9112</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite active_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Candice Bash</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE31 0015 1802 6455</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite active_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Candice Parker</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE72 0017 0027 5816</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item l_icon">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <span class="list_header_title" data-rv-text="beneficiary.alias">David Blaine</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE98 0017 1531 8593</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Elen DeGeneras</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE96 2930 3702 9605</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Freddy Highmore</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE50 1430 6441 9118</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Grady Sizemore</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE79 0014 0645 4833</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite active_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Heidi Klum</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2018</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Ivan Rodrique</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2023</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Janet Jackson</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 1949</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite active_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Kyla Pratt</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 1999</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Layla Ali</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2004</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Michael Diouglas</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2009</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Nicjholas Cage</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2014</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite active_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Oprah</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2019</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite active_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Paul McCartney</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2024</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite active_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Queen Latifah</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 1959</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Ran Moss</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2000</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Sidney Pottier</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2005</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Tom</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2010</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite active_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Uma Thurman</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2015</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Vida Guerra</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2020</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Willie Nelson</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2025</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite active_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Xavier Nady </h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 1969</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list_group">
+                        <div class="list_item ">
+                          <div class="list_wrapper">
+                            <div class="list_wrapper_inner"> 
+                              <!-- Level3 Header Clickable --> 
+                              <span class="list_icon fontcon-fav-default fav_icon beneficiary_favourite" data-rv-on-click="accordion:beneficiaryFavouriteUpdate | view" data-rv-favourite="beneficiary.favourite"> </span>
+                              <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:beneficiaryDetailShow | view">
+                                <div class="list_content_col1">
+                                  <div class="list_content_details">
+                                    <div class="listiban_group beneficiary_name">
+                                      <h3 data-rv-text="beneficiary.alias">Yolanda Adams</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list_content_col2">
+                                  <h3> <span class="highlight_txt" data-rv-text="beneficiary.accountNumber|formatUcrIBAN">BE58 0014 0088 2001</span> </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="beneficiary">
+          <div class="beneficiary_inner"><!-- -->
+            <div class="module_main_header">
+              <div class="ia_alert"> 
+                <!-- rivets: each-error --> 
+              </div>
+              <div class="module_header h_functions">
+                <div class="module_header__inner">
+                  <div class="h_col">
+                    <div class="module_hcontent f_left">
+                      <h2 class="module_title" data-rv-text="config.app.message.label.beneficiary.beneficiaryDetail.beneficiaries">Beneficiaries</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="module_content">
+              <div class="module_tab_content">
+                <div class="module_listitem">
+                  <div class="details_inner">
+                    <div class="back_link">
+                      <div class="navigation_btns">
+                        <div class="left_navigation_btn btn_bene" data-rv-on-click="detailView:backtoList|view"><span class="arrow_left btn_arrow_left fontcon-arrow-left"></span> <span class="lnk_primary" data-rv-text="config.app.message.label.beneficiary.beneficiaryDetail.back">Back</span></div>
+                      </div>
+                    </div>
+                    <div class="l_icon">
+                    <div class="list_wrapper_inner">
+                    <span class="list_icon fontcon-fav-default fav_icon active_favourite" data-rv-on-click="detailView:beneficiaryFavouriteUpdate|view" data-rv-favourite="beneficiaryDetailModel.favourite"> </span>
+                      <div class="list_item__header list_item_heading clearfix noclk">
+                        <div class="list_details_col_group">
+                          <div class="list_content_col1">
+                            <div class="list_content_details">
+                              <div class="listiban_group">
+                                <span class="list_header_title noclk" data-rv-text="beneficiaryDetailModel.alias">Amanda Bynes</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="list_content_col2">
+                            <h3> <span data-rv-text="beneficiaryDetailModel.accountNumber|formatUcrIBAN">BE19 4292 1439 9112</span> </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="page_details">
+                      <div class="list_details ">
+                        <label class="details_label"> Beneficiary IBAN </label>
+                        <div class="listitem_details">
+                          <p> BE56 4567 8966 2234 </p>
+                        </div>
+                      </div>
+                      <div class="list_details ">
+                        <label class="details_label" data-rv-text="config.app.message.label.beneficiary.beneficiaryDetail.bankCountry">Country of the bank</label>
+                        <div class="listitem_details">
+                          <p data-rv-text="beneficiaryDetailModel.bankCountry.name">Belgium</p>
+                        </div>
+                      </div>
+                      <div class="list_details ">
+                        <label class="details_label" data-rv-text="config.app.message.label.beneficiary.beneficiaryDetail.beneficiaryName">Name</label>
+                        <div class="listitem_details">
+                          <p data-rv-text="beneficiaryDetailModel.name">Bynes</p>
+                        </div>
+                      </div>
+                      <div class="list_details ">
+                        <label class="details_label" data-rv-text="config.app.message.label.beneficiary.beneficiaryDetail.beneficiaryAddress">Address</label>
+                        <div class="listitem_details">
+                          <p data-rv-text="beneficiaryDetailModel.address">Sparkenhoe Street</p>
+                        </div>
+                      </div>
+                      <div class="list_details ">
+                        <label class="details_label" data-rv-text="config.app.message.label.beneficiary.beneficiaryDetail.beneficiaryPostalCode">Postcode</label>
+                        <div class="listitem_details">
+                          <p data-rv-text="beneficiaryDetailModel.postalCode">1001</p>
+                        </div>
+                      </div>
+                      <div class="list_details ">
+                        <label class="details_label" data-rv-text="config.app.message.label.beneficiary.beneficiaryDetail.beneficiaryCity">Residence</label>
+                        <div class="listitem_details">
+                          <p data-rv-text="beneficiaryDetailModel.city">Aalst</p>
+                        </div>
+                      </div>
+                      <div class="list_details ">
+                        <label class="details_label" data-rv-text="config.app.message.label.beneficiary.beneficiaryDetail.beneficiaryCountry">Country</label>
+                        <div class="listitem_details">
+                          <p data-rv-text="beneficiaryDetailModel.country.name">Belgium</p>
+                        </div>
+                      </div>
+                      <div class="list_details ">
+                        <label class="details_label" data-rv-text="config.app.message.label.beneficiary.beneficiaryDetail.communication">Communication</label>
+                        <div class="listitem_details">
+                          <p data-rv-text="beneficiaryDetailModel.defaultCommunication.message">VALUE</p>
+                        </div>
+                      </div>
+                      <div class="list_details ">
+                        <label class="details_label beneficiary_label" data-rv-text="config.app.message.label.beneficiary.beneficiaryDetail.personalComment">Notes</label>
+                        <div class="listitem_details">
+                          <p data-rv-text="beneficiaryDetailModel.comment">EB Bill</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="action_btns">
+                    <div class="navigation_btns">
+                      <div class="right_navigation_btn f_right">
+                        <button class="btn_default btn_primary delete_beneficiary btn_beneficiary" data-rv-text="config.app.message.label.beneficiary.beneficiaryDetail.delete" data-rv-on-click="detailView:deletebeneficiary|view">Delete</button>
+                        <button class="btn_default btn_primary f_right " data-rv-text="config.app.message.label.beneficiary.beneficiaryDetail.modify" data-rv-on-click="detailView:modifybeneficiary|view">Modify</button>
+                      </div>
+                      <div class="right_navigation_btn f_left">
+                        <button class="btn_default btn_secondary send_btn" data-rv-on-click="detailView:sendMoneyBeneficiary|view" data-rv-text="config.app.message.label.beneficiary.beneficiaryDetail.sendMoneyToBeneficiary">Transfer to this beneficiary</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+			require([ './app-wcm-config' ], function() {
+				require([ 'beneficiary' ], function(beneficiaryApp) {
+					new beneficiaryApp('#beneficiary');
+				});
+			});
+		</script> 
+    <!--   <div class="sendmoney" id="sepa" data-url-context="/BE_FORTIS_PFPL-pr01-war/"></div>
+    <script>
+        require(['./app-wcm-config'], function() {
+            require(['sepa'], function (sepaApp) {
+                new sepaApp('#sepa');
+            });
+        });
+    </script>
+   
+  
+     <div class="bnppf_sendmoney" id="zoomit" data-url-context="/PFPL-pr01/"></div>
+    <script>
+        require(['./app-wcm-config'], function() {
+            require(['zoomit'], function (zoomitApp) {
+                new zoomitApp('#zoomit','sepa.paynow');
+            });
+        });
+    </script>  --> 
+    
+    <!-- <div class="bnppf_accounts" id="accountList" data-url-context="/PFPL-pr01/"></div>
+        <script>
+         require(['./app-wcm-config'], function() {
+            require(['accountlist'], function (accountListApp) {
+                new accountListApp('#accountList');
+            });
+        });
+    </script> --> 
+    
+    <!--  <div class="bnppf_accounts" id="accountDetail" data-url-context="/PFPL-pr01/"></div>
+        <script>
+         require(['./app-wcm-config'], function() {
+            require(['accountdetail'], function (accountListApp) {
+                new accountListApp('#accountDetail');
+            });
+        });
+    </script> --> 
+  </div>
+</div>
+<script type="text/javascript" src="js/wcm-hostpage.js"></script>
+</body>
+</html>

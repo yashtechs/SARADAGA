@@ -373,12 +373,12 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .contactus_block { border-bottom:1px solid #BEC6D0; display:table; padding:1.88em 0 1.125em; width:100%; }
 .contactus_block:first-child { padding-top:0; }
 .contactus_block:last-child { border:0; padding-bottom:0; }
-.module_block { float:left; width:80%; }
+.module_block { float:left; width:70%; }
 .module_block_inner { width:100%; display:table; }
 .module_heading { font-family:'BnppSans-r',arial; font-size:1.25em; width:50%; float:left; padding:0 0 0.6em; }
 .module_list { float:left; font-size:1em; text-align:left; text-overflow:ellipsis; width:50%; padding-top:0.06em; }
 .module_list p { margin:0; padding:0 0 0.75em; }
-.module_contact { float:right; font-size:1.125em; width:20%; text-align:right; }
+.module_contact { float:right; font-size:1.125em; width:30%; text-align:right; }
 .module_contact p { font-size:1.25em; margin:0; padding:0 0 0.7em; }
 .single_data .module_contact p { padding-bottom:0; }
 .module_contact p span, .module_contact p a { display:block; }
@@ -818,10 +818,9 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .filter_content_heading{ padding:0.62em 0;font-family: 'BnppSans-r',arial;}
 .filter_content__range{text-align:left; width:18.75em; display:none;}
 .filter_content__specific{ text-align:left; display:none;}
-.filter_inputs_col{ float:left; width:50%;}
+.filter_inputs_col{ width:100%;}
+.filter_inputs_col:first-child{ margin-bottom:0.75em}
 .filter_inputs_col label, .filter_inputs_row label{font-family: 'BnppSans-r',arial; padding-bottom:0.37em; display:table;}
-.filter_from{ padding-right:0.4em;}
-.filter_to{ padding-left:0.4em;}
 .filter_calendar{ padding-top:0.4em;}
 .filter_popup .filter_btn{ padding:1.87em 0 0 0;}
 .msie .filter_popup .default_input_field{ display:inline-block;}

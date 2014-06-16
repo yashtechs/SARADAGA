@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Site Structure</title>
+		<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/brand-mr2.css">
+<link rel="stylesheet" href="../css/pattern-lib.css">
+<link rel="stylesheet" href="../css/fonticon.css">
+	
+	</head>
+<body>
+<div class="easybanking">
+	<div class="wrapper">
+<div class="acknowledge_page details">
+   
+      <div class="module_main_header">
+        <div class="module_header h_functions">
+          <div class="module_header__inner">
+            <div class="title_column">
+              <div class="module_hcontent f_left">
+                <h2 class="module_title clearfix" data-rv-text="config.app.message.label.beneficiary.addBeneficiaryResult.beneficiaries">Beneficiaries</h2>
+                <div class="module_operation_title clearfix">
+                  <p data-rv-text="config.app.message.label.beneficiary.addBeneficiaryResult.addBeneficiaryTitle">Add Beneficiary</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="header_steps">
+              <div class="module_steps">
+                <ul class="module_steps_block">
+                  <li><span class="module_steps__digit">1</span></li>
+
+                  <li><span class="module_steps__digit">2</span></li>
+
+                  <li><span class="module_steps__digit active">3</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="acknowledge_page">
+        <!-- Sepa result -->
+
+        <div class="acknowledge__info form_inner" id="printableArea">
+          <h4 class="form_title" data-rv-text="config.app.message.label.beneficiary.addBeneficiaryResult.Result"></h4>
+          <div class="form_title">
+            <h2 data-rv-text="config.app.message.label.beneficiary.addBeneficiaryResult.beneficiarySuccess">Beneficiary was sucessfully created</h2>
+          </div>
+           <div class="acknowledge_fullwrapper">
+             <div class="result_content_detail">
+             <span class="fontcon-circle-done benf_done"></span>
+               <p class="fontcon-personage benf_img"></p>
+			   
+               <div class="resultfrom_info">
+                 <p data-rv-text="beneficiaryDetails.name">Bynes</p>
+                 <p data-rv-text="beneficiaryDetails.alias">Benef000</p>
+               </div>
+             </div>
+           </div>
+          <div class="action_btns form_btns">
+            <div class="result_navigation_btn">
+              <div class="result_btn navigation_btns">
+                <div class="right_navigation_btn f_right">
+                  <button class="btn_default btn_primary f_right" data-rv-text="config.app.message.label.beneficiary.addBeneficiaryResult.beneficiaryOverview" data-rv-on-click="beneficiaryResult:beneficiaryOverview | view">Overview</button> 
+         		  <button class="btn_default btn_secondary beneficiary_add" data-rv-text= "config.app.message.label.beneficiary.addBeneficiaryResult.beneficiaryAddAnother" data-rv-on-click="beneficiaryResult:AddBeneficiary | view">Add new</button>
+                  <button class="btn_default btn_secondary" data-rv-text="config.app.message.label.beneficiary.addBeneficiaryResult.beneficiarySendMoney" data-rv-on-click="beneficiaryResult:sendMoneyBeneficiary | view">Create transfer</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+  </div>
+  </body>
+  </html>

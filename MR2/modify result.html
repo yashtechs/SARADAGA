@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Site Structure</title>
+		<link rel="stylesheet" href="css/reset.css">
+		
+		<link rel="stylesheet" href="css/brand.css">
+		<link rel="stylesheet" href="css/brand_mr2.css">
+		<link rel="stylesheet" href="css/pattern-lib.css">
+		<link rel="stylesheet" href="css/fonticon.css">
+	
+	</head>
+<body>
+<div class="easybanking">
+<div class="wrapper"> 
+   <div class="bnppf_ben" id="beneficiary" data-url-context="/server/"><div>
+          <div class="beneficiary_result_modify">
+            <div class="beneficiary_result_modify_inner">
+            <!-- Sepa Header -->
+              <div class="module_main_header noPrint">
+						<div class="module_header h_functions">
+							<div class="module_header__inner">
+								<div class="title_column">
+                                	<div class="module_hcontent f_left">
+                                       <h2 class="module_title clearfix" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryResult.beneficiaries">Beneficiary</h2>
+									
+										                             <div class="module_operation_title clearfix">
+      <p data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryResult.modifyBeneficiaryTitle">Modify Beneficiary</p>
+     </div>
+								</div>
+									<div class="header_steps">			
+									<div class="module_steps">
+						<ul class="module_steps_block beneficiary_header">
+							<li>
+								<span class="module_steps__digit">1</span>
+								<!-- <span class="module_steps__text active" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryResult.enterDetails" >Enter Details</span> -->
+							</li>
+							<li>
+								<span class="module_steps__digit">2</span>
+								<!-- <span class="module_steps__text"data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryResult.confirm">Confirm</span> -->
+							</li>
+							<li>
+								<span class="module_steps__digit active">3</span>
+								<!-- <span class="module_steps__text"  data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryConfirm.Result">Result</span> -->
+							</li>
+						</ul>
+					</div>
+					</div> 
+							</div>
+						</div>
+						
+					</div>
+					</div>
+            <!-- Sepa Content -->
+              <div class="acknowledge_page" style="
+    background: white;
+">
+            <!-- Sepa result -->
+              	<div class="acknowledge__info form_inner" id="printableArea">
+				<h4 class="form_title" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryConfirm.Result"></h4>
+                	<div class="form_title">
+                    	<h2>Beneficiary was sucessfully changed</h2>
+                        
+                        
+                    </div>
+                    
+                    	<div class="result_container">
+                           <div class="result_content_detail">
+								   <p class="fontcon-personage center_image"></p>
+									<span class="fontcon-circle-done circle_tick"></span>
+                                    <div class="resultfrom_info_detail">
+                                        <p data-rv-text="beneficiaryDetails.beneficiaryIban|formatUcrIBAN">BE58  001 4 00 88 1 979 </p>
+										<p data-rv-text="beneficiaryDetails.beneficiaryName">Bynes</p>
+										<p data-rv-text="beneficiaryDetails.beneficiaryAlias">Benef000</p>                                     </div>
+                                </div>
+							</div>
+                   
+				
+                     <div class="action_btns form_btns">
+        	<div class="result_navigation">
+             <div class="result_btn navigation_btns">
+                  <div class="right_navigation_btn f_right">
+				                                  <button class="btn_default btn_primary f_right" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryResult.beneficiaryOverview" data-rv-on-click="beneficiaryResult:beneficiaryOverview | view"></button>
+                  	 			
+                     <button class="btn_default btn_secondary exp_btn" data-rv-text="config.app.message.label.beneficiary.modifyBeneficiaryResult.beneficiarySendMoney" data-rv-on-click="beneficiaryResult:sendMoneyBeneficiary | view"></button>
+        
+                 </div>
+             </div>
+            </div>
+         </div>
+                </div>
+          </div>
+        </div>
+      </div>
+   </div></div>
+        <script>
+         require(['./app-wcm-config'], function() {
+            require(['beneficiary'], function (beneficiaryApp) {
+                new beneficiaryApp('#beneficiary');
+            });
+        });
+    </script>
+  
+</div>
+</div>
+
+
+
+<script type="text/javascript" src="js/wcm-hostpage.js"></script>
+
+
+
+</body>
+</html>
