@@ -257,7 +257,7 @@ input[type="checkbox"]:focus, button:focus{outline:#008578 solid 1px !important;
 .canvas_opened .canvas_container{box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1em;}
 .canvas_opened .easybanking{ overflow:hidden;}
 .canvas_closed .canvas_container{ transform: none !important; -webkit-transform:none !important; -moz-transform:none !important;}
-.canvas_container {background-color: #F9F9F9;margin: 0;position: relative;z-index: 2;}
+.canvas_container {margin: 0;position: relative;z-index: 2;}
 .offcanvas_menu ul.navigation_control li { padding:0;}
 .offcanvas_menu .indicator_icon{position:absolute; top:14px;color:#e53012; right:0; display:none; font-size:1.12em}
 .offcanvas_menu li ul li .touch-button { top:15px;}
