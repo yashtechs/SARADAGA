@@ -1,0 +1,134 @@
+
+/* Break point 768-1023 */
+@media all and (min-width: 48em) and (max-width: 63.9375em) {
+ .content_wrapper {
+  padding: 1.87em;
+}
+
+.user_message {
+  padding: 1.4em 1.4em 0 1.4em;
+}
+
+.margin_col .ls-cmp-wrap {
+  &:nth-child(odd) {
+    padding-right: 0.31em;
+  }
+  &:nth-child(even) {
+    padding-left: 0.31em;
+  }
+}
+
+.service_navigation .ls-cmp-wrap:first-child {
+  top: 5em;
+	}
+}
+/* Break point 1023 */
+@media all and (max-width: 63.9375em) {
+  /* Navigation Header */
+  .site_header {
+        height: 3.75em;
+    }
+ 
+    .site_header__inner {
+        padding: 0.6em;
+    }
+ 
+    .brand_logo, #brandLogo {
+        width: 2.62em;
+        height: 2.5em;
+    }
+  .menu_nav_small {
+    display: block;
+    cursor: pointer;
+  	margin-left: 1em;
+    padding: 0.65em 0;
+    font-size: 1.12em;
+    text-transform: uppercase;
+  }
+  .navigation {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    float: none;
+    box-shadow: 0 4px 7px -6px #000000;
+    -webkit-box-shadow: 0 4px 7px -6px #000000;
+    -moz-box-shadow: 0 4px 7px -6px #000000;
+    -ms-box-shadow: 0 4px 7px -6px #000000;
+  }
+  .navigation_inner {
+    padding: 0 10px;
+    background: unquote($white-bg);
+  }
+  .navigation_control {
+    width: 100%;
+    padding: 0;
+    display: none;
+    position: relative;
+    li {
+      width: 100%;
+      padding: 0.94em 0;
+      border-top: 1px dotted #d2d8e1;
+      border-left: none;
+      &:nth-child(1) {
+        border-top: 1px dotted #d2d8e1;
+      }
+      a {
+        border: none;
+        &:hover {
+          border: none;
+        }
+        &.selected-page {
+          color: $link-indication;
+          border: none;
+        }
+      }
+    }
+  }
+  .menu-show {
+    .navigation_control {
+      display: inline-block;
+    }
+    display: inline-block;
+  }
+  .menu_indicator {
+    top: 0.25em;
+    left: 4.12em;
+  }
+  /* layout */
+  .content_col, .fluid {
+    margin-right: 0;
+  }
+  .main_wrapper, .login_bg {
+    padding-top: 3.75em;
+  }
+  .warning_area {
+    top: 3.75em;
+  }
+  /* Margin modules alignment Layout */
+  .margin_col {
+  width: 100%;
+  margin: 0;
+  padding-top: 1.25em;
+  .ls-cmp-wrap {
+    width: 50%;
+    float: left;
+    position: relative;
+    &:nth-child(2) .iw_component {
+      margin: 0;
+    }
+  }
+}
+  /* FAQ Widget */
+  .service_col {
+    top: 3.75em;
+  }
+  .wcm-faq {
+    top: 1.87em;
+  }
+  .home .sticky_widget {
+    top: -1.19em !important;
+     margin-top: 0;
+  }
+}

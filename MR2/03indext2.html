@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Site Structure</title>
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/brand-mr2.css">
+		<link rel="stylesheet" href="../css/pattern-lib.css">
+		<link rel="stylesheet" href="../css/fonticon.css">
+		<script data-main="js/app" src="js/jquery-1.9.1.js"></script>
+		<script data-main="js/app" src="js/custom.js"></script>
+		<script data-main="js/app" src="js/mask.js"></script>
+		<script data-main="js/app" src="js/modrenizr.js"></script>
+		<script data-main="js/app" src="js/hammer.js"></script>
+		<script data-main="js/app" src="js/jquery.browser.min.js"></script>
+	</head>
+	<body>
+		<div class="easybanking">
+			<div class="ls-canvas wrapper">
+				<div class="ls-row eb-header">
+					<div class="ls-lqr">
+						<div class="ls-area">
+							<div class="ls-area-body">
+								<div class="ls-cmp-wrap">
+									<div class="iw_component">
+										<!-- Header component -->
+										<div class="wcm-header">
+											<div class="site_header">
+												<div class="site_header__inner clearfix">
+													<div class="site_logotype">
+														<a href="#" class="brand_logo">
+														</a>
+													</div>
+													<div class="wcm-language">
+														<ul class="language-change">
+															<li>
+																<a href="#">NL</a>
+															</li>
+															<li>
+																<a href="#">FR</a>
+															</li>
+															<li>
+																<a href="#">DE</a>
+															</li>
+															<li class="ln-selected">
+																<a href="#">EN</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End of Header component -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ls-row login_bg">
+					<div class="ls-lqr">
+						<div class="ls-col">
+							<div class="ls-col-body">
+								<!-- Individual Rows inside column Warning-->
+								<div class="ls-row wcm-messages">
+									<div class="ls-lqr">
+										<div class="ls-area">
+											<div class="ls-area-body">
+												<div class="ls-cmp-wrap">
+													<div class="iw_component">
+														<div class="wcm-severity-message" style="display:none;">
+															<div class="severity_message">
+																<div class="alert_messages fade in alert_messages_information" style="display:block">
+																	<div class="alert_messages__inner clearfix">
+																		<span class="fontcon-information error_icon"></span>
+																		<div class="alert_message_content">
+																			<h2 style="display:inline-block">Warning:</h2>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit sapien.</p>
+																		</div>
+																		<span class="fontcon-close icon_dismiss"></span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- End of component-->
+													</div>
+												</div>
+												<!-- User welcome Message -->
+												<div class="ls-cmp-wrap">
+													<div class="iw_component">
+														<div class="rich_text">
+															<div class="region" id="metaInfo">
+																<div class="section level1">
+																	<h3>Welcome to your daily</h3>
+																	<h1>Easy banking</h1>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End -->
+								<!-- Individual Rows inside column IA-->
+								<div class="ls-row content_row">
+									<div class="ls-lqr">
+										<div class="ls-area">
+											<div class="ls-area-body">
+												<div class="ls-cmp-wrap">
+													<div class="iw_component">
+														<!-- Content Area Component -->
+														<div class="wcm-authentication">
+															<div class="authentication">
+																<div class="authentication__inner">
+																	<div class="authentication__identification">
+																		<div class="identification_content">
+																			<div class="identification__inner">
+                                                                            <div class="saved_data">
+								<div class="saved_data__inner clearfix">
+									<div class="saved_details">
+										<div class="selected_profile_details">
+											<p data-rv-text="userInfo.aliasName" class="user_info name">MIller</p>
+										</div>
+										<div class="selected_profile_description">
+											<div class="selected_profile_details">
+												<div class="profile_label">
+													<label>Client number</label><span>:</span>
+												</div>
+												<p data-rv-text="userInfo.clientNumber" class="profile_info">34234 23423</p>
+											</div>
+											<div class="selected_profile_details">
+												<div class="profile_label">
+													<label>Card number</label><span>:</span>
+												</div>
+												<p data-rv-text="userInfo.cardNumber" class="profile_info">4534 5345 3454 5345 3</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="identification_ucr">
+							 	<p data-rv-class-show_active="violations.responseError" data-rv-text="violations.responseErrorMessage" class="error_summary"></p>
+                                <!-- Error summary standard component-->
+                                <div class="error_summary" data-rv-class-show_active="violations.authenticateErrorSummaryHeader">
+                                    <p data-rv-class-show_active="violations.authenticateErrorSummaryHeader" data-rv-text="config.app.message.Label.authentication.identification.errorMessage">Veuillez corriger les champs suivants</p>
+                                    <ul class="error_summary_items">
+                                      <li data-rv-showactive="violations.signatureError" data-rv-text="config.app.message.Label.authentication.authenticationUCR.electronicSignatureError" class="hide">Signature électronique</li>
+                                     </ul>
+                                </div>
+								<!-- Error summary standard component-->
+								<h4 class="ucr_title" data-rv-text="config.app.message.Label.authentication.authenticationUCR.sign">Signer</h4>
+								<div class="ucr_details">
+									<span class="ucr_details__numbering">1.</span>
+									<div class="ucr_details__content">
+										<p class="ucr_action_content">
+											<span class="ucr_action_content ucr_action_1content">
+												<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.cardReader">Insérez votre carte de banque dans le lecteur de carte et appuyez sur</span>
+												<span class="fontcon-m1 m1_icon"></span>
+											</span>
+										</p>
+									</div>
+									<span></span>
+								</div>
+								<div class="ucr_details">
+									<span class="ucr_details__numbering">2.</span>
+									<div class="ucr_details__content">
+										<p class="ucr_action_content" data-rv-text="config.app.message.Label.authentication.authenticationUCR.CHALLENGE">'CHALLENGE?' s'affiche</p>
+										<div class="ucr_content__challenge">
+											<span class="f_left challenge_part1" data-rv-text="config.app.message.Label.authentication.authenticationUCR.enterCode">Introduisez le code</span>
+											<div class="ucr_challenge__code challenge_part2">
+												<div class="ucr_code">
+													<p class="default_input_field ucr_code__input" data-rv-text="loginModel.challenge | getFormattedChallenge">3167 9264 </p>
+												</div>
+											</div>
+											<p class="challenge_part3">
+												<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.press">et appuyez sur</span>
+												<span class="fontcon-ucr-ok ok_icon"></span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="ucr_details">
+									<span class="ucr_details__numbering">3.</span>
+									<div class="ucr_details__content">
+										<p class="ucr_action_content" data-rv-text="config.app.message.Label.authentication.authenticationUCR.PIN">'PIN?' s'affiche</p>
+										<p class="ucr_action_content">
+											<span>
+												<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.enterPersonalPIN">Introduisez votre code PIN personnel et appuyez sur</span>
+												<span class="fontcon-ucr-ok ok_icon"></span>
+											</span>
+										</p>
+									</div>
+								</div>
+								<div class="ucr_details last-child">
+									<span class="ucr_details__numbering">4.</span>
+									<div class="ucr_details__content">
+										<p class="ucr_action_content" data-rv-text="config.app.message.Label.authentication.authenticationUCR.electronicSignature">La signature électronique s'affiche</p>
+										<span class="f_left ucr_content" data-rv-text="config.app.message.Label.authentication.authenticationUCR.enterElectronicSignature">Introduisez votre signature électronique</span>
+										<div class="ucr_signature" data-rv-class-field_error="violations.signatureError">
+										<p data-rv-class-show_active="violations.signatureError" class="field_error_message" data-rv-text="config.app.message.Label.authentication.authenticationUCR.errorDescriptionresponse">Veuillez introduire une signature électronique correcte</p>			
+											<div class="default_input_field ucr_signature__input">
+												<input type="tel" class="input_ucr_signature" placeholder="---- ----" data-location="5,10" max-length="8" maxlength="9" oncopy="return false;" onpaste="return false;" oncut="return false;" autocomplete="off">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                            </div>
+																		</div>
+                                                                        <div class="identification__navigation">
+							<div class="navigation_btns">
+								<div class="left_navigation_btn f_left left_btn_navigation"> 
+									  
+								</div>
+								<div class="right_navigation_btn f_right">
+                                <span class="lnk_primary" data-rv-text="config.app.message.Label.authentication.selectContract.back">Trouble signing in?</span>				
+									<button class="btn_default btn_primary2" data-rv-buttonstatus="violations.authenticateNextButton" data-rv-text="config.app.message.Label.authentication.authenticationUCR.submit">Signer</button>
+								</div>
+							</div>
+						</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- End -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End -->
+								<!-- Individual Rows inside column Service-->
+								<div class="ls-row service_navigation">
+									<div class="ls-lqr">
+										<div class="ls-area">
+											<div class="ls-area-body">
+												<div class="ls-cmp-wrap">
+													<div class="iw_component">
+														<!-- Service navigation Area Component -->
+														<div class="wcm-service">
+															<div class="service_cmp faq">
+																<a href="#">
+																	<div class="service_cmp__links">
+																		<span class="service__icon fontcon-faq"></span>
+																		<p>Yash</p>
+																	</div>
+																</a>
+															</div>
+														</div>
+														<!-- End -->
+													</div>
+												</div>
+												<div class="ls-cmp-wrap">
+													<div class="iw_component">
+														<!-- Service navigation Area Component -->
+														<div class="wcm-faq" >
+															<div class="widget" style="height:750px;">
+																<div class="widget_header">
+																	<div class="widget_header__inner">
+																		<h2>FAQ</h2>
+																		<span class="icon_widget_close fontcon-close"></span>
+																	</div>
+																</div>
+																<div class="module_content">
+																	<div class="module_listitem">
+																		<!-- For each question -->
+																		<div class="accordion_main content_l2_list_item">
+																			<div class="list_wrapper header_l2 dropdown_arrow">
+																				<div class="accordion_l2__inner">
+																					<h3>What does "by BNP Paribas Fortis" mean?</h3>
+																				</div>
+																			</div>
+																			<div class="accordion_content content_l2">
+																				<div class="list_wrapper">
+																					<div class="faq_answer rich_text">
+																						<div class="region">
+																							<div class="section level1">
+																								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="accordion_main content_l2_list_item">
+																			<div class="list_wrapper header_l2 dropdown_arrow">
+																				<div class="accordion_l2__inner">
+																					<h3>What does "by BNP Paribas Fortis" mean?</h3>
+																				</div>
+																			</div>
+																			<div class="accordion_content content_l2">
+																				<div class="list_wrapper">
+																					<div class="faq_answer rich_text">
+																						<div class="region">
+																							<div class="section level1">
+																								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="accordion_main content_l2_list_item">
+																			<div class="list_wrapper header_l2 dropdown_arrow">
+																				<div class="accordion_l2__inner">
+																					<h3>What does "by BNP Paribas Fortis" mean?</h3>
+																				</div>
+																			</div>
+																			<div class="accordion_content content_l2">
+																				<div class="list_wrapper">
+																					<div class="faq_answer rich_text">
+																						<div class="region">
+																							<div class="section level1">
+																								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- End -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ls-row footer">
+					<div class="ls-lqr">
+						<div class="ls-area">
+							<div class="ls-area-body">
+								<div class="ls-cmp-wrap">
+									<div class="iw_component">
+										<!-- Footer -->
+										<div class="wcm-footer">
+											<div class="footer_lnks clearfix">
+												<div class="link_list">
+													<div class="link_title">
+														<div class="title_txt">Contact</div>
+													</div>
+													<ul>
+														<li><a href="#">Contact overview</a></li>
+														<li><a href="tel:+3223129477">+ 31 2 261 11 11</a></li>
+													</ul>
+												</div>
+												<div class="link_list">
+													<div class="link_title">
+														<div class="title_txt">General</div>
+													</div>
+													<ul>
+														<li><a href="#">About us</a></li>
+														<li><a href="#">FAQs</a></li>
+													</ul>
+												</div>
+												<div class="link_list">
+													<div class="link_title">
+														<div class="title_txt">BNP Paribas fortis</div>
+													</div>
+													<ul>
+														<li><a href="#">BNP Paribas Fortis</a></li>
+														<li><a href="tel:12345" style="background:red">12345</a></li>
+														<li><a href="#">BNP Paribas Fortis group</a></li>
+													</ul>
+												</div>
+												<div class="link_list extsocial_icons">
+													<ul class="social_icon">
+														<li><a href="#" target="_blank" class="fontcon-twitter"></a></li>
+														<li><a href="https://www.facebook.com/bnpparibas.net" target="_blank" class="fontcon-facebook"></a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="footer_lnks clearfix">
+												<ul class="legal_lnks">
+													<li><a href="#">Disclaimer</a></li>
+													<li><a href="#">Privacy</a></li>
+													<li><a href="#">Cookies</a></li>
+												</ul>
+												<div class="legal_msg">
+													<p>&copy 2013 BNP Paribas Fortis</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

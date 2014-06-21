@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Site Structure</title>
+		<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/brand-mr2.css">
+<link rel="stylesheet" href="../css/pattern-lib.css">
+<link rel="stylesheet" href="../css/fonticon.css">
+	
+	</head>
+<body>
+
+<!-- Login page -->
+
+<div data-url-context="/server/" class="login-container" id="login_overlayer"> <form class="form-class">         
+		 <!-- Authentication IA -->
+            <div class="authentication new_profile">
+                <div class="authentication__inner">
+  				<!-- Box 2 -->
+                    <div class="authentication__identification">
+                    	<div class="identification_content">
+                        	<div class="identification__inner">
+                            	<!-- Error summary standard component-->
+                            	<p data-rv-text="violations.responseErrorMessage" data-rv-class-show_active="violations.responseError" class="error_summary"></p>
+                                <div data-rv-class-show_active="violations.errorSummaryHeader" class="error_summary">
+                                    <p data-rv-text="config.app.message.Label.LogonUpdate.IdentificationScreen.correctTheFollowingFields" data-rv-class-show_active="violations.errorSummaryHeader">Please correct the following fields:</p>
+                                    <ul class="error_summary_items">
+                                        <li data-rv-text="config.app.message.Label.LogonUpdate.IdentificationScreen.correctClientNumber" data-rv-showactive="violations.clientNumber" class="hide">Please type in a correct client number</li>
+										<li data-rv-text="config.app.message.Label.LogonUpdate.IdentificationScreen.correctCardNumber" data-rv-showactive="violations.cardNumber" class="hide">Please type in a correct card number</li>
+										<li data-rv-text="config.app.message.Label.LogonUpdate.IdentificationScreen.correctCardAlias" data-rv-showactive="violations.PEW0020" class="hide">Please type in a correct alias</li>
+									</ul>
+                                </div>
+                                <!-- Header title -->
+						<div class="identification_header">
+                                    <p data-rv-text="config.app.message.Label.authentication.identification.newProfile">Create a new profile</p>
+                        </div>
+                                <!-- Client number -->
+                                <div class="identification_fields">
+                                    <div class="identification_labels">
+                                        <label data-rv-text="config.app.message.Label.LogonUpdate.IdentificationScreen.clientNumber">Client number</label><span>:</span>
+										<div class="identification_tooltip">
+											<div class="identification_tooltip_container">
+												<div class="fontcon-attention attention_align">
+													<p data-rv-text="config.app.message.Label.LogonUpdate.IdentificationScreen.toolTipInfo" class="identification_tooltip_content">You will find your client number on your account statements, at the bottom left of each page</p>
+												</div>
+											</div>
+										</div>
+                                    </div>
+                                    <div class="default_input_control">
+                                        <p data-rv-text="config.app.message.Label.authentication.identification.error_PEW0026" data-rv-class-show_active="violations.PEW0005" class="field_error_message">Please type in a correct client number</p>
+										<p data-rv-text="config.app.message.Label.authentication.identification.error_PEW0025" data-rv-class-show_active="violations.PEW0004" class="field_error_message">Client number is empty</p>
+                                        <div data-rv-class-field_error="violations.clientNumber" class="identification_details">
+                                            <div class="default_input_field">
+                                                <input type="tel" max-length="10" placeholder="----- -----" data-rv-value="user.clientNumber" class="input_client_number" maxlength="11" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <!-- Card number -->
+                                <div class="identification_fields">
+                                    <div class="identification_labels">
+                                        <label data-rv-text="config.app.message.Label.LogonUpdate.IdentificationScreen.cardNumber">Card number</label><span>:</span> 
+										<div class="identification_tooltip">
+											<div class="identification_tooltip_container">
+												<div class="fontcon-attention attention_align">
+													<p data-rv-text="config.app.message.Label.LogonUpdate.IdentificationScreen.toolTipCardNumber" class="identification_tooltip_content ">Tooltip text card number</p>
+												</div>
+											</div>
+										</div>
+                                    </div>
+                                    <div class="default_input_control">
+                                        <p data-rv-text="config.app.message.Label.authentication.identification.error_PEW0028" data-rv-class-show_active="violations.PEW0015" class="field_error_message">Please type in a correct card number</p>
+										<p data-rv-text="config.app.message.Label.authentication.identification.error_PEW0027" data-rv-class-show_active="violations.PEW0016" class="field_error_message">Card number is empty</p>
+                                        <div data-rv-class-field_error="violations.cardNumber" class="identification_details">
+                                            <div class="default_input_field">
+                                                <input type="tel" max-length="17" placeholder="---- ---- ---- ---- -" data-rv-value="user.cardNumber" class="input_card_number" maxlength="21" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <!-- Save data -->
+                                <div class="save_profile">
+                                    <label>
+                                    	<input type="checkbox" data-rv-checked="user.saveSettings" class="save_profile__check">
+                                    	<span data-rv-text="config.app.message.Label.LogonUpdate.IdentificationScreen.saveInformation" class="save_profile__text">Save this information for my next login</span>
+                                    </label>
+									<div class="identification_tooltip identification_tooltip_save">
+										<div class="identification_tooltip_container">
+											<div class="fontcon-attention attention_align">
+												<p data-rv-text="config.app.message.Label.LogonUpdate.IdentificationScreen.toolTipSave" class="identification_tooltip_content">Tooltip text save</p>
+											</div>
+										</div>
+									</div>
+                                </div>
+                                <!-- Choose alias -->
+                                <div data-rv-class-show_active="user.saveSettings" class="identification_fields_alias show_active">
+                                    <p data-rv-text="config.app.message.Label.authentication.identification.errorMessageProfile" data-rv-class-show_active="violations.errorMessageProfile" class="field_error_message">*Please first delete a saved profile (max 10)r*</p>
+                                   
+                                    <div class="identification_labels">
+                                        <label data-rv-text="config.app.message.Label.LogonUpdate.IdentificationScreen.chooseAlias">Choose an alias</label>
+										<span>*:</span>	
+										<!--<div class="identification_tooltip hide">
+											<div class="identification_tooltip_container">
+												<div class="fontcon-attention attention_align">
+													<p class="identification_tooltip_content">Please type in a correct client numberPlease  </p>
+												</div>
+											</div>
+										</div>
+                                    --></div>
+                                    <div class="default_input_control">
+                                        <p data-rv-text="config.app.message.Label.authentication.identification.errorMessageAlias" data-rv-class-show_active="violations.PEW0020" class="field_error_message">EN Error message &lt;new-card-number&gt; TBD</p>
+                                        <div data-rv-class-field_error="violations.PEW0020" class="bnpp_identification_details">
+                                            <div class="default_input_field">
+                                                <input type="text" oncut="return false;" maxlength="15" data-rv-value="user.aliasName" data-rv-adddisabled="violations.errorMessageProfile" class="input_alias_name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<!-- Navigation btn -->
+							<div class="identification__navigation">
+								<div class="navigation_btns">
+									<div class="expand_navigation_btns">
+										<button data-rv-text="config.app.message.Label.authentication.identification.cardReader" data-rv-buttonstatus="violations.isUCRAvailable" class="btn_default btn_authentication clearfix authentication_btn btn_active_bg">Card reader (UCR)</button>
+									</div>
+									<div class="expand_navigation_btns">
+										<span data-disabled="false" class="lnk_primary login_lnk exp_lnk">Use an existing profile</span>
+									</div>
+								</div>
+							</div>
+                            </div>
+							
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </form>
+	</div>
+
+</body>
+</html>

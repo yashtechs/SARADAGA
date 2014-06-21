@@ -37,7 +37,7 @@ function iCheck(){
 	   $('.number-type').val('10.45');
 	}
 }	
-	//new IScroll('.dropdown_wrapper', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
+	//new IScroll('.item_list', { mouseWheel:true, scrollbars:true, fadeScrollbars:true });
 	//$('.select_message__structured input').mask('000 / 0000 / 00000')
 	$('.yashraja').focus(function(){
 		$('input').blur();

@@ -1,0 +1,9 @@
+/* Print */ 
+@media print {
+  .site_header, .user_message, .wcm-footer, .no_print, .action_btns, .content_btns, .action_icons, .dropdown_arrow::after, .content_menu, .alert_messages, .margin_col, .service_col, #cookiesMessage {
+    display: none;
+  }
+  .fluid {
+    width: $default-width;
+  }
+}

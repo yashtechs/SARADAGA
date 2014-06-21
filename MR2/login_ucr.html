@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Site Structure</title>
+		<link rel="stylesheet" href="css/reset.css">
+		
+		<link rel="stylesheet" href="css/brand.css">
+		<link rel="stylesheet" href="css/brand-mr2.css">
+		<link rel="stylesheet" href="css/pattern-lib.css">
+		<link rel="stylesheet" href="css/fonticon.css">
+	
+	</head>
+<body>
+<!-- Login page -->
+
+<div data-url-context="/server/" class="login-container" id="login_overlayer"><form class="form-class">
+
+			<!-- Authentication IA -->
+			<div class="authentication">
+				<div class="authentication__inner">
+					<!-- Box 1 -->
+					<div class="authentication__details">
+						<div class="identification__inner">
+							<!-- User information -->
+							<div class="saved_data">
+								<div class="saved_data__inner clearfix">
+									<div class="saved_details">
+										<div class="selected_profile_details">
+											<p data-rv-text="userInfo.aliasName" class="user_info name">MIller</p>
+										</div>
+										<div class="selected_profile_description">
+											<div class="selected_profile_details">
+												<div class="profile_label">
+													<label>Client number</label><span>:</span>
+												</div>
+												<p data-rv-text="userInfo.clientNumber" class="profile_info">34234 23423</p>
+											</div>
+											<div class="selected_profile_details">
+												<div class="profile_label">
+													<label>Card number</label><span>:</span>
+												</div>
+												<p data-rv-text="userInfo.cardNumber" class="profile_info">4534 5345 3454 5345 3</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> 
+						</div>
+					</div>
+					<!-- Box 2 -->
+					<div class="identification_ucr">
+						<div class="identification_content">
+							<div class="identification__inner">
+							
+							 	<p class="error_summary" data-rv-text="violations.responseErrorMessage" data-rv-class-show_active="violations.responseError"></p>
+                                <!-- Error summary standard component-->
+                                <div data-rv-class-show_active="violations.authenticateErrorSummaryHeader" class="error_summary">
+                                    <p data-rv-text="config.app.message.Label.authentication.identification.errorMessage" data-rv-class-show_active="violations.authenticateErrorSummaryHeader">EN Error message on top TBD</p>
+                                    <ul class="error_summary_items">
+                                      <li class="hide" data-rv-text="config.app.message.Label.authentication.authenticationUCR.electronicSignatureError" data-rv-showactive="violations.signatureError"></li>
+                                     </ul>
+                                </div>
+								<!-- Error summary standard component-->
+								
+								<div class="ucr_details">
+									<span class="ucr_details__numbering">1.</span>
+									<div class="ucr_details__content">
+										<p class="ucr_action_content">
+											<span class="ucr_action_content ucr_action_1content">
+												<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.cardReader">Put your bank card in the reader and press</span>
+												<span class="fontcon-m1 m1_icon"></span>
+											</span>
+										</p>
+									</div>
+									<span></span>
+								</div>
+								<div class="ucr_details">
+									<span class="ucr_details__numbering">2.</span>
+									<div class="ucr_details__content">
+										<p data-rv-text="config.app.message.Label.authentication.authenticationUCR.CHALLENGE" class="ucr_action_content">'CHALLENGE' is displayed.</p>
+										<div class="ucr_content__challenge">
+											<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.enterCode" class="f_left challenge_part1">Enter the code</span>
+											<div class="ucr_challenge__code challenge_part2">
+												<div class="ucr_code">
+													<p data-rv-text="loginModel.challenge | getFormattedChallenge" class="default_input_field ucr_code__input">1111 1111 </p>
+												</div>
+											</div>
+											<p class="challenge_part3">
+												<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.press">and press</span>
+												<span class="fontcon-ucr-ok ok_icon"></span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="ucr_details">
+									<span class="ucr_details__numbering">3.</span>
+									<div class="ucr_details__content">
+										<p data-rv-text="config.app.message.Label.authentication.authenticationUCR.PIN" class="ucr_action_content">'PIN' is displayed.</p>
+										<p class="ucr_action_content">
+											<span>
+												<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.enterPersonalPIN">Enter your personal PIN code and press</span>
+												<span class="fontcon-ucr-ok ok_icon"></span>
+											</span>
+										</p>
+									</div>
+								</div>
+								<div class="ucr_details last-child">
+									<span class="ucr_details__numbering">4.</span>
+									<div class="ucr_details__content">
+										<p data-rv-text="config.app.message.Label.authentication.authenticationUCR.electronicSignature" class="ucr_action_content">*Electronic signature*</p>
+										<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.enterElectronicSignature" class="f_left ucr_content">Enter your electronic signature</span>
+										<div data-rv-class-field_error="violations.signatureError" class="ucr_signature">
+										<p data-rv-text="config.app.message.Label.authentication.authenticationUCR.errorDescriptionresponse" class="field_error_message" data-rv-class-show_active="violations.signatureError">EN Error message &lt;response&gt; TBD</p>			
+											<div class="default_input_field ucr_signature__input">
+												<input type="tel" autocomplete="off" oncut="return false;" onpaste="return false;" oncopy="return false;" maxlength="9" max-length="8" data-location="5,10" placeholder="---- ----" class="input_ucr_signature">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						<!-- Navigation btn -->
+						<div class="identification__navigation">
+							<div class="navigation_btns">
+								<div class="right_navigation_btn f_right">
+									<span class="lnk_primary login_lnk">Trouble in signing in?</span>
+									<button class="btn_default btn_authentication authentication_btn">Submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</form></div>
+			
+
+
+</body>
+</html>
