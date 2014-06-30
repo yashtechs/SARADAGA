@@ -1,0 +1,40 @@
+/* Breakpoint 1279 */
+@media all and (max-width: 79.9375em) {
+	.main_wrapper .wcm-service-nav {
+		display: none;
+	}
+	.linux.safari4 .login_bg, .unknown.safari1 .login_bg {
+		background-attachment: local;
+	}
+}
+
+@media all and (min-width: 80em) {
+	body, .site_header__inner, #siteHeaderErrorInner {
+		max-width: 80em;
+		margin: 0 auto;
+	}
+	body {
+		-webkit-box-shadow: 0px 0px 2px 0px $body-shadow;
+		-moz-box-shadow: 0px 0px 2px 0px $body-shadow;
+		box-shadow: 0px 0px 2px 0px $body-shadow;
+		display: table;
+	}
+  	// Layout
+	.content_col {
+		margin-right: -26.25em;
+	}
+	.fluid {
+		margin-right: 26.25em;
+	}
+	.meta_nav_user {
+		display: block;
+	}
+	.linux.safari4 .login_bg {
+		background-attachment: local;
+	}
+	/* severity */
+	.warning_area .severity_message {
+		width: 80em;
+	}
+  
+}

@@ -1,0 +1,117 @@
+/* Function & Service module headers */
+
+.module_header {
+ 	width: $default-width;
+	min-height: 8.75em;
+	padding: 1.87em;
+	top: 0;
+	position: relative;
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,0,0)
+}
+.module_header__inner {
+	display: table;
+ 	width: $default-width;
+}
+.h_col {
+	width: 50%;
+	float: left;
+	min-height: 0.12em;
+}
+.module_content {
+	position: relative;
+ 	background: unquote($white-bg);
+	min-height: 25.94em;
+	@include border-radius-all(0,0,$glb-bleft-radius,$glb-bright-radius)
+}
+.module_row {
+ 	width: $default-width;
+	display: table;
+	 color: unquote($white-clr);
+	 label {
+		 float: left;
+		 margin: 0.69em 0.31em 0 0;
+		 text-transform: uppercase;
+		 white-space: nowrap;
+		 min-width: 0.62em;
+	}
+}
+.module_semirow {
+	text-align: right;
+ 	color: unquote($white-clr);
+	margin-top: 0.25em;
+	span {
+	 	display: inline-block;
+	}
+}
+.module_title {
+	font-size: 2.25em;
+	text-transform: uppercase;
+ 	color: unquote($white-clr);
+	line-height: 1.14em;
+	font-weight: 100;
+	float: left;
+}
+.module_operation_title{
+	color: unquote($white-bg);
+	width: $default-width;
+	clear: both;
+}
+.module_selected_value {
+	font-size: 2.25em;
+	text-transform: uppercase;
+ 	color: unquote($white-clr);
+	line-height: 1.14em;
+	font-weight: 100;
+	font-size: 1.87em;
+	float: right;
+	span {
+	 	display: inline-block;
+	}
+}
+.tabs_row {
+	padding: 0 0.62em;
+}
+
+/* Module header themes */
+
+.h_accounts {
+	background:$h-accounts-bg;
+}
+.h_cards {
+	background:$h-cards-bg;
+}
+.h_functions {
+	background: $h-function-bg;
+}
+.h_services {
+	background-color:$h-services-bg;
+}
+.login_bg .h_services, .module_bg {
+ 	background: unquote($white-bg);
+}
+
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+    .module_header {
+        padding: 1.25em 0.62em 0.62em 0.62em;
+        min-height: 84px;
+    }
+    .module_row label {
+        float: right;
+        margin: 0;
+        font-size: 0.62em;
+    }
+    .module_selected_value {
+        font-size: 1em;
+        width: 100%;
+        text-align: right;
+    }
+    .module_semirow {
+        font-size: 0.87em;
+    }
+    .module_title {
+        font-size: 1.12em;
+    }
+}

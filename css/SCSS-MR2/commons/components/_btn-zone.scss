@@ -1,0 +1,28 @@
+/* Navigation btns for forms & static pages */
+
+.btns_zone, .action_btns {
+	padding: 1.87em;
+ 	width: $default-width;
+	display: table;
+ 	border-top: 1px solid $default-border-clr;
+}
+.btns_zone {
+	border: none;
+}
+.zone_btn {
+ 	background: unquote($zones-bg);
+	margin: 0;
+	 &:hover {
+		@include color-rgba(255, 255, 255, 0.9);
+	}
+}
+
+/* Button components and Alignmets */
+
+.wcm-btns-zone {
+	width: 45.63em;
+	margin: 0 auto;
+}
+.logout_btn .btns_zone {
+	padding: 1.87em 0;
+}

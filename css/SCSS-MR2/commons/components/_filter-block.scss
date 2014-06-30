@@ -1,0 +1,171 @@
+
+.filter_block {
+ 	width: $default-width;
+	display: none;
+	position: relative;
+}
+.filter_inner_block {
+	display: table;
+}
+.filter_values {
+	padding: 0.87em 0;
+ 	color:  $link-indication;
+	cursor: pointer;
+	&:first-child .filter_link {
+	 	padding-left: 0;
+	}
+	p {
+	    @include light;
+		padding-right: 1.25em;
+		line-height: 1;
+	}
+	.dropdown_arrow:after {
+		right: 0.81em;
+		top: 0.56em;
+	}
+}
+.filter_link {
+ 	border-left: 1px dotted $default-border-clr;
+	left: -0.12em;
+	padding: 0 0.62em 0 1em;
+	position: relative;
+	 p {
+	 	margin: 0;
+	}
+}
+.filter_values {
+	 &:first-child .filter_link {
+	 	border: 0;
+	}
+}
+.filter_option {
+	min-width: 11.25em;
+	position: absolute;
+	top: 2.75em;
+	border: 1px solid #D8DBDE;
+ 	background:unquote($white-bg);
+	display: none;
+	z-index: 100;
+}
+.filter_option_active {
+	display: block;
+}
+.filter_option_value {
+ 	border-bottom: 1px solid $default-border-clr;
+	padding: 0.87em 0.81em 0.81em;
+	white-space: nowrap;
+ 	&:last-child {
+ 		border: 0;
+	}
+}
+.filter_btn {
+	padding: 1.87em;
+}
+.menu_options {
+	color: #009966;
+	cursor: pointer;
+}
+
+/* Filter Overlay Popup */ 
+
+.filter_popup {
+ 	width: $default-width;
+ 	height: $default-height;
+	position: absolute;
+	text-align: center;
+	z-index: 200;
+ 	@include color-rgba(255, 255, 255, 0.8);
+	top: 0;
+	display: none;
+}
+.filter_popup__inner {
+	 width: $default-width;
+	 height: $default-height;
+}
+.filter_popup__content {
+	position: relative;
+ 	background: unquote($white-bg);
+	border: 1px solid #D8DBDE;
+	z-index: 112;
+	margin: 0 auto;
+	top: 0.62em;
+	display: inline-block;
+}
+.filter_content_inner {
+	padding: 1.87em;
+	display: table;
+ 	width: $default-width;
+}
+.popup_close {
+	font-size: 0.69em;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	padding: 1.8em;
+}
+.filter_content_heading {
+	padding: 0.62em 0;
+ 	@include regular;
+}
+.filter_content__range {
+	text-align: left;
+	width: 18.75em;
+	display: none;
+}
+.filter_content__specific {
+	text-align: left;
+	display: none;
+}
+.filter_inputs_col {
+	width: 100%;
+	&:first-child{ margin-bottom:0.75em;}
+}
+.filter_inputs_col label, .filter_inputs_row label {
+ 	@include regular;
+	padding-bottom: 0.37em;
+	display: table;
+}
+.filter_calendar {
+	padding-top: 0.4em;
+}
+.filter_popup .filter_btn {
+	padding: 1.87em 0 0 0;
+}
+.msie .filter_popup .default_input_field {
+	display: inline-block;
+}
+
+// 479
+
+@media all and (max-width: 29.9375em) {
+  .filter_content_inner {
+    padding: 0.64em;
+  }
+  .filter_content__range, .filter_popup .datepicker {
+    width: 17.50em;
+  }
+  .filter_content__specific, .filter_content__range {
+    padding-top: 1.25em;
+  }
+  .show_filters p{
+  	 width:6.87em;
+   }
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+    .search_block {
+        padding: 1.25em 0.62em 0.62em;
+    }
+    .no_filters .search_field {
+        width: 100%;
+    }
+    .filter_btn {
+        padding: 0.62em;
+    }
+    .filter_popup .filter_btn {
+        padding: 0.62em 0;
+    }
+}

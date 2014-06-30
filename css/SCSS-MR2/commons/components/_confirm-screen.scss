@@ -1,0 +1,33 @@
+
+.ucr_highlight p, .amount_highlight {
+	 color: $highlight-clr;
+	 @include regular;
+}
+.confirmation_details__amount {
+ 	width: $default-width;
+	display: table;
+}
+.confirm_amount .amount_highlight {
+	margin-right: 0px;
+}
+.alias_name {
+ 	color: $select-color;
+	display: table;
+	padding-top: 0.25em;
+	 label {
+	 	float: left;
+	}
+}
+.space_right {
+	margin-right: 0.25em;
+}
+.space_left {
+	margin-left: 0.25em;
+}
+.exp_btn {
+	margin-right: 0.62em;
+}
+.exp_lnk {
+	padding: 0.85em 0;
+	text-align: center;
+}

@@ -1,0 +1,24 @@
+.action_group {
+ 	width: $default-width;
+	display: table;
+}
+.action_icons {
+	float: right;
+}
+.action_icons__global {
+ 	border-left: 1px dotted $default-border-clr;
+	font-size: 1.25em;
+	padding: 0 0.73em 0 1em;
+	cursor: pointer;
+	display: inline-block;
+	margin: 1.2em 0;
+}
+.action_icons .action_icons__global:first-child {
+	border: none;
+}
+
+@media all and (max-width: 47.9375em) {
+	.fontcon-print {
+		display: none;
+	}
+}

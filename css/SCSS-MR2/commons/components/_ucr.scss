@@ -1,0 +1,170 @@
+/* UCR */ 
+
+.ucr_comp {
+	 background: $component-bg;
+	 width: $default-width;
+}
+.ucr_title {
+	font-size: 1.5em;
+	padding-bottom: 0.75em;
+	line-height: 1.5em;
+	text-transform: uppercase;
+}
+.ucr_img {
+	background: url(images/ucr_img.png) no-repeat;
+	width: 5.31em;
+	height: 5em;
+	position: absolute;
+	right: 3.12em;
+	top: -0.62em;
+}
+.ucr_details {
+	font-size: 1em;
+ 	border-bottom: 1px solid $default-border-clr;
+ 	width: $default-width;
+	display: table;
+	padding: 0.94em 0;
+	position: relative;
+	line-height: 1.80em;
+	&:last-child {
+	 	border: none;
+	}
+}
+.ucr_details__numbering {
+	width: 1em;
+	float: left;
+ 	@include regular;
+}
+.ucr_details__content {
+	width: 94%;
+	display: table;
+ 	p:first-child {
+ 		@include regular;
+	}
+}
+.ucr_code {
+	display: table;
+	float: left;
+	text-align: center;
+ 	p:nth-child(2) {
+		 font-size: 0.75em;
+		 line-height: 0.62em;
+		 text-align: left;
+		 padding-left: 1em;
+		 margin-top: 0.56em;
+	}
+}
+.ucr_contentone {
+	padding: 0.5em 0;
+	margin-right: 0.62em;
+}
+.ucr_code__input {
+	width: auto !important;
+ 	color: $highlight-clr !important;
+	padding: 0.56em 0.62em 0;
+	cursor: default;
+}
+.ucr_challenge__content {
+	display: inline-block;
+}
+.challenge_part1 {
+	padding: 0.5em 0;
+	margin-right: 0.62em;
+}
+.challenge_part2 {
+	float: left;
+	display: table;
+	margin-right: 0.62em;
+}
+.challenge_part3 {
+	display: inline-block;
+	padding: 0.44em 0;
+	float: left;
+}
+.ucr_signature {
+	display: inline-block;
+}
+.default_input_field.ucr_signature__input {
+	width: 15.62em;
+}
+.ucr_content__challenge {
+ 	width: $default-width;
+	padding-top: 0.62em;
+	position: relative;
+}
+.m1_icon {
+ 	color: $indicator-clr-icon;
+	font-size: 1.6em;
+	position: relative;
+	margin: 0 0.31em;
+	display: inline-block;
+	vertical-align: middle;
+ 	&::after {
+ 		content: 'M1';
+ 		font-size: 14px;
+ 		position: absolute;
+ 		left: 0.4em;
+ 		top: 0.4em;
+ 		color: unquote($white-clr-icon);
+ 		@include regular;
+	}
+}
+.m2_icon {
+ 	color: $icon-color-m2;
+	position: relative;
+	font-size: 1.6em;
+	display: inline-block;
+	margin: 0 0.31em;
+	vertical-align: middle;
+}
+.ok_icon {
+	font-size: 1.6em;
+	position: relative;
+ 	color: $icon-color-ok;
+	margin: 0 0.31em;
+	display: inline-block;
+	vertical-align: middle;
+ 	&::after {
+ 		content: 'OK';
+ 		font-size: 0.5em;
+ 		position: absolute;
+ 		@include regular;
+ 		color: unquote($white-clr-icon);
+ 		top: 0.64em;
+ 		left: 0.38em;
+	}
+}
+.last_ok {
+	margin: 0;
+}
+.ucr_code_ok {
+	float: left;
+	margin: 0.24em;
+}
+/* Customised UCR for other languages */ 
+.de .ucr_details:nth-child(2) .ucr_action_content, .fr .ucr_details:nth-child(2) .ucr_action_content {
+	width: 55%;
+}
+.de .ucr_img, .fr .ucr_img {
+	top: 1em;
+}
+.de .login_bg .ucr_details:nth-child(2) .ucr_action_content, .fr .login_bg .ucr_details:nth-child(2) .ucr_action_content {
+ 	width: $default-width;
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+ 	.ucr_img {
+        display: none;
+    }
+    .de .ucr_details:nth-child(2) .ucr_action_content, .fr .ucr_details:nth-child(2) .ucr_action_content {
+        width: 100%;
+    }
+    .de .login_bg .ucr_details:nth-child(2) .ucr_action_content, .fr .login_bg .ucr_details:nth-child(2) .ucr_action_content {
+        width: 88%;
+    }
+    .selected_profile_details {
+        font-size: 0.87em;
+    }
+}

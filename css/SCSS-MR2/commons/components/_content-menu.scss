@@ -1,0 +1,101 @@
+.content_block {
+    width: $default-width;
+	min-height: 0.06em;
+   #accountList, #cardList {
+   		margin-left: 9.38em;
+   }
+}
+.content_menu {
+	float: left;
+}
+.content_menu_items {
+	width: 9.38em;
+	height: 9.38em;
+	cursor: pointer;
+	margin-bottom: 0;
+	p {
+		font-size: 1.25em;
+		color: unquote($white-clr);
+		line-height: 1;
+		text-transform: uppercase;
+		padding: 0;
+		text-align: left;
+	}
+}
+.content_menu__links {
+	padding: 0.94em;
+	height: 9.375em;
+	position: relative;
+    @include transition(all, 0.6s, ease-in-out);
+	@include border-radius-all($glb-tleft-radius,0,0,$glb-bright-radius);
+}
+/* Content menu customised for Home */
+.home .content_block {
+	display: block;
+}
+
+/* Content menu theme */
+
+.accounts_menu {
+	@include bg-color($h-accounts-bg,$bg-bottom);
+	&:hover, &.active {
+	   background: $accounts-hover-clr;
+	}
+	&.active::after {
+		position: absolute;
+		top: 50%;
+		right: -0.563em;
+		display: block;
+		width: 0;
+		height: 0;
+		margin-top: -0.188em;
+		border-left: 10px solid $accounts-hover-clr;
+		border-top: 9px solid transparent;
+		border-bottom: 9px solid transparent;
+		content: "";
+	}
+}
+.cards_menu {
+ 	//background: $h-cards-bg;
+	@include bg-color($h-cards-bg,$bg-bottom);
+	&:hover, &.active {
+	 	background: $cards-hover-clr;
+	}
+	&.active::after {
+		position: absolute;
+		top: 50%;
+		right: -0.63em;
+		display: block;
+		width: 0;
+		height: 0;
+		margin-top: -0.188em;
+		border-left: 10px solid $cards-hover-clr;
+		border-top: 9px solid transparent;
+		border-bottom: 9px solid transparent;
+		content: "";
+	}
+}
+
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+	.content_menu {
+		width: $default-width;
+		height: auto;
+	}
+	.content_menu_items {
+		width: 50%;
+		float: left;
+		&:last-child .content_menu__links{
+			float:right;
+		}
+	}
+	.accounts_menu.active::after, .cards_menu.active::after {
+		display: none;
+	}
+	/*.content_menu__links{
+		@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
+		width:99.4%;
+	}*/
+}

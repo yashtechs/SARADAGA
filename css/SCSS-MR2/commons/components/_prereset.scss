@@ -1,0 +1,61 @@
+button {
+	border: 0;
+}
+.f_left {
+	float: left;
+}
+.f_right {
+	float: right;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+a {
+	text-decoration: none;
+ color: $default-color;
+}
+
+::selection, ::-moz-selection {
+ background: $highlight-comp-bg;
+ text-shadow: none;
+}
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+input:focus, textarea:focus {
+	outline: none !important;
+	height: auto;
+}
+input {
+	 &[type="text"], &[type="tel"] {
+	 -webkit-user-modify: read-write-plaintext-only;
+	}
+}
+textarea {
+	-webkit-user-modify: read-write-plaintext-only;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
+}
+a[href^=tel] {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+ color: $default-color;
+}
+.win {
+ .footer a[href^=tel], .contact_us a[href^=tel] {
+ pointer-events: none;
+ cursor: default;
+ text-decoration: none;
+ color: $default-color;
+}
+}
+* {
+ @include boxsizing(border-box);
+ &:before, &:after {
+ @include boxsizing(border-box);
+}
+}

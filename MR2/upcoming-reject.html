@@ -5,12 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Site Structure</title>
-		<link rel="stylesheet" href="css/reset.css">
-		
-		<link rel="stylesheet" href="css/brand.css">
-		<link rel="stylesheet" href="css/brand_mr2.css">
-		<link rel="stylesheet" href="css/pattern-lib.css">
-		<link rel="stylesheet" href="css/fonticon.css">
+		<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/brand-mr2.css">
+<link rel="stylesheet" href="../css/pattern-lib.css">
+<link rel="stylesheet" href="../css/fonticon.css">
 	
 	</head>
 <body>
@@ -849,8 +847,8 @@
                   <div class="accordion_header header_l1 dropdown_arrow dropdown-active" data-rv-on-click="accordion:accToggle">
                      <div class="accordion_l1__inner">
                         <h4 data-rv-text="config.app.message.Label.accounttransactions.rejectedMovements.rejectedTransactions">Rejected transactions</h4>
-                        <span class="space_left">(</span><span class="rejectedcount">3</span><span>)</span>
-                        <span class="number_rejected fontcon-expire escalmation_icon hide" data-rv-class-show_active="transactions.showexclamation"></span>
+                        <span class="space_left bracket">(</span><span class="rejectedcount">3</span><span class="bracket">)</span>
+                        <span class="inline_icon fontcon-expire notexecuted" data-rv-class-show_active="transactions.showexclamation"></span>
                      </div>
                   </div>
                   <div class="accordion_content content_l2 rejected_transactions collapse in" style="height: auto; "><div class="accordion_list rejected_detail">
@@ -862,10 +860,12 @@
                <!-- Level3 Header Clickable -->
                <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
                   <div class="list_content_col1">
-                  	<span class="list_icon fontcon-transaction-in fontcon-transaction-out" data-rv-arrowdirection="rejectedmovements.amount.amount"></span>
                      <div class=" list_content_details">
                         <div class="listiban_group">
-                           <h3 class="service_highlight" data-rv-text="rejectedmovements.rejectedText">Insufficient balance</h3>
+                        <span>
+                           <span class="list_header_title" data-rv-text="rejectedmovements.rejectedText">Insufficient balance</span>
+                           <span class=" inline_icon fontcon-executed expire" data-rv-arrowdirection="rejectedmovements.amount.amount"></span>
+                           </span>
                            <span class="list_icon escalmation_icon" data-rv-displayexclamation="rejectedmovements.rejectionDate" displayexclamation="28.02.2014"></span>
                         </div>
                         <div class="listiban_detail">
@@ -912,7 +912,7 @@
                <!-- Level3 Header Clickable -->
                <div class="list_item__header  clearfix accordion_header header_l3" data-rv-on-click="accordion:innerToggle">
                   <div class="list_content_col1">
-                  	<span class="list_icon fontcon-transaction-in" data-rv-arrowdirection="rejectedmovements.amount.amount"></span>
+                  	
                      <div class=" list_content_details">
                         <div class="listiban_group">
                            <h3 class="service_highlight" data-rv-text="rejectedmovements.rejectedText">Insufficient balance</h3>

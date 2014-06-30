@@ -1,0 +1,13 @@
+/*Switch button*/
+// Seperated as Hellobank holds different design
+.switch_container{ border:1px solid #d8dbde; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; display:table; background:#ffffff; }
+.switch_btn_align{ 
+	padding:6px 20px; 
+	color:#252429; 
+	cursor:pointer; 
+	&:hover{ 
+		color:#008578; 
+	}
+}
+.switch_btn{ float:left; }
+.switch_highlight{ background:#009966; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; color:#ffffff !important; }

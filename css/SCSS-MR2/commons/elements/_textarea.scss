@@ -1,0 +1,34 @@
+.default_text_area {
+	 width: $default-width;
+	 textarea {
+		 border: 1px solid $default-border-clr;
+		 font-size: 1em;
+		 color: $select-color;
+		 width: $default-width;
+		 resize: vertical;
+		 padding:  0.375em;
+		 @include boxsizing(border-box);
+		 @include border-radius(0px);
+		 -webkit-appearance: none;
+		 @include light;
+		 @include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bright-radius,$glb-bright-radius);
+		 &:focus {
+			border-color: $default-border-clr;
+		}
+	}
+}
+.eurostructured_remaining {
+ 	color: $select-color;
+}
+.default_text_area {
+ 	.message_length {
+ 		float: right;
+	}
+	.text_count {
+ 	color: $select-color;
+	margin-right: 0.25em;
+ 	span {
+ 		padding-left: 0.25em;
+	}
+  }
+}

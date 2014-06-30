@@ -1,0 +1,269 @@
+/* Flyout */
+
+.flyout_selection {
+	width: 23em;
+	position: relative;
+}
+.selected_details {
+ 	width: $default-width;
+}
+.selected_details__account {
+	display: table;
+	width:316px;
+	z-index:2;
+	position:relative;
+}
+.accounts_title, .cards_title, .functions_title {
+	font-size: 1.88em;
+	text-transform: uppercase;
+ 	color: unquote($white-clr);
+	line-height: 1.14em;
+	cursor: pointer;
+	float: left;
+	white-space: nowrap;
+	min-width: 7.87em;
+}
+.flyout_active {
+	 .flyout_container {
+		 width:$default-width;
+		 background:unquote($white-bg);
+		 height:26em;
+		 position:absolute;
+		 z-index:999;
+		 @include transition(height, 0.4s, ease-in-out);
+		 top: -1.25em;
+		 left: -1.25em;
+		 border:1px, solid, $default-border-clr;
+	}
+	.selected_details {
+		padding: 1.25em 2.5em 1.25em 1.25em;
+	}
+	.functions_info, .functions_title {
+	 	color: $title-clr;
+	}
+}
+.selected_details__info {
+	 color: unquote($white-clr);
+	 p {
+		 padding: 0.12em 0;
+		 text-transform: uppercase;
+	}
+}
+.flyout_list_items {
+	float: left;
+	opacity: 0;
+	position: absolute;
+	top: 6.87em;
+	display: none;
+ 	border-top: 1px solid $default-border-clr;
+ 	width: $default-width;
+}
+.flyout_active .show_listitems {
+	opacity: 1;
+	display: table;
+}
+.flyout_list_items {
+	.header_l1 {
+		 font-size: 1.25em;
+		 cursor: default;
+	}
+	.accordion_list:first-child .header_l1 {
+		border: none;
+	}
+	.accordion_l1__inner {
+		padding: 0.76em 0;
+	}
+	.group_colone {
+	 	width: $default-width;
+	}
+	.group_coltwo h4 {
+		padding: 0.12em 0 0.12em 0;
+	}
+	.list_content_col1 {
+		max-width: none;
+	 	width: $default-width;
+	}
+	.list_content_col2 {
+		max-width: none;
+	 	width: $default-width;
+		padding-top: 0.62em;
+	}
+	.listiban_detail {
+		font-size: 0.87em !important;
+	}
+	.item_list {
+		height: 18.75em;
+		overflow: hidden;
+		padding: 0 20px 0 20px;
+		position: relative;
+		pointer-events: auto;
+	 	@include touch-action(none);
+	}
+}
+.flyout_selection {
+	 .dropdown_arrow:after {
+		 border-color: #ffffff transparent transparent transparent;
+		 top: 0.87em;
+		 right: 4.37em;
+	}
+	.dropdown-active:after {
+		border-color: transparent transparent #252429 transparent;
+		top: 34px;
+		right: 48px;
+	}
+}
+.hello_account {
+	 .hello_icon {
+		 display: inline-block;
+		 margin:0.31em 0 0 0.12em;
+	}
+	.dropdown_arrow:after {
+		right: 3.37em;
+	}
+	.dropdown-active:after {
+		right: 2em;
+	}
+}
+
+/* Right aligned Flyout */
+
+.right_col {
+	.selected_details__account {
+		 float: right;
+		 width:auto;
+	}
+	.selected_details.dropdown_arrow {
+		padding-right: 1.25em;
+	}
+	.flyout_active .selected_details.dropdown_arrow {
+		padding-right: 2.5em;
+	}
+	.selected_details__info {
+		text-align: right;
+	 	width: $default-width;
+	}
+	.flyout_selection {
+		.dropdown_arrow:after {
+		 right: 0;
+		}
+		&.flyout_active .dropdown_arrow:after {
+		 	right: 1.25em;
+		}
+	}
+	.flyout_active {
+		.flyout_container {
+		 	left: 1.25em;
+		}
+		.selected_details__info {
+			padding-right: 0px;
+		}
+    }
+	.list_group:first-child .list_header {
+		border-top: none;
+	}
+	.functions_title {
+		text-align: right;
+	}
+}
+
+/* Fly out customised for IAs */
+
+.flyout_active {
+	.accounts_info, .accounts_title {
+	 	color: $accounts-clr;
+	}
+	.cards_info, .cards_title {
+	 	color: $cards-clr;
+	}
+}
+.cards_transactions {
+	.hello_account .dropdown_arrow:after {
+	 	right: 2.62em;
+	}
+	.flyout_active .selected_details {
+		padding-right: 2em;
+	}
+	.hello_account .dropdown-active:after {
+		right: 1.25em;
+	}
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+.flyout_selection {
+	 width: 199px;
+	.hello_icon {
+		margin-top: 0;
+	}
+	.dropdown_arrow{
+		&:after {
+			top: 0.56em;
+			right: 2.5em;
+    	}
+	}
+	.dropdown-active{
+		&:after {
+			top: 1.75em;
+			right: 5em;
+    	}
+	}
+	.item_list {
+        padding: 0 0.62em 0 0.62em;
+    }
+}
+.flyout_active {
+	width: 15.62em;
+	.selected_details {
+        padding: 1.25em 0.62em 0.62em;
+    }
+	.flyout_container {
+        left: -0.62em;
+    }
+}
+.functions_title, .cards_title, .accounts_title {
+	font-size: 1em;
+}
+.selected_details__info p {
+	font-size: 0.75em;
+}
+.flyout_list_items {
+	top: 5.62em;
+}
+.selected_details__account{ 
+	width:200px;
+}
+/* Flyout for Cards */
+.card_transactions{
+	.flyout_selection{
+		.hello_account{
+			.dropdown_arrow{
+				&:after{
+					right: 0.87em;
+				}
+			}
+			.dropdown-active{
+				&:after{
+				right: 3.37em;	
+				}
+			}
+		}
+	}
+}
+
+/* Right aligned Flyout */
+
+ .right_col{
+ 	.flyout_active{
+		.selected_details.dropdown_arrow {
+        	padding-right: 1.87em;
+    	}
+		.flyout_container {
+        	left: 0.62em;
+    	}
+		.dropdown_arrow:after {
+        	right: 0.62em;
+    	}
+	}
+ }
+}

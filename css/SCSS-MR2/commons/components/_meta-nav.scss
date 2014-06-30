@@ -1,0 +1,75 @@
+.meta_navigation {
+	float: right;
+	padding-top: 1.12em;
+	font-size: 0.88em;
+ 	color: $select-color;
+}
+.meta_nav_user {
+	float: left;
+ 	border-right: 1px dotted $default-border-clr;
+	padding-right: 0.94em;
+	margin-right: 0.94em;
+	display: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 21.40em;
+ 	span:first-child {
+ 		margin-right: 0.25em;
+	}
+}
+.meta_nav_service, .meta_nav_logout {
+	float: left;
+}
+.meta_nav_logout {
+	 a {
+	 color: $select-color;
+	 &:hover span {
+	 	color: $hover;
+	}
+  }
+}
+.meta_icon:hover, .meta_icons_s.active .meta_icon {
+ 	color: $hover;
+}
+.meta_logout {
+	margin-right: 10px;
+}
+.meta_icon {
+ color:$metaicon-clr;
+}
+.meta_icons_s {
+	display: none;
+	float: left;
+    border-right: 1px dotted $default-border-clr;
+	padding: 0 0.85em;
+}
+
+// 1279
+
+@media all and (max-width: 79.9375em){
+	.meta_navigation {
+		padding: 0.62em 0;
+	}
+	.meta_nav_service {
+		margin-right: 0.75em;
+		line-height: 0;
+	}
+	.meta_icons_s {
+		display: block;
+	}
+	.meta_icons_l {
+		padding-right: 0.12em;
+	}
+	.meta_logout {
+		display: none;
+	}
+	.meta_nav_logout {
+		float: left;
+		line-height: 0;
+	}
+	.meta_icon {
+		color: $default-clr-icon;
+		font-size: 1.25em;
+	}
+}

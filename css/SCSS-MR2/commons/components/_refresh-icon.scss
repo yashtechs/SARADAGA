@@ -1,0 +1,35 @@
+/* Zoomit refresh */ 
+
+.refresh {
+	cursor: pointer;
+	padding: 0.62em 0;
+	font-weight: 600;
+	float: left;
+}
+.icon_refresh {
+ 	color: unquote($white-clr-icon) !important;
+	font-size: 1em;
+	border-left: 1px dotted #ffffff;
+	padding: 0.12em 0.25em 0.12em 0.62em;
+	margin-left: 0.62em;
+}
+.refresh_txt {
+ 	color: unquote($white-clr);;
+	text-decoration: underline;
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+ 	.refresh_txt {
+        display: none;
+    }
+    .refresh {
+        padding: 0;
+        z-index: 9999;
+    }
+    .icon_refresh {
+        font-size: 0.875em;
+        padding: 0 0 0 0.37em;
+    }
+}

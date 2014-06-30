@@ -1,0 +1,88 @@
+.menu_icon{ 
+	z-index: 22; 
+	position: absolute; 
+	top: 11px; 
+	left: 0;
+	font-size: 1.5em;
+	color: $default-clr-icon; 
+	padding:8px 0; 
+	width:4.37em; 
+}
+.offcanvas_menu { 
+	z-index: 1; 
+	width:300px; 
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0; 
+	background:$white-bg; 
+	padding:0.87em; 
+	display:table; 
+	ul.navigation_control { 
+		padding: 0; 
+		margin: 0;
+		position: relative;
+		li{
+			font-size: 1.12em; 
+			position: relative;
+			float:none; 
+			padding:10px 0; 
+			border:none;
+			padding:0;
+			a{ 
+				padding:0; 
+				background-color: transparent; 
+				display:block; 
+				border-bottom:1px solid $default-border-clr; 
+				padding:14px 0; 
+				@include regular;
+			}
+			ul{ 
+				position:relative; 
+				top:0; 
+				background-color:transparent;
+				box-shadow: none; 
+				padding:0;
+				display: block !important;
+				li{
+				> ul{ 
+						margin:0;
+						box-shadow: none;
+				    }
+				a{ 
+					@include light;
+					padding-left:0.87em; 
+				 }	
+			   }
+			}	
+		}
+	}
+	.indicator_icon{
+		position:absolute; 
+		top:0.87em;
+		color:$indicator-clr-icon; 
+		right:0; 
+		display:none; 
+		font-size:1.12em;
+	}
+	li ul li .touch-button { top:0.94em;}
+}
+.canvas_opened{
+	.easybanking{ 
+		overflow:hidden;
+	}
+	.canvas_container{
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1em;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1em;
+		-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1em;
+	}
+}
+.canvas_closed{ 
+	.canvas_container{ 
+	transform: none !important; 
+	-webkit-transform:none !important; 
+	-moz-transform:none !important;
+	}
+}
+.canvas_container {margin: 0;position: relative;z-index: 2;}

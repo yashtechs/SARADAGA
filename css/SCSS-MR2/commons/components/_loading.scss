@@ -1,0 +1,32 @@
+.progressing {
+ 	width: $default-width;
+ 	height: $default-height;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	text-align: center;
+ 	@include color-rgba(229, 233, 239, 0.5);
+	line-height: 1;
+	display: none;
+}
+.progressing_inner {
+	width: $progress-width;
+	height: $progress-height;
+	background: url(images/animgif.gif) no-repeat 50% 35%, unquote($white-clr);
+	margin: 20% auto 1.25em;
+}
+.progressing p {
+ 	@include regular;
+	font-size: 1.12em;
+ 	color: $default-color;
+	padding-top: 5.56em;
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+	.progressing_inner {
+		margin-top: 40%;
+	}
+} 

@@ -1,0 +1,27 @@
+.site_logotype {
+	float: left;
+}
+.brand_logo, #brandLogo {
+	background: url(images/sprite.svg) no-repeat;
+	background-position: -1px 1px;
+	width: $logo-width;
+	height: $logo-height;
+	display: block;
+}
+.no-svg {
+	 .brand_logo, #brandLogo {
+		 background: url(images/sprite.png) no-repeat;
+		 background-position: -1px 1px;
+	}
+}
+
+// Public Navigation links
+
+.nav_lnks{ 
+	float:left; font-size:0.75em; margin:2em 0 0 1.87em;
+ 	a{ 
+		padding:0 0.75em; border-right:1px dotted #d8dbde; color:$default-border-clr;
+		&:hover{ text-decoration:underline;}
+		&:last-child{ border:0;}
+	}
+}

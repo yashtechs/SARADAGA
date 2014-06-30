@@ -1,0 +1,41 @@
+/* MR2 V2 Login */
+.authentication{ width:320px;margin:0 auto; display:table; position:relative;  font-family: 'light',arial; padding-top:60px;}
+.identification_header{font-family: 'regular', arial;padding-bottom: 1.25em;}
+.identification_fields{padding-bottom: 0.75em;}
+.identification_labels {font-family: 'regular', arial;line-height: 0.82em;color:#252429;position: relative; margin-left:12px; opacity:0.6;padding:0 1em 0.5em 0;}
+.save_profile {margin-top: 13px;display: table;width: 100%; position:relative; padding-right:16px;}
+.save_profile__check {float: left;}
+.save_profile__text{font-family: 'regular', arial;margin: 0 0 0 0.37em;float: left;width: 80%;}
+.identification_fields_alias {padding-top: 1.25em; display:none;}
+.identification__navigation{padding: 1.87em 0;}
+.help_icon{ right:0;position:absolute; color:#85b909; top:0; cursor:help;}
+
+/* Tooltip */
+.tooltip_secondary{background: #85B909;left: -167px;position: absolute;bottom: 29px;width: 200px;z-index: 999;color: #ffffff;padding: 20px;font-family: 'regular', arial;font-size: 16px;}
+.tooltip_secondary:before {border-width: 15px 15px 0 15px;border-color: #85B909 transparent transparent transparent;border-style: solid;content: " ";display: block;height: 0;position: absolute;left: 158px;bottom: -15px;width: 0;}
+
+/* Known Profile */
+.select_profile{ height:390px; overflow:hidden; position:relative;}
+.saved_data{ background:#fff;  position:relative;margin-bottom:10px;-webkit-transition: all 300ms linear 0s;-moz-transition: all 300ms linear 0s;-ms-transition: all 300ms linear 0s;transition: all 300ms linear 0s;}
+.saved_data:last-child{ margin:0;}
+.saved_data__inner.hvr:hover{ background:#85b909; color:#ffffff;font-family: 'regular',arial; cursor:pointer;}
+.saved_data__inner.hvr:hover .user_info{color:#ffffff;}
+.saved_data__inner{ padding:0.93em 0.93em 0.93em 0.93em;}
+.select_profile .saved_details{ width:100%; float:left;}
+.selected_profile_details {padding: 0.31em 0;width: 100%;display: table;}
+.user_info{font-family: 'regular',arial;font-size: 1em;color: #252429; width:100%; padding-right:20px; margin:0 0 10px 12px;}
+.profile_label {float: left;margin-right: 0.25em;display: inline;}
+.profile_icon{ color:#85b909; font-size:50px; position:relative; float:right; top:-35px; right:-35px; cursor:pointer;}
+.identification_header.profile{ position:absolute; top:25px; width:100%;}
+.identification_header.profile p{ margin-left:-20px; color:#85b909}
+
+/*Wipe btn*/
+.wipe_saved { cursor: pointer; line-height: 0.85em; position: absolute; right: 0; top: 0; padding: 1em; font-size: 0.75em; color: #f66900; z-index:200;-webkit-transition: all 200ms linear 0s;-moz-transition: all 200ms linear 0s;-ms-transition: all 200ms linear 0s;transition: all 200ms linear 0s; } 
+.wipe_saved:hover{ background:#f66900; color:#ffffff;}
+
+/* Contract selection */
+.contract_choice{ height:238px; overflow:hidden; position:relative;}
+.choice_btn{ margin-bottom:20px;}
+.choice_btn:last-child{ margin-bottom:0;}
+.contract_information{ padding:20px 0;font-family: 'regular',arial;}
+

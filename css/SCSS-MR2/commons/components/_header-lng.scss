@@ -1,0 +1,46 @@
+// Language selection
+
+.wcm-language, #wcmLanguage {
+	float: right;
+	font-size: 1em;
+	padding: 0.56em 0;
+}
+.language-change{
+	li{
+		cursor: pointer;
+	    float: left;
+ 		border-left: 1px dotted $default-border-clr;
+	    padding: 0 0.75em;
+		a{
+			text-transform: uppercase;
+		  &:hover{
+		  	text-decoration: underline;
+	        text-transform: uppercase;
+		  }
+		}
+		&:first-child{border: none;}
+		&:last-child{padding-right: 0;}
+	}
+}
+ #wcmLanguage{
+ 	ul{
+		list-style: none;
+		li{
+			cursor: pointer;
+			float: left;
+			border-left: 1px dotted $default-border-clr;
+			padding: 0 0.75em;
+			a{
+				height: auto;
+		 		color: $default-color;
+				text-transform: uppercase;
+			}
+			&:first-child{border: none;}
+			&:last-child{padding-right: 0;}
+		}
+	}
+ }
+.ln-selected, #lnSelected {
+	text-decoration: underline;
+	text-transform: uppercase;
+}

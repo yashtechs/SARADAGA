@@ -1,0 +1,47 @@
+.rich_text #cookiesMessage {
+	padding: 1.86em;
+	text-align: center;
+	background:rgba(0,0,0,0.2);
+	position: relative;
+ 	width: $default-width;
+	bottom: 0;
+	display: none;
+}
+.cookies_close {
+	position: absolute;
+	right: 2.35em;
+	top: 2.35em;
+	font-size: 0.9em;
+ 	color: unquote($white-clr);
+}
+#cookiesMessage {
+	 h3 {
+		 font-size: 1.5em;
+		 color: unquote($white-clr);
+		 font-weight: normal;
+		 padding: 0;
+	    }
+	p {
+		padding: 0.88em 0 0 0;
+		line-height: 1.25em;
+	  }
+	a {
+	 color: unquote($white-clr);
+		 &:hover {
+		 text-decoration: underline;
+		}
+	}
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+	#cookiesMessage {
+		padding: 0.62em;
+	}
+	
+	.cookies_close {
+		top: 0.62em;
+		right: 0.62em;
+	}
+}

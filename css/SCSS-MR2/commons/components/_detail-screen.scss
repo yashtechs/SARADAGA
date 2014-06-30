@@ -1,0 +1,109 @@
+.details {
+	 width: $default-width;
+	 background: unquote($white-bg);
+}
+.details_inner {
+	padding: 1.87em;
+	display: table;
+ 	width:$default-width;
+}
+.details_title {
+	padding:0.9em 0.9em 0 0.9em;
+	font-size: 2em;
+	line-height: 1em;
+}
+.detail_group {
+	padding: 1.87em 0;
+ 	border-top: 1px solid $default-border-clr;
+}
+.detail_group_title {
+ 	@include regular;
+	font-size: 1.2em;
+}
+.details{ 
+	.detail_group:nth-child(1) {
+		padding: 0 0 1.87em 0;
+		border: none;
+	}
+	.detail_group:last-child{ 
+	  	padding-bottom:0;
+	 }
+}
+.details_label {
+	width: 30%;
+	float: left;
+ 	@include regular;
+	margin-right: 1.56em;
+}
+.list_details {
+ 	width: $default-width;
+	padding: 1.25em 0 0 0;
+	display: table;
+	 &:last-child {
+	 	border: none;
+	}
+}
+.listitem_details {
+	width: 65%;
+	float: left;
+	line-height: 1.25em;
+	word-break: break-all;
+	display: inherit;
+	 p {
+		 display: inline-block;
+		 float: left;
+		 &:nth-child(2) {
+		 	font-size: 0.87em;
+		}
+	}
+	span {
+		float: left;
+	}
+}
+.list_detail_header.exp{ 
+	padding:1.87em 1.87em 0 1.87em;
+}
+.back_link { 
+	display: table; 
+	clear: both; 
+	cursor:pointer; 
+	padding:9px 0;
+}
+.balance_details p {
+ 	width: $default-width;
+}
+
+/* Detail screen with boder bottom for each Item */
+
+.border_list, .border_bottom {
+	padding: 1.25em 0;
+ 	border-bottom: 1px solid $default-border-clr;
+}
+.border_list:first-child, .border_bottom:first-child {
+	padding-top: 0;
+}
+.border_list:last-child, .border_bottom:last-child {
+	padding-bottom: 0;
+	border: none;
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+	.details_title, .form_title {
+		font-size: 1.14em;
+	}
+	
+	.details_inner {
+		padding: 0.62em;
+	}
+	
+	.listitem_details {
+		width: $default-width;
+		padding-top: 0.75em;
+	}
+	
+	.details_label {
+		width: $default-width;
+	}
+}

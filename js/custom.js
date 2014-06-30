@@ -1,9 +1,9 @@
 $(document).ready(function () {
 	
-	//$(".flexnav").flexNav();
+	$(".flexnav").flexNav();
 	
-	//var offCanvas = $('.flexnav').html();
-	//$('.offcanvas_menu').html(offCanvas);
+	var offCanvas = $('.flexnav').html();
+	$('.offcanvas_menu').html(offCanvas);
 	//alert(document.getElementsByTagName("html")[0].className);
 	 //require(['lib/rivetsconfig'], function(rivets) {
 //					 var Tab = Backbone.Model.extend({

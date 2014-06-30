@@ -1,0 +1,50 @@
+/* Products */ 
+
+.laccounts, .lcards {
+ 	background: unquote($white-bg);
+	min-height: 18.75em;
+}
+
+
+/* Products viewport header */ 
+
+.viewport_header {
+ 	width: $default-width;
+ 	color: unquote($white-clr);
+	padding: 0.94em 0;
+	display: none;
+	 &.accounts {
+	 	background: $h-accounts-bg;
+	}
+	&.cards {
+	 	background: $h-cards-bg;
+	}
+}
+.viewport_icon {
+	display: inline-block;
+	padding: 0.8em 2.2em 0.4em 2.2em;
+	margin-right: 1.25em;
+	font-size: 0.75em;
+	border-right: 1px dotted #ffffff;
+	cursor: pointer;
+	float: left;
+}
+.viewport_header {
+	 h4 {
+		 display: inline-block;
+		 font-size: 1.12em;
+		 text-transform: uppercase;
+		 padding-top: 0.5em;
+	}
+	.fontcon-calendar-arrow-left {
+		display: inline-block;
+	}
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+	.viewport_header {
+        display: inline-block;
+    }
+}

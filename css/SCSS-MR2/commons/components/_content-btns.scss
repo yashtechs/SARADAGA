@@ -1,0 +1,30 @@
+.load_more {
+ 	width: $default-width;
+	text-align: center;
+ 	border-top: 1px solid $default-border-clr;
+}
+.load_btn {
+	padding: 1.87em 0;
+	margin: auto;
+}
+.notavailable {
+	text-align: center;
+	padding: 0.94em 0;
+	border-top: 1px solid $default-border-clr;
+}
+.estatements .notavailable {
+ 	border-top:none;
+}
+#estatements {
+ 	background: unquote($white-bg);
+	min-height: 22.5em;
+}
+.showall_months {
+	text-align: center;
+ 	color:$link-indication;
+	cursor: pointer;
+	h3 {
+		 padding: 1.87em 0;
+		 border-top: 1px solid $default-border-clr;
+	}
+}

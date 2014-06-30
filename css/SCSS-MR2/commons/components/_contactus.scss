@@ -1,0 +1,150 @@
+.contact_us {
+	 line-height: 1;
+	 width: $default-width;
+	 a[href^=tel] {
+	 	pointer-events:auto;
+	}
+}
+.contactus_content {
+	 width: $default-width;
+	 background: unquote($white-bg);
+}
+.contactus_content_inner {
+	padding: 1.88em;
+}
+.contactus_block {
+	 border-bottom: 1px solid #BEC6D0;
+	 display: table;
+	 padding: 1.88em 0 1.13em;
+	 width: $default-width;
+	 &:first-child {
+	 	padding-top: 0;
+	}
+	 &:last-child {
+		 border: 0;
+		 padding-bottom: 0;
+	}
+}
+.module_block {
+	float: left;
+	width: 70%;
+}
+.module_block_inner {
+    width: $default-width;
+	display: table;
+}
+.module_heading {
+ 	@include regular;
+	font-size: 1.25em;
+	width: 50%;
+	float: left;
+	padding: 0 0 0.6em;
+}
+.module_list {
+	float: left;
+	font-size: 1em;
+	text-align: left;
+	text-overflow: ellipsis;
+	width: 50%;
+	padding-top: 0.063em;
+	 p {
+		 margin: 0;
+		 padding: 0 0 0.75em;
+	}
+}
+.module_contact {
+	float: right;
+	font-size: 1.13em;
+	width: 30%;
+	text-align: right;
+	 p {
+		 font-size: 1.25em;;
+		 margin: 0;
+		 padding: 0 0 0.7em;
+        span, a {
+	 		display: block;
+	    }
+	}
+	 .contact_date {
+		padding: 0 0 0.36em;
+		 span {
+			 color: $select-color;
+			 display: block;
+			 font-size: 0.88em;
+			 list-style: none outside none;
+			 padding-bottom: 0.429em;
+		}
+	}
+}
+.single_data .module_contact p {
+	padding-bottom: 0;
+}
+.closed_now {
+	padding-top: 0.75em;
+}
+
+/* Contact us customised for Login */
+
+.login_bg {
+	 .h_services {
+		 background-color: unquote($white-bg);
+		 border-bottom: 2px solid #729f08;
+	}
+	.module_title {
+	 	color: $default-color;
+	}
+	.contact_us, .faq-page {
+	 	width: $info-width;
+		margin: 6.25em auto 0 auto;
+	}
+	.contact_us {
+	 &.attempt_fail {
+	 	margin-top: 0;
+	}
+	.lnk_primary {
+		color: #009966;
+		padding: 0;
+		 &:hover {
+			 text-decoration: underline;
+			 color: #008578;
+		  }
+	   }
+	}
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+    .contactus_content_inner {
+        padding: 1.25em 0.62em 0.62em;
+    }
+    .module_heading {
+        font-size: 1em;
+    }
+    .module_block {
+        width: 60%;
+    }
+    .module_heading,.module_list {
+        width: 100%;
+    }
+    .contactus_block {
+        padding: 1.25em 0 0.5em;
+    }
+    .module_list p {
+        font-size: 0.94em;
+        padding: 0 0 0.5em;
+    }
+    .module_contact {
+	 	width: 40%;
+        padding: 0.06em 0 0;
+		p {
+        	font-size: 1em;
+			span {
+				font-size: 1.06em;
+			}
+    	}
+		.contact_date span {
+			font-size: 0.75em;
+		}
+    }
+}
