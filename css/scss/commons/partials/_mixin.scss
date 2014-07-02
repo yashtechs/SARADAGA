@@ -121,7 +121,7 @@
 
 @mixin bg-color($bg-top,$bg-bottom){
 
-	@if $bg-bottom == null {
+	@if $bg-bottom == 100% {
     	background: $bg-top;
 
    } @else {

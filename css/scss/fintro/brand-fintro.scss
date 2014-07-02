@@ -1,67 +1,67 @@
-@import "commons/partials/_mixin";
-@import "easybanking-config/config";
+@import "../commons/partials/_mixin";
+@import "fintro/config";
 
-@import "commons/components/_prereset";					// Pre resets on website
-@import "commons/partials/_fonts";								// Font imports
-@import "commons/partials/_font-icons";							// Font imports
-@import "commons/components/_element-declaration"; 		// Brand style property declaration
-@import "commons/elements/_buttons";					// Buttons
-@import "commons/elements/_links";						// Links 
-@import "commons/elements/_input";						// Input 
-@import "commons/elements/_dropdown";					// Custom Dropdown & opt groups
-@import "commons/elements/_textarea";					// Text area 
-@import "commons/components/_tabs";						// Tabs
-@import "commons/components/_loading";					// Loading or progressing 
-@import "commons/components/_errors-msg";				// Input error messages styles	
-@import "commons/components/_header";					// Header
-@import "commons/components/_logo";						// Brand logo and public site links
-@import "commons/components/_header-lng";						// Language selection in header
-@import "commons/components/_nav-menu";					// multi navigation menu in header
-@import "commons/components/_slide-menu";				// Slide in menu or hamburger menu 
-@import "commons/components/_meta-nav";					// Meta user and service navigation of header
-@import "commons/components/_footer";					// footer styles
-@import "commons/components/_cookies";					// cookies 	
-@import "commons/components/_hero-eb";					// Hero background for Easybanking(For other brands this has to be maintained)
-@import "commons/components/_alert-msgs";				// Information/Severity/Warning/Errors
-@import "commons/components/_layout";					// layout settings and margin module settings
-@import "commons/components/_service-nav";				// Service navigation and image list
-@import "commons/components/_content-menu";				// Content menu accounts and cards	
-@import "commons/components/_contactus";				// Contact us and mutli row and row 
-@import "commons/components/_btn-zone";					// Buttons zone for WCM
-@import "commons/components/_overlay";					// Overlays 
-@import "commons/components/_xopus-content";			// Xopus content static web text	
-@import "commons/components/_unsupported";				// Unsupported browser overlay
-@import "commons/components/_teasers";					// Margin teasers like transfer in Margin module section
-@import "commons/components/_headline";					// Headline images/banners in margin module	
-@import "commons/components/_ad-banners";				// Internal - social - other banners
-@import "commons/components/_meta-name";				// Meta name on Home screen
-@import "commons/components/_hello-icon";				// Hello icon just for Easy banking or Fintro
-@import "commons/elements/_accordion";					// Accordion and its content styles	
-@import "commons/elements/_action-icons";				// action icons like print - pdf - download - csv
-@import "commons/components/_faq-page";					// FAQ Page
-@import "commons/components/_faq-widget";				// FAQ widget and accordion
-@import "commons/components/_module-header";			// Module header, header title	
-@import "commons/components/_flyout";					// Flyouts right and left side
-@import "commons/components/_detail-screen";			// Detail screen like MAP or extradetails
-@import "commons/elements/_search-input";				// Search input box for BNP styleguide
-@import "commons/components/_filter-block";				// Filter block and filter popups
-@import "commons/components/_horiScroll-menu";			// Horizontal scroll menu 
-@import "commons/components/_header-steps";				// Module header steps 1 2 3	
-/*@import "commons/components/_login-v2";			    // Login V2. A seperate file which will also hold all the @media properties*/
-@import "commons/components/_intermediate-screens";		// Intermediate screens - WCM and IA
-@import "commons/components/_viewport-header";			// Viewport header of accounts and cards
-@import "commons/components/_currency-overlay";    		// Currency overlay
-@import "commons/components/_content-btns";				// Content buttons like load more or static text like not avaliable	
-@import "commons/elements/_form-model";					// Form model like SEPA CT and Standing orders
-@import "commons/components/_confirm-screen";			// Confrim screen specific for SEPA CT or Standing orders
-@import "commons/components/_result-screen";			// Three box model and one box model	
-@import "commons/components/_ucr";						// UCR component M1 & M2 signature	
-@import "commons/components/_refresh-icon";				// Refresh icon in Zoomit header	
-@import "commons/components/_presets";					// Presets like show, hide, disabled.
-@import "commons/components/_print";					// Print styles with a node.
-@import "commons/components/_fav-icon";					// Favourite icon
-@import "commons/elements/_add-btn";					// add button on headers
-@import "commons/elements/_datepicker";					// datepicker default
+@import "../commons/components/_prereset";					// Pre resets on website
+@import "../commons/partials/_fonts";								// Font imports
+@import "_font-icons";							// Font imports
+@import "../commons/components/_element-declaration"; 		// Brand style property declaration
+@import "../commons/elements/_buttons";					// Buttons
+@import "../commons/elements/_links";						// Links 
+@import "../commons/elements/_input";						// Input 
+@import "../commons/elements/_dropdown";					// Custom Dropdown & opt groups
+@import "../commons/elements/_textarea";					// Text area 
+@import "../commons/components/_tabs";						// Tabs
+@import "../commons/components/_loading";					// Loading or progressing 
+@import "../commons/components/_errors-msg";				// Input error messages styles	
+@import "../commons/components/_header";					// Header
+@import "../commons/components/_logo";						// Brand logo and public site links
+@import "../commons/components/_header-lng";						// Language selection in header
+@import "../commons/components/_nav-menu";					// multi navigation menu in header
+@import "../commons/components/_slide-menu";				// Slide in menu or hamburger menu 
+@import "../commons/components/_meta-nav";					// Meta user and service navigation of header
+@import "../commons/components/_footer";					// footer styles
+@import "../commons/components/_cookies";					// cookies 	
+@import "../commons/components/_hero-eb";					// Hero background for Easybanking(For other brands this has to be maintained)
+@import "../commons/components/_alert-msgs";				// Information/Severity/Warning/Errors
+@import "../commons/components/_layout";					// layout settings and margin module settings
+@import "../commons/components/_service-nav";				// Service navigation and image list
+@import "../commons/components/_content-menu";				// Content menu accounts and cards	
+@import "../commons/components/_contactus";				// Contact us and mutli row and row 
+@import "../commons/components/_btn-zone";					// Buttons zone for WCM
+@import "../commons/components/_overlay";					// Overlays 
+@import "../commons/components/_xopus-content";			// Xopus content static web text	
+@import "../commons/components/_unsupported";				// Unsupported browser overlay
+@import "../commons/components/_teasers";					// Margin teasers like transfer in Margin module section
+@import "../commons/components/_headline";					// Headline images/banners in margin module	
+@import "../commons/components/_ad-banners";				// Internal - social - other banners
+@import "../commons/components/_meta-name";				// Meta name on Home screen
+@import "../commons/components/_hello-icon";				// Hello icon just for Easy banking or Fintro
+@import "../commons/elements/_accordion";					// Accordion and its content styles	
+@import "../commons/elements/_action-icons";				// action icons like print - pdf - download - csv
+@import "../commons/components/_faq-page";					// FAQ Page
+@import "../commons/components/_faq-widget";				// FAQ widget and accordion
+@import "../commons/components/_module-header";			// Module header, header title	
+@import "../commons/components/_flyout";					// Flyouts right and left side
+@import "../commons/components/_detail-screen";			// Detail screen like MAP or extradetails
+@import "../commons/elements/_search-input";				// Search input box for BNP styleguide
+@import "../commons/components/_filter-block";				// Filter block and filter popups
+@import "../commons/components/_horiScroll-menu";			// Horizontal scroll menu 
+@import "../commons/components/_header-steps";				// Module header steps 1 2 3	
+/*@import "../commons/components/_login-v2";			    // Login V2. A seperate file which will also hold all the @media properties*/
+@import "../commons/components/_intermediate-screens";		// Intermediate screens - WCM and IA
+@import "../commons/components/_viewport-header";			// Viewport header of accounts and cards
+@import "../commons/components/_currency-overlay";    		// Currency overlay
+@import "../commons/components/_content-btns";				// Content buttons like load more or static text like not avaliable	
+@import "../commons/elements/_form-model";					// Form model like SEPA CT and Standing orders
+@import "../commons/components/_confirm-screen";			// Confrim screen specific for SEPA CT or Standing orders
+@import "../commons/components/_result-screen";			// Three box model and one box model	
+@import "../commons/components/_ucr";						// UCR component M1 & M2 signature	
+@import "../commons/components/_refresh-icon";				// Refresh icon in Zoomit header	
+@import "../commons/components/_presets";					// Presets like show, hide, disabled.
+@import "../commons/components/_print";					// Print styles with a node.
+@import "../commons/components/_fav-icon";					// Favourite icon
+@import "../commons/elements/_add-btn";					// add button on headers
+@import "../commons/elements/_datepicker";					// datepicker default
 
 /* Zoomit */ 
 
@@ -117,11 +117,11 @@
 .reload_align{ color: #85b909; font-size: 2.19em; position: relative;  right: 1.25em; background:unquote($white-clr); border-top-left-radius:1em; border-top-right-radius:1em;  border-bottom-left-radius:1em;  border-bottom-right-radius:1em;}/*reload*/
 
 
-@import"commons/partials/_319px";
-@import"commons/partials/_480px";
-@import"commons/partials/_320px";
-@import"commons/partials/_767px";
-@import"commons/partials/_1023px";
-@import"commons/partials/_1279px";
-@import"commons/partials/_print";
+@import"../commons/partials/_319px";
+@import"../commons/partials/_480px";
+@import"../commons/partials/_320px";
+@import"../commons/partials/_767px";
+@import"../commons/partials/_1023px";
+@import"../commons/partials/_1279px";
+@import"../commons/partials/_print";
 
