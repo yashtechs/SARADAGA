@@ -81,7 +81,7 @@ a[href^=tel] {
 @font-face {
   font-family: 'bnpiconfont';
   src: url("fonts/bnpiconfont.eot");
-  src: url("fonts/bnpiconfont.eot#iefix") format("embedded-opentype"), url("fonts/bnpiconfont.woff") format("woff"), url("fonts/bnpiconfont.ttf") format("truetype"), url("fonts/bnpiconfont.svg#bnpiconfont") format("svg");
+  src: url("fonts/bnpiconfont.eot?#iefix") format("embedded-opentype"), url("fonts/bnpiconfont.woff") format("woff"), url("fonts/bnpiconfont.ttf") format("truetype"), url("fonts/bnpiconfont.svg#bnpiconfont") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -97,7 +97,10 @@ a[href^=tel] {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.fontcon-hero-logo:before {
+.fontcon-cards:before {
+  content: "\e602"; }
+
+.fontcon-hero-icon:before {
   content: "\e631"; }
 
 .fontcon-savings-account:before {
@@ -105,9 +108,6 @@ a[href^=tel] {
 
 .fontcon-current-account:before {
   content: "\e601"; }
-
-.fontcon-cards:before {
-  content: "\e602"; }
 
 .fontcon-transaction-out:before {
   content: "\e604"; }
@@ -118,10 +118,10 @@ a[href^=tel] {
 .fontcon-calendar:before {
   content: "\e61a"; }
 
-.fontcon-personage:before {
+.fontcon-benefeciary:before {
   content: "\e61b"; }
 
-.fontcon-send-money-icon:before {
+.fontcon-send_money_icon:before {
   content: "\e61e"; }
 
 .fontcon-circle-done:before {
@@ -190,7 +190,7 @@ a[href^=tel] {
 .fontcon-fav-default:before {
   content: "\e617"; }
 
-.fontcon-fav-select:before {
+.fontcon-fav-select:after {
   content: "\e618"; }
 
 .fontcon-reload:before {
