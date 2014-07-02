@@ -1,0 +1,175 @@
+@font-face {
+	font-family: 'bnpiconfont';
+	src:url('fonts/bnpiconfont.eot');
+	src:url('fonts/bnpiconfont.eot#iefix') format('embedded-opentype'),
+		url('fonts/bnpiconfont.woff') format('woff'),
+		url('fonts/bnpiconfont.ttf') format('truetype'),
+		url('fonts/bnpiconfont.svg#bnpiconfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="fontcon-"], [class*=" fontcon-"] {
+	font-family: 'bnpiconfont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.fontcon-hero-logo:before {
+	content: "\e631";
+}
+.fontcon-savings-account:before {
+	content: "\e600";
+}
+.fontcon-current-account:before {
+	content: "\e601";
+}
+.fontcon-cards:before {
+	content: "\e602";
+}
+.fontcon-transaction-out:before {
+	content: "\e604";
+}
+.fontcon-transaction-in:before {
+	content: "\e605";
+}
+.fontcon-calendar:before {
+	content: "\e61a";
+}
+.fontcon-personage:before {
+	content: "\e61b";
+}
+.fontcon-send-money-icon:before {
+	content: "\e61e";
+}
+.fontcon-circle-done:before {
+	content: "\e627";
+}
+.fontcon-contactus:before {
+	content: "\e603";
+}
+.fontcon-header-contactus:before {
+	content: "\e606";
+}
+.fontcon-faq:before {
+	content: "\e608";
+}
+.fontcon-header-faq:before {
+	content: "\e607";
+}
+.fontcon-menu-icon:before {
+	content: "\e61f";
+}
+.fontcon-logout:before {
+	content: "\e620";
+}
+.fontcon-warning-active:before {
+	content: "\e609";
+}
+.fontcon-m1:before {
+	content: "\e60a";
+}
+.fontcon-m2:before {
+	content: "\e60b";
+}
+.fontcon-ucr-ok:before {
+	content: "\e60c";
+}
+.fontcon-correct:before {
+	content: "\e60d";
+}
+.fontcon-close:before {
+	content: "\e60e";
+}
+.fontcon-search:before {
+	content: "\e60f";
+}
+.fontcon-download:before {
+	content: "\e610";
+}
+.fontcon-print:before {
+	content: "\e611";
+}
+.fontcon-pdf:before {
+	content: "\e612";
+}
+.fontcon-csv:before {
+	content: "\e613";
+}
+.fontcon-refresh:before {
+	content: "\e614";
+}
+.fontcon-executed:before {
+	content: "\e615";
+}
+.fontcon-not-executed:before {
+	content: "\e616";
+}
+.fontcon-fav-default:before {
+	content: "\e617";
+}
+.fontcon-fav-select:before {
+	content: "\e618";
+}
+.fontcon-reload:before {
+	content: "\e619";
+}
+.fontcon-add-benf:before {
+	content: "\e61c";
+}
+.fontcon-add:before {
+	content: "\e61d";
+}
+.fontcon-link-intern-teaser:before {
+	content: "\e621";
+}
+.fontcon-timeout:before {
+	content: "\e622";
+}
+.fontcon-information:before {
+	content: "\e623";
+}
+.fontcon-information-active:before {
+	content: "\e624";
+}
+.fontcon-attention:before {
+	content: "\e625";
+}
+.fontcon-expire:before {
+	content: "\e626";
+}
+.fontcon-expand:before {
+	content: "\e628";
+}
+.fontcon-collapse:before {
+	content: "\e629";
+}
+.fontcon-calendar-arrow-right:before {
+	content: "\e62a";
+}
+.fontcon-calendar-arrow-left:before {
+	content: "\e62b";
+}
+.fontcon-arrow-right:before {
+	content: "\e62c";
+}
+.fontcon-arrow-left:before {
+	content: "\e62d";
+}
+.fontcon-facebook:before {
+	content: "\e62e";
+}
+.fontcon-twitter:before {
+	content: "\e62f";
+}
+.fontcon-youtube:before {
+	content: "\e630";
+}
