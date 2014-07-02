@@ -6,7 +6,7 @@ html {
 body {
  width: $default-width;
 	height: auto;
-	background: #eef1f5;
+	@include bg-color($mainbg-top,$mainbg-bottom);
 	position: relative;
 }
 .easybanking {
@@ -15,7 +15,7 @@ body {
 	 font-size: 1em;
 	 line-height: 1.12em;
 	 color: $default-color;
-	 background: $main-bg-clr;
+	 @include bg-color($mainbg-top,$mainbg-bottom);
 	 @include light;
 	 -webkit-touch-callout: none;
 	 -webkit-user-select: none !important;

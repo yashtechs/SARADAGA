@@ -1,7 +1,7 @@
 .fav_icon{
 	color:$fav-icon-default; 
-	font-size:1.25em; 
-	top:0.60em;
+	font-size:1.25em !important; 
+	top:0.60em !important;
 }
 .fav_select:after{
 	color:$fav-icon-selected;

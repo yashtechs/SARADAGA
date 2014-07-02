@@ -13,6 +13,7 @@
 .faq-widget {
 	display: block;
 	z-index: 1;
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
 }
 .widget_header {
 	position: relative;
@@ -23,6 +24,9 @@
 }
 .widget_header__inner {
 	padding-right: 1.6em;
+	h2{
+		color:#252429;
+	}
 }
 .icon_widget_close {
 	font-size: 0.75em;

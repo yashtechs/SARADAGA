@@ -8,6 +8,7 @@
 .contactus_content {
 	 width: $default-width;
 	 background: unquote($white-bg);
+	 @include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
 }
 .contactus_content_inner {
 	padding: 1.88em;

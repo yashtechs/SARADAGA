@@ -3,6 +3,7 @@
 	padding: 2.5em 1.88em 1.88em 1.88em;
 	display: table;
  	width: $default-width;
+	@include border-radius-all(0,0,$glb-bleft-radius,$glb-bright-radius);
 	&.inner{
 		padding-top:1.87em;
 		border:1px solid $default-border-clr;

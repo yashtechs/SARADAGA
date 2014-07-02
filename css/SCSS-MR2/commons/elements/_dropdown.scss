@@ -21,7 +21,7 @@
 }
 }
 .dropdown_arrow:after, .widget .header_l2:after {
-	border-color: #252429 transparent transparent transparent;
+	border-color: $default-clr-icon transparent transparent transparent;
 	position: absolute;
 	top: 50%;
 	right: 0.94em;
@@ -64,7 +64,7 @@
 	line-height: 1.38em;
 	position: absolute;
 	z-index: 999;
-	@include border-radius-all(0,0,$glb-bleft-radius,$glb-bright-radius);
+	@include border-radius-all($glb-tleft-radius,$glb-tleft-radius,$glb-bleft-radius,$glb-bright-radius);
 	[data-selectable] {
 		 border-bottom: 1px solid $default-border-clr;
 		 cursor: pointer;
@@ -110,7 +110,7 @@
 	border-top: 0 none;
 }
 .optgroup-header {
- 	color: $default-color;
+ 	color: $optgroup-header;
  	border-bottom: 1px solid $default-border-clr;
 	font-size: 1em;
 	text-transform: uppercase;

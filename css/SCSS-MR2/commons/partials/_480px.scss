@@ -11,6 +11,11 @@
 			.iw_component{
 				margin-top:1.25em !important;
 			}
+			&:first-child{
+				.iw_component{
+					margin-top:0 !important;
+				}
+			}
 		}
     }
 .margin_headline{ margin-top:1.25em !important;}

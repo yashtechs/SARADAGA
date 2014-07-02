@@ -1,13 +1,13 @@
 /* Date Picker */
  .default_input__datePicker {
-        height: 44px;
-        padding: 11px 12px;
-        overflow: hidden;
-        border: 1px solid #d8dbde;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        cursor: pointer;
+	height: 44px;
+	padding: 11px 12px;
+	overflow: hidden;
+	border: 1px solid #d8dbde;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: pointer;
 }
  .date_picker input {
         width: 100%;
@@ -18,14 +18,14 @@
 }
 /* Date picker UI will append to the WCM need to discuss regarding branding*/
 .datepicker-dropdown.dropdown-menu {
-        position: absolute;
-        z-index: 1000;
-        display: none;
-        min-width: 160px;
-        list-style: none;
-        background-color: #ffffff;
-        border-left: 1px solid #d8dbde;
-        border-top: 1px solid #d8dbde;
+	position: absolute;
+	z-index: 1000;
+	display: none;
+	min-width: 160px;
+	list-style: none;
+	background-color: #ffffff;
+	border-left: 1px solid #d8dbde;
+	border-top: 1px solid #d8dbde;
 }
 .datepicker {
         top: 0;
@@ -98,30 +98,30 @@
         background-color: #003399 \9;
 }
 .datepicker td span {
-        display: block;
-        width: 47px;
-        height: 54px;
-        line-height: 54px;
-        float: left;
-        margin: 2px;
-        cursor: pointer;
+	display: block;
+	width: 47px;
+	height: 54px;
+	line-height: 54px;
+	float: left;
+	margin: 2px;
+	cursor: pointer;
 }
 .datepicker td span:hover {
-        background: #eeeeee;
+    background: #eeeeee;
 }
 .datepicker td span.active {
-        color: #ffffff;
-        background: #009e83;
-        color: #fff;
-        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	color: #ffffff;
+	background: #009e83;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .datepicker td span.active:hover, .datepicker td span.active:focus, .datepicker td span.active:active, .datepicker td span.active.active, .datepicker td span.active.disabled, .datepicker td span.active[disabled] {
-        color: #ffffff;
-        background-color: #0044cc;
+	color: #ffffff;
+	background-color: #0044cc;
  *background-color: #003bb3;
 }
 .datepicker td span.active:active, .datepicker td span.active.active {
-        background-color: #003399 \9;
+    background-color: #003399 \9;
 }
 .datepicker td span.old {
         color: #999999;

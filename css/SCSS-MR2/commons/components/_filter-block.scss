@@ -9,10 +9,10 @@
 }
 .filter_values {
 	padding: 0.87em 0;
- 	color:  $link-indication;
 	cursor: pointer;
 	&:first-child .filter_link {
 	 	padding-left: 0;
+		border: 0;
 	}
 	p {
 	    @include light;
@@ -29,13 +29,9 @@
 	left: -0.12em;
 	padding: 0 0.62em 0 1em;
 	position: relative;
+	color:  $link-indication;
 	 p {
 	 	margin: 0;
-	}
-}
-.filter_values {
-	 &:first-child .filter_link {
-	 	border: 0;
 	}
 }
 .filter_option {
@@ -46,6 +42,8 @@
  	background:unquote($white-bg);
 	display: none;
 	z-index: 100;
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
+	color:$dropdownlnk-clr;
 }
 .filter_option_active {
 	display: block;
@@ -54,6 +52,17 @@
  	border-bottom: 1px solid $default-border-clr;
 	padding: 0.87em 0.81em 0.81em;
 	white-space: nowrap;
+	&:hover{
+		background:unquote($filter-hover);
+		color:unquote($white-clr-hover);
+		cursor:pointer;
+		&:first-child{
+			@include border-radius-all($glb-tleft-radius,$glb-tright-radius,0,0);
+		}
+		&:last-child{
+			@include border-radius-all(0,0,$glb-bleft-radius,$glb-bright-radius);
+		}
+	}
  	&:last-child {
  		border: 0;
 	}

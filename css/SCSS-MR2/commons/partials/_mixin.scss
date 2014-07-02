@@ -15,12 +15,7 @@
 	-o-border-radius: $radius;
 }
 
-@mixin border-radius-split($radius-split){
-	border-top-left-radius: $radius-split;
-	border-top-right-radius: $radius-split;
-	border-bottom-left-radius: $radius-split;
-	border-bottom-right-radius: $radius-split;
-}
+
 @mixin border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius){
 	-webkit-border-top-left-radius: $glb-tleft-radius;
 	-webkit-border-top-right-radius: $glb-tright-radius;
@@ -34,6 +29,21 @@
 	border-top-right-radius: $glb-tright-radius;
 	border-bottom-right-radius: $glb-bleft-radius;
 	border-bottom-left-radius: $glb-bright-radius;
+}
+
+@mixin radius-steps($step-tleft,$step-tright,$step-bleft,$step-bright){
+	-webkit-border-top-left-radius: $step-tleft;
+	-webkit-border-top-right-radius: $step-tright;
+	-webkit-border-bottom-right-radius: $step-bleft;
+	-webkit-border-bottom-left-radius: $glb-bright-radius;
+	-moz-border-radius-topleft: $step-tleft;
+	-moz-border-radius-topright: $step-tright;
+	-moz-border-radius-bottomright: $step-bleft;
+	-moz-border-radius-bottomleft: $glb-bright-radius;
+	border-top-left-radius: $step-tleft;
+	border-top-right-radius: $step-tright;
+	border-bottom-right-radius: $step-bleft;
+	border-bottom-left-radius: $step-bright;
 }
 
 @mixin text-size-adjust($adjust-text){
@@ -122,9 +132,20 @@
 		background: -o-linear-gradient(top,  $bg-top 0%,$bg-bottom 100%);
 		background: -ms-linear-gradient(top,  $bg-top 0%,$bg-bottom 100%);
 		background: linear-gradient(to bottom,  $bg-top 0%,$bg-bottom 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-bottom',GradientType=0 );
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$bg-top}', endColorstr='#{$bg-bottom}',GradientType=0 );
    }
 	
+}
+
+@mixin bg-color($mainbg-top,$mainbg-bottom){
+        background: $mainbg-top;
+		background: -moz-linear-gradient(top,  $mainbg-top 0%, $mainbg-bottom 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$mainbg-top), color-stop(100%,$mainbg-bottom));
+		background: -webkit-linear-gradient(top,  $mainbg-top 0%,$mainbg-bottom 100%);
+		background: -o-linear-gradient(top,  $mainbg-top 0%,$mainbg-bottom 100%);
+		background: -ms-linear-gradient(top,  $mainbg-top 0%,$mainbg-bottom 100%);
+		background: linear-gradient(to bottom,  $mainbg-top 0%,$mainbg-bottom 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$mainbg-top}', endColorstr='#{$mainbg-bottom}',GradientType=0 );	
 }
 
 

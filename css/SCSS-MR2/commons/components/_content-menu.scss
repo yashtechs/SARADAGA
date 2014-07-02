@@ -56,7 +56,6 @@
 	}
 }
 .cards_menu {
- 	//background: $h-cards-bg;
 	@include bg-color($h-cards-bg,$bg-bottom);
 	&:hover, &.active {
 	 	background: $cards-hover-clr;
@@ -87,15 +86,8 @@
 	.content_menu_items {
 		width: 50%;
 		float: left;
-		&:last-child .content_menu__links{
-			float:right;
-		}
 	}
 	.accounts_menu.active::after, .cards_menu.active::after {
 		display: none;
 	}
-	/*.content_menu__links{
-		@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
-		width:99.4%;
-	}*/
 }

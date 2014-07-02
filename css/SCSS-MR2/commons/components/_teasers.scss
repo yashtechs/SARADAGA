@@ -78,7 +78,7 @@
 /* Teaser Services Hover */
 
 .margin_teaser:hover, .margin_teaser_link:hover {
-	background: #6e154f;
+	background: $teaser-bg-hover;
 }
 .margin_teaser:hover .module_icon, .margin_teaser_link:hover .module_icon {
  	color: unquote($white-clr-hover) !important;

@@ -19,8 +19,7 @@
 	text-align: center;
 	display: inline-block;
 	padding: 0.87em 1em;
- 	@include border-radius(2.14em);
- 	@include border-radius-split(2.14em);
+ 	@include radius-steps($step-tleft,$step-tright,$step-bleft,$step-bright);
  	&.active {
 		color: #861a61;
 		background:#ffffff;

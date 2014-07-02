@@ -1,4 +1,3 @@
-
 .collapse {
 	display: none;
 	&.in {
@@ -17,6 +16,7 @@
 .accordion {
 	width: auto;
  	background: unquote($white-bg);
+	@include border-radius-all(0,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
 }
 .accordion_main {
 	width: $default-width;
@@ -92,8 +92,10 @@
 	padding: 1.42em 0;
  	border-top: 1px solid $default-border-clr;
 }
-.content_l2_list_item:first-child .accordion_l2__inner {
-	border: none;
+.content_l2_list_item:first-child {
+	.accordion_l2__inner {
+		border: none;
+	}
 }
 /* Common and Groups L3 */
 
@@ -105,6 +107,7 @@
 .group_icons {
 	font-size: 1.4em;
 	float: left;
+	color:$default-clr-icon;
 }
 .item_group {
 	font-size: 1.12em;
@@ -132,6 +135,7 @@
 		 display: inline-block;
 		 white-space: nowrap;
 		 min-width: 6.25em;
+		 color:$optgroup-header;
 	}
 }
 .group_coltwo {
@@ -140,6 +144,9 @@
 		 padding: 0.45em 0 0.45em 0;
 		 display: inline-block;
 	}
+}
+.currency_header{
+	color:$optgroup-header;
 }
 /* List headers for Each item in list */
 
@@ -207,7 +214,7 @@
 }
 .listiban_detail {
  	color: $default-color;
-	font-size: 1em;
+	font-size: 0.87em;
 	padding-top: 0.22em;
 	line-height: 1.49em;
 }
@@ -295,7 +302,7 @@
 }
 .view_more p, .show_filters p {
  	@include regular;
- 	color: $link-indication;
+ 	color:$icon2-clr;
 	padding-left: 1.25em;
 	cursor: pointer;
 }
@@ -316,6 +323,9 @@
 }
 
 /* Accordion customized for IA's */
+.laccounts,.lcards{
+	@include border-radius-all(0,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
+	}
 
 .laccounts .header_l1, .account_transactions .header_l1 {
  	color: $accounts-clr;
@@ -329,7 +339,14 @@
 .short_account_type {
 	display: none;
 }
-
+.list_icon{
+	&.fontcon-transaction-in{
+		color:$icon3-clr;
+	}
+	&.fontcon-transaction-out{
+		color:$icon4-clr;
+	}
+}
 
 @media all and (max-width: 47.9375em) {
 	.accordion_l1__inner {

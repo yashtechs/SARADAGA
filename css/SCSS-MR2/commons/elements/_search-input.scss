@@ -15,7 +15,7 @@
 }
 .search_wipe {
 	border-left: 0;
-	color: $default-color;
+	color: $icon4-clr;
 	font-size: 0.62em;
 	right: 4.2em;
 	position: absolute;
@@ -25,7 +25,7 @@
 }
 .search_icon {
 	font-size: 1.37em;
-	color: $default-color;
+	color: $default-clr-icon;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -43,6 +43,7 @@
 	}
 	.dropdown_arrow::after {
 		left: 0;
+		 border-color: $icon2-clr transparent transparent transparent;
 	}
 }
 .search_counter {
@@ -50,4 +51,5 @@
 	display: none;
  	width: $default-width;
 	float: left;
+	color:$search-text;
 }

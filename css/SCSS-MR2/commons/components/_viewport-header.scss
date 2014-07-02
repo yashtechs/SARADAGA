@@ -14,10 +14,10 @@
 	padding: 0.94em 0;
 	display: none;
 	 &.accounts {
-	 	background: $h-accounts-bg;
+		@include bg-color($h-accounts-bg,$bg-bottom)
 	}
 	&.cards {
-	 	background: $h-cards-bg;
+		@include bg-color($h-cards-bg,$bg-bottom)
 	}
 }
 .viewport_icon {

@@ -22,9 +22,10 @@
 }
 .overlay_header {
 	width: $default-width;
-	background: $h-overlay-bg;
+	@include bg-color($h-overlay-bg,$bg-bottom);
 	position: relative;
  	color: unquote($white-clr);
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,0,0);
 }
 .overlay_header_inner {
 	padding: 1.87em;

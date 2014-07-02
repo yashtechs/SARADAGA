@@ -17,6 +17,7 @@
 	text-transform: uppercase;
     color: $link-title-clr;
 	padding-bottom: 1.25em;
+	@include regular;
 }
 .link_list {
 	width: 25%;
@@ -30,7 +31,10 @@
 		}
       }
 	a {
-		color: unquote($white-clr);
+		color: $foo-links-clr;
+		&:hover{
+			color:$foo-hvr-lnks-clr;
+		}
 	}
 }
 .extsocial_icons {

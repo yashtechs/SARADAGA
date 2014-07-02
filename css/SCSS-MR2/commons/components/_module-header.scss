@@ -75,16 +75,16 @@
 /* Module header themes */
 
 .h_accounts {
-	background:$h-accounts-bg;
+	@include bg-color($h-accounts-bg,$bg-bottom);
 }
 .h_cards {
-	background:$h-cards-bg;
+	@include bg-color($h-cards-bg,$bg-bottom);
 }
 .h_functions {
-	background: $h-function-bg;
+	@include bg-color($h-function-bg,$bg-bottom);
 }
 .h_services {
-	background-color:$h-services-bg;
+	@include bg-color($h-services-bg,$bg-bottom);
 }
 .login_bg .h_services, .module_bg {
  	background: unquote($white-bg);

@@ -1,5 +1,7 @@
 $(document).ready(function () {
 	
+	//$('.fontcon-calendar').datepicker();
+	
 	$(".flexnav").flexNav();
 	
 	var offCanvas = $('.flexnav').html();
@@ -26,7 +28,7 @@ $(document).ready(function () {
 
 $('.fav_icon').click(function(){
 	$('.fav_icon').toggleClass('fav_icon_select');
-})
+});
 iCheck();
 function iCheck(){
 	var isiPhone = navigator.userAgent.match(/iPhone/i) != null;

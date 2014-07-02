@@ -1,6 +1,10 @@
 .margin_headline {
  	background: $margin-mod-bg;
 	cursor: pointer;
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
+	.headline_picture img{
+		@include border-radius-all($glb-tleft-radius,$glb-tright-radius,0,0);
+	}
 }
 .margin_headline_content {
 	padding: 1.56em;
@@ -10,6 +14,7 @@
 	img {
 		 width: $default-width;
 		 height:10.62em;
+		 @include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
 	}
 }
 .headline_heading {
@@ -72,6 +77,7 @@
 
 .video_link {
  	background: $margin-mod-bg;
+	 @include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
 }
 .video_streaming {
  	width: $default-width !important;

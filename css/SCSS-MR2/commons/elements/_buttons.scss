@@ -14,7 +14,7 @@
 /* Button */
 
 .btn_default {
-	@include ele-btn(5.63em, 2.75em, 1em, 1.25em);
+	@include ele-btn(5.63em, 2.75em, 0, 1.25em);
 	font-size: 1em;
  	@include regular;
 	line-height: 1em;
@@ -28,7 +28,7 @@
 }
 a.btn_default {
 	display: inline-block;
-	padding: 1em 1.25em;
+	padding: 0.87em 1.25em;
 }
 .btn_disabled{cursor: auto; -moz-opacity: 0.6;-webkit-opacity: 0.6;  opacity: 0.6;}
 
@@ -55,13 +55,14 @@ a.btn_default {
 	}
 }
 .btn_arrow_right, .arrow-left {
-	padding-right: 0.70em;
+	padding-right: 0.95em;
 }
 .arrow-right {
  	color: unquote($white-clr-icon);
 	line-height: 0;
 	position: relative;
 	top: 0.13em;
+	margin-left: 0.63em;
 }
 .btn_arrow_left{ padding-right:0.75em}
 

@@ -1,5 +1,5 @@
 @import "commons/partials/_mixin";
-@import "easybanking-config/config";
+@import "hb-config/config";
 
 @import "commons/components/_prereset";					// Pre resets on website
 @import "commons/partials/_fonts";								// Font imports
@@ -21,11 +21,11 @@
 @import "commons/components/_meta-nav";					// Meta user and service navigation of header
 @import "commons/components/_footer";					// footer styles
 @import "commons/components/_cookies";					// cookies 	
-@import "commons/components/_hero-eb";					// Hero background for Easybanking(For other brands this has to be maintained)
+@import "commons/components/_hero-hb";					// Hero background for Easybanking(For other brands this has to be maintained)
 @import "commons/components/_alert-msgs";				// Information/Severity/Warning/Errors
 @import "commons/components/_layout";					// layout settings and margin module settings
 @import "commons/components/_service-nav";				// Service navigation and image list
-@import "commons/components/_content-menu";				// Content menu accounts and cards	
+@import "commons/components/_content-menu-hb";				// Content menu accounts and cards	
 @import "commons/components/_contactus";				// Contact us and mutli row and row 
 @import "commons/components/_btn-zone";					// Buttons zone for WCM
 @import "commons/components/_overlay";					// Overlays 
@@ -47,7 +47,7 @@
 @import "commons/components/_filter-block";				// Filter block and filter popups
 @import "commons/components/_horiScroll-menu";			// Horizontal scroll menu 
 @import "commons/components/_header-steps";				// Module header steps 1 2 3	
-/*@import "commons/components/_login-v2";			    // Login V2. A seperate file which will also hold all the @media properties*/
+@import "commons/components/_login-v2";			    	// Login V2. A seperate file which will also hold all the @media properties
 @import "commons/components/_intermediate-screens";		// Intermediate screens - WCM and IA
 @import "commons/components/_viewport-header";			// Viewport header of accounts and cards
 @import "commons/components/_currency-overlay";    		// Currency overlay
@@ -61,7 +61,7 @@
 @import "commons/components/_print";					// Print styles with a node.
 @import "commons/components/_fav-icon";					// Favourite icon
 @import "commons/elements/_add-btn";					// add button on headers
-@import "commons/elements/_datepicker";					// datepicker default
+@import "commons/elements/_datepicker-hb";					// datepicker default
 
 /* Zoomit */ 
 
@@ -74,39 +74,7 @@
 	}
 }
 
-/* ZoomIt Content buttons */ 
 
-.content_btns {
-	padding: 0.62em 0 0.5em 0;
- 	border-top: 1px solid $default-border-clr;;
-	margin-left: 3.12em;
-}
-.view_more_lnk {
-	font-size: 0.87em;
-	position: relative;
-	top: 1px;
-}
-
-/* Commons colors/borders/style */ 
-
-.has_foreign_currency {
- 	color: $foreign-currency-clr;
-	cursor: pointer;
-}
-
-/*Switch button*/
-// Seperated as Hellobank holds different design
-.switch_container{ border:1px solid #d8dbde; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; display:table; background:#ffffff; }
-.switch_btn_align{ 
-	padding:6px 20px; 
-	color:#252429; 
-	cursor:pointer; 
-	&:hover{ 
-		color:#008578; 
-	}
-}
-.switch_btn{ float:left; }
-.switch_highlight{ background:#009966; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; color:#ffffff !important; }
 
 /* Revist on this */
 .default_dropdown_container{ position:relative; }

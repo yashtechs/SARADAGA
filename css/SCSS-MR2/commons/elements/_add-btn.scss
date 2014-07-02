@@ -11,6 +11,7 @@
 		@include light;
 		margin:0; 
 		cursor:pointer;
+		@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
 		&:focus{
 			outline:none !important;
 		}
@@ -27,5 +28,5 @@
 @media all and (max-width: 47.9375em){
 	.add_btn_text{ display:none;}
 	.add_icon{ padding:0.56em; margin:0;}
-	.add_btn button{ height:auto; padding:0;border-radius: 26px;}
+	.add_btn button{ height:auto; padding:0;@include radius-steps($step-tleft,$step-tright,$step-bleft,$step-bright)}
 }

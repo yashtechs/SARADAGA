@@ -8,6 +8,10 @@ $ele-height:44px;									// Default input boxes heights
 
 $logo-width:11.7em;									// Brand logo width
 $logo-height:2.5em;									// Brand logo height
+$logo-position:-1px 1px;							// Logo sprite positions
+$logo-small-width:2.62em;							// Logo width on small screen
+$logo-small-height:2.5em;							// Logo height on small screen
+$logo-parent-height:2.5em;							// Logo parent height	
 
 $error-clr: #e53012; 								// General color for Errors, warnings.
 $indicator-clr-icon: #e53012; 						// Red color for ZoomIT or any alert icons.
@@ -33,6 +37,8 @@ $xopus-border:#009966;								// Xopus header green border
 $xopus-clr:#009966;									// Xopus elements green color
 $link-indication:#009966;							// Links but not links (USed in Filters)
 $header-link:#009966;								// Accordion header text color
+$dropdownlnk-clr:#009966;							// Dropdown values text color
+
 
 $primary2-btn-clr: #85b909;							// Login primary btn
 $loginv2-green: #85b909;							// Login V2 green
@@ -54,15 +60,17 @@ $secondary-btn-hover-clr:#d2d8e1;					// Secondary button hover color
 $main-bg-clr:#eef1f5;								// Main background color for main site.
 
 $default-border-clr:#d8dbde;						// Default border line color
-$slevel-menu-icon:#d8dbde;						// Menu second level indicating icon
+$slevel-menu-icon:#d8dbde;							// Menu second level indicating icon
 
 $select-color:#76767b;								// Dropdown select color
 
-$default-color:#252429;								// Black color for text and backgrounds
-$default-color-border:#252429;						// 
-$nav-hover-border:#008578;							// 
+$default-color:#252429;								// Black color for text and backgrounds 
 $default-color-bg:#252429;							// Black background color default
-$default-clr-icon:#252429;							// Black color icons for list items / content based  
+$default-clr-icon:#252429;							// Black color icons for list items / content based/ blue for Hello 
+$icon2-clr:#252429;									// For pink type icons on hello
+$icon3-clr:#252429;									// For pink color icons
+$icon4-clr:#252429;									// For grey color
+$search-text:#252429;								// Search counter text
 
 $xopus-table-bg:#f4f5f6;							// Xopus table backgrounds or even/odd colors
 $inactive-clr:#f4f5f6;								// in active icons colors
@@ -70,6 +78,7 @@ $component-bg:#f4f5f6;								// Greyish backgoruns for Components / Modules i.e
 
 $h-function-bg:#861a61;								// Functional Header background color
 $teaser-bg:#861a61;									// Sepa CT teaser background color in Margin column
+$teaser-bg-hover:#6e154f;							// Teaser background hover color
 $title-clr:#861a61;									// Functional header title color	
 
 $h-cards-bg:#009e83;								// Cards dark green header background color
@@ -108,16 +117,14 @@ $icon-twitter: #50a8f2;								// Twiter icon color
 $icon-facebook: #4454a1;							// Facebook icon color
 $icon-youtube: #e53012;								// Youtube icon color
 $link-title-clr:#76767b;							// Footer group title colors
+$foo-links-clr:#ffffff;								// Footer links color
+$foo-hvr-lnks-clr:#ffffff;							// Footer links hvr color
 
 $font-h1:36px;										// Xopus h1 fontsize	
 $font-h2:28px;										// Xopus h2 fontsize	
 $font-h3:20px;										// Xopus h3 fontsize	
 $font-h4:18px;										// Xopus h4 fontsize	
 $font-p:16px;										// Xopus p fontsize
-
-$space-large:30px;
-$space-small:10px;
-$space-error:12px;
 
 $progressing-img: url(images/animgif.gif) no-repeat 50% 35%, $white-clr; 	//Loading image
 $progress-width: 9.38em;							// Loding image width
@@ -132,14 +139,26 @@ $dropdown-shadow:#d8dbde;							// Dropdown box & menu shadows
 $header-shadow:#252429;								// Main header dropshadow
 
 // Border - radius
+$glb-tleft-radius:0;							// Global raduis for 4 sides
+$glb-tright-radius:0;							// Global raduis for 4 sides
+$glb-bleft-radius:0;							// Global raduis for 4 sides
+$glb-bright-radius:0;							// Global raduis for 4 sides
 
-$glb-tleft-radius:0.38em;							// Global raduis for 4 sides
-$glb-tright-radius:0.38em;							// Global raduis for 4 sides
-$glb-bleft-radius:0.38em;							// Global raduis for 4 sides
-$glb-bright-radius:0.38em;							// Global raduis for 4 sides
+//Steps - radius
+$step-tleft:2.14em;									// Raduis for header steps
+$step-tright:2.14em;								// Raduis for header steps
+$step-bleft:2.14em;									// Raduis for header steps
+$step-bright:2.14em;								// Raduis for header steps
 
+//Gradient values
+$bg-top:#252645;									// If gradient is applicable top value has to be added to parent variable of the class.
+$bg-bottom:null;									// For gradient bottom value 
 
-$bg-top:#252645;
-$bg-bottom:#242529;
+$mainbg-top:#dde3e6;										// main background gradient top
+$mainbg-bottom:#eef1f5;									// main background gradient bottom
 
+$filter-hover:'#ffffff';								// Hover color for blue theme
+$optgroup-header:#252429;								// Opt header color
 
+//Nav public links
+$nav-links-clr:#252429;								// Nav public links text color
