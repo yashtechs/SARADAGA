@@ -4,7 +4,7 @@
 	margin: 0 auto;
  	color: unquote($white-clr);
 	position: relative;
-	background:$hero-bg;
+	@include bg-color($hero-bg,$bg-bottom);
 	.level1 {
 	 	padding:3em 0 1em 0; 
 		width:30em; 
