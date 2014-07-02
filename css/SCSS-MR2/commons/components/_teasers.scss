@@ -46,11 +46,13 @@
 	position: relative;
 	width: 10.62em;
 	float: left;
+	@include border-radius-all($glb-tleft-radius,0,0,$glb-bright-radius);
 }
 .link_senstive {
  	background: unquote($white-bg);
 	height: 10.62em;
 	margin-left: 10.63em;
+	@include border-radius-all(0,$glb-tright-radius,$glb-bleft-radius,0);
 	.region .section {
 		 padding: 1.44em 0 1.44em 1.44em;
 		 border-bottom: 1px solid $default-border-clr;

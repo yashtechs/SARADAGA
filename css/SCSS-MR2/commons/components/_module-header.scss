@@ -1,12 +1,14 @@
 /* Function & Service module headers */
-
+.module_main_header{
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,0,0);
+}
 .module_header {
  	width: $default-width;
 	min-height: 8.75em;
 	padding: 1.87em;
 	top: 0;
 	position: relative;
-	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,0,0)
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,0,0);
 }
 .module_header__inner {
 	display: table;

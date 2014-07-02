@@ -100,7 +100,7 @@
 	display: inline-block;
 	vertical-align: middle;
  	&::after {
- 		content: 'M1';
+ 		content: '';
  		font-size: 14px;
  		position: absolute;
  		left: 0.4em;
@@ -125,7 +125,7 @@
 	display: inline-block;
 	vertical-align: middle;
  	&::after {
- 		content: 'OK';
+ 		content: '';
  		font-size: 0.5em;
  		position: absolute;
  		@include regular;

@@ -1374,7 +1374,7 @@ input[type="checkbox"]:focus, button:focus {
     top: 0.62em;
     right: 0.62em; } }
 #metaInfo {
-  width: 45.62em;
+  width: 100%;
   margin: 0 auto;
   color: #ffffff;
   position: relative;
@@ -2277,12 +2277,36 @@ input[type="checkbox"]:focus, button:focus {
   cursor: pointer;
   position: relative;
   width: 10.62em;
-  float: left; }
+  float: left;
+  -webkit-border-top-left-radius: 0.38em;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0.38em;
+  -moz-border-radius-topleft: 0.38em;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0.38em;
+  border-top-left-radius: 0.38em;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0.38em; }
 
 .link_senstive {
   background: #ffffff;
   height: 10.62em;
-  margin-left: 10.63em; }
+  margin-left: 10.63em;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0.38em;
+  -webkit-border-bottom-right-radius: 0.38em;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-topright: 0.38em;
+  -moz-border-radius-bottomright: 0.38em;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0.38em;
+  border-bottom-right-radius: 0.38em;
+  border-bottom-left-radius: 0; }
   .link_senstive .region .section {
     padding: 1.44em 0 1.44em 1.44em;
     border-bottom: 1px solid #e8e8e8;
@@ -2703,8 +2727,7 @@ input[type="checkbox"]:focus, button:focus {
 .noclk {
   cursor: default !important;
   color: #464646;
-  text-decoration: none;
-  pointer-events: none; }
+  text-decoration: none; }
   .noclk:hover {
     text-decoration: none; }
 
@@ -2764,6 +2787,8 @@ input[type="checkbox"]:focus, button:focus {
 
 .list_item__header:hover .list_header_title {
   text-decoration: underline; }
+.list_item__header:hover .list_header_title.noclk {
+  text-decoration: none; }
 
 .list_content_col1 p {
   color: #464646;
@@ -3155,6 +3180,20 @@ input[type="checkbox"]:focus, button:focus {
     margin-left: 0;
     width: 76.6%; } }
 /* Function & Service module headers */
+.module_main_header {
+  -webkit-border-top-left-radius: 0.38em;
+  -webkit-border-top-right-radius: 0.38em;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 0.38em;
+  -moz-border-radius-topright: 0.38em;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 0.38em;
+  border-top-right-radius: 0.38em;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
 .module_header {
   width: 100%;
   min-height: 8.75em;
@@ -4146,7 +4185,7 @@ input[type="checkbox"]:focus, button:focus {
   display: none;
   width: 45.62em;
   margin: 6.25em auto 0 auto;
-  background: rgba(255, 255, 255, 0.3);
+  background: white;
   padding: 1.87em;
   line-height: 1.5em; }
 
@@ -4157,7 +4196,7 @@ input[type="checkbox"]:focus, button:focus {
 .intermediate_content {
   padding: 1.88em;
   line-height: 1.5em;
-  background: rgba(255, 255, 255, 0.3); }
+  background: white; }
   .intermediate_content h4 {
     padding-bottom: 45px;
     text-transform: uppercase;
@@ -4745,7 +4784,7 @@ input.mask_pattern {
   display: inline-block;
   vertical-align: middle; }
   .m1_icon::after {
-    content: 'M1';
+    content: '';
     font-size: 14px;
     position: absolute;
     left: 0.4em;
@@ -4769,7 +4808,7 @@ input.mask_pattern {
   display: inline-block;
   vertical-align: middle; }
   .ok_icon::after {
-    content: 'OK';
+    content: '';
     font-size: 0.5em;
     position: absolute;
     font-family: 'regular', arial;
@@ -5090,14 +5129,14 @@ input.mask_pattern {
   border-bottom-left-radius: 0; }
 
 .datepicker table thead tr:first-child {
-  background: #252645;
-  background: -moz-linear-gradient(top, #252645 0%, #1c87ad 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #252645), color-stop(100%, #1c87ad));
-  background: -webkit-linear-gradient(top, #252645 0%, #1c87ad 100%);
-  background: -o-linear-gradient(top, #252645 0%, #1c87ad 100%);
-  background: -ms-linear-gradient(top, #252645 0%, #1c87ad 100%);
-  background: linear-gradient(to bottom, #252645 0%, #1c87ad 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#252645', endColorstr='#1c87ad',GradientType=0 );
+  background: #4ec1d3;
+  background: -moz-linear-gradient(top, #4ec1d3 0%, #1c87ad 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4ec1d3), color-stop(100%, #1c87ad));
+  background: -webkit-linear-gradient(top, #4ec1d3 0%, #1c87ad 100%);
+  background: -o-linear-gradient(top, #4ec1d3 0%, #1c87ad 100%);
+  background: -ms-linear-gradient(top, #4ec1d3 0%, #1c87ad 100%);
+  background: linear-gradient(to bottom, #4ec1d3 0%, #1c87ad 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ec1d3', endColorstr='#1c87ad',GradientType=0 );
   height: 40px; }
 
 .datepicker table thead tr:first-child th {

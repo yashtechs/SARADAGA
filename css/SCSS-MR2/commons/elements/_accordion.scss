@@ -162,8 +162,7 @@
 .noclk{ 
 		cursor:default !important;
 		color:$default-color;
-		text-decoration:none; 
-		pointer-events:none;
+		text-decoration:none;
 		&:hover{ 
 			text-decoration:none;
 		}
@@ -229,8 +228,13 @@
 		 text-transform: uppercase;
 	}
 }
-.list_item__header:hover .list_header_title {
-	text-decoration: underline;
+.list_item__header:hover{ 
+	.list_header_title {
+		text-decoration: underline;
+	}
+	.list_header_title.noclk{
+		text-decoration:none;
+	}
 }
 .list_content_col1 p {
  	color: $default-color;
