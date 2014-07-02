@@ -1381,15 +1381,15 @@ input[type="checkbox"]:focus, button:focus {
   margin: 0 auto;
   color: #ffffff;
   position: relative;
-  background: #85b909;
+  background: #4ec1d3;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #85b909 0%, #1c87ad 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #85b909), color-stop(100%, #1c87ad));
-  background: -webkit-linear-gradient(top, #85b909 0%, #1c87ad 100%);
-  background: -o-linear-gradient(top, #85b909 0%, #1c87ad 100%);
-  background: -ms-linear-gradient(top, #85b909 0%, #1c87ad 100%);
-  background: linear-gradient(to bottom, #85b909 0%, #1c87ad 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#85b909', endColorstr='#1c87ad',GradientType=0 ); }
+  background: -moz-linear-gradient(top, #4ec1d3 0%, #1c87ad 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4ec1d3), color-stop(100%, #1c87ad));
+  background: -webkit-linear-gradient(top, #4ec1d3 0%, #1c87ad 100%);
+  background: -o-linear-gradient(top, #4ec1d3 0%, #1c87ad 100%);
+  background: -ms-linear-gradient(top, #4ec1d3 0%, #1c87ad 100%);
+  background: linear-gradient(to bottom, #4ec1d3 0%, #1c87ad 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ec1d3', endColorstr='#1c87ad',GradientType=0 ); }
   #metaInfo .level1 {
     padding: 3em 0 1em 0;
     width: 30em;
