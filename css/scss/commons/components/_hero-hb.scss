@@ -1,25 +1,26 @@
-
 #metaInfo {
  	width: $default-width;
 	margin: 0 auto;
  	color: unquote($white-clr);
 	position: relative;
-	@include bg-color($hero-bg,$bg-bottom);
+	height:220px;
+	@include bg-color2($hero-bg,$bg-bottom,$bg-ie);
 	.level1 {
-	 	padding:3em 0 1em 0; 
+	 	padding:8.5em 0 1em 0; 
 		width:30em; 
 	 	margin:0 auto; 
 		position:relative;
+		text-align:center;
 	}
 	h3 {
 		font-size: 1.56em;
 		padding-bottom: 0.24em;
 	}
 	h1 {
-		font-size: 2.88em;
+		font-size: 1.88em;
+		padding-bottom:0.3em;
 	}
 }
-
 .hero_logo{ 
 	background: none;
 	-webkit-transition: all 0.8s ease-in-out;

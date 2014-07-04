@@ -148,6 +148,36 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$mainbg-top}', endColorstr='#{$mainbg-bottom}',GradientType=0 );	
 }
 
+@mixin bg-color2($bg-top,$bg-bottom, $bg-ie){
+
+	@if $bg-bottom == #123456 {
+    	background: $bg-top;
+
+   } @else if $bg-ie == #123456 {
+   		background: $bg-ie;
+        background: $bg-top;
+		background: -moz-linear-gradient(top,  $bg-top 0%, $bg-bottom 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$bg-top), color-stop(100%,$bg-bottom));
+		background: -webkit-linear-gradient(top,  $bg-top 0%,$bg-bottom 100%);
+		background: -o-linear-gradient(top,  $bg-top 0%,$bg-bottom 100%);
+		background: -ms-linear-gradient(top,  $bg-top 0%,$bg-bottom 100%);
+		background: linear-gradient(to bottom,  $bg-top 0%,$bg-bottom 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$bg-top}', endColorstr='#{$bg-bottom}',GradientType=0 );
+   }
+   @else {
+        background: $bg-top;
+		background: -moz-linear-gradient(top,  $bg-top 0%, $bg-bottom 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$bg-top), color-stop(100%,$bg-bottom));
+		background: -webkit-linear-gradient(top,  $bg-top 0%,$bg-bottom 100%);
+		background: -o-linear-gradient(top,  $bg-top 0%,$bg-bottom 100%);
+		background: -ms-linear-gradient(top,  $bg-top 0%,$bg-bottom 100%);
+		background: linear-gradient(to bottom,  $bg-top 0%,$bg-bottom 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$bg-top}', endColorstr='#{$bg-bottom}',GradientType=0 );
+   }
+   
+	
+}
+
 
 
 

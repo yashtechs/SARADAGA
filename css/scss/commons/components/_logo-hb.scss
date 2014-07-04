@@ -1,0 +1,57 @@
+.site_logotype {
+	float: left;
+	width: $logo-width;
+	height: $logo-parent-height;
+}
+.brand_logo, #brandLogo {
+	background: url(images/sprite.svg) no-repeat;
+	background-position: $logo-position;
+	width: $logo-width;
+	height: $logo-height;
+	display: block;
+	position:absolute;
+	margin:0 auto;
+}
+.no-svg {
+	 .brand_logo, #brandLogo {
+		 background: url(images/sprite.png) no-repeat;
+		 background-position: $logo-position;
+	}
+}
+
+// Public Navigation links
+
+.nav_lnks{ 
+	float:left; font-size:0.75em; margin:2em 0 0 1.87em; color:#ffffff;
+ 	a{ 
+		padding:0 0.75em; border-right:1px dotted $default-border-clr; color:$nav-links-clr;
+		&:hover{ text-decoration:underline;}
+		&:last-child{ border:0;}
+	}
+}
+
+
+// Other than logo are also included to avoid duplicating file
+
+#webbankingUnauthenticated{
+	padding-top:0;
+	background:rgb(248,248,248);
+	.site_logotype{
+		top:5.63em;
+		position:absolute;
+		left:0;
+	}
+	.site_header__inner, #site_header__inner{
+		background:rgba(0,0,0,0.3);
+		padding:1em 1.88em;
+	}
+}
+.login_bg
+// 1023
+
+@media all and (max-width: 63.9375em) {
+	.brand_logo, #brandLogo {
+		width: $logo-small-width;
+		height: $logo-small-height;
+	}
+}
