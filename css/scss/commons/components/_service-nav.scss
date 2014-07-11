@@ -1,6 +1,6 @@
 
 .service__icon {
-	font-size: 3.72em;
+	font-size:$service-icon-size;
 }
 .service_navigation .ls-cmp-wrap:first-child {
 	width: auto;
@@ -38,8 +38,9 @@
 /* Service navigation Customised for Login */
 .login_bg {
 	.service__icon {
-	 	color: unquote($white-clr);
+	 	color: $login_faq_icon;
 	}
+	.service_cmp p{display:none;}
 }
 
 /* Service navigation Customised for Sticky */

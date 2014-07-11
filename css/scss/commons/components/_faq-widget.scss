@@ -9,34 +9,6 @@
 	height: 31.25em;
 	overflow: hidden;
 	display: none;
-}
-.faq-widget {
-	display: block;
-	z-index: 1;
-	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
-}
-.widget_header {
-	position: relative;
-	padding: 1.39em;
- 	border-bottom: 1px solid $default-border-clr;
- 	@include regular;
-	font-size: 1.12em;
-}
-.widget_header__inner {
-	padding-right: 1.6em;
-	h2{
-		color:#252429;
-	}
-}
-.icon_widget_close {
-	font-size: 0.75em;
-	position: absolute;
-	right: 1em;
-	top: 1em;
-	cursor: pointer;
-	padding: 1em;
-}
-.widget {
 	.faq_answer {
 	 	border-bottom: 0;
 	}
@@ -74,7 +46,40 @@
 	 		right: 1.53em;
 		}
 	}
+	.lnk_primary{
+		color: $primary-link-clr;
+		&:hover{
+			color:$primary-hover-clr;
+		}
+	}
 }
+.faq-widget {
+	display: block;
+	z-index: 1;
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
+}
+.widget_header {
+	position: relative;
+	padding: 1.39em;
+ 	border-bottom: 1px solid $default-border-clr;
+ 	@include regular;
+	font-size: 1.12em;
+}
+.widget_header__inner {
+	padding-right: 1.6em;
+	h2{
+		color:#252429;
+	}
+}
+.icon_widget_close {
+	font-size: 0.75em;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	cursor: pointer;
+	padding: 1em;
+}
+
 
 /* FAQ Widget Customised for Login */
 
@@ -105,9 +110,7 @@
 .wcm-messages, .content_row {
  	@include transition(all, 0.3s, ease-in-out);
 }
-.widget .lnk_primary, .widget .lnk_primary:hover {
-	color: #009966;
-}
+
 /* Sticky widget */
 
 .home {

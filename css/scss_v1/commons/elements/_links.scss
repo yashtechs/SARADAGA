@@ -1,0 +1,35 @@
+// Links
+
+.lnk_primary {
+	font-size: 1em;
+ 	color: $primary-link-clr;
+	padding-right: 0.93em;
+	cursor: pointer;
+    @include regular;
+	display: table-cell;
+	vertical-align: middle;
+	 &:hover {
+	 color: $hover-bg;
+	 text-decoration: underline;
+	}
+}
+.identification_contract .lnk_primary, .identification_ucr .lnk_primary {
+	padding: 0.81em 0;
+}
+.ct2_link {
+	padding:0.87em 0; 
+	display:block;
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+	.login_bg{ 
+		.lnk_primary {
+			padding: 0.81em 0 0.81em 0.62em;
+		}
+		.wcm-btns-zone .lnk_primary {
+       		padding: 0;
+    	}
+	}
+}

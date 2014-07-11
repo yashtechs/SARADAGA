@@ -14,7 +14,7 @@
 /* Button */
 
 .btn_default {
-	@include ele-btn(5.63em, 2.75em, 0, 1.25em);
+	@include ele-btn(90px, 44px, 0, 20px);
 	font-size: 1em;
  	@include regular;
 	line-height: 1em;

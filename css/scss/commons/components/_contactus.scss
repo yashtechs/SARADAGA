@@ -14,7 +14,7 @@
 	padding: 1.88em;
 }
 .contactus_block {
-	 border-bottom: 1px solid #BEC6D0;
+	 border-bottom: 1px solid $default-border-clr;
 	 display: table;
 	 padding: 1.88em 0 1.13em;
 	 width: $default-width;
@@ -89,7 +89,7 @@
 .login_bg {
 	 .h_services {
 		 background-color: unquote($white-bg);
-		 border-bottom: 2px solid #729f08;
+		 border-bottom: 2px solid $h-accounts-bg;
 	}
 	.module_title {
 	 	color: $default-color;
@@ -99,17 +99,14 @@
 		margin: 6.25em auto 0 auto;
 	}
 	.contact_us {
-	 &.attempt_fail {
-	 	margin-top: 0;
-	}
-	.lnk_primary {
-		color: #009966;
-		padding: 0;
-		 &:hover {
-			 text-decoration: underline;
-			 color: #008578;
-		  }
-	   }
+		.lnk_primary {
+			color: $primary-link-clr;
+			padding: 0;
+			 &:hover {
+			 	text-decoration: underline;
+			 	color: $primary-hover-clr;
+		 	}
+	   	}
 	}
 }
 

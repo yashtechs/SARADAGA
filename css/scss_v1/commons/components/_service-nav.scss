@@ -1,0 +1,54 @@
+
+.service__icon {
+	font-size: 3.72em;
+}
+.service_navigation .ls-cmp-wrap:first-child {
+	width: auto;
+	position: absolute;
+	right: 1.88em;
+	top: 19.8em;
+}
+.service_cmp {
+	 text-align: center;
+	 margin-bottom: 0.82em;
+	 cursor: pointer;
+	 @include transition(all, 0.6s, ease-in-out);
+	 a:hover, &.active a {
+	 	color: $hover;
+	}
+	 &:last-child {
+	 margin: 0;
+	}
+	p {
+		padding-top: 0.31em;
+	}
+}
+.service_cmp__links {
+	 &:before {
+		 content: '';
+		 display: table;
+	}
+	 &:after {
+		 content: '';
+		 display: table;
+		 clear: both;
+	}
+}
+
+/* Service navigation Customised for Login */
+.login_bg {
+	.service__icon {
+	 	color: unquote($white-clr);
+	}
+}
+
+/* Service navigation Customised for Sticky */
+.main_wrapper .wcm-service-nav {
+	width: 4.38em;
+}
+
+/* Sticky Service navigation */
+.sticky_fixed {
+	position: fixed;
+	top: 6.88em;
+}

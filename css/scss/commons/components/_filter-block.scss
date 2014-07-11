@@ -54,7 +54,7 @@
 	white-space: nowrap;
 	&:hover{
 		background:unquote($filter-hover);
-		color:unquote($white-clr-hover);
+		color:unquote($filter-hover-clr);
 		cursor:pointer;
 		&:first-child{
 			@include border-radius-all($glb-tleft-radius,$glb-tright-radius,0,0);

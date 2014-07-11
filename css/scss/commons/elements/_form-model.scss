@@ -195,6 +195,9 @@ input.mask_pattern {
 // 767px breakpoint
 
 @media all and (max-width: 47.9375em) {
+	.form_fields{
+		padding-bottom:0.75em;
+	}
 	.form_inner {
         padding: 0.62em;
 		h5 {

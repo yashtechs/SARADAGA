@@ -1,0 +1,35 @@
+/* Dependent classes */ 
+
+.show_active, .show {
+	display: block !important;
+}
+.show_inline {
+	display: inline-block !important;
+}
+.hide {
+	display: none !important;
+}
+.show_hello {
+	display: inline-block;
+}
+.show_table {
+	display: table;
+}
+.disabled {
+ 	color: $select-color !important;
+	cursor: default;
+ 	.list_header_title, .listiban_detail, .lnk_primary {
+ 		color: $select-color !important;
+ 		cursor: default;
+	}
+	.hello_icon {
+		background-position: -210px -3px;
+	}
+	&:hover, .list_item__header:hover .list_header_title {
+	 	text-decoration: none !important;
+	}
+	.dropdown_arrow:after {
+		border-color: #76767b;
+	}
+}
+.status_error { color: $error-clr}

@@ -86,14 +86,6 @@
 }
 
 /* attempt error */
-
-.login_bg .attempt_error {
-	 margin-top: 6.25em;
-	 .alert_messages {
-		 color: unquote($white-clr-icon) !important;
-		 margin-bottom: 0;
-	 }
-}
 .attempt_error {
 	 .error_icon, .fontcon-information {
 		display: none;

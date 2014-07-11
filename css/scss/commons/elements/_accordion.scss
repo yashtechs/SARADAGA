@@ -100,7 +100,7 @@
 /* Common and Groups L3 */
 
 .list_wrapper {
-	padding: 0 1.67em;
+	padding: 0 1.87em;
 	display: table;
  	width: $default-width;
 }
@@ -281,7 +281,8 @@
 	 width: $default-width;
 	 border-top: 1px solid $default-border-clr;
 	 border-bottom: 1px solid $default-border-clr;
-	 &.details{ padding-top:12px;}
+	 padding-bottom: 1.25em;
+	 &.details{ padding-top:15px;}
 }
 /* L4 */
 
@@ -306,7 +307,7 @@
 }
 .view_more p, .show_filters p {
  	@include regular;
- 	color:$icon2-clr;
+ 	color:$primary-link-clr;
 	padding-left: 1.25em;
 	cursor: pointer;
 }

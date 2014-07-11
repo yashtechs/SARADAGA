@@ -1,0 +1,121 @@
+/* Alert Messages */
+
+.wcm-severity-message {
+ 	width: $default-width;
+}
+.warning_area {
+	position: fixed;
+ 	width: $default-width;
+	top: 5em;
+	z-index: 999;
+}
+.alert_messages {
+ 	width: $default-width;
+ 	color: unquote($white-clr);
+	display: none;
+	@include font-smoothing(auto);
+	position: relative;
+}
+.alert_messages__inner {
+	padding: 1.25em 2.5em 1.25em 1.25em;
+ 	width: $default-width;
+	p {
+		font-size: 1em;
+		width: auto;
+	}
+}
+.error_icon {
+	font-size: 2.19em;
+	float: left;
+	width: auto;
+ 	color: unquote($white-clr);
+	margin-right: 0.29em;
+}
+.alert_message_content h2 {
+	color: $default-color;
+	@include regular;
+	padding: 0.13em 0;
+	display: inline-block;
+}
+.icon_dismiss {
+	float: right;
+	cursor: pointer;
+	font-size: 0.88em;
+	position: absolute;
+	right: 0.72em;
+	top: 0.86em;
+	padding: 0.72em;
+}
+.alert_messages_error .icon_dismiss, .alert_messages_severity .icon_dismiss {
+	display: none;
+}
+.alert_messages_error .alert_message_content, .alert_messages_severity .alert_message_content {
+	 width: $default-width !important;
+	 p {
+		 width: $default-width !important;
+	 }
+}
+.alert_message_content {
+	float: left;
+	padding-right: 1.88em;
+	width: auto;
+}
+
+/* Alert messages Themes */
+.alert_messages_warning {
+ 	background: $warning-clr;
+}
+.alert_messages_error, .alert_messages_severity {
+ 	background: $error-clr-bg;
+}
+.alert_messages_information {
+ 	background: $information-clr;
+}
+
+/* Custom messages */
+
+.login_bg {
+	.icon_dismiss {
+		padding-top: 0.57em;
+		display: none;
+		color: unquote($white-clr-icon);
+	}
+	.alert_message_content {
+		width: 92%;
+	}
+}
+
+/* attempt error */
+
+.login_bg .attempt_error {
+	 margin-top: 6.25em;
+	 .alert_messages {
+		 color: unquote($white-clr-icon) !important;
+		 margin-bottom: 0;
+	 }
+}
+.attempt_error {
+	 .error_icon, .fontcon-information {
+		display: none;
+	}
+	.alert_message_content {
+		width: $default-width;
+	}
+}
+
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+    .login_bg{ 
+		.alert_message_content {
+			width: 85%;
+		}
+		.attempt_error {
+       		 margin-top: 1.87em;
+			 .alert_messages {
+				width: 100% !important;
+			 }
+    	}
+	}
+}

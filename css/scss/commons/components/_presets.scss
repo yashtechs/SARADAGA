@@ -1,13 +1,12 @@
 /* Dependent classes */ 
-
+.hide {
+	display: none !important;
+}
 .show_active, .show {
 	display: block !important;
 }
 .show_inline {
 	display: inline-block !important;
-}
-.hide {
-	display: none !important;
 }
 .show_hello {
 	display: inline-block;

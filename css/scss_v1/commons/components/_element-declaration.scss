@@ -1,0 +1,35 @@
+html {
+ width: $default-width;
+	height: auto;
+	background: #eef1f5;
+}
+body {
+ width: $default-width;
+	height: auto;
+	@include bg-color($mainbg-top,$mainbg-bottom);
+	position: relative;
+}
+.easybanking {
+	 width: $default-width;
+	 height: $default-height;
+	 font-size: 1em;
+	 line-height: 1.12em;
+	 color: $default-color;
+	 @include bg-color($mainbg-top,$mainbg-bottom);
+	 @include light;
+	 -webkit-touch-callout: none;
+	 -webkit-user-select: none !important;
+	 -moz-user-select: none !important;
+	 -ms-user-select: none !important;
+	 -khtml-user-select: none;
+	 @include text-size-adjust(none);
+	 @include font-smoothing(antialiased);
+}
+.no_scroll, .no_scroll body {
+	overflow: hidden;
+ width: $default-width;
+ height:$default-height;
+}
+.no_hscroll, .no_hscroll .easybanking {
+	overflow-x: hidden;
+}

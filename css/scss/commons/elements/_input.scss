@@ -33,7 +33,7 @@
 }
 }
  >input {
-	 @include ele-input($default-width, 2.75em, none !important, 0.69em, 0.75em);
+	 @include ele-input($default-width, 44px, none !important, 11px, 12px);
 	 max-height: none !important;
 	 min-height: 0 !important;
 	 margin: 0!important;
@@ -70,8 +70,8 @@
  	line-height: 1.63em;
 }
 .default_input_field.focus, textarea:focus {
-	border: #008578 solid 1px !important;
+	border: $focus solid 1px !important;
 }
 input[type="checkbox"]:focus, button:focus {
-	outline: #008578 solid 1px !important;
+	outline: $focus solid 1px !important;
 }

@@ -20,7 +20,7 @@
 	position:relative;
 }
 .accounts_title, .cards_title, .functions_title {
-	font-size: 1.88em;
+	font-size: $function-title-fsize;
 	text-transform: uppercase;
  	color: unquote($white-clr);
 	line-height: 1.14em;

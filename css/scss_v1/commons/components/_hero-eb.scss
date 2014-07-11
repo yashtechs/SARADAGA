@@ -1,0 +1,29 @@
+
+#metaInfo {
+ 	width: $default-width;
+	margin: 0 auto;
+ 	color: unquote($white-clr);
+	position: relative;
+	@include bg-color($hero-bg,$bg-bottom);
+	.level1 {
+	 	padding:3em 0 1em 0; 
+		width:30em; 
+	 	margin:0 auto; 
+		position:relative;
+	}
+	h3 {
+		font-size: 1.56em;
+		padding-bottom: 0.24em;
+	}
+	h1 {
+		font-size: 2.88em;
+	}
+}
+
+.hero_logo{ 
+	font-size:60px; 
+	position:absolute;
+	content: "\e631"; 
+	right:0; 
+	margin-top:6px;
+}

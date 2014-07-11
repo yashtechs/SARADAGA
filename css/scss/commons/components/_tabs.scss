@@ -60,7 +60,7 @@
 .accounts_module_tab {
  	background: $accounts-modtab-bg;
  	color: unquote($white-clr);
-	font-weight: 600;
+	@include regular;
 }
 .cards_module_tab {
  	background: $cards-modtab-bg;

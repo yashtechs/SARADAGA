@@ -1,0 +1,134 @@
+
+.border_none {
+	border: none !important;
+}
+.acknowledge_info {
+	h2 {
+	 font-size: 2.25em;
+	 display: inline-table;
+	 line-height: 1em;
+	}
+	p {
+		font-size: 1em;
+		margin-top: 4px;
+	}
+}
+.acknowledge_content_inner {
+ 	width: $default-width;
+	display: inline-table;
+	padding-bottom: 3.12em;
+}
+.acknowledge_blocks {
+	width: 33.3%;
+	float: left;
+}
+.result_content {
+	padding: 0.87em 0.94em;
+	text-align: center;
+	border-right: 1px dotted $default-border-clr;
+	.hello_icon {
+		 position: relative;
+		 top: 0.31em;
+		 float: none;
+		 margin-right: 0.125em;
+	}
+}
+.result_personicon, .fontcon-send-money-icon {
+	font-size: 3.75em;
+ 	color: $result-icon-clr;
+	display: inline-block;
+}
+.done_icon {
+	font-size: 1.87em;
+ 	color: $icon-done-clr;
+	position: relative;
+	top: 0.18em;
+	right: 0.6em;
+}
+.resultfrom_info {
+	margin-top: 1.5em;
+	font-size: 1em;
+	line-height: 1.6em;
+	 label {
+		 @include regular;
+		 display: block;
+	}
+}
+.result_navigation {
+	display: inline-block;
+ 	width: $default-width;
+}
+.resultfrom__iban p {
+	display: inline-block;
+}
+
+/* One box model */
+
+.acknowledge_fullwrapper{
+	text-align:center;
+	padding-bottom:1.87em;
+}
+.benf_done{ 
+	right: 1.5em;
+	top:3.34em;
+	position: relative;
+	color: $icon-done-clr; 
+	font-size:2.25em;
+	background:unquote($white-clr);
+	@include border-radius-all(2em,2em,2em,2em);
+	border:2px solid #ffffff;
+}
+.benf_img{
+	font-size:7em;
+	color:$result-icon-clr;
+} 
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+	.acknowledge_info h2 {
+        font-size: 1.12em;
+        line-height: 1.12em;
+    }
+    .acknowledge_blocks {
+        width: 100%;
+    }
+    .form_details {
+        width: 100%;
+    }
+	.result_content {
+        text-align: left;
+        padding: 0.75em 0.62em;
+        border-bottom: 1px solid #d8dbde;
+        border-right: none;
+        width: 100%;
+        display: table;
+    }
+    .resultfrom_info {
+        margin: 0;
+        line-height: 1.37em;
+		label {
+			width: 25%;
+			float: left;
+    	}
+    }
+    .resultfrom_content {
+        width: 60%;
+        float: left;
+    }
+    .result_personicon {
+        float: right;
+        font-size: 2.5em;
+    }
+    .fontcon-send-money-icon {
+        position: absolute;
+        right: 0.5em;
+        font-size: 2.5em;
+    }
+    .done_icon {
+        float: right;
+        font-size: 1.56em;
+        top: 1.25em;
+        right: 0;
+    }
+}
