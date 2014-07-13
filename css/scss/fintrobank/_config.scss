@@ -3,8 +3,12 @@ $default-height:100%;
 $content-width:80%;
 $height-half:50%; 
 $width-half:50%;
-$info-width:45.62em;
+$fixed-width:45.62em;
 $ele-height:44px;									// Default input boxes heights
+
+// Site primary colors
+$primarycolor: #009966;								// Primary color for Site
+$primarytxtcolor: #252429;							// Primary text color
 
 $logo-width:2.5em;									// Brand logo width
 $logo-height:3.125em;									// Brand logo height
@@ -12,6 +16,10 @@ $logo-position:-1px 1px;							// Logo sprite positions
 $logo-small-width:2.62em;							// Logo width on small screen
 $logo-small-height:3.125em;							// Logo height on small screen
 $logo-parent-height:2.5em;							// Logo parent height
+
+// Header
+$navheader-bg:'#ffffff';							// Header color
+$navheader-unauth:'#ffffff';						// Header color unauthenticated
 
 $error-clr: #e53012; 								// General color for Errors, warnings.
 $indicator-clr-icon: #e53012; 						// Red color for ZoomIT or any alert icons.
@@ -98,12 +106,14 @@ $function-modtab-bg:#537e1c;						// Generic module tabs backgrounds
 $accounts-modtab-bg:#003e73;						// Accounts module tab background color 
 $cards-modtab-bg:#00629c;							// Cards Module tabs theme
 
-$icon-color-m2:#186494;								// M2 icon color
-$icon-color-ok:#138e57;								// OK icon color
+// UCR icon color
+$m1-icon-clr:#e53012;								// M2 icon color
+$m2-icon-clr:#186494;								// M2 icon color
+$ok-icon-clr:#138e57;								// OK icon color
 
 $margin-mod-bg:#fafbfc;								// Margin module light blue background or text color
 
-$icon-done-clr:#85b909;								// icon done color
+$done-icon-clr:#85b909;								// icon done color
 
 $highlight-clr:#186494;								// Blue highlight color i.e UCR screen text	
 $highlight-comp-bg:#e5e9ef;							// Background highlight on key selections
