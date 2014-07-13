@@ -88,7 +88,7 @@
 .h_services {
 	@include bg-color($h-services-bg,$bg-bottom);
 }
-.login_bg .h_services, .module_bg {
+.module_bg {
  	background: unquote($white-bg);
 }
 

@@ -93,7 +93,7 @@
 	position: relative;
 }
 .m1_icon {
- 	color: $indicator-clr-icon;
+ 	color: $m1-icon-clr;
 	font-size: 1.6em;
 	position: relative;
 	margin: 0 0.31em;
@@ -110,7 +110,7 @@
 	}
 }
 .m2_icon {
- 	color: $icon-color-m2;
+ 	color: $m2-icon-clr;
 	position: relative;
 	font-size: 1.6em;
 	display: inline-block;
@@ -120,7 +120,7 @@
 .ok_icon {
 	font-size: 1.6em;
 	position: relative;
- 	color: $icon-color-ok;
+ 	color: $ok-icon-clr;
 	margin: 0 0.31em;
 	display: inline-block;
 	vertical-align: middle;

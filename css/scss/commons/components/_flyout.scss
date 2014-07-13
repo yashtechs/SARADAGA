@@ -272,4 +272,40 @@
     	}
 	}
  }
+
+/* Right col exp */
+	.right_col.exp{ 
+		.selected_details__account{ 
+			float:none;
+			width:19.75em;
+		}
+		.selected_details.dropdown_arrow{
+			padding-right:0;
+		}
+		.selected_details__info{
+			text-align:left;
+			width:100%;
+		}
+		.flyout_selection{ 
+			.dropdown_arrow:after{ right:3.37em;}
+			&.flyout_active .dropdown_arrow:after{ right:1.25em;}
+		}
+		.flyout_active{ 
+			.selected_details.dropdown_arrow{ 
+				padding-right:0;
+			}
+			.flyout_container{ 
+				left:0;
+			}
+			.selected_details__info{
+				padding-right:0;
+			}
+		}
+		.list_group:first-child .list_header{ 
+			border-top:none;
+		}
+		.functions_title{ text-align:right;} 
+	}
+ 
 }
+

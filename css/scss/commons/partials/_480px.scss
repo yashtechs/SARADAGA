@@ -41,10 +41,6 @@
     display: block;
     margin: 0 0 0.5em 0;
   }
-  /* Identification alignments */
-  .authentication, .authentication__identification, .identification_contract, .authentication__details, .identification_ucr, .login_bg #metaInfo, .wcm-authentication {
-  width: 18.75em !important;
-}
 
 .login_bg {
   .severity_message .alert_messages {
@@ -84,7 +80,7 @@
     margin: 1.25em auto 1.87em;
   }
   .severity_message .alert_messages {
-    width: 365px;
+    width: 100%;
     margin: 1.25em auto 0 auto;
   }
 }

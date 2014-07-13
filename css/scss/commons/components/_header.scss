@@ -10,11 +10,16 @@
 }
 .site_header__inner, #siteHeaderErrorInner {
 	padding: 1.25em 1.88em;
- 	background: unquote($white-bg);
+ 	background: unquote($navheader-bg);
 	box-shadow: 0 4px 4px -6px $header-shadow;
 	-webkit-box-shadow: 0 4px 4px -6px $header-shadow;
 	-moz-box-shadow: 0 4px 4px -6px $header-shadow;
 	-ms-box-shadow: 0 4px 4px -6px $header-shadow;
+}
+#webbankingUnauthenticated{
+	.site_header__inner, #siteHeaderErrorInner{
+		background:unquote($navheader-unauth);
+	}
 }
 #siteHeaderError a {
 	display: block;

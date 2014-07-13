@@ -56,9 +56,9 @@
 .default_dropdown_box {
  	background: unquote($white-bg);
 	border: 1px solid $default-border-clr;
-	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 10%/100%);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 10%/100%);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 10%/100%);
 	margin: -0.06em 0 0 0;
  	color: $select-color;
 	line-height: 1.38em;

@@ -2,14 +2,14 @@
 
 #security_msg {
 	display: none;
- 	width: $info-width;
+ 	width: $fixed-width;
 	margin: 6.25em auto 0 auto;
 	background: rgba(255, 255, 255, 1);
 	padding: 1.87em;
 	line-height: 1.5em;
 }
 .intermediate_messages {
- 	width:$info-width;
+ 	width:$fixed-width;
 	margin: 6.25em auto 3.75em auto;
 }
 .intermediate_content {
@@ -24,7 +24,7 @@
 	}
 }
 .intermediate_btns {
-	width: $info-width;
+	width: $fixed-width;
 	margin: 0 auto;
 	padding: 1.87em 0;
 	span {

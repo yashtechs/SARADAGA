@@ -10,10 +10,11 @@
 	border: none;
 }
 .zone_btn {
- 	background: unquote($zones-bg);
+ 	background: $primary2-btn-clr;
+	color:unquote($white-clr-primary);
 	margin: 0;
 	 &:hover {
-		@include color-rgba(255, 255, 255, 0.9);
+		background:$primary-hover-clr;
 	}
 }
 

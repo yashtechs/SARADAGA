@@ -140,10 +140,10 @@
 	  position: absolute !important;
 	  top: -19px !important;
 	  right: 10px !important;
-	  -moz-box-shadow: 0 10px 3px rgba(0, 0, 0, 0.6);
-	  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-	  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-	  border-top: 3px solid #009966;
+	  -moz-box-shadow: 0 10px 3px rgba(0, 0, 0, 60%/100%);
+	  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 60%/100%);
+	  box-shadow: 0 1px 3px rgba(0, 0, 0, 60%/100%);
+	  border-top: 3px solid $primarycolor;
 	}
 	.faq_pointer::after {
 	  position: absolute;

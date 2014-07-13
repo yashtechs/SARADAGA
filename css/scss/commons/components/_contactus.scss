@@ -87,16 +87,9 @@
 /* Contact us customised for Login */
 
 .login_bg {
-	 .h_services {
-		 background-color: unquote($white-bg);
-		 border-bottom: 2px solid $h-accounts-bg;
-	}
-	.module_title {
-	 	color: $default-color;
-	}
 	.contact_us, .faq-page {
-	 	width: $info-width;
-		margin: 6.25em auto 0 auto;
+	 	width: $fixed-width;
+		margin: 11.25em auto 0 auto;
 	}
 	.contact_us {
 		.lnk_primary {

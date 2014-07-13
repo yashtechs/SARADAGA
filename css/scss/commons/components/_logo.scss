@@ -32,6 +32,10 @@
 // 1023
 
 @media all and (max-width: 63.9375em) {
+	.site_logotype {
+		width: $logo-small-width;
+		height: $logo-small-height;
+	}
 	.brand_logo, #brandLogo {
 		width: $logo-small-width;
 		height: $logo-small-height;

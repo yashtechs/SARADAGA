@@ -73,9 +73,9 @@
 		overflow:hidden;
 	}
 	.canvas_container{
-		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1em;
-		-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1em;
-		-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1em;
+		box-shadow: rgba(0, 0, 0, 20%/100%) 0px 0px 1em;
+		-webkit-box-shadow: rgba(0, 0, 0, 20%/100%) 0px 0px 1em;
+		-moz-box-shadow: rgba(0, 0, 0, 20%/100%) 0px 0px 1em;
 	}
 }
 .canvas_closed{ 

@@ -270,7 +270,7 @@ body {
   body:after {
     clear: both; }
 
-.easybanking {
+.portal_wrapper {
   width: 100%;
   height: 100%;
   font-size: 1em;
@@ -887,6 +887,9 @@ input[type="checkbox"]:focus, button:focus {
   -webkit-box-shadow: 0 4px 4px -6px #252429;
   -moz-box-shadow: 0 4px 4px -6px #252429;
   -ms-box-shadow: 0 4px 4px -6px #252429; }
+
+#webbankingUnauthenticated .site_header__inner, #webbankingUnauthenticated #siteHeaderErrorInner {
+  background: #ffffff; }
 
 #siteHeaderError a {
   display: block;
@@ -1524,7 +1527,6 @@ input[type="checkbox"]:focus, button:focus {
   position: relative; }
 
 .login_bg {
-  padding-top: 5em;
   min-height: 48.13em;
   position: relative; }
 
@@ -1769,14 +1771,9 @@ input[type="checkbox"]:focus, button:focus {
   padding-top: 0.75em; }
 
 /* Contact us customised for Login */
-.login_bg .h_services {
-  background-color: #ffffff;
-  border-bottom: 2px solid #729f08; }
-.login_bg .module_title {
-  color: #252429; }
 .login_bg .contact_us, .login_bg .faq-page {
   width: 45.62em;
-  margin: 6.25em auto 0 auto; }
+  margin: 11.25em auto 0 auto; }
 .login_bg .contact_us .lnk_primary {
   color: #009966;
   padding: 0; }
@@ -1824,10 +1821,11 @@ input[type="checkbox"]:focus, button:focus {
   border: none; }
 
 .zone_btn {
-  background: #ffffff;
+  background: #85b909;
+  color: #ffffff;
   margin: 0; }
   .zone_btn:hover {
-    background: rgba(255, 255, 255, 0.9); }
+    background: #009966; }
 
 /* Button components and Alignmets */
 .wcm-btns-zone {
@@ -1842,7 +1840,7 @@ input[type="checkbox"]:focus, button:focus {
   height: 100%;
   position: absolute;
   z-index: 9999;
-  background-color: rgba(229, 233, 239, 0.95);
+  background-color: rgba(229, 233, 239, 0.9);
   top: 0;
   left: 0;
   position: fixed;
@@ -2102,7 +2100,7 @@ input[type="checkbox"]:focus, button:focus {
 /* Static pages customised for Login */
 .login_bg .content_page {
   width: 45.62em;
-  margin: 6.25em auto 0; }
+  margin: 11.25em auto 0; }
 
 @media all and (min-width: 20em) and (max-width: 29.9375em) {
   .table {
@@ -2675,7 +2673,7 @@ input[type="checkbox"]:focus, button:focus {
 
 /* List headers for Each item in list */
 .list_header {
-  background: #d8dbde;
+  background: #e5e9ef;
   border-top: 1px solid #d8dbde;
   border-bottom: 1px solid #d8dbde; }
   .list_header h2 {
@@ -3256,7 +3254,7 @@ input[type="checkbox"]:focus, button:focus {
 .h_services {
   background: #009966; }
 
-.login_bg .h_services, .module_bg {
+.module_bg {
   background: #ffffff; }
 
 @media all and (max-width: 47.9375em) {
@@ -3686,7 +3684,7 @@ input[type="checkbox"]:focus, button:focus {
   white-space: nowrap; }
   .filter_option_value:hover {
     background: #ffffff;
-    color: #009966;
+    color: $primarycolor;
     cursor: pointer; }
     .filter_option_value:hover:first-child {
       -webkit-border-top-left-radius: 0;
@@ -5204,10 +5202,6 @@ input.mask_pattern {
     display: block;
     margin: 0 0 0.5em 0; }
 
-  /* Identification alignments */
-  .authentication, .authentication__identification, .identification_contract, .authentication__details, .identification_ucr, .login_bg #metaInfo, .wcm-authentication {
-    width: 18.75em !important; }
-
   .login_bg .severity_message .alert_messages {
     width: 18.75em !important; }
   .login_bg .alert_message_content {
@@ -5233,7 +5227,7 @@ input.mask_pattern {
   .login_bg .content_page {
     margin: 1.25em auto 1.87em; }
   .login_bg .severity_message .alert_messages {
-    width: 365px;
+    width: 100%;
     margin: 1.25em auto 0 auto; }
 
   /* Identification alignments */
@@ -5275,7 +5269,8 @@ input.mask_pattern {
   /* Alignments */
   .login_bg .content_page, .login_bg .contact_us, .login_bg .faq-page, #security_msg, .intermediate_messages {
     width: 100%;
-    margin: 1.25em auto 0; }
+    margin: 4.25em auto 0;
+    padding: 0.62em 0.62em 0 0.62em; }
 
   .intermediate_btns, .wcm-btns-zone {
     width: 100%; }
