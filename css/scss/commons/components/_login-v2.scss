@@ -8,11 +8,11 @@
 .save_profile__text{font-family: 'regular', arial;margin: 0 0 0 0.37em;float: left;width: 80%;}
 .identification_fields_alias {padding-top: 1.25em; display:none;}
 .identification__navigation{padding: 1.87em 0;}
-.help_icon{ right:0;position:absolute; color:#85b909; top:0; cursor:help;}
+.help_icon{ right:0;position:absolute; color:$help_icon; top:0; cursor:help;}
 
 /* Tooltip */
-.tooltip_secondary{background: #85B909;left: -167px;position: absolute;bottom: 29px;width: 200px;z-index: 999;color: #ffffff;padding: 10px;font-family: 'regular', arial;font-size: 16px;display:none;}
-.tooltip_secondary:before {border-width: 15px 15px 0 15px;border-color: #85B909 transparent transparent transparent;border-style: solid;content: " ";display: block;height: 0;position: absolute;left: 158px;bottom: -15px;width: 0;}
+.tooltip_secondary{background: $help_icon;left: -167px;position: absolute;bottom: 29px;width: 200px;z-index: 999;color: #ffffff;padding: 10px;font-family: 'regular', arial;font-size: 16px;display:none;}
+.tooltip_secondary:before {border-width: 15px 15px 0 15px;border-color: $help_icon transparent transparent transparent;border-style: solid;content: " ";display: block;height: 0;position: absolute;left: 158px;bottom: -15px;width: 0;}
 
 /* Known Profile */
 .select_profile{ height:390px; overflow:hidden; position:relative;}

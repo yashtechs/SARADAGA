@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'bnpiconfont';
 	src:url('fonts/bnpiconfont.eot');
-	src:url('fonts/bnpiconfont.eot#iefix') format('embedded-opentype'),
+	src:url('fonts/bnpiconfont.eot?#iefix') format('embedded-opentype'),
 		url('fonts/bnpiconfont.woff') format('woff'),
 		url('fonts/bnpiconfont.ttf') format('truetype'),
 		url('fonts/bnpiconfont.svg#bnpiconfont') format('svg');
@@ -23,7 +23,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.fontcon-hero-logo:before {
+.fontcon-cards:before {
+	content: "\e602";
+}
+.fontcon-hero-icon:before {
 	content: "\e631";
 }
 .fontcon-savings-account:before {
@@ -31,9 +34,6 @@
 }
 .fontcon-current-account:before {
 	content: "\e601";
-}
-.fontcon-cards:before {
-	content: "\e602";
 }
 .fontcon-transaction-out:before {
 	content: "\e604";
@@ -44,10 +44,10 @@
 .fontcon-calendar:before {
 	content: "\e61a";
 }
-.fontcon-personage:before {
+.fontcon-benefeciary:before {
 	content: "\e61b";
 }
-.fontcon-send-money-icon:before {
+.fontcon-send_money_icon:before {
 	content: "\e61e";
 }
 .fontcon-circle-done:before {
@@ -66,7 +66,7 @@
 	content: "\e607";
 }
 .fontcon-menu-icon:before {
-	content: "\e61f";
+	content: "\e618";
 }
 .fontcon-logout:before {
 	content: "\e620";
@@ -117,7 +117,7 @@
 	content: "\e617";
 }
 .fontcon-fav-select:before {
-	content: "\e618";
+	content: "\e61f";
 }
 .fontcon-reload:before {
 	content: "\e619";
