@@ -52,6 +52,7 @@
 	 p {
 		 display: inline-block;
 		 float: left;
+		 word-break: break-word;
 		 &:nth-child(2) {
 		 	font-size: 0.87em;
 		}
@@ -90,7 +91,7 @@
 // 767px breakpoint
 
 @media all and (max-width: 47.9375em) {
-	.details_title, .form_title {
+	.details_title{
 		font-size: 1.14em;
 	}
 	

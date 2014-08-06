@@ -66,7 +66,8 @@ $white-bg:'#ffffff';								// Used for white back grounds
 
 // Links and dropdown
 $link-indication:$primarycolor;							// Links but not links (USed in Filters)
-$header-link:$primarycolor;								// Accordion header text color
+$header-link:$primarytxtcolor;							// Accordion header text color
+$list-link:$primarycolor;								// Accordion list header text color
 $dropdownlnk-clr:$primarycolor;							// Dropdown values text color
 
 //default lines color
@@ -77,6 +78,7 @@ $primary-btn-clr:$primarycolor;						// Primary button color
 $primary-link-clr:$primarycolor;					// Primary link color
 $primary-hover-clr:#0087c2;							// Primary button/Link hover color
 $primary2-btn-clr:$primarycolor;					// Login primary btn
+$primary2-btn-hover:#0087c2;						// Primary 2 color	
 $secondary-btn-clr:#d0d0d0;							// Secondary button background color
 $secondary-btn-hover-clr:#bdbcbc;					// Secondary button hover color
 

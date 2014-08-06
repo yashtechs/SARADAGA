@@ -34,19 +34,30 @@
  	width: $default-width;
  	border-top: 2px solid $default-border-clr;
 	text-transform: uppercase;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	line-height: 1.06em;
 	position: relative;
-	padding-top: 0.21em;
  	color: $header-link;
 	h4{
-		display: inline;
+		display: inline-block;
  		@include transition(all, 0.2s, ease-in-out);
 	}
 	&.dropdown_arrow {
 		cursor: pointer;
 		 &:after {
-			right: 1.25em;
+			left: 1.45em;
+			border-color: transparent transparent transparent #252429;
+			border-width: 6px 6px 6px;
+		}
+	}
+	&.dropdown-active{
+		&:after{
+			border-color: transparent transparent $default-clr-icon transparent;
+			margin-top: -0.15em;
+			border-width: 0 6px 6px 6px;
+		}
+		.action_icons{
+			display:table;
 		}
 	}
 }
@@ -63,10 +74,20 @@
  	color: $default-color;
 }
 .accordion_l1__inner {
-	padding: 0.84em 1.25em;
+	padding: 0.74em 1.60em 0.56em 1.87em;
 	display: table;
  	width: $default-width;
 	line-height: 1;
+}
+.header_l1{
+	&.dropdown_arrow{
+		.accordion_l1__inner {
+			padding-left:2.64em;
+		}
+	}
+	&.dropdown-active{
+		background: #d1d8e2;
+	}
 }
 .accordion_main:nth-child(1) .header_l1, .first_list_item .list_wrapper_inner {
 	border-top: none;
@@ -149,13 +170,21 @@
 	color:$optgroup-header;
 }
 /* List headers for Each item in list */
-
+.list_group{
+	margin-bottom:1.25em;
+}
+.list_group:last-child{
+	margin-bottom:0;
+}
 .list_header {
-	 background: $header-list-bg;
-	 border-top: 1px solid $default-border-clr;
-	 border-bottom: 1px solid $default-border-clr;
+	 border-bottom: 2px solid $default-border-clr;
+	 margin:0 1.87em;
 	 h2 {
-	 	padding: 0.31em 1.87em;
+	 	padding-top:1.87em;
+	 	padding-bottom: 0.5em;
+		@include regular;
+		text-transform: uppercase;
+		color:$primarycolor;
 	}
 }
 /* List item icon */
@@ -221,7 +250,7 @@
 	float: left;
 	 .list_header_title {
 		 @include regular;
-		 color: $header-link;
+		 color: $list-link;
 		 font-size: 1.1em;
 		 line-height: 1.18em;
 		 float: left;
@@ -269,8 +298,8 @@
 /* List item content C3 */
 .content_details {
  	width: $default-width;
+ 	 padding: 0.31em 0 1.25em 0;
 	 p {
-		 padding: 0.31em 0 1.25em 0;
 		 text-transform: uppercase;
 		 line-height: 1.37em;
 		 white-space:pre-line;
@@ -326,6 +355,9 @@
 	 	border: none;
 	}
 }
+.more_detail_wrapper{
+padding-top:1.25em;
+}
 
 /* Accordion customized for IA's */
 .laccounts,.lcards{
@@ -333,7 +365,7 @@
 	}
 
 .laccounts .header_l1, .account_transactions .header_l1 {
- 	color: $accounts-clr;
+ 	color: $header-link;
 }
 .laccounts .list_content_col1, .lcards .list_content_col1 {
 	width: 60%;
@@ -355,13 +387,13 @@
 
 @media all and (max-width: 47.9375em) {
 	.accordion_l1__inner {
-		padding: 0.94em 0.62em;
+		padding: 0.74em 1.60em 0.56em 1.87em !important;
 	}
 	
 	.header_l1 {
 		font-size: 1.12em;
 		&.dropdown_arrow:after {
-			right: 0.62em;
+			left: 0.62em;
 		}
 	}
 	
@@ -387,8 +419,9 @@
 	}
 	
 	.list_header{
+		margin:0 0.62em;
 		h2 {
-			padding: 0.31em 0.62em;
+			padding: 1.25em 0 0.25em 0;
 		}
 	}
 	.group_colone {

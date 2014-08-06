@@ -30,13 +30,13 @@
 	height: 0;
 	margin-top: -0.19em;
 	border-style: solid;
-	border-width: 5px 5px 0 5px;
-	content: ' ';
+	border-width: 6px 6px 0 6px;
+	content: '';
 }
 .dropdown-active:after, .widget .header_l2.dropdown-active:after {
 	border-color: transparent transparent $default-clr-icon transparent;
 	margin-top: -0.25em;
-	border-width: 0 5px 5px 5px;
+	border-width: 0 6px 6px 6px;
 }
 .dropdown-active::before {
 	position: absolute;

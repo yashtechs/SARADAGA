@@ -26,7 +26,10 @@
 		a{ 
 			position:relative;
 			padding-bottom:1em; 
-			z-index:2;
+			z-index:2;	
+			&.selected-page {
+					border-bottom: 5px solid #252429;
+			}			
 			&:hover{ 
 				border-bottom:5px solid $hover;
 				color:$hover;
@@ -105,4 +108,6 @@ display:none;
 		font-size: 1.12em;
 		text-transform: uppercase;
 	}
+	
+	.navigation_control li a.selected-page{ color:#009966; border:none;} 
 }

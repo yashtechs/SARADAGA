@@ -6,7 +6,6 @@
 }
 .ucr_title {
 	font-size: 1.5em;
-	padding-bottom: 0.75em;
 	line-height: 1.5em;
 	text-transform: uppercase;
 }
@@ -23,7 +22,7 @@
  	border-bottom: 1px solid $default-border-clr;
  	width: $default-width;
 	display: table;
-	padding: 0.94em 0;
+	padding: 0.62em 0;
 	position: relative;
 	line-height: 1.80em;
 	&:last-child {
@@ -38,9 +37,6 @@
 .ucr_details__content {
 	width: 94%;
 	display: table;
- 	p:first-child {
- 		@include regular;
-	}
 }
 .ucr_code {
 	display: table;
@@ -89,7 +85,6 @@
 }
 .ucr_content__challenge {
  	width: $default-width;
-	padding-top: 0.62em;
 	position: relative;
 }
 .m1_icon {
@@ -158,6 +153,9 @@
  	.ucr_img {
         display: none;
     }
+	.challenge_part3 {
+		padding:0.25em 0 0 0;
+	}
     .de .ucr_details:nth-child(2) .ucr_action_content, .fr .ucr_details:nth-child(2) .ucr_action_content {
         width: 100%;
     }

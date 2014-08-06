@@ -37,7 +37,7 @@ $primarytxtcolor: #252429;
 
 // Header
 $navheader-bg:'#ffffff';							// Header color
-$navheader-unauth:'rgba(0,0,0,20%/100%)';						// Header color unauthenticated
+$navheader-unauth:'rgba(0,0,0,0.2)';						// Header color unauthenticated
 
 //Site logo
 $logo-width:2.5em;									// Brand logo width
@@ -65,8 +65,9 @@ $white-clr-icon:'#ffffff';							// Button direction Icon in White
 $white-bg:'#ffffff';								// Used for white back grounds
 
 // Links and dropdown
-$link-indication:$primarycolor;							// Links but not links (USed in Filters)
-$header-link:$primarycolor;								// Accordion header text color
+$link-indication:$primarycolor;						// Links but not links (USed in Filters)
+$header-link:$primarycolor;							// Accordion header text color
+$list-link:$primarycolor;							// Accordion list header text color
 $dropdownlnk-clr:#ff6e78;							// Dropdown values text color
 
 //default lines color
@@ -77,6 +78,7 @@ $primary-btn-clr:#ff6e78;							// Primary button color
 $primary-link-clr:#ff6e78;							// Primary link color
 $primary-hover-clr:#ff5a64;							// Primary button/Link hover color
 $primary2-btn-clr: #ff6e78;							// Login primary btn
+$primary2-btn-hover:#ff5a64;						// Primary 2 color	
 $secondary-btn-clr:#d2d8e1;							// Secondary button background color
 $secondary-btn-hover-clr:#bec6d0;					// Secondary button hover color
 
@@ -128,7 +130,7 @@ $component-bg:#f4f5f6;								// Greyish backgoruns for Components / Modules i.e
 // teaser colors
 $teaser-bg:#0ad2e1;									// Sepa CT teaser background color in Margin column
 $teaser-bg-hover:$primarycolor;							// Teaser background hover color
-$title-clr:#861a61;									// Functional header title color
+$title-clr:#0080a6;									// Functional header title color
 $icon-teaser-clr:#ffffff;							// Transfer teaser icon color	
 
 // 
@@ -216,3 +218,6 @@ $function-title-fsize:1.45em;
 
 // Service icon size
 $service-icon-size:2.72em;
+
+//Help icon(Tooltip)
+$help_icon:$primarycolor;

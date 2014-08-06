@@ -16,7 +16,7 @@
          <script data-main="js/app" src="js/polyfill.js"></script>
 	</head>
 	<body>
-		<div class="easybanking">
+		<div class="portal_wrapper">
         <!-- IA code -->
 			<div class="account_transactions transactions">
 				<div class="accounts_transactions__inner">
@@ -179,22 +179,31 @@
 							<div class="module_listitem">
 								<div class="accordion_main invoices">
 									<!-- Level1 Header Clickable with right arrow -->
-									<div class="accordion_header header_l1 dropdown_arrow" data-on-click="accordion:toggle">
+									<div class="accordion_header header_l1 dropdown_arrow dropdown-active" data-on-click="accordion:toggle">
 										<div class="accordion_l1__inner">
 											<h4>Pending transactions</h4>
-                                            <span>(30)</span>
+                                            <span>
+                                            	<span class="bracket">(</span>
+                                                <span>300</span>
+                                                <span class="bracket">)</span>
+                                            </span>
+                                            <div class="action_icons">
+                                                <span class="action_icons__global active">
+                                                	<span class="fontcon-search"></span>
+                                                </span>
+                                                 <span class="action_icons__global">
+                                                	<span class="fontcon-pdf"></span>
+                                                </span>
+                                                 <span class="action_icons__global">
+                                                	<span class="fontcon-print"></span>
+                                                </span>
+                                            </div>
 										</div>
 									</div>
-									<div class="accordion_content content_l2">
+									<div class="accordion_content content_l2 collapse">
                                         <div class="list_wrapper">               
                                         <!-- Action icons groups -->
-                                            <div class="action_group">
-                                                <div class="action_icons">
-                                                    <span class="action_icons__global fontcon-print"></span>
-                                                    <span class="action_icons__global fontcon-pdf"></span>
-                                                    <span class="action_icons__global fontcon-print"></span>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
 										<div class="accordion_list">
 											<div class="list_group">
@@ -203,15 +212,16 @@
 												</div>
 												<!-- List item 1 -->
 												<div class="list_item accordion_main">
-													<div class="list_wrapper">
+													<div class="list_wrapper l_icon">
 														<div class="list_wrapper_inner">
 															<!-- Level3 Header Clickable -->
+                                                            <span class=" list_icon fav_icon fontcon-fav-default"></span>
 															<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
 																<div class="list_content_col1">
-                                                                	<span class="fav_icon fontcon-fav-default"></span>
+                                                                	
                                                                     <div class=" list_content_details">
                                                                         <div class="listiban_group">
-                                                                            <h3>Transfer from account 295-565423-70</h3>
+                                                                            <h3 class="list_header_title">Transfer from account 295-565423-70</h3>
                                                                             <span class="hello_icon"></span>
                                                                         </div>
                                                                         <div class="listiban_detail">
@@ -490,7 +500,13 @@
                                             <span>(4)</span>
 										</div>
 									</div>
-									<div class="accordion_content content_l2">
+                                    <div class="accordion_header header_l1 dropdown_arrow" data-on-click="accordion:toggle">
+										<div class="accordion_l1__inner">
+											<h4>Booked transactions</h4>
+                                            <span>(4)</span>
+										</div>
+									</div>
+									<div class="accordion_content content_l2 collapse">
 										<div class="accordion_list">
 											<div class="list_group">
 												<div class="list_header">
@@ -606,13 +622,7 @@
 								</div>
 							</div>
 						</div>
-                        <!-- Load more-->
-                        <div class="load_more">
-                        	<div class="load_btn">
-                        	<button class="btn_default btn_primary">Load more</button>
-                            </div>
-                        </div>
-                        <!-- -->
+                        
 					</div>
 				</div>
 			</div>

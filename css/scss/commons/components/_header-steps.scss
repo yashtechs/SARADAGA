@@ -18,7 +18,7 @@
 	border: 2px solid #ffffff;
 	text-align: center;
 	display: inline-block;
-	padding: 0.87em 1em;
+	padding: 0.62em 0.75em;
  	@include radius-steps($step-tleft,$step-tright,$step-bleft,$step-bright);
  	&.active {
 		color: #861a61;

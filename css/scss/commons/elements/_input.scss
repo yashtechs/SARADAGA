@@ -46,10 +46,9 @@
 	 user-select: auto !important;
 	 -webkit-box-shadow: none !important;
 	 box-shadow: none !important;
-	 line-height: 1em;
+	 line-height: 1.4;
 	 color: $select-color;
 }
- overflow: hidden;
 	 &::after {
 	 display: block;
 	 clear: left;

@@ -7,11 +7,12 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 15em;
+	height: 18em;
 	.level1 {
-	 	padding:11em 0 1em 0;
 		text-align: center;
 		width: 100%;
+		position:absolute;
+		bottom:0.62em;
 	}
 	h3 {
 		font-size: 1.56em;
@@ -21,5 +22,36 @@
 		font-size: 1.88em; 
 		padding-bottom:0.3em;
 	}
+}
+#hello_logo{
+	width:110px;
+	height:120px;
+	background:url('images/hello_logo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position:relative;
+	top:-14px;
+	display: inline-block;
+}
+#hello_icon a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.brand_exc{
+	#metaInfo {
+		margin-top:-5em;
+	}
+}
+
+/* Breakpoint 767 */
+@media all and (max-width: 47.9375em) {
+	#metaInfo{height:16em;}
+	#hello_icon{
+		width:73px;
+		height:80px;
+	}
+	
 }
 

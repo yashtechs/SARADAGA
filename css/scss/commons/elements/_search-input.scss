@@ -13,6 +13,11 @@
 		padding-right: 2.75em;
 	}
 }
+
+.search_field .default_input_field>input{
+	padding-right:52px;
+}
+
 .search_wipe {
 	border-left: 0;
 	color: $icon4-clr;
@@ -22,6 +27,7 @@
 	top: 0;
 	padding: 1.65em;
 	display: none;
+	background:$white-clr;
 }
 .search_icon {
 	font-size: 1.37em;

@@ -32,4 +32,5 @@
 	}
 }
 .status_error { color: $error-clr}
-.mobscroll{ overflow-y:scroll;}
+.mobscroll{ overflow-y:scroll !important;pointer-events:auto!important;-ms-touch-action:auto!important;}
+.pad_0{padding:0!important;}

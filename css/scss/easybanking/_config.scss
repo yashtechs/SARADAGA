@@ -65,9 +65,10 @@ $white-clr-icon:'#ffffff';							// Button direction Icon in White
 $white-bg:'#ffffff';								// Used for white back grounds
 
 // Links and dropdown
-$link-indication:$primarycolor;							// Links but not links (USed in Filters)
-$header-link:$primarycolor;								// Accordion header text color
-$dropdownlnk-clr:$primarycolor;							// Dropdown values text color
+$link-indication:$primarycolor;						// Links but not links (USed in Filters)
+$header-link:$primarytxtcolor;						// Accordion header text color
+$list-link:$primarycolor;							// Accordion list header text color
+$dropdownlnk-clr:$primarycolor;						// Dropdown values text color
 
 //default lines color
 $default-border-clr:#d8dbde;						// Default border line color
@@ -75,8 +76,9 @@ $default-border-clr:#d8dbde;						// Default border line color
 // Buttons and links
 $primary-btn-clr:$primarycolor;						// Primary button color
 $primary-link-clr:$primarycolor;					// Primary link color
-$primary-hover-clr:#009e83;							// Primary button/Link hover color
+$primary-hover-clr:#008578;							// Primary button/Link hover color
 $primary2-btn-clr: #85b909;							// Login primary btn
+$primary2-btn-hover:#85b909;						// Primary 2 color	
 $secondary-btn-clr:#d2d8e1;							// Secondary button background color
 $secondary-btn-hover-clr:#d2d8e1;					// Secondary button hover color
 
@@ -145,6 +147,7 @@ $margin-mod-bg:#fafbfc;								// Margin module light blue background or text co
 $highlight-clr:#186494;								// Blue highlight color i.e UCR screen text	
 $highlight-comp-bg:#e5e9ef;							// Background highlight on key selections
 
+//to be removed
 $header-list-bg:#e5e9ef;							// SEPA CT dropdown group header
 
 // teaser social icons

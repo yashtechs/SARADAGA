@@ -4,7 +4,7 @@
   /* Alignments */
     .login_bg .content_page, .login_bg .contact_us, .login_bg .faq-page, #security_msg, .intermediate_messages {
         width: 100%;
-        margin: 4.25em auto 0;
+        margin: 1.25em auto 0;
 		padding:0.62em 0.62em 0 0.62em; 
     }
 
@@ -62,10 +62,9 @@
     }
 
 /* Identification */
-    .authentication {
-        width: 22.81em;
-    }
-
+	.authentication {
+		padding-top: 0.62em;
+	}
     .authentication__information {
         display: none;
     }
@@ -77,7 +76,6 @@
     .authentication__information .identification__inner {
         padding: 0.62em;
     }
-
 /* Intermediate */
     .intermediate_content {
         padding: 0.62em;

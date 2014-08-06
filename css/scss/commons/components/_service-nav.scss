@@ -6,7 +6,7 @@
 	width: auto;
 	position: absolute;
 	right: 1.88em;
-	top: 19.8em;
+	top: 2em;
 }
 .service_cmp {
 	 text-align: center;
@@ -21,6 +21,11 @@
 	}
 	p {
 		padding-top: 0.31em;
+	}
+}
+.brand_exc{
+	.service_cmp{
+		margin-top:14.2em;
 	}
 }
 .service_cmp__links {
@@ -52,4 +57,12 @@
 .sticky_fixed {
 	position: fixed;
 	top: 6.88em;
+}
+
+@media all and (max-width: 63.9375em){
+	.brand_exc{
+		.service_cmp{
+			margin-top:9.2em;
+		}
+	}
 }

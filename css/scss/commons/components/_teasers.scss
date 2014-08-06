@@ -64,7 +64,7 @@
 	}
 	.section {
 		h4 {
-			 color: $primarycolor;
+			 color: $title-clr;
 			 text-transform: uppercase;
 			 font-size: 1.12em;
 		}
@@ -84,4 +84,10 @@
 }
 .margin_teaser:hover .module_icon, .margin_teaser_link:hover .module_icon {
  	color: unquote($white-clr-hover) !important;
+}
+
+@media all and (max-width: 47.9375em) {
+	.margin_teaser{
+		min-width:320px;
+	}
 }

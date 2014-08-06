@@ -24,7 +24,7 @@
 .form_fields {
  	width: $default-width;
 	display: table;
-	padding-bottom: 1.87em;
+	padding-bottom: 0.94em;
 }
 .form_labels {
  	@include regular;
@@ -37,10 +37,9 @@
 	float: left;
 	width: 60%;
 }
-.form_btns {
-	border-top: 1px solid #d8dbde;
+.field_space{
+	padding: 0.62em 0;
 }
-
 
 /* Select field selected items */ 
 
@@ -66,7 +65,7 @@
 .trig_datepicker {
 	 background: unquote($white-bg);
 	float: right;
-	padding: 0.56em 0;
+	padding: 0.54em 0 0.48em;
 	position: absolute;
 	right: 0px;
 	top: 0px;
@@ -100,10 +99,6 @@
 /* Customized for SEPA */ 
 
 .form_fields {
-	 &.to_field {
-		 border-bottom: 1px solid #d8dbde;
-		 margin-bottom: 1.87em;
-	}
 	&.message_field {
 	 	padding-bottom: 0.62em;
 	}
@@ -114,7 +109,7 @@
 	cursor: pointer;
 }
 .select_message__structured, .select_message__freetext, .select_message__eurostructured {
-	margin-top: 1.87em;
+	margin-top: 0.94em;
 }
 
 /* Struct pattern input*/ 
@@ -195,8 +190,14 @@ input.mask_pattern {
 // 767px breakpoint
 
 @media all and (max-width: 47.9375em) {
+	.form_title {
+		font-size: 1.14em;
+	}
 	.form_fields{
 		padding-bottom:0.75em;
+	}
+	.form_labels{
+		width:100%;
 	}
 	.form_inner {
         padding: 0.62em;
@@ -212,4 +213,7 @@ input.mask_pattern {
         margin: 0;
         width: 100%;
     }
+    .field_space{
+		padding: 0;
+	}
 }

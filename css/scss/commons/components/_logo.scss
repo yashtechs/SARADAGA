@@ -40,4 +40,9 @@
 		width: $logo-small-width;
 		height: $logo-small-height;
 	}
+	#webbankingAuthenticated{
+		.brand_logo, #brandLogo{
+			pointer-events:none;
+		}
+	}
 }

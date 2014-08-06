@@ -20,16 +20,7 @@
     }
 .margin_headline{ margin-top:1.25em !important;}
   
-  /* Log out */
-  #logoutMsg {
-    width: 100%;
-    border-bottom: none;
-    margin-top: 20%;
-    h1 {
-      font-size: 1.12em;
-      @include regular;
-    }
-  }
+ 
   
   /* Non 100% buttons */
   .zoomit_map .right_navigation_btn, .zoomit_map .right_navigation_btn button {
@@ -75,52 +66,38 @@
 @media all and (min-width: 30em) and (max-width: 47.9375em) {
   /* Static pages */
 
-.login_bg {
-  .content_page {
-    margin: 1.25em auto 1.87em;
-  }
-  .severity_message .alert_messages {
-    width: 100%;
-    margin: 1.25em auto 0 auto;
-  }
-}
+	.login_bg {
+	  .content_page {
+	    margin: 1.25em auto 1.87em;
+	  }
+	  .severity_message .alert_messages {
+	    width: 100%;
+	    margin: 1.25em auto 0 auto;
+	  }
+	}
+	
+	/* Identification alignments */
+	
+	/* Internal ad and headline */
+	
+	.home .margin_col .ls-cmp-wrap {
+	  &:nth-child(odd) {
+	    padding-left: 0.31em;
+	    padding-right: 0.62em;
+	  }
+	  &:nth-child(even) {
+	    padding-right: 0.31em;
+	    padding-left: 0.62em;
+	  }
+	}
+	
+	.margin_col .ls-cmp-wrap {
+	  &:nth-child(odd) {
+	    padding-right: 0.31em;
+	  }
+	  &:nth-child(even) {
+	    padding-left: 0.31em;
+	  }
+	}
 
-/* Identification alignments */
-
-.wcm-authentication, .login_bg #metaInfo {
-  width: 22.812em;
-  margin: 1.25em auto 0 auto;
-}
-
-/* Internal ad and headline */
-
-.home .margin_col .ls-cmp-wrap {
-  &:nth-child(odd) {
-    padding-left: 0.31em;
-    padding-right: 0.62em;
-  }
-  &:nth-child(even) {
-    padding-right: 0.31em;
-    padding-left: 0.62em;
-  }
-}
-
-.margin_col .ls-cmp-wrap {
-  &:nth-child(odd) {
-    padding-right: 0.31em;
-  }
-  &:nth-child(even) {
-    padding-left: 0.31em;
-  }
-}
-
-/* Log out */
-
-#logoutMsg {
-  width: 100%;
-  h1 {
-    font-size: 1.125em;
-    @include regular;
-  }
-}
 }

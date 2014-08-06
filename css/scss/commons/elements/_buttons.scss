@@ -67,7 +67,13 @@ a.btn_default {
 .btn_arrow_left{ padding-right:0.75em}
 
 // Alternative BTNS
-.btn_primary2{ background:$primary2-btn-clr;color:unquote($white-clr);}
+.btn_primary2{ 
+	background:$primary2-btn-clr;
+	color:unquote($white-clr);
+	&:hover{
+		background:$primary2-btn-hover;
+	}
+}
 
 //Full width btns
 
@@ -103,7 +109,6 @@ a.btn_default {
 .content_btns {
 	padding: 0.62em 0 0.5em 0;
  	border-top: 1px solid $default-border-clr;;
-	margin-left: 3.12em;
 }
 .view_more_lnk {
 	font-size: 0.87em;
@@ -124,9 +129,6 @@ a.btn_default {
 			&.btn_arrow_right, &.btn_arrow_left {
 			  width: auto;
 			}
-			&:last-child {
-				margin-bottom: 0;
-			  }
 	  	}
 	 }
 	.arrow_btn {

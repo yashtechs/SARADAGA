@@ -17,393 +17,860 @@
 		<script data-main="js/app" src="js/jquery.browser.min.js"></script>
 	</head>
 	<body>
-		<div class="portal_wrapper">
-			<div class="ls-canvas wrapper">
-				<div class="ls-row eb-header">
-					<div class="ls-lqr">
-						<div class="ls-area">
-							<div class="ls-area-body">
-								<div class="ls-cmp-wrap">
-									<div class="iw_component">
-										<!-- Header component -->
-										<div class="wcm-header">
-											<div class="site_header">
-												<div class="site_header__inner clearfix">
-													<div class="site_logotype">
-														<a href="#" class="brand_logo">
-														</a>
-													</div>
-													<div class="wcm-language">
-														<ul class="language-change">
-															<li>
-																<a href="#">NL</a>
-															</li>
-															<li>
-																<a href="#">FR</a>
-															</li>
-															<li>
-																<a href="#">DE</a>
-															</li>
-															<li class="ln-selected">
-																<a href="#">EN</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- End of Header component -->
-									</div>
-								</div>
-							</div>
+		<div class="ls-canvas portal_wrapper" id="webbankingUnauthenticated"><div class="ls-row eb-header" id="header"><div class="ls-lqr" id="ls-gen85985868-ls-lqr"><div class="ls-area" id="ls-row-1-area-1"><div class="ls-area-body" id="ls-gen85985869-ls-area-body"><div class="ls-cmp-wrap ls-1st" id="w1392308262051"><div class="iw_component" id="1392308262051"><script>
+       require(["unauthenticatedcustom"], function (UnauthApp) 
+   {
+   });
+</script><div class="wcm-header nextgen">
+<div class="site_header">
+<div class="site_header__inner clearfix">
+<div class="site_logotype">
+<a class="brand_logo" href="/en/PC/be/priv/index1e5" data-webanalytics="menunavigation.bnpplogo"></a>
+</div>
+<div class="wcm-language">
+<ul class="language-change">
+<li>
+<a href="/nl/PC/be/priv/loginbbb">nl</a>
+</li>
+<li>
+<a href="/fr/PC/be/priv/loginbbb">fr</a>
+</li>
+<li>
+<a href="/de/PC/be/priv/loginbbb">de</a>
+</li>
+<li class="ln-selected">en</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="ls-cmp-wrap" id="w1392308262879"><div class="iw_component" id="1392308262879">
+</div></div></div></div><div class="ls-row-clr"></div></div></div><div class="ls-row login_bg" id="content"><div class="ls-lqr" id="ls-gen85985870-ls-lqr"><div class="ls-col" id="ls-row-2-col-1"><div class="ls-col-body" id="ls-gen85985871-ls-col-body"><div class="ls-row wcm-messages" id="warning"><div class="ls-lqr" id="ls-gen85985872-ls-lqr"><div class="ls-area" id="ls-row-2-col-1-row-1-area-1"><div class="ls-area-body" id="ls-gen85985873-ls-area-body"><div class="ls-cmp-wrap ls-1st" id="w1405446241188"><div class="iw_component" id="1405446241188"><div class="wcm-severity-message">
+<div class="severity_message">
+<div class="alert_messages fade in brand_exc   hide">
+<script>
+            require(["sf","errorMessage"], function (sf,ErrorMessage) 
+            {
+              if (typeof sf.messaging.queryTopic('target.ia.contact.showContactInfo')[0] != 'undefined') 
+              {
+                var queryData = sf.messaging.queryTopic('target.ia.contact.showContactInfo')[0];
+                ErrorMessage.loadErrorData(queryData);
+              }
+                else if (typeof sf.messaging.queryTopic('target.ia.contact.showAuthContactInfo')[0] != 'undefined') 
+              {
+                var queryData = sf.messaging.queryTopic('target.ia.contact.showAuthContactInfo')[0];
+                ErrorMessage.loadErrorData(queryData);
+              }
+            });
+          </script>
+<div class="alert_messages__inner clearfix ">
+<span class="error_icon fontcon-information"></span>
+<div class="alert_message_content">
+<h2></h2>
+<p></p>
+</div>
+<span class="fontcon-close icon_dismiss"></span>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="ls-cmp-wrap" id="w1405446241189"><div class="iw_component" id="1405446241189"><!--content start--><div class="rich_text brand_exc nextgen">
+<div id="metaInfo" class="region ">
+<div class="section level1 ">
+<h3>Welcome to your daily</h3>
+<span id="hero_icon"></span>
+<div class="section level2 ">
+<h1>Easy banking</h1>
+</div>
+</div>
+</div>
+</div><!--content stop-->
+</div></div></div></div><div class="ls-row-clr"></div></div></div><div class="ls-row content_row" id="IA"><div class="ls-lqr" id="ls-gen85985874-ls-lqr"><div class="ls-area" id="ls-row-2-col-1-row-2-area-1"><div class="ls-area-body" id="ls-gen85985875-ls-area-body"><div class="ls-cmp-wrap ls-1st" id="w1392308262055"><div class="iw_component" id="1392308262055"><div id="login_overlayer" class="login-container" data-url-context="/EBIA-pr01/"><form class="form-class">
+	<div class="authentication new_profile">
+		<div class="authentication__inner">
+			<!-- Error summary standard component-->
+			<p class="error_summary" data-rv-class-show_active="violations.responseError" data-rv-text="violations.responseErrorMessage"></p>
+			<div class="error_summary" data-rv-class-show_active="violations.errorSummaryHeader">
+				<p data-rv-class-show_active="violations.errorSummaryHeader" data-rv-text="config.app.message.Label.authentication.identification.errorMessage">Please correct the following fields.</p>
+				<ul class="error_summary_items">
+					<li data-rv-showactive="violations.clientNumber" data-rv-text="config.app.message.Label.authentication.identification.clientNumber" class="hide">Customer number</li>
+					<li data-rv-showactive="violations.cardNumber" data-rv-text="config.app.message.Label.authentication.identification.cardNumber" class="hide">Card number</li>
+					<li data-rv-showactive="violations.PEW0020" data-rv-text="config.app.message.Label.authentication.selectContract.contractAlias" class="hide">User name</li>
+				</ul>
+			</div>
+			<!-- Header title -->
+			<div class="form2_header">
+				<p data-rv-text="config.app.message.Label.authentication.identification.newProfileHeader">Please type in your</p>
+			</div>
+			<div class="form_wrapper">
+				<div class="form2_fields l_col s_row">
+					<div class="form2_label">
+						<label for="clientNum"><span data-rv-text="config.app.message.Label.authentication.identification.clientNumber">Customer number</span><span>:</span></label>
+						<span class="fontcon-attention help_icon">
+							<p class="tooltip_secondary" data-rv-text="config.app.message.Label.authentication.identification.toolTipClient">Your customer number can be found on your bank card.</p>
+						</span>
+					</div>
+					<div class="form2_details" data-rv-class-field_error="violations.clientNumber">
+						<p class="field_error_message" data-rv-class-show_active="violations.PEW0005" data-rv-text="config.app.message.Label.authentication.identification.custNumberInvalid"></p>
+						<p class="field_error_message" data-rv-class-show_active="violations.PEW0004" data-rv-text="config.app.message.Label.authentication.identification.custNumberEmpty"></p>
+						<div class="default_input_field">
+							<input type="tel" name="clientNum" class="input_client_number" data-rv-value="user.clientNumber" placeholder="----- -----" max-length="10" maxlength="11" autocomplete="off">
 						</div>
 					</div>
 				</div>
-				<div class="ls-row login_bg">
-					<div class="ls-lqr">
-						<div class="ls-col">
-							<div class="ls-col-body">
-								<!-- Individual Rows inside column Warning-->
-								<div class="ls-row wcm-messages">
-									<div class="ls-lqr">
-										<div class="ls-area">
-											<div class="ls-area-body">
-												<div class="ls-cmp-wrap">
-													<div class="iw_component">
-														<div class="wcm-severity-message" style="display:none;">
-															<div class="severity_message">
-																<div class="alert_messages fade in alert_messages_information" style="display:block">
-																	<div class="alert_messages__inner clearfix">
-																		<span class="fontcon-information error_icon"></span>
-																		<div class="alert_message_content">
-																			<h2 style="display:inline-block">Warning:</h2>
-																			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit sapien.</p>
-																		</div>
-																		<span class="fontcon-close icon_dismiss"></span>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<!-- End of component-->
-													</div>
-												</div>
-												<!-- User welcome Message -->
-												<div class="ls-cmp-wrap">
-													<div class="iw_component">
-														<div class="rich_text">
-															<div class="region" id="metaInfo">
-																<div class="section level1">
-																	<h3>Welcome to your daily</h3>
-																	<h1>Easy banking</h1>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- End -->
-								<!-- Individual Rows inside column IA-->
-								<div class="ls-row content_row">
-									<div class="ls-lqr">
-										<div class="ls-area">
-											<div class="ls-area-body">
-												<div class="ls-cmp-wrap">
-													<div class="iw_component">
-														<!-- Content Area Component -->
-														<div class="wcm-authentication">
-															<div class="authentication">
-																<div class="authentication__inner">
-																	<div class="authentication__identification">
-																		<div class="identification_content">
-																			<div class="identification__inner">
-																				<!-- Error summary standard component-->
-																				<div class="error_summary">
-																					<p>Please correct the following fields</p>
-																					<ul class="error_summary_items">
-																						<li>Client number</li>
-																						<li>Card number</li>
-																					</ul>
-																				</div>
-																				<!-- Header title -->
-																				<div class="identification_header">
-																					<p>Please type in:</p>
-																				</div>
-																				<!-- Client number -->
-																				<div class="identification_fields">
-																					<div class="identification_labels">
-																						<label>
-                                                                                            <span>Client number</span>
-                                                                                            <span>:</span>
-                                                                                        </label>
-                                                                                        <span class="fontcon-attention help_icon"></span>
-																					</div>
-																					<div class="default_input_control">
-																						<p class="field_error_message">Please type in a correct client number</p>
-																						<div class="identification_details">
-																							<div class="default_input_field">
-																								<input class="input_client" type="tel" placeholder="---- ----"/>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																				<!-- Card number -->
-																				<div class="identification_fields">
-																					<div class="identification_labels">
-																						<label>
-                                                                                        	<span>Card number</span>
-                                                                                            <span>:</span>
-                                                                                        </label> 
-                                                                                        <span class="fontcon-attention help_icon"></span>
-																					</div>
-																					<div class="default_input_control">
-																						<p class="field_error_message">Please type in a correct card number</p>
-																						<div class="identification_details">
-																							<div class="default_input_field">
-																								<input class="input_card" type="tel"/>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																				<!-- Save data -->
-																				<div class="save_profile">
-																					<input class="save_profile__check" type="checkbox"/>
-																					<label  class="save_profile__text">Save the data for the next login</label>
-                                                                                     <div class="fontcon-attention help_icon">
-                                                                                     	<p class="tooltip_secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                                                                                     </div>
-																				</div >
-																				<!-- Choose alias -->
-																				<div class="identification_fields_alias">
-																					<div class="identification_labels">
-																						<label>Choose an alias</label>
-																						<span> *:</span> 
-																					</div>
-																					<div class="default_input_control">
-																						<p class="field_error_message">Please choose valid alias</p>
-																						<div class="bnpp_identification_details">
-																							<div class="default_input_field">
-																								<input type="text"/>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																		<!-- Navigation btn -->
-																		<div class="identification__navigation">
-																			<div class="navigation_btns">
-																				<div class="fullwidth_btn">
-																					<button class="btn_default btn_primary2">Card reader (UCR)</button>
-																				</div>
-                                                                                <div class="fullwidth_lnk">
-                                                                                    <span class="lnk_center">
-                                                                                   	 <span class="lnk_primary">Select an existing profile</span>
-                                                                                    </span>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<!-- End -->
-													</div>
-												</div>
-												<div class="ls-cmp-wrap">
-													<div class="iw_component">
-														<!-- Cookies -->
-														<div class="wcm-cookies">
-															<div class="rich_text nextgen">
-																<div id="cookiesMessage" class="region  show_active">
-																	<div class="section level1 ">
-																		<div class="section level2 ">
-																			<h3>Cookies(DE)</h3>
-																			<span class="cookies_close fontcon-close"></span>
-																		</div>
-																		<div class="section level2 ">
-																			<p>This is website cookies. To find out more about cookies, how to block them or control their use by configuring your browser, <a href="/de/PC/be/priv/Cookies-Unauthenticated4eb">read this page</a>. </p>
-																			<p>If you continue to browse the site, you are deemed to have automatically authorised BNP Paribas Fortis to use these cookies. Please note: blocking certain type of cookies will impede the proper functionality of website.</p>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- End -->
-								<!-- Individual Rows inside column Service-->
-								<div class="ls-row service_navigation">
-									<div class="ls-lqr">
-										<div class="ls-area">
-											<div class="ls-area-body">
-												<div class="ls-cmp-wrap">
-													<div class="iw_component">
-														<!-- Service navigation Area Component -->
-														<div class="wcm-service">
-															<div class="service_cmp faq">
-																<a href="#">
-																	<div class="service_cmp__links">
-																		<span class="service__icon fontcon-faq"></span>
-																		<p>Yash</p>
-																	</div>
-																</a>
-															</div>
-														</div>
-														<!-- End -->
-													</div>
-												</div>
-												<div class="ls-cmp-wrap">
-													<div class="iw_component">
-														<!-- Service navigation Area Component -->
-														<div class="wcm-faq" >
-															<div class="widget" style="height:750px;">
-																<div class="widget_header">
-																	<div class="widget_header__inner">
-																		<h2>FAQ</h2>
-																		<span class="icon_widget_close fontcon-close"></span>
-																	</div>
-																</div>
-																<div class="module_content">
-																	<div class="module_listitem">
-																		<!-- For each question -->
-																		<div class="accordion_main content_l2_list_item">
-																			<div class="list_wrapper header_l2 dropdown_arrow">
-																				<div class="accordion_l2__inner">
-																					<h3>What does "by BNP Paribas Fortis" mean?</h3>
-																				</div>
-																			</div>
-																			<div class="accordion_content content_l2">
-																				<div class="list_wrapper">
-																					<div class="faq_answer rich_text">
-																						<div class="region">
-																							<div class="section level1">
-																								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="accordion_main content_l2_list_item">
-																			<div class="list_wrapper header_l2 dropdown_arrow">
-																				<div class="accordion_l2__inner">
-																					<h3>What does "by BNP Paribas Fortis" mean?</h3>
-																				</div>
-																			</div>
-																			<div class="accordion_content content_l2">
-																				<div class="list_wrapper">
-																					<div class="faq_answer rich_text">
-																						<div class="region">
-																							<div class="section level1">
-																								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="accordion_main content_l2_list_item">
-																			<div class="list_wrapper header_l2 dropdown_arrow">
-																				<div class="accordion_l2__inner">
-																					<h3>What does "by BNP Paribas Fortis" mean?</h3>
-																				</div>
-																			</div>
-																			<div class="accordion_content content_l2">
-																				<div class="list_wrapper">
-																					<div class="faq_answer rich_text">
-																						<div class="region">
-																							<div class="section level1">
-																								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<!-- End -->
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+				<!-- Card number -->
+				<div class="form2_fields l_col s_row">
+					<div class="form2_label">
+						<label for="cardNum"><span data-rv-text="config.app.message.Label.authentication.identification.cardNumber">Card number</span><span>:</span></label> 
+						<span class="fontcon-attention help_icon">
+							<p class="tooltip_secondary" data-rv-text="config.app.message.Label.authentication.identification.toolTipCard">Your card number can be found on your bank card.</p>
+						</span>
+					</div>
+					<div class="form2_details" data-rv-class-field_error="violations.cardNumber">
+						<p class="field_error_message" data-rv-class-show_active="violations.PEW0015" data-rv-text="config.app.message.Label.authentication.identification.cardNumberInvalid"></p>
+						<p class="field_error_message" data-rv-class-show_active="violations.PEW0016" data-rv-text="config.app.message.Label.authentication.identification.cardNumberEmpty"></p>
+						<div class="default_input_field">
+							<input type="tel" name="cardNum" class="input_card_number" data-rv-value="user.cardNumber" placeholder="---- ---- ---- ---- -" max-length="17" maxlength="21" autocomplete="off">
 						</div>
 					</div>
 				</div>
-				<div class="ls-row footer">
-					<div class="ls-lqr">
-						<div class="ls-area">
-							<div class="ls-area-body">
-								<div class="ls-cmp-wrap">
-									<div class="iw_component">
-										<!-- Footer -->
-										<div class="wcm-footer">
-											<div class="footer_lnks clearfix">
-												<div class="link_list">
-													<div class="link_title">
-														<div class="title_txt">Contact</div>
-													</div>
-													<ul>
-														<li><a href="#">Contact overview</a></li>
-														<li><a href="tel:+3223129477">+ 31 2 261 11 11</a></li>
-													</ul>
-												</div>
-												<div class="link_list">
-													<div class="link_title">
-														<div class="title_txt">General</div>
-													</div>
-													<ul>
-														<li><a href="#">About us</a></li>
-														<li><a href="#">FAQs</a></li>
-													</ul>
-												</div>
-												<div class="link_list">
-													<div class="link_title">
-														<div class="title_txt">BNP Paribas fortis</div>
-													</div>
-													<ul>
-														<li><a href="#">BNP Paribas Fortis</a></li>
-														<li><a href="tel:12345" style="background:red">12345</a></li>
-														<li><a href="#">BNP Paribas Fortis group</a></li>
-													</ul>
-												</div>
-												<div class="link_list extsocial_icons">
-													<ul class="social_icon">
-														<li><a href="#" target="_blank" class="fontcon-twitter"></a></li>
-														<li><a href="https://www.facebook.com/bnpparibas.net" target="_blank" class="fontcon-facebook"></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="footer_lnks clearfix">
-												<ul class="legal_lnks">
-													<li><a href="#">Disclaimer</a></li>
-													<li><a href="#">Privacy</a></li>
-													<li><a href="#">Cookies</a></li>
-												</ul>
-												<div class="legal_msg">
-													<p>&copy 2013 BNP Paribas Fortis</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+				<!-- Save data -->
+				<div class="form2_fields save_profile l_col s_row">
+					<label>
+					<input class="save_profile__check f_left" type="checkbox" data-rv-checked="user.saveSettings">
+					<span class="save_profile__text" data-rv-text="config.app.message.Label.authentication.identification.saveData">Save this information for the next time you log in</span>
+					</label>
+					<span class="fontcon-attention help_icon exp">
+						<p class="tooltip_secondary" data-rv-text="config.app.message.Label.authentication.identification.toolTipSave">TBD Tooltip text save</p>
+					</span>
+				</div>
+				<!-- Choose alias -->
+				<div class="form2_fields hide f_left l_col s_row" data-rv-class-show_active="user.saveSettings">
+					<p class="field_error_message" data-rv-class-show_active="violations.errorMessageProfile" data-rv-text="config.app.message.Label.authentication.identification.errorMessageProfile">Please first delete a saved profile (max. 10).</p>
+					<div class="form2_label">
+						<label for="chooseAlias"><span data-rv-text="config.app.message.Label.authentication.identification.chooseAlias">Choose a user name</span><span>:</span></label>
+					</div>
+					<div class="default_input_control" data-rv-class-field_error="violations.PEW0020">
+						<p class="field_error_message" data-rv-class-show_active="violations.PEW0020" data-rv-text="config.app.message.Label.authentication.identification.errorMessageAlias">Please enter a valid user name</p>
+						<div class="default_input_field">
+							<input type="text" name="chooseAlias" class="input_alias_name" data-rv-adddisabled="violations.errorMessageProfile" data-rv-value="user.aliasName" maxlength="15" oncut="return false;">
+						</div>
+					</div>
+				</div>
+				<!-- Navigation btn -->
+				<div class="form2_fields l_col s_row identification_nav">
+					<div class="navigation_btns">
+						<div class="fullwidth_btn">
+							<button class="btn_default btn_primary2 btn_active_bg" data-rv-buttonstatus="violations.isUCRAvailable" data-rv-text="config.app.message.Label.authentication.identification.signInButton">Log in</button>
+						</div>
+						<div class="fullwidth_lnk">
+							<span class="lnk_center">
+							<span class="lnk_primary hide" data-disabled="true" data-rv-text="config.app.message.Label.authentication.identification.useExisting">Use an existing profile</span>
+							</span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+</form></div><script>
+ 
+ var hide_logon = false;
+ 
+   jQuery(document).ready(function( $ ) {
+     var topicName = "target.ia.logon.showLogon";
+     var iaId = Mediator.getIaIdFromTopic(topicName);
+     Mediator.registerIa(iaId, hide_logon);
+ 
+     if (hide_logon === true && Mediator.checkQuery(topicName) === false) {
+       Mediator.subscribeToTopic("mediator.load.ia.logon", function(topic, data) {
+  require(["login"], function (LoginApp) 
+  {
+  new LoginApp('#login_overlayer');
+  });
+       });
+     } else {
+       require(["login"], function (LoginApp) 
+   {
+   new LoginApp('#login_overlayer');
+   });
+     } 
+	 });
+	 
+ </script>
+</div></div><div class="ls-cmp-wrap" id="w1392308265896"><div class="iw_component" id="1392308265896"><!--content start--><div class="rich_text nextgen">
+<div id="cookiesMessage" class="region  show_active">
+<div class="section level1 ">
+<div class="section level2 ">
+<h3>Cookies</h3>
+<span class="cookies_close fontcon-close"></span>
+</div>
+<div class="section level2 ">
+<p>This is website cookies. To find out more about cookies, how to block them or control their use by configuring your browser, <a href="/en/PC/be/priv/Cookies-Unauthenticated4eb">read this page</a>. </p>
+<p>If you continue to browse the site, you are deemed to have automatically authorised BNP Paribas Fortis to use these cookies. Please note: blocking certain type of cookies will impede the proper functionality of website.</p>
+</div>
+</div>
+</div>
+</div><!--content stop-->
+</div></div></div></div><div class="ls-row-clr"></div></div></div><div class="ls-row service_navigation" id="service"><div class="ls-lqr" id="ls-gen85985876-ls-lqr"><div class="ls-area" id="ls-row-2-col-1-row-3-area-1"><div class="ls-area-body" id="ls-gen85985877-ls-area-body"><div class="ls-cmp-wrap ls-1st" id="w1392308262057"><div class="iw_component" id="1392308262057"><!--Image List Component--><div class="wcm-service-nav brand_exc nextgen">
+<div class="service_cmp faq">
+<a data-data="faq" data-topic="faq" href="#" class="postPagebusMessage faq">
+<div class="service_cmp__links">
+<span class="service__icon fontcon-faq"></span>
+<p>FAQ</p>
+</div>
+</a>
+</div>
+</div>
+</div></div><div class="ls-cmp-wrap" id="w1392308262058"><div class="iw_component" id="1392308262058"><div class="wcm-faq nextgen">
+<div class="widget sticky_widget">
+<div class="widget_header">
+<div class="widget_header__inner">
+<h2>FAQ Widget</h2>
+<span class="icon_widget_close fontcon-close"></span>
+</div>
+</div>
+<div class="module_content" style="height: 673px;">
+<div class="module_content_inner">
+<div class="module_listitem hide" id="dummy_id">
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">How do you create a shortcut for the new PC banking on your desktop?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<ul>
+<li>Right click on the desktop and select "New", then "Shortcut".</li>
+<li>Type in the address https://www.bnpparibasfortis.be and click on "Next".</li>
+<li>Choose a name for the shortcut (e.g.: PC banking) and click on "Finish". </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">My user data disappeared from the identification page!</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>Your browser probably does not accept cookies. Please check whether:</p>
+<ol>
+<li>Your browser accepts cookies. Check this in your browser's internet options.</li>
+<li>The cookie has not been automatically deleted by a (clean-up) program or by your browser.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Different Kind of accounts  </h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>Accounts are of two type Own Private accounts and Other Private accounts. Accounts for which the user is Holder/joint holder that are displayed under Own Private Accounts and all other accounts are shown under Other Private account.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2 webanalytics" data-webanalytics="comscoreCardReader1">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">The text 'PIN blocked' appears on my card reader. What should I do?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>If you enter the wrong PIN for your BNP Paribas Fortis bank card three times, your card will be blocked. You should contact your branch. The branch will unblock your bank card.
+If you have forgotten your bank card's PIN, the branch must request a new PIN. A few days later, you will receive a new PIN at your address.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2 webanalytics" data-webanalytics="ComscoreCardReader2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Defective card reader or flat battery ? </h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>If your card reader is defective (does not respond or does not give the usual display) or displays the message "battery low", we will give you a new card reader. You can change your card reader for free. Order it online, we will send it to you within a week.Go to your BNP Paribas Fortis, branch to get a new card reader in exchange for your defective one</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2 webanalytics" data-webanalytics="ComscoreDigipassParam1">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Defective Digipass or flat battery </h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>If your Digipass is defective (does not react or does not generate the usual display) or shows the message "battery low", you should visit your BNP Paribas Fortis branch</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Can I replace the Digipass battery myself?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>No, once opened the battery cannot be replaced and the Digipass becomes unusable. This must be exchanged for a new security module (card reader).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">This agreement has been blocked for security reasons. </h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>This error message indicates that for the specified user number, you entered three incorrect Digipass signatures in a row. Your access was therefore blocked automatically.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Which card should I use with the card reader?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>To identify yourself or sign transactions with a card reader, you must always have a valid BNP Paribas Fortis bank card. The BNP Paribas Fortis bank card must have the following characteristics: Be linked to the charge account of your PC Banking contract;A debit card for which you are the holder as a PC Banking contracting party;A card bearing the number 67xx xxxx xxxx xxxx x It must first be used in a cash dispenser or to pay a retailer.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2 webanalytics" data-webanalytics="ComscoreDigipassParam1">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Defective Digipass or flat battery </h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>If your Digipass is defective (does not react or does not generate the usual display) or shows the message "battery low", you should visit your BNP Paribas Fortis branch</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Can I replace the Digipass battery myself?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>No, once opened the battery cannot be replaced and the Digipass becomes unusable. This must be exchanged for a new security module (card reader).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">This agreement has been blocked for security reasons. </h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>This error message indicates that for the specified user number, you entered three incorrect Digipass signatures in a row. Your access was therefore blocked automatically.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Invalid Digipass signature? </h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>Calculate a new signature with your Digipass. After three failed attempts, your PC banking agreement will be blocked automatically for security reasons.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Forgotten Digipass PIN ? </h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>If you have forgotten the PIN code for your Digipass, you must go to a BNP Paribas Fortis branch.
+Bring your old Digipass with you. A member of staff will give you a new security module free of charge.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="module_listitem" id="loginbbb">
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Wat zijn overschrijvingen met uitvoeringsdatum?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>Overschrijvingen met een uitvoeringsdatum zijn overschrijvingen waarbij u een precieze datum van uitvoering invult: dit is de datum waarop het geld uw rekening verlaat.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Hoe maak ik een overschrijving met uitvoeringsdatum aan?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>Voor een overschrijving met uitvoeringsdatum duidt u de datum aan waarop deze overschrijving uitgevoerd moet worden. </p>
+<p>Op de gegeven uitvoeringsdatum wordt uw overschrijving automatisch bij de bank aangeboden voor uitvoering. Ze verschijnt dan in de historiek van de betreffende rekening bij de nog te verwerken verrichtingen </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Hoe volg ik dit op?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<ul>
+<li>Uw overschrijving wordt op de aangeduide uitvoeringsdatum automatisch voor uitvoering aangeboden. </li>
+<li>Op de dag van de uitvoeringsdatum zelf verschijnt uw overschrijving in de historiek van de betrokken rekening bij de nog te verwerken verrichtingen.</li>
+<li>Wanneer een overschrijving bij deze technische controle echter geweigerd wordt, verschijnt ze doorgaans na enkele minuten in de Omslag in het rood. De reden van de weigering en verdere instructies vindt u in het detailscherm van de overschrijving.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Hoe raadpleeg ik een overschrijving met uitvoeringsdatum?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>Enkel in PC banking kunt u deze overschrijvingen met uitvoeringsdatum nog raadplegen nadat u ze verstuurd hebt, voor zover ze nog niet uitgevoerd zijn. Overschrijvingen met uitvoeringsdatum zijn onmiddellijk na inbreng zichtbaar in PC banking:</p>
+<ol>
+<li>Kies in het linkermenu <span class="highlight_text">Rekeningen en kaarten.</span> 
+</li>
+<li>Kies in het <span class="highlight_text">Mijn PC banking</span>-menu de optie <span class="highlight_text">Overschrijvingen met uitvoeringsdatum.</span> U ziet een overzicht van de overschrijvingen met uitvoeringsdatum die met de geselecteerde rekening zullen worden uitgevoerd. De overschrijvingen die vandaag moeten worden uitgevoerd, verschijnen niet in deze lijst. U kunt eventueel een andere rekening selecteren in de keuzelijst. </li>
+<li>Kies <span class="highlight_text">Details</span> in het <span class="highlight_text">Extra</span>-menu naast de overschrijving waarvan u de gegevens wenst te raadplegen. Het detailscherm verschijnt.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Hoe wijzig ik een overschrijving met uitvoeringsdatum?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>Enkel in PC banking kunt u deze overschrijvingen met uitvoeringsdatum nog raadplegen nadat u ze verstuurd hebt, voor zover ze nog niet uitgevoerd zijn. Overschrijvingen met uitvoeringsdatum zijn onmiddellijk na inbreng zichtbaar in PC banking:</p>
+<ol>
+<li>Kies in het linkermenu <span class="highlight_text">Rekeningen en kaarten.</span> 
+</li>
+<li>Kies in het <span class="highlight_text">Mijn PC banking</span>-menu de optie <span class="highlight_text">Overschrijvingen met uitvoeringsdatum.</span> U ziet een overzicht van de overschrijvingen met uitvoeringsdatum die met de geselecteerde rekening zullen worden uitgevoerd. De overschrijvingen die vandaag moeten worden uitgevoerd, verschijnen niet in deze lijst. U kunt eventueel een andere rekening selecteren in de keuzelijst. </li>
+<li>Kies <span class="highlight_text">Details</span> in het <span class="highlight_text">Extra</span>-menu naast de overschrijving waarvan u de gegevens wenst te raadplegen. Het detailscherm verschijnt.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Hoe verwijder ik een overschrijving met uitvoeringsdatum?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>Enkel in PC banking kunt u deze overschrijvingen met uitvoeringsdatum nog raadplegen nadat u ze verstuurd hebt, voor zover ze nog niet uitgevoerd zijn. Overschrijvingen met uitvoeringsdatum zijn onmiddellijk na inbreng zichtbaar in PC banking:</p>
+<ol>
+<li>Kies in het linkermenu <span class="highlight_text">Rekeningen en kaarten.</span> 
+</li>
+<li>Kies in het <span class="highlight_text">Mijn PC banking</span>-menu de optie <span class="highlight_text">Overschrijvingen met uitvoeringsdatum.</span> U ziet een overzicht van de overschrijvingen met uitvoeringsdatum die met de geselecteerde rekening zullen worden uitgevoerd. De overschrijvingen die vandaag moeten worden uitgevoerd, verschijnen niet in deze lijst. U kunt eventueel een andere rekening selecteren in de keuzelijst. </li>
+<li>Kies <span class="highlight_text">Details</span> in het <span class="highlight_text">Extra</span>-menu naast de overschrijving waarvan u de gegevens wenst te raadplegen. Het detailscherm verschijnt.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Hoe verwijder ik een overschrijving met uitvoeringsdatum?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>Enkel in PC banking kunt u deze overschrijvingen met uitvoeringsdatum nog raadplegen nadat u ze verstuurd hebt, voor zover ze nog niet uitgevoerd zijn. Overschrijvingen met uitvoeringsdatum zijn onmiddellijk na inbreng zichtbaar in PC banking:</p>
+<ol>
+<li>Kies in het linkermenu <span class="highlight_text">Rekeningen en kaarten.</span> 
+</li>
+<li>Kies in het <span class="highlight_text">Mijn PC banking</span>-menu de optie <span class="highlight_text">Overschrijvingen met uitvoeringsdatum.</span> U ziet een overzicht van de overschrijvingen met uitvoeringsdatum die met de geselecteerde rekening zullen worden uitgevoerd. De overschrijvingen die vandaag moeten worden uitgevoerd, verschijnen niet in deze lijst. U kunt eventueel een andere rekening selecteren in de keuzelijst. </li>
+<li>Kies <span class="highlight_text">Details</span> in het <span class="highlight_text">Extra</span>-menu naast de overschrijving waarvan u de gegevens wenst te raadplegen. Het detailscherm verschijnt.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Wat kan ik in een vrije mededeling zetten?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>De maximale lengte is 140 tekens. Alleen de volgende tekens zijn toegestaan:</p>
+<p>a-z A-Z 0-9 / - ? : () . , ' +</p>
+<p>Als u een bedrag wil specificeren, gebruik 'euro' of 'EUR' om het teken '€' te vervangen.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Wat is een elektronische handtekening?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<p>De elektronische handtekening is een unieke<span class="highlight_text"> code van maximaal 8 cijfers</span> die u bij iedere verrichting die u ondertekent, opnieuw berekent met behulp van uw kaartlezer en een bankkaart van BNP Paribas Fortis.</p>
+<ul>
+<li>Volg telkens de stap-voor-stap instructies op het scherm tot deze code verschijnt op het scherm van uw kaartlezer.</li>
+<li>Voer ten slotte deze code in bij<span class="highlight_text"> Elektronische handtekening</span> en klik op <span class="highlight_text">Bevestigen</span>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion_main content_l2_list_item">
+<div class="list_wrapper header_l2">
+<div class="accordion_l2__inner">
+<h3 class="faq_question">Naar welke rekeningen kan ik een overschrijving uitvoeren?</h3>
+</div>
+</div>
+<div class="accordion_content content_l2 collapse">
+<div class="list_wrapper">
+<div class="faq_answer rich_text">
+<div class="region ">
+<div class="section level1 ">
+<ul>
+<li>Overschrijving van uw zichtrekening<ul>
+<li>naar een rekening van een derde begunstigde<ul>
+<li>die reeds gekend is en die zich in de lijst van gekende begunstigden bevindt</li>
+<li>die nog niet gekend is en u aan deze lijst dient toe te voegen mits een M2-handtekening alvorens de overschrijving uitgevoerd kan worden.</li>
+</ul>
+</li>
+<li>naar een van uw andere rekeningen</li>
+<li>naar een spaarrekening</li>
+</ul>
+</li>
+<li>Eenmalige overschrijving van uw spaarrekening<ul>
+<li>naar een zichtrekening</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="static_text hide">
+<p>No FAQ available for this function</p>
+</div>
+<div class="static_link">
+<a class="lnk_primary" href="/en/PC/be/priv/faq-unauthenticated499">Redirect me to FAQ module</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="ls-row-clr"></div></div></div></div></div><div class="ls-row-clr"></div></div></div><div class="ls-row footer" id="footer"><div class="ls-lqr" id="ls-gen85985878-ls-lqr"><div class="ls-area" id="ls-row-3-area-1"><div class="ls-area-body" id="ls-gen85985879-ls-area-body"><div class="ls-cmp-wrap ls-1st" id="w1392308262060"><div class="iw_component" id="1392308262060"><!--Footer Module--><div class="wcm-footer nextgen">
+<div class="footer_lnks clearfix">
+<div class="link_list">
+<div class="link_title">
+<div class="title_txt">Contact Easy Banking </div>
+</div>
+<ul>
+<li>
+<a href="#" class="tel_link">02 433 41 90</a>
+</li>
+<li>
+<a href="https://www.bnpparibasfortis.be/pics/BE/F/en/anon/priv/Offers/ms_middle.asp?ID=hPeea3UF0DjPJLyLQ4n_HAMAO0uNLJV9URBm%2BA&amp;SOURCETAG=TEST&amp;TESTUSER=1" target="_blank" data-webanalytics="footer.generalcontactus">Send us a message</a>
+</li>
+</ul>
+</div>
+<div class="link_list">
+<div class="link_title">
+<div class="title_txt">Customer Service </div>
+</div>
+<ul>
+<li>
+<a href="#" class="tel_link">02 762 60 00</a>
+</li>
+<li>
+<a href="/en/PC/be/priv/contact-usb13" target="_self" data-webanalytics="footer.contactus">Contact us</a>
+</li>
+<li>
+<a href="/en/PC/be/priv/faq-unauthenticated499" target="_self" data-webanalytics="footer.faq">Frequently asked questions (FAQ)</a>
+</li>
+</ul>
+</div>
+<div class="link_list">
+<div class="link_title">
+<div class="title_txt">BNP PARIBAS FORTIS </div>
+</div>
+<ul>
+<li>
+<a href="/en/PC/be/priv/About-Us-Unauthenticated6c3" target="_self" data-webanalytics="footer.bnpparibasfortis">About BNP Paribas Fortis</a>
+</li>
+</ul>
+</div>
+<div class="link_list extsocial_icons">
+<ul class="social_icon">
+<li>
+<a href="http://www.twitter.com/questionBNPPF" class="fontcon-twitter" target="_blank" data-webanalytics="footer.twitter"></a>
+</li>
+<li>
+<a href="http://www.facebook.com/BNPParibasFortisBelgique" class="fontcon-facebook" target="_blank" data-webanalytics="footer.facebook"></a>
+</li>
+<li>
+<a href="http://www.youtube.com/bnppfBelgique" class="fontcon-youtube" target="_blank" data-webanalytics="footer.youtube"></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer_lnks clearfix">
+<ul class="legal_lnks">
+<li>
+<a href="/en/PC/be/priv/Disclaimer-Unauthenticatedd96" target="_self" data-webanalytics="footer.disclaimer">Disclaimer</a>
+</li>
+<li>
+<a href="/en/PC/be/priv/Cookies-Unauthenticated4eb" target="_self" data-webanalytics="footer.cookieregulation">Cookies</a>
+</li>
+<li>
+<a href="/sites/web-banking/privacy-unauthenticated.page" target="_self" data-webanalytics="footer.privacy">Privacy</a>
+</li>
+</ul>
+<div class="legal_msg">
+<p>© 2014 BNP Paribas Fortis</p>
+</div>
+</div>
+<div class="progressing">
+<div class="progressing_inner">
+<p>Loading</p>
+</div>
+</div>
+</div>
+</div></div><div class="ls-cmp-wrap" id="w1398775295501"><div class="iw_component" id="1398775295501"><div class="wcm-overlay">
+<div class="overlay nextgen">
+<div class="overlay_inner overlayUnsupportedBrowser small">
+<div class="overlay_container">
+<div class="overlay_header">
+<div class="overlay_header_inner clearfix">
+<div class="overlay_header_colone">
+<span class="fontcon-attention overlay_icon"></span>
+</div>
+<div class="overlay_header_coltwo">
+<h2>Attention</h2>
+</div>
+<span class="fontcon-close popup_close"></span>
+</div>
+</div>
+<div class="rich_text">
+<div class="region ">
+<div class="section level1 ">
+<h2>UNSPUPPORTED BROWSER</h2>
+<p>Current browser: <span></span><span id="browserVersion">7.0</span>
+</p>
+<span></span>
+<p>Lipsum</p>
+<div id="unsupportedBrowser" class="section level2 ">
+<div id="unChrome" class="section level3 ">
+<p>Google chrome 8+</p>
+</div>
+<div id="unFirefox" class="section level3 ">
+<p>Mozilla Firefox 3.6+</p>
+</div>
+<div id="unSafari" class="section level3 ">
+<p>Safari 6+</p>
+</div>
+<div id="unIe" class="section level3 ">
+<p>Internet explorer 9+</p>
+</div>
+<div id="unOpera" class="section level3 ">
+<p>Opera 11+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="overlay_btn">
+<div class="navigation_btns">
+<div class="right_navigation_btn f_right">
+<a data-data="unsupportedBrowser" data-topic="hideOverlay" href="#" class="btn_default btn_primary postPagebusMessage">Accept</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="ls-row-clr"></div></div></div></div>
 	</body>
 </html>

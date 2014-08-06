@@ -1,7 +1,7 @@
 /* Navigation btns for forms & static pages */
 
 .btns_zone, .action_btns {
-	padding: 1.87em;
+	padding: 0.94em 1.87em;
  	width: $default-width;
 	display: table;
  	border-top: 1px solid $default-border-clr;
@@ -14,7 +14,7 @@
 	color:unquote($white-clr-primary);
 	margin: 0;
 	 &:hover {
-		background:$primary-hover-clr;
+		background:$primary2-btn-clr;
 	}
 }
 

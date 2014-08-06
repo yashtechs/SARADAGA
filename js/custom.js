@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	
-	$('.fontcon-calendar').datepicker();
+	//$('.fontcon-calendar').datepicker();
 	
 	$(".flexnav").flexNav();
 	

@@ -1,4 +1,3 @@
-
 #metaInfo {
  	width: $default-width;
 	margin: 0 auto;
@@ -6,8 +5,8 @@
 	position: relative;
 	background:$hero-bg;
 	.level1 {
-	 	padding:3em 0 1em 0; 
-		width:30em; 
+	 	padding-top:1.25em;
+		width:41.75em; 
 	 	margin:0 auto; 
 		position:relative;
 	}
@@ -17,6 +16,7 @@
 	}
 	h1 {
 		font-size: 2.88em;
+		padding-bottom:20px;
 	}
 }
 
@@ -24,7 +24,19 @@
 	font-size:60px; 
 	position:absolute;
 	content: "\e631"; 
-	right:0; 
-	margin-top:6px;
+	right:0;
 	font-family: 'bnpiconfont';
+}
+
+/* Breakpoint 767 */
+@media all and (max-width: 47.9375em) {
+	#hero_icon{
+		display:none;
+	}
+	#metaInfo{
+		padding: 0 0.62em;
+		.level1{
+			width:auto;
+		}
+	}
 }

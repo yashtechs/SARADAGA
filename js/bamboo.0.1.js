@@ -13,6 +13,7 @@ var Bamboo = (function (window, document) {
 	openButton = $('.menu_icon'),
 	container = $('.canvas_container'),
 	cover = null,
+	canvasOpen ="canvas_opened",
 	
 	// Browser checks
 	hasTouch = testTouch(),
@@ -30,7 +31,7 @@ var Bamboo = (function (window, document) {
 		    menu: true,
 		    swipeToOpen: true,
 		    breakpoint: 1024,
-		    menuWidth: 300,
+		    menuWidth: 265,
 		    headerHeight: 50,
 		    snapThreshold: null,
 		    resize: null,
@@ -45,7 +46,7 @@ var Bamboo = (function (window, document) {
 
 		// add required html
 		cover = $('<div id="cover"/>');
-		container.find('.main_wrapper').append(cover);
+		$('.canvas_container').find('.main_wrapper').append(cover);
 
 		// resize listeners
 		$(window).on(resizeEvent, this.resizeSite.bind(this) );
@@ -142,15 +143,18 @@ var Bamboo = (function (window, document) {
             // Start event biding
             container.on('touchstart mousedown', function(e) {
             	_this._start(e);
+				$body.removeClass(canvasOpen);
             	// move
                 $body.on('touchmove.bmboo mousemove.bmboo', function(e) {
                     _this._move(e);
+					$body.addClass(canvasOpen);
                 });
                 // end
                 $body.on('touchend.bmboo mouseup.bmboo', function(e) {
                     _this._end(e);
                     // clear the move and end events
                     $body.off('.bmboo');
+					$body.addClass(canvasOpen);
                 });
             });
 		},
@@ -227,7 +231,7 @@ var Bamboo = (function (window, document) {
 			// open button
 			if (this.dx === 0 && nx === 0 && this.tgt.is('.menu_icon')) {
 				this._animateTo(this.options.menuWidth, this.options.menuWidth);
-				$('body').addClass('canvas_opened').removeClass('canvas_closed');
+				$('body').addClass('canvas_opened');
 			}
 
 			this.ox = null;
@@ -241,7 +245,7 @@ var Bamboo = (function (window, document) {
 				'transition-duration' : Math.floor(100 * x / this.snapThreshold) + 'ms',
 				'transform' : 'translate(' + to + 'px,0)' + translateZ
 			});
-			$('body').removeClass('canvas_opened').addClass('canvas_closed');
+			$('body').removeClass('canvas_opened');
 			// hide / show cover
 			this._toggleCover(to);
 		},

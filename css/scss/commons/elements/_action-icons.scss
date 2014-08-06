@@ -3,22 +3,46 @@
 	display: table;
 }
 .action_icons {
-	float: right;
+	 position:absolute;
+	 right:30px;
+	 top:0.31em;
+	 display:none;
 }
 .action_icons__global {
- 	border-left: 1px dotted $default-border-clr;
 	font-size: 1.25em;
-	padding: 0 0.73em 0 1em;
 	cursor: pointer;
-	display: inline-block;
-	margin: 1.2em 0;
+	display: table-cell;
+	padding:6px 0;
+	span{
+		border-left: 1px dotted #969696;
+		padding:0 0.62em;
+		
+	}
+	&.active{
+		background:#ffffff;
+	}
+	&:first-child {
+		span{
+			border: none;
+		}
+	}
+	&:last-child {
+		span{
+			padding-right:0;
+		}
+	}
 }
-.action_icons .action_icons__global:first-child {
-	border: none;
+.cards_transactions{
+	.action_icons {
+		top:20px;
+	}
 }
 
 @media all and (max-width: 47.9375em) {
 	.fontcon-print {
 		display: none;
+	}
+	.action_icons {
+		 right:0;
 	}
 }

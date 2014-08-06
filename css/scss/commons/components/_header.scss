@@ -15,6 +15,7 @@
 	-webkit-box-shadow: 0 4px 4px -6px $header-shadow;
 	-moz-box-shadow: 0 4px 4px -6px $header-shadow;
 	-ms-box-shadow: 0 4px 4px -6px $header-shadow;
+	height:100%;
 }
 #webbankingUnauthenticated{
 	.site_header__inner, #siteHeaderErrorInner{
@@ -52,6 +53,18 @@
 }
 #header404 {
 	float: left;
+}
+
+// Model 2 exceptional header
+
+.brand_exc{ 
+	.site_header{height:auto;}
+	.site_logotype{
+		display:none;
+	}
+	.site_header__inner, #siteHeaderErrorInner{
+		padding:0.84em 1.88em;
+	}
 }
 
 // 767px breakpoint

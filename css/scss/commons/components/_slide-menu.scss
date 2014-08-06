@@ -5,12 +5,12 @@
 	left: 0;
 	font-size: 1.5em;
 	color: $default-clr-icon; 
-	padding:8px 0; 
-	width:4.37em; 
+	padding:6px 0; 
+	width:2.60em; 
 }
 .offcanvas_menu { 
 	z-index: 1; 
-	width:300px; 
+	width:265px; 
 	position: absolute; 
 	top: 0; 
 	right: 0; 
@@ -85,4 +85,24 @@
 	-moz-transform:none !important;
 	}
 }
-.canvas_container {margin: 0;position: relative;z-index: 2;@include bg-color($mainbg-top,$mainbg-bottom);}
+.canvas_container {
+	margin: 0;
+	position: relative;
+	z-index: 2;
+	@include bg-color($mainbg-top,$mainbg-bottom);
+	width:100%!important
+}
+
+// 1023
+@media all and (max-width: 63.9375em) {	
+	.ie .canvas_opened .site_header{
+		margin-left:265px;
+	}
+}
+
+// 1024
+@media all and (min-width: 64em){
+	.canvas_container{
+		transform:none !important;
+	}
+}

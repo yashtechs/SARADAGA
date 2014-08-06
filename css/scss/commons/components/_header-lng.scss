@@ -22,6 +22,16 @@
 		&:last-child{padding-right: 0;}
 	}
 }
+.brand_exc{
+	.language-change{
+		li{
+			color:unquote($white-clr);
+			a{
+				color:unquote($white-clr);
+			}
+		}
+	}
+}
  #wcmLanguage{
  	ul{
 		list-style: none;

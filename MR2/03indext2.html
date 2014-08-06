@@ -17,7 +17,7 @@
 		<script data-main="js/app" src="js/jquery.browser.min.js"></script>
 	</head>
 	<body>
-		<div class="easybanking">
+		<div class="portal_wrapper">
 			<div class="ls-canvas wrapper">
 				<div class="ls-row eb-header">
 					<div class="ls-lqr">
@@ -114,114 +114,111 @@
 													<div class="iw_component">
 														<!-- Content Area Component -->
 														<div class="wcm-authentication">
+															<div class="saved_data">
+																<div class="saved_inline_data clearfix">
+																	<ul class="saved_inline_details">
+                                                                    	<li class="saved_user highlight_text" style="">Yashwanth Kumar</li>
+                                                                        <li>
+                                                                        	<label class="highlight_text">Klantnummer</label>
+                                                                            <span>18103 45230</span>
+                                                                        </li>
+                                                                        <li>
+                                                                        	<label class="highlight_text">Kaartnummer</label>
+                                                                            <span>6703 04XX XXXX XX37 2</span>
+                                                                        </li>
+                                                                        </ul>
+                                                                        <ul class="saved_inline_details">
+                                                                        <li>
+                                                                        	<label class="highlight_text">Kaartnummer</label>
+                                                                            <span>6703 04XX XXXX XX37 2</span>
+                                                                        </li>
+																	</ul>
+																</div>
+															</div>
 															<div class="authentication">
 																<div class="authentication__inner">
 																	<div class="authentication__identification">
 																		<div class="identification_content">
 																			<div class="identification__inner">
-                                                                            <div class="saved_data">
-								<div class="saved_data__inner clearfix">
-									<div class="saved_details">
-										<div class="selected_profile_details">
-											<p data-rv-text="userInfo.aliasName" class="user_info name">MIller</p>
-										</div>
-										<div class="selected_profile_description">
-											<div class="selected_profile_details">
-												<div class="profile_label">
-													<label>Client number</label><span>:</span>
-												</div>
-												<p data-rv-text="userInfo.clientNumber" class="profile_info">34234 23423</p>
-											</div>
-											<div class="selected_profile_details">
-												<div class="profile_label">
-													<label>Card number</label><span>:</span>
-												</div>
-												<p data-rv-text="userInfo.cardNumber" class="profile_info">4534 5345 3454 5345 3</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="identification_ucr">
-							 	<p data-rv-class-show_active="violations.responseError" data-rv-text="violations.responseErrorMessage" class="error_summary"></p>
-                                <!-- Error summary standard component-->
-                                <div class="error_summary" data-rv-class-show_active="violations.authenticateErrorSummaryHeader">
-                                    <p data-rv-class-show_active="violations.authenticateErrorSummaryHeader" data-rv-text="config.app.message.Label.authentication.identification.errorMessage">Veuillez corriger les champs suivants</p>
-                                    <ul class="error_summary_items">
-                                      <li data-rv-showactive="violations.signatureError" data-rv-text="config.app.message.Label.authentication.authenticationUCR.electronicSignatureError" class="hide">Signature électronique</li>
-                                     </ul>
-                                </div>
-								<!-- Error summary standard component-->
-								<h4 class="ucr_title" data-rv-text="config.app.message.Label.authentication.authenticationUCR.sign">Signer</h4>
-								<div class="ucr_details">
-									<span class="ucr_details__numbering">1.</span>
-									<div class="ucr_details__content">
-										<p class="ucr_action_content">
-											<span class="ucr_action_content ucr_action_1content">
-												<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.cardReader">Insérez votre carte de banque dans le lecteur de carte et appuyez sur</span>
-												<span class="fontcon-m1 m1_icon"></span>
-											</span>
-										</p>
-									</div>
-									<span></span>
-								</div>
-								<div class="ucr_details">
-									<span class="ucr_details__numbering">2.</span>
-									<div class="ucr_details__content">
-										<p class="ucr_action_content" data-rv-text="config.app.message.Label.authentication.authenticationUCR.CHALLENGE">'CHALLENGE?' s'affiche</p>
-										<div class="ucr_content__challenge">
-											<span class="f_left challenge_part1" data-rv-text="config.app.message.Label.authentication.authenticationUCR.enterCode">Introduisez le code</span>
-											<div class="ucr_challenge__code challenge_part2">
-												<div class="ucr_code">
-													<p class="default_input_field ucr_code__input" data-rv-text="loginModel.challenge | getFormattedChallenge">3167 9264 </p>
-												</div>
-											</div>
-											<p class="challenge_part3">
-												<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.press">et appuyez sur</span>
-												<span class="fontcon-ucr-ok ok_icon"></span>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="ucr_details">
-									<span class="ucr_details__numbering">3.</span>
-									<div class="ucr_details__content">
-										<p class="ucr_action_content" data-rv-text="config.app.message.Label.authentication.authenticationUCR.PIN">'PIN?' s'affiche</p>
-										<p class="ucr_action_content">
-											<span>
-												<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.enterPersonalPIN">Introduisez votre code PIN personnel et appuyez sur</span>
-												<span class="fontcon-ucr-ok ok_icon"></span>
-											</span>
-										</p>
-									</div>
-								</div>
-								<div class="ucr_details last-child">
-									<span class="ucr_details__numbering">4.</span>
-									<div class="ucr_details__content">
-										<p class="ucr_action_content" data-rv-text="config.app.message.Label.authentication.authenticationUCR.electronicSignature">La signature électronique s'affiche</p>
-										<span class="f_left ucr_content" data-rv-text="config.app.message.Label.authentication.authenticationUCR.enterElectronicSignature">Introduisez votre signature électronique</span>
-										<div class="ucr_signature" data-rv-class-field_error="violations.signatureError">
-										<p data-rv-class-show_active="violations.signatureError" class="field_error_message" data-rv-text="config.app.message.Label.authentication.authenticationUCR.errorDescriptionresponse">Veuillez introduire une signature électronique correcte</p>			
-											<div class="default_input_field ucr_signature__input">
-												<input type="tel" class="input_ucr_signature" placeholder="---- ----" data-location="5,10" max-length="8" maxlength="9" oncopy="return false;" onpaste="return false;" oncut="return false;" autocomplete="off">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-                            </div>
+																				<div class="identification_ucr">
+																					<p data-rv-class-show_active="violations.responseError" data-rv-text="violations.responseErrorMessage" class="error_summary"></p>
+																					<!-- Error summary standard component-->
+																					<div class="error_summary" data-rv-class-show_active="violations.authenticateErrorSummaryHeader">
+																						<p data-rv-class-show_active="violations.authenticateErrorSummaryHeader" data-rv-text="config.app.message.Label.authentication.identification.errorMessage">Veuillez corriger les champs suivants</p>
+																						<ul class="error_summary_items">
+																							<li data-rv-showactive="violations.signatureError" data-rv-text="config.app.message.Label.authentication.authenticationUCR.electronicSignatureError" class="hide">Signature électronique</li>
+																						</ul>
+																					</div>
+																					<!-- Error summary standard component-->
+																					<h4 class="ucr_title" data-rv-text="config.app.message.Label.authentication.authenticationUCR.sign">Signer</h4>
+																					<div class="ucr_details">
+																						<span class="ucr_details__numbering">1.</span>
+																						<div class="ucr_details__content">
+																							<p class="ucr_action_content">
+																								<span class="ucr_action_content ucr_action_1content">
+																								<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.cardReader">Insérez votre carte de banque dans le lecteur de carte et appuyez sur</span>
+																								<span class="fontcon-m1 m1_icon"></span>
+																								</span>
+																							</p>
+																						</div>
+																						<span></span>
+																					</div>
+																					<div class="ucr_details">
+																						<span class="ucr_details__numbering">2.</span>
+																						<div class="ucr_details__content">
+																							<p class="ucr_action_content" data-rv-text="config.app.message.Label.authentication.authenticationUCR.CHALLENGE">'CHALLENGE?' s'affiche</p>
+																							<div class="ucr_content__challenge">
+																								<span class="f_left challenge_part1" data-rv-text="config.app.message.Label.authentication.authenticationUCR.enterCode">Introduisez le code</span>
+																								<div class="ucr_challenge__code challenge_part2">
+																									<div class="ucr_code">
+																										<p class="default_input_field ucr_code__input" data-rv-text="loginModel.challenge | getFormattedChallenge">3167 9264 </p>
+																									</div>
+																								</div>
+																								<p class="challenge_part3">
+																									<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.press">et appuyez sur</span>
+																									<span class="fontcon-ucr-ok ok_icon"></span>
+																								</p>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="ucr_details">
+																						<span class="ucr_details__numbering">3.</span>
+																						<div class="ucr_details__content">
+																							<p class="ucr_action_content" data-rv-text="config.app.message.Label.authentication.authenticationUCR.PIN">'PIN?' s'affiche</p>
+																							<p class="ucr_action_content">
+																								<span>
+																								<span data-rv-text="config.app.message.Label.authentication.authenticationUCR.enterPersonalPIN">Introduisez votre code PIN personnel et appuyez sur</span>
+																								<span class="fontcon-ucr-ok ok_icon"></span>
+																								</span>
+																							</p>
+																						</div>
+																					</div>
+																					<div class="ucr_details last-child">
+																						<span class="ucr_details__numbering">4.</span>
+																						<div class="ucr_details__content">
+																							<p class="ucr_action_content" data-rv-text="config.app.message.Label.authentication.authenticationUCR.electronicSignature">La signature électronique s'affiche</p>
+																							<span class="f_left ucr_content" data-rv-text="config.app.message.Label.authentication.authenticationUCR.enterElectronicSignature">Introduisez votre signature électronique</span>
+																							<div class="ucr_signature" data-rv-class-field_error="violations.signatureError">
+																								<p data-rv-class-show_active="violations.signatureError" class="field_error_message" data-rv-text="config.app.message.Label.authentication.authenticationUCR.errorDescriptionresponse">Veuillez introduire une signature électronique correcte</p>
+																								<div class="default_input_field ucr_signature__input">
+																									<input type="tel" class="input_ucr_signature" placeholder="---- ----" data-location="5,10" max-length="8" maxlength="9" oncopy="return false;" onpaste="return false;" oncut="return false;" autocomplete="off">
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
 																		</div>
-                                                                        <div class="identification__navigation">
-							<div class="navigation_btns">
-								<div class="left_navigation_btn f_left left_btn_navigation"> 
-									  
-								</div>
-								<div class="right_navigation_btn f_right">
-                                <span class="lnk_primary" data-rv-text="config.app.message.Label.authentication.selectContract.back">Trouble signing in?</span>				
-									<button class="btn_default btn_primary2" data-rv-buttonstatus="violations.authenticateNextButton" data-rv-text="config.app.message.Label.authentication.authenticationUCR.submit">Signer</button>
-								</div>
-							</div>
-						</div>
+																		<div class="identification__navigation">
+																			<div class="navigation_btns">
+																				<div class="left_navigation_btn f_left left_btn_navigation"> 
+																				</div>
+																				<div class="right_navigation_btn f_right">
+																					<span class="lnk_primary" data-rv-text="config.app.message.Label.authentication.selectContract.back">Trouble signing in?</span>				
+																					<button class="btn_default btn_primary2" data-rv-buttonstatus="violations.authenticateNextButton" data-rv-text="config.app.message.Label.authentication.authenticationUCR.submit">Signer</button>
+																				</div>
+																			</div>
+																		</div>
 																	</div>
 																</div>
 															</div>

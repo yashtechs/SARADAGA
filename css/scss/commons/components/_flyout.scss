@@ -36,8 +36,8 @@
 		 position:absolute;
 		 z-index:999;
 		 @include transition(height, 0.4s, ease-in-out);
-		 top: -1.25em;
-		 left: -1.25em;
+		 top: -0.62em;
+		 left: -0.62em;
 		 border:1px solid $default-border-clr;
 		  @include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
 	}
