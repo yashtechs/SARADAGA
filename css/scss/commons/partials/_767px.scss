@@ -61,31 +61,6 @@
         margin: 0;
     }
 
-/* Identification */
-	.authentication {
-		padding-top: 0.62em;
-	}
-    .authentication__information {
-        display: none;
-    }
-
-    .identification__inner {
-        padding: 1.25em 0.62em;
-    }
-
-    .authentication__information .identification__inner {
-        padding: 0.62em;
-    }
-/* Intermediate */
-    .intermediate_content {
-        padding: 0.62em;
-    }
-
-    .intermediate_content h4 {
-        font-size: 1.12em;
-        padding-bottom: 0.94em;
-    }
-
 /*Transactions */
     .transactions .list_content_col1 h3, .transactions .listiban_detail {
         font-size: 1em;

@@ -60,6 +60,9 @@
 	padding: 0.56em 0.62em 0;
 	cursor: default;
 }
+.ucr_action_content{
+	@include regular;
+}
 .ucr_challenge__content {
 	display: inline-block;
 }

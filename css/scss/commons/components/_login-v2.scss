@@ -16,8 +16,13 @@
 		padding-left:0.62em;
 	}
 }
-.form2_fields.l_col{
-	padding-bottom: 2.375em;
+.form2_fields{
+	&.l_col{
+		padding-bottom: 2.375em;
+		&.exp{
+			padding-bottom:1.25em;
+		}
+	}
 }
 /* MR2 V2 Login */
 .authentication{
@@ -97,6 +102,9 @@
 		display:inline-block; 
 		padding:4px 12px; 
 		border-right:1px solid #d8dbde;
+		label{
+			@include regular;
+		}
 		&:first-child{ 
 			padding-left:0;
 		}
@@ -233,5 +241,22 @@
 		font-size: 0.87em;
 		li{ padding:2px 0; width:100%;border:none;}
   }
+  
+  /* Identification */
+	.authentication {
+		padding-top: 0.62em;
+	}
+    .identification__inner {
+        padding: 1.25em 0;
+    }
+/* Intermediate */
+    .intermediate_content {
+        padding: 0.62em;
+    }
+
+    .intermediate_content h4 {
+        font-size: 1.12em;
+        padding-bottom: 0.94em;
+    }
 }
 
