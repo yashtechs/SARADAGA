@@ -45,6 +45,10 @@
 	 	display: inline-block;
 	}
 }
+.title_column{
+	display:table-cell;
+	vertical-align:middle;
+}
 .module_title {
 	font-size: 2em;
 	text-transform: uppercase;
@@ -97,8 +101,7 @@
 
 @media all and (max-width: 47.9375em) {
     .module_header {
-        padding: 1.25em 0.62em 0.62em 0.62em;
-        min-height: 84px;
+        padding: 0.62em;
     }
     .module_row label {
         float: right;

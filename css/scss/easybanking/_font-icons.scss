@@ -23,153 +23,159 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.fontcon-cards:before {
-	content: "\e602";
-}
-.fontcon-hero-icon:before {
-	content: "\e631";
-}
-.fontcon-savings-account:before {
+.fontcon-extra:before {
 	content: "\e600";
 }
-.fontcon-current-account:before {
+.fontcon-cards:before {
 	content: "\e601";
 }
-.fontcon-transaction-out:before {
-	content: "\e604";
+.fontcon-hero-icon:before {
+	content: "\e602";
 }
-.fontcon-transaction-in:before {
-	content: "\e605";
-}
-.fontcon-calendar:before {
-	content: "\e61a";
-}
-.fontcon-beneficiary:before {
-	content: "\e61b";
-}
-.fontcon-send_money_icon:before {
-	content: "\e61e";
-}
-.fontcon-circle-done:before {
-	content: "\e627";
-}
-.fontcon-contactus:before {
+.fontcon-savings-account:before {
 	content: "\e603";
 }
-.fontcon-header-contactus:before {
+.fontcon-current-account:before {
+	content: "\e604";
+}
+.fontcon-transaction-out:before {
+	content: "\e605";
+}
+.fontcon-transaction-in:before {
 	content: "\e606";
 }
-.fontcon-faq:before {
-	content: "\e608";
-}
-.fontcon-header-faq:before {
+.fontcon-calendar:before {
 	content: "\e607";
 }
-.fontcon-menu-icon:before {
-	content: "\e618";
+.fontcon-beneficiary:before {
+	content: "\e608";
 }
-.fontcon-logout:before {
-	content: "\e620";
-}
-.fontcon-warning-active:before {
+.fontcon-send-money-icon:before {
 	content: "\e609";
 }
-.fontcon-m1:before {
+.fontcon-circle-done:before {
 	content: "\e60a";
 }
-.fontcon-m2:before {
+.fontcon-contactus:before {
 	content: "\e60b";
 }
-.fontcon-ucr-ok:before {
+.fontcon-header-contactus:before {
 	content: "\e60c";
 }
-.fontcon-correct:before {
+.fontcon-faq:before {
 	content: "\e60d";
 }
-.fontcon-close:before {
+.fontcon-menu-icon:before {
 	content: "\e60e";
 }
-.fontcon-search:before {
+.fontcon-logout:before {
 	content: "\e60f";
 }
-.fontcon-download:before {
+.fontcon-warning-active:before {
 	content: "\e610";
 }
-.fontcon-print:before {
+.fontcon-m1:before {
 	content: "\e611";
 }
-.fontcon-pdf:before {
+.fontcon-m2:before {
 	content: "\e612";
 }
-.fontcon-csv:before {
+.fontcon-ucr-ok:before {
 	content: "\e613";
 }
-.fontcon-refresh:before {
+.fontcon-correct:before {
 	content: "\e614";
 }
-.fontcon-executed:before {
+.fontcon-close:before {
 	content: "\e615";
 }
-.fontcon-not-executed:before {
+.fontcon-search:before {
 	content: "\e616";
 }
-.fontcon-fav-default:before {
+.fontcon-download:before {
 	content: "\e617";
 }
-.fontcon-fav-select:before {
+.fontcon-print:before {
+	content: "\e618";
+}
+.fontcon-pdf:before {
+	content: "\e619";
+}
+.fontcon-csv:before {
+	content: "\e61a";
+}
+.fontcon-refresh:before {
+	content: "\e61b";
+}
+.fontcon-executed:before {
+	content: "\e61c";
+}
+.fontcon-not-executed:before {
+	content: "\e61d";
+}
+.fontcon-fav-default:before {
+	content: "\e61e";
+}
+.fontcon-fav-select:after {
 	content: "\e61f";
 }
 .fontcon-reload:before {
-	content: "\e619";
+	content: "\e620";
 }
 .fontcon-add-benf:before {
-	content: "\e61c";
-}
-.fontcon-add:before {
-	content: "\e61d";
-}
-.fontcon-link-intern-teaser:before {
 	content: "\e621";
 }
-.fontcon-timeout:before {
+.fontcon-add:before {
 	content: "\e622";
 }
-.fontcon-information:before {
+.fontcon-link-intern-teaser:before {
 	content: "\e623";
 }
-.fontcon-information-active:before {
+.fontcon-timeout:before {
 	content: "\e624";
 }
-.fontcon-attention:before {
+.fontcon-information:before {
 	content: "\e625";
 }
-.fontcon-expire:before {
+.fontcon-information-active:before {
 	content: "\e626";
 }
-.fontcon-expand:before {
+.fontcon-attention:before {
+	content: "\e627";
+}
+.fontcon-expire:before {
 	content: "\e628";
 }
-.fontcon-collapse:before {
+.fontcon-expand:before {
 	content: "\e629";
 }
-.fontcon-calendar-arrow-right:before {
+.fontcon-collapse:before {
 	content: "\e62a";
 }
-.fontcon-calendar-arrow-left:before {
+.fontcon-calendar-arrow-right:before {
 	content: "\e62b";
 }
-.fontcon-arrow-right:before {
+.fontcon-calendar-arrow-left:before {
 	content: "\e62c";
 }
-.fontcon-arrow-left:before {
+.fontcon-arrow-right:before {
 	content: "\e62d";
 }
-.fontcon-facebook:before {
+.fontcon-arrow-left:before {
 	content: "\e62e";
 }
-.fontcon-twitter:before {
+.fontcon-facebook:before {
 	content: "\e62f";
 }
-.fontcon-youtube:before {
+.fontcon-twitter:before {
 	content: "\e630";
+}
+.fontcon-youtube:before {
+	content: "\e631";
+}
+.fontcon-clock:before {
+	content: "\e632";
+}
+.fontcon-emotion-unhappy:before {
+	content: "\e633";
 }
