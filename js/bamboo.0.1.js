@@ -29,7 +29,7 @@ var Bamboo = (function (window, document) {
 		
 		this.options = {
 		    menu: true,
-		    swipeToOpen: true,
+		    swipeToOpen: false,
 		    breakpoint: 1024,
 		    menuWidth: 265,
 		    headerHeight: 50,
@@ -45,7 +45,7 @@ var Bamboo = (function (window, document) {
 		this.resizeSite();
 
 		// add required html
-		cover = $('<div id="cover"/>');
+		cover = $('<div class="cover"/>');
 		$('.canvas_container').find('.main_wrapper').append(cover);
 
 		// resize listeners
@@ -103,7 +103,7 @@ var Bamboo = (function (window, document) {
 	    	if (this.info.docWidth < this.options.breakpoint) {
 	    		this.desktop = false;
 				// container
-	    		container.css({ width : this.info.docWidth, height : 'auto' });
+	    		container.css({ width : this.info.docWidth, height : this.info.docHeight });
 		    	// scoller height
 				container.find('#scroller').css({ height : this.info.docHeight + offset - this.options.headerHeight });
 	    	// desktop
@@ -137,26 +137,19 @@ var Bamboo = (function (window, document) {
 		_bindEvents: function(){
 			var _this = this,
                 $body = $('body');
+				container.on('click',function(e){
+					_this._start(e);
+					_this._move(e);
+					_this._end(e);
+					});
 
             // .bmboo defines the namespace for the event
 
-            // Start event biding
-            container.on('touchstart mousedown', function(e) {
-            	_this._start(e);
-				$body.removeClass(canvasOpen);
-            	// move
-                $body.on('touchmove.bmboo mousemove.bmboo', function(e) {
-                    _this._move(e);
-					$body.addClass(canvasOpen);
-                });
-                // end
-                $body.on('touchend.bmboo mouseup.bmboo', function(e) {
-                    _this._end(e);
-                    // clear the move and end events
-                    $body.off('.bmboo');
-					$body.addClass(canvasOpen);
-                });
-            });
+           
+			
+			
+			
+			
 		},
 
 		_start: function(e) {
@@ -196,10 +189,7 @@ var Bamboo = (function (window, document) {
 			}
 
 			// We are scrolling vertically, so skip SwipeView and give the control back to the browser
-			if (!this.directionLocked && this.stepsY > this.stepsX) {
-				this.initiated = false;
-				return;
-			}
+			
 
 			e.preventDefault();
 			this.directionLocked = true;
@@ -232,6 +222,7 @@ var Bamboo = (function (window, document) {
 			if (this.dx === 0 && nx === 0 && this.tgt.is('.menu_icon')) {
 				this._animateTo(this.options.menuWidth, this.options.menuWidth);
 				$('body').addClass('canvas_opened');
+				
 			}
 
 			this.ox = null;
@@ -245,7 +236,7 @@ var Bamboo = (function (window, document) {
 				'transition-duration' : Math.floor(100 * x / this.snapThreshold) + 'ms',
 				'transform' : 'translate(' + to + 'px,0)' + translateZ
 			});
-			$('body').removeClass('canvas_opened');
+			//$('body').removeClass('canvas_opened');
 			// hide / show cover
 			this._toggleCover(to);
 		},
@@ -254,13 +245,16 @@ var Bamboo = (function (window, document) {
 			container.css({
 				'transform' : 'translate(' + x + 'px,0)' + translateZ
 			})
+			//$('body').addClass('canvas_opened');
 		},
 
 		_toggleCover: function(to){
 			if (to > this.options.menuWidth - 50) {
 				cover.show();
+				$('body').addClass('canvas_opened');
 			} else {
 				cover.hide();
+				$('body').removeClass('canvas_opened');
 			}
 		}
 
