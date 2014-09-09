@@ -5,8 +5,7 @@ html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, block
 	font-family: inherit;
 	font-size: 100%;
 	vertical-align: baseline;
-	line-height: inherit; 
-	
+	line-height: inherit;
 }
 html,body {
 	line-height: 1;
@@ -51,3 +50,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .clearfix {
  *zoom: 1;
 }
+.canvas_container{
+	
+	}
+.cover{}

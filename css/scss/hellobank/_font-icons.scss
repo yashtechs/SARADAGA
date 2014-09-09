@@ -86,7 +86,7 @@
 .fontcon-ucr-ok:before {
 	content: "\e613";
 }
-.fontcon-correct:before {
+.fontcon-tick:before {
 	content: "\e614";
 }
 .fontcon-close:before {
@@ -119,7 +119,7 @@
 .fontcon-fav-default:before {
 	content: "\e61e";
 }
-.fontcon-fav-select:after {
+.fontcon-fav-select:before {
 	content: "\e61f";
 }
 .fontcon-reload:before {
@@ -181,4 +181,25 @@
 }
 .fontcon-emotion-unhappy:before {
 	content: "\e633";
+}
+.fontcon-simulator:before {
+	content: "\e635";
+}
+.fontcon-globe:before {
+	content: "\e636";
+}
+.fontcon-faq-active:before {
+	content: "\e637";
+}
+.fontcon-close-thin:before {
+	content: "\e638";
+}
+.fontcon-list:before {
+	content: "\e639";
+}
+.fontcon-remove:before {
+	content: "\e63a";
+}
+.fontcon-discover:before {
+	content: "\e63b";
 }

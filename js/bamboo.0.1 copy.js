@@ -103,9 +103,9 @@ var Bamboo = (function (window, document) {
 	    	if (this.info.docWidth < this.options.breakpoint) {
 	    		this.desktop = false;
 				// container
-	    		container.css({ width : this.info.docWidth, height : this.info.docHeight });
+	    		//container.css({ width : this.info.docWidth, height : this.info.docHeight });
 		    	// scoller height
-				container.find('#scroller').css({ height : this.info.docHeight + offset - this.options.headerHeight });
+				//container.find('#scroller').css({ height : this.info.docHeight + offset - this.options.headerHeight });
 	    	// desktop
 	    	} else {
 	    		this.desktop = true;
@@ -221,7 +221,7 @@ var Bamboo = (function (window, document) {
 			// open button
 			if (this.dx === 0 && nx === 0 && this.tgt.is('.menu_icon')) {
 				this._animateTo(this.options.menuWidth, this.options.menuWidth);
-				$('body').addClass('canvas_opened');
+				//$('body').addClass('canvas_opened');
 				
 			}
 

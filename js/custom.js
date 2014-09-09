@@ -1,8 +1,33 @@
+var viewport = offcanvas = {
+	left: {}
+};
+
 $(document).ready(function () {
+	//cover = $('<div class="cover"/>');
+//	$('.canvas_container').find('.main_wrapper').append(cover);
+//	
+//	offcanvas.left.$trigger = $('.menu_icon');
+//	offcanvas.$close = $('.cover');
+//	
+//	
+//	// bind events
+//	offcanvas.left.$trigger.click(function(e) {
+//		e.preventDefault();
+//		offcanvas.left.toggler();
+//	});
+//	offcanvas.$close.click(function(e) {
+//		e.preventDefault();
+//		$('body').removeClass('canvas_opened');
+//		cover.hide();
+//	});
+//
+//	offcanvas.left.toggler = function() {
+//		$('body').toggleClass('canvas_opened');
+//		cover.show();
+//	};
+//	
+//	
 	
-	//$('.fontcon-calendar').datepicker();
-	
-	$(".flexnav").flexNav();
 	
 	var offCanvas = $('.flexnav').html();
 	$('.offcanvas_menu').html(offCanvas);
