@@ -1,0 +1,224 @@
+$default-width:100%; 								// Globally used where ever 100% width is there, beware while changing value.
+$default-height:100%;
+$content-width:80%;
+$height-half:50%; 
+$width-half:50%;
+$fixed-width:45.62em;								// Fixed width of the content pages
+$ele-height:44px;									// Default input boxes heights
+
+// Body color
+$main-bg-clr:#eef1f5;								// Main background color for main site.
+
+// Gradient for page background 
+$mainbg-top:#dde3e6;								// main background gradient top
+$mainbg-bottom:#eef1f5;								// main background gradient bottom
+
+// Site primary colors
+$primarycolor: #009966;								// Primary color for Site
+$primarytxtcolor: #252429;							// Primary text color
+
+// Breakpoints
+
+// 480px 	30em
+// 600px 	37.5em
+// 768px 	48em
+// 992px 	62em
+// 1382px	86.375em
+//$br:320;
+//$bpdivident:16;
+//$bp-320px:($br/$bpdivident) + em;
+//$bp-479px:29.9375em;
+//$bp-480px:30em;
+//$bp-640px:40em;  		
+//$bp-small: 47.9375em;  	
+//$bp-medium: 63.9375em;  		
+//$bp-large: 62em; 		
+//$bp-xlarge: 86.375em; 
+
+// Header
+$navheader-bg:'#ffffff';							// Header color
+$navheader-unauth:'#ffffff';						// Header color unauthenticated
+
+//Site logo
+$logo-width:11.7em;									// Brand logo width
+$logo-height:2.5em;									// Brand logo height
+$logo-position:-1px 1px;							// Logo sprite positions
+$logo-small-width:2.62em;							// Logo width on small screen
+$logo-small-height:2.5em;							// Logo height on small screen
+$logo-parent-height:2.5em;							// Logo parent height	
+
+//Errors stripes
+$error-clr: #e53012; 								// General color for Errors, warnings.
+$indicator-clr-icon: #e53012; 						// Red color for ZoomIT or any alert icons.
+$error-icon:#e53012;								// Red color for icon used for font color
+
+// Error boxes colors
+$error-clr-bg: #e53012;  							// Red color used for backgrounds inorder to change without text dependency
+$warning-clr:#f66900;								// Warning component background color
+$information-clr:#138ee4;							// Information componnet background color	
+
+// Default white colors
+$white-clr:'#ffffff'; 								// White color text unique
+$white-clr-hover:'#ffffff';							// White text hover
+$white-clr-primary:'#ffffff';						// Button text in white color
+$white-clr-icon:'#ffffff';							// Button direction Icon in White 
+$white-bg:'#ffffff';								// Used for white back grounds
+
+// Links and dropdown
+$link-indication:$primarycolor;						// Links but not links (USed in Filters)
+$header-link:$primarytxtcolor;						// Accordion header text color
+$list-link:$primarycolor;							// Accordion list header text color
+$dropdownlnk-clr:$primarycolor;						// Dropdown values text color
+
+//default lines color
+$default-border-clr:#d8dbde;						// Default border line color
+
+// Buttons and links
+$primary-btn-clr:$primarycolor;						// Primary button color
+$primary-link-clr:$primarycolor;					// Primary link color
+$primary-hover-clr:#008578;							// Primary button/Link hover color
+$primary2-btn-clr: #85b909;							// Login primary btn
+$primary2-btn-hover:#85b909;						// Primary 2 color	
+$secondary-btn-clr:#d2d8e1;							// Secondary button background color
+$secondary-btn-hover-clr:#d2d8e1;					// Secondary button hover color
+
+$hover:#008578;										// Hover green color for non links and buttons 
+$hover-bg:#008578;									// Hover Green bg color for non links and buttons
+$foreign-currency-clr:#008578;						// Has foriegn currency color on Products
+
+// Module headers and cmenu
+$h-services-bg:$primarycolor;						// Service header background color
+$h-overlay-bg:$primarycolor;						// Overlay header background color
+$h-function-bg:#861a61;								// Functional Header background color
+$accounts-clr:#729f08;								// accounts text color
+$h-accounts-bg:#729f08;								// accounts green bg
+$h-cards-bg:#009e83;								// Cards dark green header background color
+$cards-clr:#009e83;									// Cards header title color
+
+//Gradient values
+$bg-top:#252645;									// If gradient is applicable top value has to be added to parent variable of the class.
+$bg-bottom:#123456;									// For gradient bottom value 
+
+//Content menu hover
+$accounts-hover-clr:#668F07;						// Accounts content menu hover colors
+$cards-hover-clr:#008E76;							// Cards content menu hover colors
+
+// Selection or disabled color
+$select-color:#76767b;								// Dropdown select color
+
+// Fonts and icons default
+$default-color:$primarytxtcolor;					// Black color for text and backgrounds 
+$default-color-bg:$primarytxtcolor;					// Black background color default
+$default-clr-icon:$primarytxtcolor;					// Black color icons for list items / content based/ blue for Hello 
+$icon2-clr:$primarytxtcolor;						// For pink type icons on hello
+$icon3-clr:#d1d8e2;									// For transaction in icon
+$icon4-clr:#d1d8e2;									// For grey color
+$search-text:$primarytxtcolor;						// Search counter text
+
+// icon color
+$result-icon-clr:#d2d8e1;							// Greyish icons/elements colors
+$done-icon-clr:#85b909;								// icon done color
+
+// UCR icon color
+$m1-icon-clr:#e53012;								// M2 icon color
+$m2-icon-clr:#186494;								// M2 icon color
+$ok-icon-clr:#138e57;								// OK icon color
+
+$inactive-clr:#f4f5f6;								// in active icons colors
+$component-bg:#f4f5f6;								// Greyish backgoruns for Components / Modules i.e UCR
+
+//teaser colors
+$teaser-bg:#861a61;									// Sepa CT teaser background color in Margin column
+$teaser-bg-hover:#6e154f;							// Teaser background hover color
+$title-clr:#861a61;									// Functional header title color	
+$icon-teaser-clr:#d12668;							// Transfer teaser icon color
+
+//
+$expired-icon:#f66900;								// Exipred orange color icon used for font color 
+$content_page_title:#138ee4;						// Content inner page title in color
+
+// tabs color
+$function-modtab-bg:#6d1d52;						// Generic module tabs backgrounds
+$accounts-modtab-bg:#5b7f06;						// Accounts module tab background color 
+$cards-modtab-bg:#008578;							// Cards Module tabs theme
+
+$margin-mod-bg:#fafbfc;								// Margin module light blue background or text color
+
+$highlight-clr:#186494;								// Blue highlight color i.e UCR screen text	
+$highlight-comp-bg:#e5e9ef;							// Background highlight on key selections
+$active-step-color:#861A61;							// active state color for SEPA steps
+
+//to be removed
+$header-list-bg:#e5e9ef;							// SEPA CT dropdown group header
+
+// teaser social icons
+$icon-twitter: #50a8f2;								// Twiter icon color
+$icon-facebook: #4454a1;							// Facebook icon color
+$icon-youtube: #e53012;								// Youtube icon color
+
+//Footer links and icons 
+$link-title-clr:#76767b;							// Footer group title colors
+$foo-links-clr:#ffffff;								// Footer links color
+$foo-hvr-lnks-clr:#ffffff;							// Footer links hvr color
+$message-clr:#d2d8e1;								// Legal links text color in footer (Privacy/Disclamier...)
+
+// Xopus - XML
+$xopus-table-bg:#f4f5f6;							// Xopus table backgrounds or even/odd colors
+$xopus-border:#009966;								// Xopus header green border
+$xopus-clr:#009966;									// Xopus elements green color
+$xopus-bg:'#ffffff';								// White background for Xopus contents	 
+$xopus-ele-clr:#6e154f;								// Xopus elemeny color
+$font-h1:36px;										// Xopus h1 fontsize	
+$font-h2:28px;										// Xopus h2 fontsize	
+$font-h3:20px;										// Xopus h3 fontsize	
+$font-h4:18px;										// Xopus h4 fontsize	
+$font-p:16px;										// Xopus p fontsize
+
+// Loading image
+$progress-width: 9.38em;							// Loding image width
+$progress-height: 9.38em;							// Loding image height
+
+// Favorite icon
+$fav-icon-default: #aeb8c4;							// Favourite icon default color
+$fav-icon-selected:#ffcc33;							// favourite icon selected 
+
+// Hero image and shadows
+$hero-bg:#85b909;									// Hero background
+$body-shadow:#76767b;								// Body right left shadow colors on 1280
+$dropdown-shadow:#d8dbde;							// Dropdown box & menu shadows
+$header-shadow:$primarytxtcolor;								// Main header dropshadow
+
+// Border - radius
+$glb-tleft-radius:0;								// Global raduis for 4 sides
+$glb-tright-radius:0;								// Global raduis for 4 sides
+$glb-bleft-radius:0;								// Global raduis for 4 sides
+$glb-bright-radius:0;								// Global raduis for 4 sides
+
+//Steps - radius
+$step-tleft:2.14em;									// Raduis for header steps
+$step-tright:2.14em;								// Raduis for header steps
+$step-bleft:2.14em;									// Raduis for header steps
+$step-bright:2.14em;								// Raduis for header steps
+
+// Filter dropdowns
+$filter-hover:'#ffffff';							// Hover color for blue theme
+$filter-hover-clr:$primarycolor;					// Hover text color
+$optgroup-header:$primarytxtcolor;					// Opt header color
+
+//Nav public links
+$nav-links-clr:$primarytxtcolor;					// Nav public links text color
+
+//focus for input boxes
+$focus:#008578;										// used for border color on focus of inputs or else dropdowns
+
+//Service icon login
+$login_faq_icon:#85b909;							// Login faq icon color
+
+// Functions title
+$function-title-fsize:1.88em;
+
+// Service icon size
+$service-icon-size:2.72em;
+
+//Help icon(Tooltip)
+$help_icon:#85b909;

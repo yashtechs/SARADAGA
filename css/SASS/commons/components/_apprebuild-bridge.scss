@@ -1,0 +1,22 @@
+	/*For two column*/	
+	.T_column{
+		.fluid {
+			margin-right: 20.7em;
+		}
+		 .margin_col{
+			float: right;
+		}
+	}
+	
+	/*For one column*/	
+		.S_column{
+		.content_col,.fluid {
+			margin-right: 0;
+		}
+		.margin_col {
+			width: 100%;
+			margin: 0;
+			padding-top: 1.25em;
+		}
+	}
+	

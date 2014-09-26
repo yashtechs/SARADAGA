@@ -1,0 +1,84 @@
+
+/* Breakpoint 767 */
+@media all and (max-width: 47.9375em) {
+  /* Alignments */
+    .login_bg .content_page, .login_bg .contact_us, .login_bg .faq-page, #security_msg, .intermediate_messages {
+        width: 100%;
+        margin: 1.25em auto 0;
+		padding:0.62em 0.62em 0 0.62em; 
+    }
+
+    .intermediate_btns, .wcm-btns-zone {
+        width: 100%;
+    }
+/* Layout */
+
+    #login_overlayer {
+        min-height: 25em;
+    }
+
+    .service_navigation {
+        display: none;
+    }
+
+    .content_wrapper {
+        padding: 0.62em 0;
+        min-height: inherit;
+    }
+
+    .home .content_wrapper {
+        padding-top: 0;
+    }
+
+/* Error messages */
+    .field_error {
+        margin: 0;
+    }
+
+/* margin Modules */
+ .margin_col {
+	  .ls-cmp-wrap {
+	  		padding: 0 0.62em;
+			.iw_component{
+				margin-top:0.62em !important;
+			}
+		}
+    }
+    .margin_headline{
+    	margin-top:0.62em !important;
+    }
+    .home .margin_col {
+        padding-top: 0;
+    }
+
+    .home .margin_col .ls-cmp-wrap:nth-child(1) {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+/* Products SlideIn */
+    .home .content_block {
+        float: left;
+        position: absolute;
+        z-index: 1;
+        min-height: 0;
+    }
+
+    .content_block #accountList, .content_block #cardList {
+        margin: 0;
+    }
+
+/* Statements */
+.statements_tab {
+    display: none;
+}
+
+/*Button Component alignments*/
+    .content_btns {
+        margin: 0;
+    }
+
+    .action_btns, .btns_zone {
+        padding: 1.87em 0.62em;
+    }
+}

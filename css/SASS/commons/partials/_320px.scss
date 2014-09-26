@@ -1,0 +1,16 @@
+@media all and (min-width: 20em) and (max-width: 63.9375em) {
+	.service_col {
+	  position: absolute;
+	  right: 0;
+	}
+}
+
+@media all and (min-width: 20em) and (max-width: 29.9375em) {
+	.dropdown_seleted_item, .known_placeholder {
+	  max-width: 16em;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	}
+}
+

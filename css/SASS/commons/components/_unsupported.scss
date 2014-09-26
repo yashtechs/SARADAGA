@@ -1,0 +1,42 @@
+
+.overlayUnsupportedBrowser  {
+	.section level2 {
+		min-height:8.75em;
+	}
+}
+#unChrome, #unFirefox, #unSafari, #unIe, #unOpera {
+	width: 25%;
+	float: left;
+	background: url(images/unsupported.png) no-repeat;
+	text-align: center;
+	margin: 0 20px;
+	p{
+		padding-top:5em;
+		font-size:1em;
+	}
+}
+#unChrome {
+	background-position: -13px -14px;
+	width: 4.69em;
+	height: 4.38em;
+}
+#unFirefox {
+	background-position: -6px -96px;
+	width: 5.62em;
+	height: 4.38em
+}
+#unSafari {
+	background-position: -14px -179px;
+	width: 4.69em;
+	height: 4.38em;
+}
+#unIe {
+	background-position: -9px -259px;
+	width: 5.62em;
+	height: 4.38em;
+}
+#unOpera {
+	background-position: -16px -343px;
+	width: 4.69em;
+	height: 4.38em
+}

@@ -1,0 +1,53 @@
+.more_items_icon{
+	position:absolute; 
+	right:10px; 
+	top:6px; 
+	cursor:pointer; 
+	line-height:0.8; 
+	padding:6px;
+}
+.more_items{
+	&.active{
+		.more_items_icon{
+			background:$icon2-clr;
+		}
+		.more_icon{
+			color: unquote($white-clr);
+		}
+		.more_flyout{ 
+			display:block;
+		}
+	}
+}
+.more_flyout{
+	position:absolute; 
+	right:10px; 
+	top:40px;
+	background:$icon2-clr; 
+	color:white; 
+	min-width:180px; 
+	z-index:9999; 
+	padding:6px; 
+	display:none;
+	div{ 
+		padding:6px; 
+		@include regular;
+	}
+	.lnk_hover:hover{
+		cursor:pointer;
+		text-decoration:underline;
+	}
+	&:after{
+		 content: "";
+		  position: absolute;
+		  border-style: solid;
+		  border-color: #252429 transparent;
+		  display: block;
+		  width: 0;
+		  top: -6px;
+		  bottom: auto;
+		  left: auto;
+		  right: 11px;
+		  border-width: 0 6px 6px;
+	}
+}

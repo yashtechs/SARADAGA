@@ -1,0 +1,38 @@
+/* User Meta name */
+
+.user_message {
+	padding: 1.08em 1.08em 0 1.08em;
+	font-size: 1.4em;
+	display: none;
+}
+.home .user_message {
+	display: block;
+}
+.meta_name {
+ 	@include regular;
+	margin-left: 0.145em;
+}
+
+// 768 - 1023
+
+@media all and (min-width: 48em) and (max-width: 63.9375em) {
+	.user_message {
+	 	 padding: 1.4em 1.4em 0 1.4em;
+	 }
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+    #metaInfo h3 {
+        font-size: 1em;
+    }
+    #metaInfo h1 {
+        font-size: 1.75em;
+    }
+    .user_message {
+        padding: 1em 0;
+        text-align: center;
+        font-size: 1em;
+    }
+}

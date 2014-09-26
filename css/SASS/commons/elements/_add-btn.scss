@@ -1,0 +1,33 @@
+.add_btn{
+	text-align:right; 
+	float:right;
+	button{ 
+		border:1px solid unquote($white-clr); 
+		background-color: transparent; 
+		color:unquote($white-clr); 
+		height:2.75em; 
+		padding:0 1.12em; 
+		font-size:1em;
+		@include light;
+		margin:0; 
+		cursor:pointer;
+		@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
+		&:focus{
+			outline:none !important;
+		}
+	}
+	&.sec{
+		padding-top:0.67em; 
+	}
+}
+.add_icon{ 
+	margin-right:0.62em;
+	font-size:0.75em;
+}
+
+@media all and (max-width: 47.9375em){
+	.add_btn{ position:absolute; right:10px;}
+	.add_btn_text{ display:none;}
+	.add_icon{ margin:0;}
+	.add_btn button{ height:auto; padding:2px; width:1.87em; height:1.87em;@include radius-steps($step-tleft,$step-tright,$step-bleft,$step-bright)}
+}

@@ -1,0 +1,279 @@
+/*Switch button*/
+// Seperated as Hellobank holds different design
+.ios-switch {
+  height: 31px;
+  width: 51px;
+  position: relative;
+  background-color: #e5e5e5;
+  -webkit-border-radius: 100px;
+   -moz-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.ios-switch .background-fill {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ios-switch .on-background {
+  background: #009966;
+  background-image: -webkit-linear-gradient(#009966, #009966);
+  background-image: -moz-linear-gradient(#009966, #009966);
+  background-image: -o-linear-gradient(#009966, #009966);
+  background-image: -ms-linear-gradient(#009966, #009966);
+  background-image: linear-gradient(#009966, #009966);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  z-index: 1;
+  -webkit-transition: 0.3s 0.2s;
+  -moz-transition: 0.3s 0.2s;
+  -o-transition: 0.3s 0.2s;
+  -ms-transition: 0.3s 0.2s;
+  transition: 0.3s 0.2s;
+}
+.ios-switch .state-background {
+  -webkit-border-radius: 100px;
+   -moz-border-radius: 100px;
+  border-radius: 100px;
+  z-index: 2;
+  background: #fdfdfd;
+  background-image: -webkit-linear-gradient(#fff, #fdfdfd);
+  background-image: -moz-linear-gradient(#fff, #fdfdfd);
+  background-image: -o-linear-gradient(#fff, #fdfdfd);
+  background-image: -ms-linear-gradient(#fff, #fdfdfd);
+  background-image: linear-gradient(#fff, #fdfdfd);
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+}
+.ios-switch .handle {
+  width: 26px;
+  height: 24px;
+  background-color: #fff;
+  top: 3px;
+  left: 2px;
+  position: absolute;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,0.075), 0 3px 5px rgba(0,0,0,0.15), 1px 2px 2px rgba(0,0,0,0.05);
+  box-shadow: 0 0 3px 1px rgba(0,0,0,0.075), 0 3px 5px rgba(0,0,0,0.15), 1px 2px 2px rgba(0,0,0,0.05);
+  z-index: 3;
+  -webkit-transition: -webkit-transform 0.3s 0.25s cubic-bezier(0.455, 0.03, 0.215, 1.33);
+  -moz-transition: -moz-transform 0.3s 0.25s cubic-bezier(0.455, 0.03, 0.215, 1.33);
+  -o-transition: -o-transform 0.3s 0.25s cubic-bezier(0.455, 0.03, 0.215, 1.33);
+  -ms-transition: -ms-transform 0.3s 0.25s cubic-bezier(0.455, 0.03, 0.215, 1.33);
+  transition: transform 0.3s 0.25s cubic-bezier(0.455, 0.03, 0.215, 1.33);
+}
+.ios-switch.off .handle {
+  -webkit-animation: expand-off 0.3s 0.2s;
+  -moz-animation: expand-off 0.3s 0.2s;
+  -o-animation: expand-off 0.3s 0.2s;
+  -ms-animation: expand-off 0.3s 0.2s;
+  animation: expand-off 0.3s 0.2s;
+  -webkit-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  -o-transform: translate(0px, 0);
+  -ms-transform: translate(0px, 0);
+  transform: translate(0px, 0);
+  -webkit-transform: translate3d(0px, 0, 0);
+  -moz-transform: translate3d(0px, 0, 0);
+  -o-transform: translate3d(0px, 0, 0);
+  -ms-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0);
+}
+.ios-switch.off .on-background {
+  -webkit-transition: 0.3s 0s;
+  -moz-transition: 0.3s 0s;
+  -o-transition: 0.3s 0s;
+  -ms-transition: 0.3s 0s;
+  transition: 0.3s 0s;
+}
+.ios-switch.off .state-background {
+  -webkit-transition: 0.4s 0.25s;
+  -moz-transition: 0.4s 0.25s;
+  -o-transition: 0.4s 0.25s;
+  -ms-transition: 0.4s 0.25s;
+  transition: 0.4s 0.25s;
+}
+.ios-switch.on .handle {
+  -webkit-animation: expand-on 0.3s 0.2s;
+  -moz-animation: expand-on 0.3s 0.2s;
+  -o-animation: expand-on 0.3s 0.2s;
+  -ms-animation: expand-on 0.3s 0.2s;
+  animation: expand-on 0.3s 0.2s;
+  -webkit-transform: translate(30px, 0);
+  -moz-transform: translate(30px, 0);
+  -o-transform: translate(30px, 0);
+  -ms-transform: translate(22px, 0);
+  transform: translate(30px, 0);
+  -webkit-transform: translate3d(20px, 0, 0);
+  -moz-transform: translate3d(20px, 0, 0);
+  -o-transform: translate3d(20px, 0, 0);
+  -ms-transform: translate3d(20px, 0, 0);
+  transform: translate3d(20px, 0, 0);
+}
+
+.ios-switch.on .on-background {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.ios-switch.on .state-background {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+@-moz-keyframes expand-on {
+  0% {
+    width: 20px;
+    left: 2px;
+  }
+  40% {
+    width: 30px;
+    left: -1px;
+  }
+  100% {
+    width: 20px;
+    left: 2px;
+  }
+}
+@-webkit-keyframes expand-on {
+ 0% {
+    width: 20px;
+    left: 2px;
+  }
+  40% {
+    width: 30px;
+    left: -1px;
+  }
+  100% {
+    width: 20px;
+    left: 2px;
+  }
+}
+@-o-keyframes expand-on {
+  0% {
+    width: 20px;
+    left: 2px;
+  }
+  40% {
+    width: 30px;
+    left: -1px;
+  }
+  80% {
+    width: 20px;
+    left: 2px;
+  }
+  100% {
+    width: 20px;
+    left: 2px;
+  }
+}
+@keyframes expand-on {
+  0% {
+    width: 20px;
+    left: 2px;
+  }
+  40% {
+    width: 30px;
+    left: -1px;
+  }
+  80% {
+    width: 20px;
+    left: 2px;
+  }
+  100% {
+    width: 20px;
+    left: 2px;
+  }
+}
+@-moz-keyframes expand-off {
+  0% {
+    width: 20px;
+    left: 2px;
+  }
+  40% {
+    width: 30px;
+    left: -7px;
+  }
+  100% {
+    width: 20px;
+    left: 2px;
+  }
+}
+@-webkit-keyframes expand-off {
+  0% {
+    width: 20px;
+    left: 2px;
+  }
+  40% {
+    width: 30px;
+    left: -7px;
+  }
+  100% {
+    width: 20px;
+    left: 2px;
+  }
+}
+@-o-keyframes expand-off {
+  0% {
+    width: 20px;
+    left: 2px;
+  }
+  40% {
+    width: 30px;
+    left: -7px;
+  }
+  100% {
+    width: 20px;
+    left: 2px;
+  }
+}
+@keyframes expand-off {
+  0% {
+    width: 20px;
+    left: 2px;
+  }
+  40% {
+    width: 30px;
+    left: -7px;
+  }
+  100% {
+    width: 20px;
+    left: 2px;
+  }
+}
+
+
+// These below styles should be removed once the IOS switch is integrated in solar project.
+
+.switch_container{ border:1px solid #d8dbde; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; display:table; background:#ffffff; }
+.switch_btn_align{ padding:6px 20px; color:#252429; cursor:pointer; }
+.switch_btn{ float:left; }
+.switch_btn_align.active{ background:#009966; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; color:#ffffff !important; }
+.switch_btn_align:hover{ color:#008578; }
+
+

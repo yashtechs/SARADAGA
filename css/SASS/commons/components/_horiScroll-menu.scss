@@ -1,0 +1,93 @@
+.scroll_menu {
+	 overflow: hidden;
+	 padding-left: 2em;
+	 padding-right: 2em;
+	 .scroll_btn {
+		 position: absolute;
+		 background: unquote($white-clr);
+		 height: 2.75em;
+		 top: 5px;
+		 bottom: 0;
+		 width: 1.87em;
+		 color: $default-color;
+		 z-index: 30;
+		 text-align: center;
+		 display: none;
+	}
+}
+.scroll_menu_icon {
+	font-size: 0.75em;
+}
+.scroll_menu {
+	.scroll_btn {
+		 &:hover {
+			cursor: pointer;
+		}
+		 &.left {
+			 left: 0;
+			 box-shadow: 0.31em 0 0.37em -0.25em #bec6d0;
+			 -webkit-box-shadow: 0.31em 0 0.37em -0.25em #bec6d0;
+			 -moz-box-shadow: 0.31em 0 0.37em -0.25em #bec6d0;
+		}
+		 &.right {
+			 right: 0;
+			 box-shadow: -0.31em 0 0.37em -0.25em #bec6d0;
+			 -webkit-box-shadow: -0.31em 0 0.37em -0.25em #bec6d0;
+			 -moz-box-shadow: -0.31em 0 0.37em -0.25em #bec6d0;
+		}
+		 &.inactive {
+			 color: $inactive-clr;
+			 cursor: default;
+			 box-shadow: none;
+		}
+		 div {
+			 &.outer_wrapper {
+				 display: table;
+				 height: $default-height;
+				 width: $default-width;
+			}
+			 &.inner_wrapper {
+				 display: table-cell;
+				 vertical-align: middle;
+			}
+		}
+	}
+	 &.show_buttons {
+		 .menu_links {
+			 display: inline;
+			 padding-right: 1.87em;
+		 }
+		.scroll_btn {
+			display: block;
+		}
+	}
+	.scroll_container {
+		width: auto;
+		overflow-x: auto;
+		overflow: hidden;
+		white-space: nowrap;
+		padding-bottom: 1.34em;
+		margin-bottom: -1.34em;
+		padding-left: 0.37em;
+		 &.momentum {
+		 overflow-x: scroll;
+		}
+		.scroll_item {
+			display: inline-block;
+		}
+    }
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+    .scroll_menu {
+        padding-left: 0.62em;
+        padding-right: 0.62em;
+		&.show_buttons{
+			.menu_links{
+				padding-left: 22px;
+			}
+		}
+    }
+}

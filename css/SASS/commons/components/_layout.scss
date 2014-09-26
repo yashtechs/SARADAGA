@@ -1,0 +1,48 @@
+.ls-row {
+	float: left;
+ 	width: $default-width;
+}
+
+.main_wrapper {
+	padding-top: 5em;
+}
+.content_wrapper {
+	padding: 1.86em 1.86em 3.75em;
+	min-height: 38.5em;
+}
+.content_col {
+ 	width: $default-width;
+	float: left;
+	margin-right: -20.4em;
+}
+.fluid {
+	margin-right: 20.4em;
+}
+.margin_col {
+	width: 18.75em;
+	margin-left: 1.56em;
+	min-height: 0.13em;
+}
+.service_col {
+	width: 4.36em;
+	float: left;
+	margin-left: 1.56em;
+	position: relative;
+}
+.login_bg {
+	min-height: 47em;
+	position: relative;
+	padding-top:5em;
+}
+#login_overlayer {
+	min-height: 24em;
+}
+
+/* Margin module spacings */
+
+.margin_col .ls-cmp-wrap .iw_component, .margin_headline {
+	margin-top: 1.25em;
+}
+.margin_col .ls-cmp-wrap:first-child .iw_component, .margin_headline:first-child {
+	margin: 0!important;
+}

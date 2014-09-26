@@ -1,0 +1,55 @@
+.accordionOption_header{
+	position:relative;
+}
+.action_group {
+ 	width: $default-width;
+	display: table;
+}
+.action_icons {
+	 position:absolute;
+	 right:16px;
+	 top:0.54em;
+}
+.action_content_icons{
+	float:right;
+	span{
+		padding:12px 0;
+	}
+}
+.action_icons__global {
+	font-size: 1.25em;
+	cursor: pointer;
+	display: inline-block;
+	padding:6px 0;
+	span{
+		border-right: 1px dotted #969696;
+		padding:0 0.94em 0 0.45em;
+		
+	}
+	&.active{
+		background:#ffffff;
+		border-bottom: 8px solid #ffffff;
+		span{
+			border:none;
+		}
+	}
+	&:last-child {
+		span{
+			border: none;
+		}
+	}
+}
+.cards_transactions{
+	.action_icons {
+		top:20px;
+	}
+}
+
+@media all and (max-width: 47.9375em) {
+	.fontcon-print, .fontcon-pdf, .innerPrint {
+		display: none;
+	}
+	.action_icons {
+		 right:10px;
+	}
+}

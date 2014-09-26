@@ -1,0 +1,122 @@
+.overlay {
+	width: $default-width;
+	height: $default-height;
+	position: absolute;
+	z-index: 9999;
+	background-color: rgba(229, 233, 239, 90%/100%);
+	top: 0;
+	left: 0;
+	position: fixed;
+	display: none;
+}
+.overlay_inner {
+	padding: 2.19em;
+	display: none;
+	.rich_text {
+		 background: unquote($white-bg);
+		 padding: 1.87em;
+	}
+}
+.overlay_container {
+	margin: 0 auto;
+}
+.overlay_header {
+	width: $default-width;
+	@include bg-color($h-overlay-bg,$bg-bottom);
+	position: relative;
+ 	color: unquote($white-clr);
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,0,0);
+}
+.overlay_header_inner {
+	padding: 1.87em;
+}
+.overlay_icon {
+	font-size: 3.75em;
+ 	color: unquote($white-clr-icon);
+ 	@include transform(180deg);
+	margin: 0;
+}
+.overlay_header_colone {
+	float: left;
+	margin-right: 1.88em;
+}
+.overlay_header_coltwo {
+	float: left;
+	font-size: 2em;
+	padding-top: 0.47em;
+	padding-bottom: 0.47em;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.overlay_close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	padding: 1.25em;
+}
+.overlay_btn {
+	display: table;
+ 	width: $default-width;
+	padding-top: 1.88em;
+}
+#timeout {
+	margin-right: 0.37em;
+}
+
+/* Overlay in sizes */
+
+.large {
+	position: relative;
+}
+.overlay_inner {
+	&.large {
+	 	max-width: 80em;
+	}
+	&.small {
+		 max-width: 48.75em;
+		 margin: 0 auto;
+	}
+}
+.small {
+	.region {
+	 	min-height: 5.62em;
+	}
+	.section .section p {
+		display: inline-block;
+		font-size: 1.5em;
+	}
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+	.overlay_inner {
+        padding: 0;
+		.rich_text {
+        	padding: 1.25em 0.62em 0.62em 0.62em;
+    	}
+    }
+    .overlay_header_inner {
+        padding: 0.62em;
+    }
+    .overlay_icon {
+        font-size: 1.87em;
+    }
+    .overlay_header_colone {
+        margin-right: 0.62em;
+    }
+    .overlay_header_coltwo {
+        font-size: 1.125em;
+        padding: 0.31em 0;
+    }
+    .logout_overlay{ 
+		.overlay_btn {
+			position: relative;
+		}
+		.navigation_btns {
+			width: $default-width;
+			float: none;
+    	}
+	}
+}

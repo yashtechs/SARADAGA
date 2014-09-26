@@ -1,0 +1,249 @@
+.wcm-faq {
+	position: absolute;
+	left: -20.31em;
+}
+.widget {
+ 	background: unquote($white-bg);
+	width: 18.75em;
+	position: absolute;
+	height: 31.25em;
+	overflow: hidden;
+	display: none;
+	.accordion_main:last-child {
+		border-bottom: 0;
+		.list_wrapper {
+			border-bottom: 0;
+	    }
+     }
+	.faq_question {
+		font-size: 0.9em;
+		line-height: 1.4;
+	}
+	.accordion_l2__inner {
+		border-top: none;
+		padding: 0.8em 0;
+	}
+	.header_l2 h3 {
+		width: 92%;
+		display: block;
+	}
+	.accordion_main {
+	 	border-top: 1px solid $default-border-clr;
+		&:first-child {
+		 	border-top: 0;
+		}
+	}
+	.module_content {
+		overflow: hidden;
+		height: 27.06em;
+	}
+	.header_l2 {
+		position: relative;
+	 	&:after {
+	 		right: 1.53em;
+		}
+	}
+	.lnk_primary{
+		color: $primary-link-clr;
+		&:hover{
+			color:$primary-hover-clr;
+		}
+	}
+}
+.faq-widget {
+	display: block;
+	z-index: 1;
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
+}
+.widget_header {
+	position: relative;
+	padding: 1.39em;
+ 	border-bottom: 1px solid $default-border-clr;
+ 	@include regular;
+	font-size: 1.12em;
+}
+.widget_header__inner {
+	padding-right: 1.6em;
+	h2{
+		color:#252429;
+	}
+}
+.icon_widget_close {
+	font-size: 0.75em;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	cursor: pointer;
+	padding: 1em;
+}
+
+
+/* FAQ Widget Customised for Login */
+
+.login_bg {
+	 .wcm-faq {
+		 right: 18.75em;
+		 left: auto;
+	}
+	.widget {
+		top: 5em;
+		height: auto;
+		box-shadow: none;
+		border: none;
+		position: absolute !important;
+	}
+}
+.widget_open {
+	margin-left: -18.75em;
+	 #cookiesMessage {
+		 padding: 0.94em;
+		 margin-top: 0.25em;
+		 .cookies_close {
+			 top: 1.07em;
+			 right: 1.07em;
+		}
+	}
+}
+.wcm-messages, .content_row {
+ 	@include transition(all, 0.3s, ease-in-out);
+}
+
+/* Sticky widget */
+
+.home {
+	 .sticky_widget, .wcm-service-nav {
+	 	margin-top: 2.5em;
+	}
+}
+
+/* Static link & text Widget */
+
+.static_link {
+	padding: 1.87em;
+	border-top: 1px solid #d8dbde;
+}
+.static_text {
+	padding: 1.87em;
+}
+
+// 320 - 1023
+
+@media all and (min-width: 20em) and (max-width: 63.9375em) {
+	.wcm-faq {
+	  position: relative;
+	}
+	
+	.widget {
+	  position: absolute !important;
+	  top: -19px !important;
+	  right: 10px !important;
+	  -moz-box-shadow: 0 10px 3px rgba(0, 0, 0, 60%/100%);
+	  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 60%/100%);
+	  box-shadow: 0 1px 3px rgba(0, 0, 0, 60%/100%);
+	  border-top: 3px solid $primarycolor;
+	}
+	.faq_pointer::after {
+	  position: absolute;
+	  top: -1.75em;
+	  display: block;
+	  width: 0;
+	  height: 0;
+	  border-bottom: 9px solid #008E76;
+	  border-right: 9px solid transparent;
+	  border-left: 9px solid transparent;
+	  content: "";
+	  z-index: 999;
+	  margin-left: -0.25em;
+	}
+	
+	.login_bg .widget {
+	  margin-top: -1.25em;
+	}
+}
+
+// 320 - 479
+
+@media all and (min-width: 20em) and (max-width: 29.9375em) {
+	.widget {
+	  right: 0 !important;
+	  height: 18.75em;
+	  .module_content{height:0.06em;}
+	}
+	.module_content{min-height:14.3em !important;}
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+    .widget_open {
+        width: $default-width;
+        margin: 0;
+    }
+
+    .home .sticky_widget {
+        margin-top: 0;
+    }
+
+    .widget .header_l2:after {
+        right: 0.62em;
+    }
+}
+
+// 1023
+
+@media all and (max-width: 63.9375em) {
+  .service_col {
+    top: 3.75em;
+  }
+  .wcm-faq {
+    top: 1.87em;
+  }
+  .home .sticky_widget {
+    top: -1.19em !important;
+     margin-top: 0;
+  }
+}
+
+// 1279
+
+@media all and (max-width: 79.9375em) {
+	.wcm-faq {
+		left: 0;
+	}
+	.login_bg {
+		.wcm-faq {
+			right: 0.87em;
+			top: 0;
+			position: absolute;
+		}
+		.widget {
+			right: -0.87em !important;
+			top: 5em !important;
+		}
+	}
+}
+
+// 1240 - 1279
+@media all and (max-width: 64em) and (max-width: 79.9375em){
+	.widget{
+		right:31px;
+		margin-top:-1px;
+	}
+	
+}
+// min 1280
+
+@media all and (min-width: 80em) {
+	.login_bg {
+		.wcm-faq {
+		  top: 0;
+		}
+		.widget {
+		  top: 5em !important;
+		}
+	}
+	.widget_open {
+		margin-left: 0;
+		width: 76.6%;
+	}
+}

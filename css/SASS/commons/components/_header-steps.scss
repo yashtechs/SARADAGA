@@ -1,0 +1,41 @@
+
+.module_steps {
+	float: right;
+	display: block;
+	min-width:8.63em;
+}
+.module_steps_block li {
+	float: left;
+	text-align: center;
+	margin-left: 0.62em;
+	 &:first-child {
+	 	margin: 0;
+	}
+}
+.module_steps__digit {
+ 	color: unquote($white-clr);
+	font-size: 1.25em;
+ 	@include regular;
+	border: 2px solid #ffffff;
+	text-align: center;
+	display: inline-block;
+	padding: 0.62em 0.75em;
+ 	@include radius-steps($step-tleft,$step-tright,$step-bleft,$step-bright);
+ 	&.active {
+		color: $active-step-color;
+		background:#ffffff;
+	}
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+	.module_steps__block {
+		float: right;
+	}
+	
+	.module_steps__digit {
+		padding: 0.62em 1em;
+		font-size: 0.87em;
+	}
+}

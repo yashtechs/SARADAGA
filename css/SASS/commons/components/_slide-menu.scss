@@ -1,0 +1,124 @@
+.menu_icon{ 
+	z-index: 22; 
+	position: absolute; 
+	top: 11px; 
+	left: 0;
+	font-size: 1.5em;
+	color: $default-clr-icon; 
+	padding:6px 0; 
+	width:2.60em; 
+}
+.offcanvas_menu { 
+	z-index: 1; 
+	width:265px; 
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0; 
+	background:unquote($white-bg); 
+	padding:0.87em; 
+	overflow-y:scroll;
+	-webkit-transform: translate3d(0,0,0);
+	height: 100%!important;
+	ul.navigation_control { 
+		padding: 0; 
+		margin: 0;
+		position: relative;
+		li{
+			font-size: 1.12em; 
+			position: relative;
+			float:none; 
+			padding:10px 0; 
+			border:none;
+			padding:0;
+			a{ 
+				padding:0; 
+				background-color: transparent; 
+				display:block; 
+				border-bottom:1px solid $default-border-clr; 
+				padding:0.62em 0; 
+				line-height: 1.2;
+				white-space: initial;
+				@include regular;
+				&:last-child{
+					border-bottom:1px solid $default-border-clr;
+				}
+			}
+			ul{ 
+				position:relative; 
+				top:0; 
+				background-color:transparent;
+				box-shadow: none; 
+				padding:0;
+				display: block !important;
+				li{
+				> ul{ 
+						margin:0;
+						box-shadow: none;
+				    }
+				a{ 
+					@include light;
+					padding-left:0.87em; 
+					&:hover{
+						 border-bottom: 1px solid $default-border-clr;
+					}
+				 }	
+			   }
+			}	
+		}
+	}
+	.indicator_icon{
+		position:absolute; 
+		top:0.62em;
+		color:$indicator-clr-icon; 
+		right:0; 
+		display:none; 
+		font-size:1.12em;
+	}
+	li ul li .touch-button { top:0.94em;}
+}
+.canvas_container {
+	margin: 0;
+	position: relative;
+	z-index: 2;
+	@include bg-color($mainbg-top,$mainbg-bottom);
+	width:100%!important;
+	height:100% !important;
+}
+.canvas_opened{
+	overflow:hidden;
+	.canvas_container{
+		box-shadow: rgba(0, 0, 0, 20%/100%) 0px 0px 1em;
+		-webkit-box-shadow: rgba(0, 0, 0, 20%/100%) 0px 0px 1em;
+		-moz-box-shadow: rgba(0, 0, 0, 20%/100%) 0px 0px 1em;
+	}
+	.offcanvas_menu{
+		position:fixed;
+	}
+}
+
+.cover{
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255,255,255,0);
+	z-index: 600;
+}
+
+// 1023
+@media all and (max-width: 63.9375em) {	
+	.canvas_opened{
+		.site_header{
+			left:265px;
+		}
+	}
+}
+
+// 1024
+@media all and (min-width: 64em){
+	
+}

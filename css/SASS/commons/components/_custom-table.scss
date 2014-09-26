@@ -1,0 +1,18 @@
+/* Custom table */
+.custom_table{ border:1px dotted #d8dbde;}
+.custom_table ul{display:table; width:100%;}
+.custom_table ul li{display:table-cell; padding:10px; vertical-align:middle; font-family: 'regular', arial; width:20%; line-height:1.2; position:relative;}
+.table_summary{ padding:15px 10px;}
+.table_header{ background:#d2d8e1;}
+ul.table_switch{ font-size:14px; padding-top:8px;list-style:disc;}
+ul.table_switch li{padding:0 10px; display:inline-table;}
+ul.table_switch li:first-child{ padding-left:0;}
+.table_switch li.selected{ color:#009966; text-decoration:underline; cursor:pointer;}
+.table_switch li:first-child{ border-right:1px dotted #252429;}
+.table_content ul{ background:#f4f5f6;}
+.table_content ul:nth-child(odd){ background:#ffffff;}
+.table_content ul li{font-family: 'light', arial;}
+
+
+
+// This file will be removed once the dev code is updated with bootstrap table.

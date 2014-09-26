@@ -1,0 +1,30 @@
+.login_bg .faq_header {
+	 background-color: unquote($white-bg);
+	 color: $default-color;
+}
+.faq_question {
+ 	color:$link-indication;
+	font-size: 1.12em;
+	line-height: 1;
+}
+.faq_answer {
+	line-height: 1.37em;
+	padding-bottom: 1.25em;
+	padding-left: 0;
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+    .faq .accordion_l2__inner {
+        padding: 15px 0;
+    }
+    .faq_question {
+        font-size: 0.87em;
+    }
+    .faq_answer {
+        line-height: 1.12em;
+        padding-bottom: 0.94em;
+        border-bottom: 0;
+    }
+}

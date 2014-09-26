@@ -1,0 +1,105 @@
+.tabs_row {
+	padding: 0 0.62em;
+	border-bottom:6px solid unquote($white-clr);
+}
+.eb_tabs {
+	margin: 0;
+	padding: 0;
+	display: table;
+	border-spacing:4px 0;
+	position: relative;
+	left: -4px;
+}
+.eb_tab_txt {
+	min-width: 6.25em;
+	cursor: pointer;
+	border-bottom: none;
+	min-height: 3.25em;
+	display: table-cell;
+	vertical-align: middle;
+	max-width: 10.31em;
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,0,0);
+	&.active {
+		position: relative;
+		top: 0.10em;
+	 	background: unquote($white-bg)!important;
+	 	color: $default-color;
+	}
+}
+.eb_tab_inner {
+	text-decoration: none;
+	padding: 1.19em 1.25em 1em 1.25em;
+	font-size: 1em;
+	display: block;
+	span {
+	 	display: inline-block;
+	}
+}
+.eb_tab_txt.active span {
+ 	color: $default-color;
+}
+.tabs_eb_content_container {
+	float: left;
+ 	width: $default-width;
+}
+
+
+// Tabs Themes 
+
+.tab_bordered {
+	.eb_tab_txt{
+		border: 1px solid #d2d8e1;
+	 	color: $link-indication;
+		border-bottom: none;
+		&:hover span{
+			text-decoration:underline;
+		}
+		&.active{
+			&:hover span{
+				text-decoration:none;
+			}
+		}
+	}
+}
+.tab_colored{
+	&.accounts{
+		.eb_tab_txt{
+			background: $accounts-modtab-bg;
+		 	color: unquote($white-clr);
+			@include regular;
+		}
+	}
+	&.cards{
+		.eb_tab_txt{
+			background: $cards-modtab-bg;
+		 	color: unquote($white-clr);
+			font-weight: 600;
+		}
+	}
+	&.functions{
+		.eb_tab_txt{
+			background: $function-modtab-bg;
+		 	color: unquote($white-clr);
+			font-weight: 600;
+		}
+	}
+}
+
+.tab_header{
+	.tabs_row{
+		padding:15px 30px 0 30px;
+		border-bottom:1px solid $default-border-clr;
+		margin-bottom:20px;
+	}
+	.eb_tab_txt{
+		max-width: initial;
+	}
+}
+
+@media all and (max-width: 29.9375em){
+	.tab_header{
+		.tabs_row{
+			padding:10px;
+		}
+	}	
+}

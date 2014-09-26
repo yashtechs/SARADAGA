@@ -1,0 +1,138 @@
+/* Function & Service module headers */
+.module_main_header{
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,0,0);
+}
+.module_header {
+ 	width: $default-width;
+	padding: 1.87em;
+	top: 0;
+	position: relative;
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,0,0);
+	@include clearfix;
+	&.flyout{
+		min-height:8.75em;
+		&.addBtn{
+			min-height:12.5em;
+		}
+	}
+}
+.module_header__inner {
+	display: table;
+ 	width: $default-width;
+}
+.h_col {
+	width: 50%;
+	float: left;
+	min-height: 0.12em;
+}
+.module_content {
+	position: relative;
+ 	background: unquote($white-bg);
+	min-height: 21.94em;
+	@include border-radius-all(0,0,$glb-bleft-radius,$glb-bright-radius)
+}
+.module_row {
+ 	width: $default-width;
+	display: table;
+	 color: unquote($white-clr);
+	 label {
+		 float: left;
+		 margin: 0.69em 0.31em 0 0;
+		 text-transform: uppercase;
+		 white-space: nowrap;
+		 min-width: 0.62em;
+	}
+}
+.module_semirow {
+	text-align: right;
+ 	color: unquote($white-clr);
+	margin-top: 0.25em;
+	span {
+	 	display: inline-block;
+	}
+}
+.title_column{
+	display:table-cell;
+	vertical-align: middle;
+}
+.module_title {
+	font-size: 2em;
+	text-transform: uppercase;
+ 	color: unquote($white-clr);
+	line-height: 1.14em;
+	font-weight: 100;
+	float: left;
+}
+.module_operation_title{
+	color: unquote($white-bg);
+	width: $default-width;
+	clear: both;
+}
+.module_selected_value {
+	font-size: 2.25em;
+	text-transform: uppercase;
+ 	color: unquote($white-clr);
+	line-height: 1.14em;
+	font-weight: 100;
+	font-size: 1.87em;
+	float: right;
+	span {
+	 	display: inline-block;
+	}
+}
+
+/* Module header themes */
+
+.h_accounts {
+	@include bg-color($h-accounts-bg,$bg-bottom);
+}
+.h_cards {
+	@include bg-color($h-cards-bg,$bg-bottom);
+}
+.h_functions {
+	@include bg-color($h-function-bg,$bg-bottom);
+}
+.h_services {
+	@include bg-color($h-services-bg,$bg-bottom);
+}
+.module_bg {
+ 	background: unquote($white-bg);
+}
+
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+    .module_header {
+        padding:0.62em;
+        min-height:3.75em;
+        &.lflyout{
+        	min-height:5em;
+			&.addBtn{
+				min-height:6.875em;
+			}
+        }
+        &.flyout{
+			min-height:7em;
+			&.addBtn{
+				min-height:6.875em;
+			}
+		}
+    }
+    .module_row label {
+        float: right;
+        margin: 0;
+        font-size: 0.62em;
+    }
+    .module_selected_value {
+        font-size: 1em;
+        width: 100%;
+        text-align: right;
+    }
+    .module_semirow {
+        font-size: 0.87em;
+    }
+    .module_title {
+        font-size: 1.12em;
+    }
+}

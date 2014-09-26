@@ -1,0 +1,33 @@
+html {
+ width: $default-width;
+	height: auto;
+	background: #eef1f5;
+	overflow-x:hidden;
+}
+body {
+ width: $default-width;
+	height: auto;
+	@include bg-color-main($mainbg-top,$mainbg-bottom);
+	position: relative;
+	@include clearfix();
+}
+.portal_wrapper {
+	 width: $default-width;
+	 height: $default-height;
+	 font-size: 1em;
+	 line-height: 1.12em;
+	 color: $default-color;
+	 @include bg-color-main($mainbg-top,$mainbg-bottom);
+	 @include light;
+	 -webkit-touch-callout: none;
+	 @include text-size-adjust(none);
+	 @include font-smoothing(antialiased);
+}
+.no_scroll, .no_scroll body {
+	overflow: hidden;
+ width: $default-width;
+ height:$default-height;
+}
+.no_hscroll, .no_hscroll .portal_wrapper {
+	overflow-x: hidden;
+}

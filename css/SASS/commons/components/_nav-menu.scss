@@ -1,0 +1,122 @@
+.menu_navigation, .navigation{ 
+	float:left;
+}
+.menu_nav_small{ 
+	display:none; 
+	cursor:pointer; 
+	padding:14px;
+	font-size:1.12em; 
+	text-transform:uppercase; 
+	float:left;
+}
+.navigation_inner{ 
+	padding-top:1.125em;
+}
+.navigation_control{
+	padding-left:1em;
+	li{ 
+		box-sizing:border-box; 
+		float:left; 
+		font-size:1.12em; 
+		text-transform:uppercase; 
+		padding:0 0.87em; 
+		border-right:1px dotted $default-border-clr; 
+		position: relative;
+		&:last-child{ 
+			border:none;
+			padding-right:0;
+		}
+		.touch-button{ 
+			display:none;
+		}
+		a{ 
+			position:relative;
+			padding-bottom:1em; 
+			z-index:2;	
+			&.selected-page {
+				border-bottom: 5px solid #252429;
+			}			
+			&:hover{ 
+				border-bottom:5px solid $hover;
+				color:$hover;
+		  	}
+		}
+		 ul{
+			 position: absolute;
+			 top: 40px;
+			 left: 0;
+			 background: #ffffff;
+			 box-shadow: 0 3px 6px -1px $dropdown-shadow;
+			 -webkit-box-shadow: 0 3px 6px -1px $dropdown-shadow;
+			 -moz-box-shadow: 0 3px 6px -1px $dropdown-shadow;
+			 padding: 8px 0 4px 0;
+			 display:none;
+			 @include border-radius-all(0,0,$glb-bleft-radius,$glb-bright-radius);
+			 li{
+				 width: 100%;
+				 border: none;
+				 padding: 0 18px;
+				 text-transform: capitalize;
+				 white-space: nowrap;
+				 a{ 
+					 font-size:18px; 
+					 display:block; 
+					 padding:8px 0;
+					 &:hover{ 
+						 text-decoration:underline;
+						 border-bottom:none;
+					 }
+					 &.selected-page {
+						color:$primarycolor;
+						border-bottom:none;
+					}
+				 }
+				 &:last-child{ 
+				 	a{
+						border-bottom:none;
+					}
+				 }
+				 > ul {
+					 margin-left: 100%;
+					 top: -10px;
+					 box-shadow: 0 4px 6px -4px $dropdown-shadow;
+					 -webkit-box-shadow: 0 4px 6px -4px $dropdown-shadow;
+					 -moz-box-shadow: 0 4px 6px -4px $dropdown-shadow;
+				 }
+				 .touch-button {
+					// position: absolute;
+//					 z-index: 999;
+//					 top: 6px;
+//					 right: 15px;
+//					 display: inline-block;
+//					 text-align: center; 
+//					 font-size:1em; 
+//					 color:$slevel-menu-icon;
+display:none;
+				 }
+			 }
+		 }
+	}
+}
+.indicator_icon{
+	position:absolute; 
+	top:-0.4em;
+	color:$indicator-clr-icon; 
+	right:-1.2em; 
+	display:none;
+}
+
+// 1023
+
+@media all and (max-width: 63.9375em) {
+	.menu_nav_small {
+		display: block;
+		cursor: pointer;
+		margin-left: 1em;
+		padding: 0.65em 0;
+		font-size: 1.12em;
+		text-transform: uppercase;
+	}
+	
+	.navigation_control li a.selected-page{ color:#009966; border:none;} 
+}

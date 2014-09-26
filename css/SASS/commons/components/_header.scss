@@ -1,0 +1,95 @@
+// Navigation header
+.site_header, #siteHeaderError {
+ 	width: $default-width;
+	height: 5em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+ 	@include transition-nonlinear(all, 500ms);
+}
+.site_header__inner, #siteHeaderErrorInner {
+	padding: 1.25em 1.88em;
+ 	background: unquote($navheader-bg);
+	box-shadow: 0 4px 4px -6px $header-shadow;
+	-webkit-box-shadow: 0 4px 4px -6px $header-shadow;
+	-moz-box-shadow: 0 4px 4px -6px $header-shadow;
+	-ms-box-shadow: 0 4px 4px -6px $header-shadow;
+	height:100%;
+}
+#webbankingUnauthenticated{
+	.site_header__inner, #siteHeaderErrorInner{
+		background:unquote($navheader-unauth);
+	}
+}
+#siteHeaderError a {
+	display: block;
+	height: 2.5em;
+}
+.nav-up {
+	top: -5em;
+	opacity: 0;
+}
+.iphone.safari6 .nav-up, .unknown.safari6 .nav-up {
+	z-index: -1;
+	outline: 1px solid rgba(0,0,0,0);
+}
+.fixfixed {
+	 .site_header {
+		 position: absolute;
+		 top: 0 !important;
+	}
+	.warning_area {
+		position: absolute;
+		top: 5em;
+	}
+}
+
+// Header customised for 404
+
+#siteHeaderErrorInner {
+	 width: $default-width;
+	 display: table;
+}
+#header404 {
+	float: left;
+}
+
+// Model 2 exceptional header
+
+.brand_exc{ 
+	.site_header{height:auto;}
+	.site_logotype{
+		display:none;
+	}
+	.site_header__inner, #siteHeaderErrorInner{
+		padding:0.84em 1.88em;
+	}
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+	.wcm-language {
+        padding: 0.75em 0 0.37em 0;
+    }
+
+    .fixfixed .warning_area {
+        position: absolute;
+        top: 3.75em;
+    }
+}
+
+// 1023
+
+@media all and (max-width: 63.9375em) {
+	.site_header {
+		height: 3.75em;
+	}
+	.site_header__inner {
+		padding: 0.6em;
+	}
+	.menu_navigation{ 
+		display:none;
+	}
+}

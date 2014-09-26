@@ -1,0 +1,220 @@
+/* Form Standards */ 
+
+.form_container {
+ 	width: $default-width;
+}
+.form_title {
+	font-size: 1.5em;
+	padding-bottom: 0.4em;
+}
+.form_container .error_summary {
+	margin-left: 20%;
+	width: 80%;
+}
+.form_inner {
+	padding: 1.875em;
+	h5 {
+		 width: 80%;
+		 padding: 0 0 1.87em 0;
+		 @include light;
+		 font-size: 0.87em;
+	}
+}
+.form_fields {
+ 	width: $default-width;
+	display: table;
+	padding-bottom: 0.94em;
+}
+.form_labels {
+ 	@include regular;
+	font-size: 1em;
+	width: 20%;
+	padding: 0.62em 0;
+	float: left;
+	margin-right: 1em;
+}
+.form_details {
+	float: left;
+	width: 60%;
+}
+.field_space{
+	padding: 0.62em 0;
+}
+
+/* Select field selected items */ 
+
+.form_details {
+	 .selected-item {
+		 padding-top: 0.75em;
+		 display: none;
+		 color: $select-color;;
+		 line-height: 1em;
+	}
+	.selected_iban {
+		display: inline-block;
+		float: left;
+	}
+}
+.iban-label {
+	float: left;
+}
+
+
+/* Calendar icon and input */ 
+
+.trig_datepicker {
+	 background: unquote($white-bg);
+	float: right;
+	padding: 0.54em 0 0.48em;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 999;
+	color:$default-clr-icon;
+	span {
+	 border-left: 1px solid #d8dbde;
+	 padding: 0 0.56em;
+	}
+}
+
+/* ISO or text and input */ 
+
+.text_input {
+	 input::-ms-clear {
+	 	display: none;
+	}
+	.default_input_field span {
+	 	color: $select-color;
+		padding-top: 0.31em;
+		padding-left: 0.75em;
+	 	background: unquote($white-bg);
+		float: right;
+		position: absolute;
+		right: 0.75em;
+		top: 0.56em;
+		z-index: 999;
+	}
+}
+
+/* Customized for SEPA */ 
+
+.form_fields {
+	&.message_field {
+	 	padding-bottom: 0.62em;
+	}
+}
+.select_message__type input[type="text"] {
+	width: 0px !important;
+	opacity: 0 !important;
+	cursor: pointer;
+}
+.select_message__structured, .select_message__freetext, .select_message__eurostructured {
+	margin-top: 0.94em;
+}
+
+/* Struct pattern input*/ 
+
+.lstruct_pattern {
+	padding-left: 0.75em;
+}
+.rstruct_pattern {
+	padding-right: 0.75em;
+	margin-left: -0.19em;
+}
+input.mask_pattern {
+	width: 8.38em;
+	padding: 0.69em 0;
+	display: inline-block;
+	&::-ms-clear {
+		display: none;
+	}
+}
+
+/* Unwanted */ 
+
+.to_field {
+	.show_active {
+	 	display: inline-block !important;
+	}
+	.selected_amount {
+		display: none;
+	}
+}
+.selected_amount span:nth-child(2) {
+	margin-right: 0.31em;
+}
+
+/* Form field with Tabs */ 
+
+.eb_tab_content {
+	border: 1px solid #d2d8e1;
+	@include border-radius-all(0,$glb-tright-radius,$glb-bright-radius,$glb-bright-radius);
+}
+.eb_tab_content__inner {
+	padding: 1.2em 0.62em;
+}
+.eb_unknown_content {
+	display: table;
+ 	width: $default-width;
+}
+.eb_unknown_input {
+	padding-top: 0.62em;
+	&:first-child {
+		padding-top: 0;
+	}
+}
+.unknown_alias, .unknown_input input {
+ 	width: $default-width;
+}
+.save_benefeciary {
+	padding: 0.62em 0;
+}
+.save_benefeciary__text {
+	margin-left: 0.25em;
+	font-size: 1em;
+}
+.unknown_labels {
+ 	@include light;
+	font-size: 1em;
+	padding-bottom: 0.62em;
+	display: block;
+}
+.fontcon-calendar {
+	z-index: 999 !important;
+	font-size: 1.37em;
+}
+.unknown_input .disabled {
+	color: #252429;
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+	.form_title {
+		font-size: 1.14em;
+	}
+	.form_fields{
+		padding-bottom:0.75em;
+	}
+	.form_labels{
+		width:100%;
+		margin-right:0;
+	}
+	.form_inner {
+        padding: 0.62em;
+		h5 {
+			width: 100%;
+			padding-bottom: 0.87em;
+		}
+    }
+    .field_error .form_labels {
+        margin-top: 0;
+    }
+    .form_container .error_summary {
+        margin: 0;
+        width: 100%;
+    }
+    .field_space{
+		padding: 0;
+	}
+}

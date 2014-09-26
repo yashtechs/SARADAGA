@@ -1,0 +1,77 @@
+.margin_ad {
+	position: relative;
+	overflow: hidden;
+	height: 10.62em;
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
+	.headline_picture{
+		height: 10.625em;
+	}
+}
+.hover_content {
+ 	background: $hover-bg;
+	text-align: center;
+	cursor: pointer;
+	z-index: 10;
+	position: relative;
+	height: 10.62em;
+}
+.hover_content_inner {
+	padding: 1.56em;
+ 	color: unquote($white-clr);;
+}
+.hover_content p {
+	line-height: 1.5em;
+	font-size: 1.13em;
+}
+.hoverteaser_icon {
+	font-size: 3em;
+	padding-top: 0.33em;
+	display: block;
+}
+/*Social ad */
+
+.twitter_icon {
+ 	color: $icon-twitter;
+}
+.facebook_icon {
+ 	color: $icon-facebook;
+}
+.youtube_icon {
+ 	color: $icon-youtube;
+}
+.headline_social {
+	padding-top: 1.25em;
+	 li {
+		 display: table;
+		 border-bottom: 1px dotted $default-border-clr;
+		 width: $default-width;
+		 padding-bottom: 0.62em;
+		 margin-bottom: 0.62em;
+		 &:last-child {
+		 	border-bottom: none;
+		}
+	}
+}
+.socialad_icon {
+	font-size: 2.19em;
+	float: left;
+}
+.headline_sociallink {
+	 float: left;
+	 padding: 0.56em 0 0.56em 0.56em;
+	 color: $link-indication;
+		 &:hover {
+		 text-decoration: underline !important;
+	}
+}
+
+// Work around solution has been applied for the Logoff banners.
+.content_row{
+	 .wcm-banner{
+		width:100%;
+		div{
+			width:300px;
+			margin:0 auto;
+		}
+	}	
+}

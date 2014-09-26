@@ -1,0 +1,37 @@
+
+.error_summary {
+ 	width: $default-width;
+ 	color: $error-clr;
+ 	@include regular;
+	display: none;
+	padding-bottom: 1.875em;
+	line-height: 1.38;
+}
+.error_summary_items {
+	list-style: disc inside none;
+	padding-top: 0.625em;
+}
+.field_error_message {
+ 	color: $error-clr;
+	line-height: 1.12;
+	font-size: 1em;
+	padding-bottom: 0.75em;
+	display: none;
+}
+.error_summary .field_error_message {
+	display: block;
+}
+.field_error {
+	 .default_input_field, textarea {
+	 	border: 1px solid #e53012;
+	}
+}
+.message_field.field_error .default_input_field:nth-child(1) {
+ 	border: 1px solid $default-border-clr;
+}
+.field_error .form_labels {
+	margin-top: 2.188em;
+}
+.message_field.field_error .form_labels {
+	margin-top: 0;
+}

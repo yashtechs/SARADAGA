@@ -1,0 +1,275 @@
+/* MR2 V2 Login */
+.authentication{
+	margin:0 auto; 
+	display:table; 
+	position:relative; 
+	font-family: 'light',arial;
+	width:41.75em;
+	&.new_profile{
+		margin-top:60px;
+		.l_col{
+			padding-bottom: 2.375em;
+			&.exp{
+				padding-bottom:1.25em;
+			}
+		}
+	}
+	&.known_profile{
+		margin-top:30px;
+	}
+}
+
+.form_wrapper_l2{
+	display:inline-block;
+	width:100%;
+}
+.form2_label {
+	font-family: 'regular', arial;
+	line-height: 0.82em;
+	color:#919193;
+	position: relative;
+	padding:0 1em 0.5em 0;
+}
+
+.l_col{
+	width:50%;
+	float:left;
+	padding-bottom:1.25em;
+	&:nth-child(odd){ 
+		padding-right:0.62em;
+	}
+	&:nth-child(even){ 
+		padding-left:0.62em;
+	}
+}
+
+.save_profile {
+	display: table;
+	position:relative;
+	padding-right:1.56em !important;
+}
+
+.profile_name{
+	display:table-cell;
+	vertical-align:middle;
+	font-size:1.25em;
+}
+
+.save_profile__text{
+	font-family: 'regular', arial;
+	margin:-2px 0 0 0.37em;
+	float: left;
+	width: 80%;
+}
+.identification_nav{
+	padding:0 0 0.62em 0.62em !important;
+	float:right;
+}
+
+/* help & Tooltip */
+/* remove this styles for tooltip*/
+
+.help_icon{
+	position:relative; 
+	color:$help_icon; 
+	top:2px; 
+	cursor:help;
+	margin-left:0.62em;
+	&.exp{
+		position:absolute;
+		right:10px;
+	}
+}
+
+.identification_ucr{ padding-top:0.75em;}
+
+/* Known Profile */
+.saved_data{ background:#fff;  position:relative;-webkit-transition: all 300ms linear 0s;-moz-transition: all 300ms linear 0s;-ms-transition: all 300ms linear 0s;transition: all 300ms linear 0s;@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);}
+.saved_data__inner.hvr:hover{ background:$primary2-btn-hover; color:#ffffff;font-family: 'regular',arial; cursor:pointer;}
+.saved_data__inner.hvr:hover .user_info{color:#ffffff;}
+.saved_data__inner.hvr:hover .wipe_saved{color:#ffffff;}
+.saved_data__inner{ padding:0.93em;}
+.selected_profile_details {padding: 0.31em 0;width: 100%;display: table;}
+.user_info{font-family: 'regular',arial;font-size: 1em;color: #252429; width:100%; padding-right:20px;}
+.profile_label {float: left;margin-right: 0.25em;display: inline;}
+
+// Save inline data 
+
+.saved_inline_data{ padding:9px 15px;}
+.saved_inline_details{
+	width:41.75em;
+	margin:0 auto;
+	li{ 
+		display:inline-block; 
+		padding:4px 12px; 
+		border-right:1px solid #d8dbde;
+		label{
+			@include regular;
+		}
+		&:first-child{ 
+			padding-left:0;
+		}
+		&:last-child{
+			border-right:none; 
+			padding-right:0;
+		}
+	}
+}
+
+.form2_header{
+	p{
+		font-family: 'regular', arial;
+		padding-bottom: 0.75em;
+	}
+	&.profile{
+		width:100%;
+		display:table;
+		font-family: 'regular', arial;
+		padding-bottom: 0.75em;
+		margin-bottom: 0.75em;
+		border-bottom: 1px solid #d8dbde;
+		span{
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+}
+
+/*Wipe btn*/
+.wipe_saved { 
+	cursor: pointer; 
+	line-height: 0.85em; 
+	position: absolute; 
+	right: 0; 
+	top: 0; 
+	padding: 1em; 
+	font-size: 0.75em; 
+	color: #f66900; 
+	z-index:200;
+	-webkit-transition: all 200ms linear 0s;
+	-moz-transition: all 200ms linear 0s;
+	-ms-transition: all 200ms linear 0s;
+	transition: all 200ms linear 0s;
+	&:hover{
+		background:#f66900; 
+		color:#ffffff;
+	}
+} 
+
+
+/* Contract selection */
+.contract_choice{width:100%;display:table;}
+.contract_information{ padding:20px 0;font-family: 'regular',arial;}
+
+/* Logout */
+
+.logout_msg{ height:300px; background:$hero-bg;}
+#logoutMsg{ width:768px; margin:0 auto; padding-top:130px; color:#ffffff;}
+
+.btn_profile{
+	float: right;
+	background: $primary2-btn-clr;
+	color: white;
+	padding: 6px 15px;
+	margin: 0;
+	cursor: pointer;
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
+}
+.profile_icon{ 
+	color:unquote($white-clr-primary); 
+	font-size:22px;
+	vertical-align: middle;
+}
+.profile_txt{
+	line-height: 1;
+	font-size: 1.25em;
+	font-family: 'regular', arial;
+	position: relative;
+	top: 2px;
+}
+
+/* Breakpoint 479 */
+@media all and (max-width: 29.9375em) {
+	.authentication, .saved_inline_details{
+		width:300px !important;
+	}
+}
+
+/* Breakpoint 767 */
+@media all and (max-width: 47.9375em) {
+	.authentication{
+		width:22.81em;
+		&.new_profile{
+			margin-top:1.25em;
+			.l_col{
+				padding-bottom: 0.94em;
+			}
+		}
+	}
+	.s_row{
+		width:100%;
+		padding-bottom:0.94em;
+		&:nth-child(odd){ 
+			padding-right:0;
+		}
+		&:nth-child(even){ 
+			padding-left:0;
+		}
+	}
+	
+	/*.tooltip_secondary{
+		left: -175px;
+		top: -130px;
+		&:before {
+			border-width: 10px 12px 0 12px;
+			border-color: #252429 transparent transparent transparent;
+			right: 6px;
+			top: 100%;
+		}
+	}*/
+	.identification_nav{
+		padding:0.62em 0 0.62em 0 !important;
+	}
+	.logout_msg{
+		height:150px;
+  	}
+  	#logoutMsg {
+	    width: 100%;
+	    text-align:center;
+	    padding:60px 10px;
+	    h1 {
+	      font-size: 1.12em;
+	      padding-top:4px;
+	      @include regular;
+	    }
+  }
+  .saved_inline_details{ 
+  		width:365px;
+		font-size: 0.87em;
+		li{ padding:2px 0; width:100%;border:none;}
+  }
+  
+  /* Identification */
+	.authentication {
+		padding-top: 0.62em;
+	}
+    .identification__inner {
+        padding: 1.25em 0;
+    }
+/* Intermediate */
+    .intermediate_content {
+        padding: 0.62em;
+    }
+
+    .intermediate_content h4 {
+        font-size: 1.12em;
+        padding-bottom: 0.94em;
+    }
+    .btn_profile{
+    	padding:6px 10px;
+    }
+    .form2_header.profile span.profile_txt{
+    	display:none;
+    }
+}
+

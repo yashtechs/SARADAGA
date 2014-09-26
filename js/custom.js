@@ -3,6 +3,11 @@ var viewport = offcanvas = {
 };
 
 $(document).ready(function () {
+	$('label[for]').on('click', function (e) {
+		var target = window[this.htmlFor];
+		target.checked = !target.checked;
+		e.preventDefault();
+	});
 	//cover = $('<div class="cover"/>');
 //	$('.canvas_container').find('.main_wrapper').append(cover);
 //	

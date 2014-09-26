@@ -1,0 +1,259 @@
+/* Flyout */
+
+.flyout_selection {
+	width: 23em;
+	position: relative;
+	.dropdown_arrow::after{
+		border:none!important; // will be deleted once updated code/
+	}
+	&.flyout_active {
+		 .arrow_icon:before{
+		 	content: '\e62a';
+		 	color:#252429 !important;
+		 }
+		 .flyout_container {
+			 width:$default-width;
+			 background:unquote($white-bg);
+			 height:416px;
+			 position:absolute;
+			 z-index:9999;
+			 @include transition(height, 0.4s, ease-in-out);
+			 top: -1.25em;
+			 left: -1.25em;
+			 border:1px solid $default-border-clr;
+			  @include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
+		}
+		.selected_details {
+			padding: 1.25em;
+		}
+		.functions_info, .functions_title {
+		 	color: $title-clr;
+		}
+	}
+}
+.selected_details {
+ 	width: $default-width;
+	cursor: default;
+	display:inline-block;
+	.arrow_icon{display:none;}
+	&.dropdown_arrow{
+		.arrow_icon{
+			font-size:0.62em;
+			top:6px;
+			left:6px;
+			position:relative;
+			color:unquote($white-clr);
+			display:inline-block;
+		}
+		.selected_details__account{
+			cursor:pointer;
+		}
+	}
+}
+.selected_details__account {
+	display: table;
+	z-index:2;
+	position:relative;
+}
+.accounts_title, .cards_title, .functions_title {
+	font-size: $function-title-fsize;
+	text-transform: uppercase;
+ 	color: unquote($white-clr);
+	line-height: 1.14em;
+	float: left;
+	white-space: nowrap;
+	min-width: 7.87em;
+}
+.selected_details__info {
+	 color: unquote($white-clr);
+	 p {
+		 padding: 0.12em 0;
+		 text-transform: uppercase;
+	}
+}
+.flyout_list_items {
+	float: left;
+	opacity: 0;
+	position: absolute;
+	top: 6.87em;
+	display: none;
+ 	border-top: 1px solid $default-border-clr;
+ 	width: $default-width;
+}
+.flyout_active .show_listitems {
+	opacity: 1;
+	display: table;
+}
+.flyout_list_items {
+	.header_l1 {
+		 font-size: 1.25em;
+		 cursor: default;
+	}
+	.accordion_list:first-child .header_l1 {
+		border: none;
+	}
+	.accordion_l1__inner {
+		padding: 0.76em 0;
+	}
+	.group_colone {
+	 	width: $default-width;
+	}
+	.group_coltwo h4 {
+		padding: 0.12em 0 0.12em 0;
+	}
+	.list_content_col1 {
+		max-width: none;
+	 	width: $default-width;
+	}
+	.list_content_col2 {
+		max-width: none;
+	 	width: $default-width;
+		padding-top: 0.62em;
+	}
+	.listiban_detail {
+		font-size: 0.87em !important;
+	}
+	.item_list {
+		height: 18.75em;
+		overflow: hidden;
+		padding: 0 20px 0 20px;
+		position: relative;
+		pointer-events: auto;
+	 	@include touch-action(none);
+	}
+}
+.hello_account{ 
+	.hello_icon{
+		display:inline-block;
+		margin:0.31em 0 0 0.12em;
+	}
+}
+
+/* Right aligned Flyout( for right aligned flyouts you need to use left_col and right_col) */
+.left_col{
+	width:50%;
+	float:left;
+	min-height:0.12em;
+}
+.right_col {
+	width:50%;
+	float:left;
+	min-height:0.12em;
+	.selected_details__account {
+		 float: right;
+		 width:auto;
+	}
+	.selected_details__info {
+		text-align: right;
+	 	width: $default-width;
+	}
+	.selected_details{
+		&.dropdown_arrow{
+			.selected_details__info{
+				padding-right:1.25em;
+			}
+		}
+	}
+	.flyout_selection {
+		float:right;
+	}
+	.flyout_active {
+		.flyout_container {
+		 	left: 1.25em;
+		}
+    }
+	.list_group:first-child .list_header {
+		border-top: none;
+	}
+	.functions_title {
+		text-align: right;
+	}
+}
+
+/* Fly out customised for IAs */
+
+.flyout_active {
+	.accounts_info, .accounts_title {
+	 	color: $accounts-clr;
+	}
+	.cards_info, .cards_title {
+	 	color: $cards-clr;
+	}
+}
+
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+.flyout_selection {
+	 width: 199px;
+	.hello_icon {
+		margin-top: 0;
+	}
+	.item_list {
+        padding: 0 0.62em 0 0.62em;
+    }
+}
+.flyout_active {
+  width: 15.62em;
+  .selected_details {
+    padding: 0.62em !important;
+  }
+}
+
+.flyout_selection.flyout_active .flyout_container {
+  left: -0.62em;
+  top: -0.62em;
+}
+
+.functions_title, .cards_title, .accounts_title {
+	font-size: 1em;
+}
+.selected_details__info p {
+	font-size: 0.75em;
+}
+.flyout_list_items {
+	top: 5.62em;
+}
+.selected_details__account{ 
+	width:200px;
+}
+
+.selected_details {
+	&.dropdown_arrow{
+		.arrow_icon{
+			top:-1px;
+		}
+	}
+}
+
+/* Right aligned Flyout */
+.left_col{
+	width:100%;
+}
+ .right_col{
+ 	width:100%;
+ 	padding-top:0.62em;
+ 	.flyout_selection{
+ 		float:left;
+ 		
+    	.selected_details{
+    		padding-right:1.25em;
+    	}
+    	.selected_details__account{
+    		float:left;
+    	}
+    	.selected_details__info{
+    		text-align:left;
+    	}
+	 	&.flyout_active{
+			.flyout_container {
+	        	left: -0.62em;
+	        	top:-9px;
+	    	}
+			
+		}
+	}
+ }
+}
+

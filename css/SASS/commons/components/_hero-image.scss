@@ -1,0 +1,79 @@
+#metaInfo {
+ 	width: $default-width;
+	margin: 0 auto;
+ 	color: unquote($white-clr);
+	position: relative;
+	background:url('images/hero-image.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 13em;
+	.level1 {
+		width:41.75em; 
+	 	margin:0 auto; 
+		text-align: center;
+		position:relative;
+		top:4.7em;
+		display:table;
+	}
+	h3 {
+		font-size: 1.56em;
+		padding-bottom: 0.24em;
+	}
+	h1 {
+		font-size: 1.88em; 
+		padding-bottom:0.3em;
+	}
+	.level2{
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+#hello_logo{
+	width:110px;
+	height:120px;
+	background:url('images/hello_logo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position:relative;
+	display: inline-block;
+	a{
+		display: block;
+		width: 110px;
+		height: 120px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}
+.brand_exc{
+	#metaInfo {
+		margin-top:-5em;
+	}
+}
+
+/* Breakpoint 767 */
+@media all and (max-width: 47.9375em) {
+	#metaInfo{
+		height:12em;
+		.level1{
+			width:100%;
+			top:5.7em;
+		}
+		.level2{
+			display:none;
+		}
+	}
+	#hello_logo{
+		width:73px;
+		height:80px;
+		a{
+			width:73px;
+			height:80px;
+		}
+	}
+	
+}
+

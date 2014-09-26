@@ -1,0 +1,72 @@
+.default_input_control .default_input_field {
+	cursor: pointer;
+	 input {
+	 	cursor: pointer;
+	}
+ &.focus {
+	 cursor: text;
+	 input {
+	 	cursor: text;
+	}
+  }
+}
+.default_input_field {
+ 	border: 1px solid $default-border-clr;
+ 	background: unquote($white-bg);
+	position: relative;
+	z-index: 1;
+ 	width: $default-width;
+	cursor: pointer;
+	height: 2.75em;
+	@include border-radius-all($glb-tleft-radius,$glb-tright-radius,$glb-bleft-radius,$glb-bright-radius);
+	 > * {
+		 display: -moz-inline-stack;
+		 display: inline-block;
+		 *display: inline;
+		 vertical-align: baseline;
+		 zoom: 1;
+	}
+ &.disabled {
+ cursor: default !important;
+ * {
+ cursor: default !important;
+}
+}
+ >input {
+	 @include ele-input($default-width, 44px, none !important, 11px, 12px);
+	 max-height: none !important;
+	 min-height: 0 !important;
+	 margin: 0!important;
+	 text-indent: 0 !important;
+	 border: 0 none !important;
+	 -webkit-box-shadow: none !important;
+	 box-shadow: none !important;
+	 line-height: 1.4;
+	 color: $select-color;
+	 @include light;
+}
+	 &::after {
+	 display: block;
+	 clear: left;
+	 content: ' ';
+	}
+}
+
+::-webkit-input-placeholder {
+ 	line-height: 1.63em;
+}
+::-ms-input-placeholder {
+ 	line-height: 1.63em;
+}
+::-moz-input-placeholder {
+ 	line-height: 1.63em;
+}
+::moz-placeholder {
+ 	line-height: 1.63em;
+}
+.default_input_field.focus, textarea:focus {
+	border: $focus solid 1px !important;
+}
+input[type="checkbox"]:focus, button:focus {
+	outline: $focus solid 1px !important;
+}

@@ -1,0 +1,14 @@
+/* Hello icon */
+
+.hello_icon {
+	background: url(images/sprite.svg) no-repeat;
+	padding: 9px;
+	background-position: -190px -3px;
+	margin: 0 0 0 5px;
+	display: none;
+	float: left;
+}
+.no-svg .hello_icon {
+	background: url(images/sprite.png) no-repeat;
+	background-position: -190px -3px;
+}

@@ -1,0 +1,85 @@
+
+/* Breakpoint 479 */
+@media all and (max-width: 29.9375em) {
+.identification_ucr .right_navigation_btn, .identification_contract .right_navigation_btn {
+  width: auto;
+}
+  /* layout */
+  .margin_col {
+	  .ls-cmp-wrap {
+			width: 100% !important;
+			&:first-child{
+				.iw_component{
+					margin-top:0 !important;
+				}
+			}
+		}
+    }
+.margin_headline{ margin-top:0.62em !important;}
+  
+ 
+  
+  /* Non 100% buttons */
+  .zoomit_map .right_navigation_btn, .zoomit_map .right_navigation_btn button {
+    width: auto;
+   }
+  /* Login buttons & text */
+  .intermediate_btns .plain_text {
+    width: 100%;
+    display: block;
+    margin: 0 0 0.5em 0;
+  }
+
+.login_bg {
+  .alert_message_content {
+    width: 80%;
+    padding-right: 0.87em;
+  }
+}
+  /* SEPA CT Form */
+  .selected-item {
+    font-size: 0.75em;
+  } 
+}
+
+
+
+/* Breakpoints 480-767 */
+@media all and (min-width: 30em) and (max-width: 47.9375em) {
+  /* Static pages */
+
+	.login_bg {
+	  .content_page {
+	    margin: 1.25em auto 1.87em;
+	  }
+	  .severity_message .alert_messages {
+	    width: 100%;
+	    margin: 1.25em auto 0 auto;
+	  }
+	}
+	
+	/* Identification alignments */
+	
+	/* Internal ad and headline */
+	
+	.home .margin_col .ls-cmp-wrap {
+	  &:nth-child(odd) {
+	    padding-left: 0.31em;
+	    padding-right: 0.62em;
+	  }
+	  &:nth-child(even) {
+	    padding-right: 0.31em;
+	    padding-left: 0.62em;
+	  }
+	}
+	
+	.margin_col .ls-cmp-wrap {
+	  &:nth-child(odd) {
+	    padding-right: 0.31em;
+	  }
+	  &:nth-child(even) {
+	    padding-left: 0.31em;
+	  }
+	}
+
+}

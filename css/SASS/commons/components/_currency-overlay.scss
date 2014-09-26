@@ -1,0 +1,60 @@
+.currency_overlay {
+	font-size: 0.75em;
+ 	@include light;
+	position: absolute;
+	top: 0.70em;
+	right: -0.84em;
+	text-align: right;
+ 	border: 1px solid $default-border-clr;
+	display: none;
+	z-index: 999;
+}
+.currency_overlay h4, .currency_header span {
+	display: inline-block;
+	font-size: 1.12em;
+ 	@include regular;
+}
+.currency_overlay {
+	 p span {
+	 	margin: 0 0.12em;
+	}
+	.currency_header {
+		span {
+			padding-left: 0.12em
+		}
+		h4 {
+			padding: 0 0 0.93em 0;
+		}
+	}
+}
+.currency_overlay-active {
+	.currency_overlay {
+	 	display: block;
+	}
+	.currency_header {
+		 color: $foreign-currency-clr;
+		 cursor: pointer;
+		 font-size:1.2em;
+	}
+}
+.currency_inner {
+	padding: 0.9em;
+	background: unquote($white-bg);
+}
+.touch .currency_overlay-active .currency_header {
+	h2, span {
+		text-decoration: underline;
+	}
+}
+
+// 767px breakpoint
+
+@media all and (max-width: 47.9375em) {
+ 	.currency_overlay {
+        top: 3.12em;
+    }
+
+    .savings_accounts .currency_overlay {
+        top: 3.75em;
+    }
+}

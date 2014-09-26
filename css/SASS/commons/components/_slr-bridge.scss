@@ -1,0 +1,155 @@
+
+// Can be analysed and removed by removing the dependency
+
+.info_para{ padding-bottom:20px; line-height:1.25em;}
+.form_secondary{ padding-top:20px;}
+.sub_label{ font-size:14px; font-family: 'light', arial;}
+.non_input{padding: 0.62em 0;}
+.form_input_btn{ margin-left:12px; display:inline-block;}
+
+.modify_lnk{ display:inline-block; margin-left:80px;}
+
+
+
+/* list details */
+.list_details.total{ font-size:20px;}
+.list_details.total .details_label{ width:29.4%; line-height:1.25em}
+.list_details .yash{ margin-left:60px;}
+
+
+.fav_icon{ cursor:pointer;}
+
+@media all and (max-width:767px){
+.form_input_btn{ margin:10px 0 0 0; float:right;}
+}
+
+//sp5
+
+.add_btn .btn_secondary{
+	background-color:#d2d8e1;
+	color:#252429;
+}
+.header_xtrInformation{
+	font-size:14px; 
+	margin-left:40px;
+}
+.tableContent_header{
+	position:relative; 
+	margin:15px 0; 
+	.more_items_icon{
+		top:0;
+		right:0;
+	}
+}
+.eachTable_item{
+	&:first-child{
+		.tableContent_header{
+			margin-top:0;
+		}
+	}
+}
+.content_title h2{ font-size:26px; line-height:1;}
+.table_icon{
+	cursor:pointer;
+}
+
+
+.form_group_title{
+	font-family:'regular', Arail;
+	padding-bottom:15px;
+	border-bottom:1px solid #d8dbde;
+	margin-bottom:15px;
+}
+
+.switch_status{ display:table-cell; vertical-align:middle; padding-left:20px;}
+.switch_container{ display:table-cell;}
+
+.content_title{ margin-bottom:30px;}
+
+.content_inner{
+	padding:30px;
+}
+.icon_done{
+	font-size:12px;
+}
+@media (max-width: 47.9375em){
+	.content_inner{
+		padding:10px;
+	}
+}
+
+
+.pad-t10{ padding-top:10px;}
+.pad-t15{ padding-top:15px;}
+.pad-t20{ padding-top:20px;}
+.pad-t25{ padding-top:25px;}
+.pad-t30{ padding-top:30px;}
+.pad-t35{ padding-top:35px;}
+.pad-t40{ padding-top:40px;}
+.pad-t45{ padding-top:45px;}
+.pad-t50{ padding-top:50px;}
+
+.pad-l10{ padding-left:10px !important;}
+.pad-l15{ padding-left:15px !important;}
+.pad-l20{ padding-left:20px;}
+.pad-l25{ padding-top:25px;}
+.pad-l30{ padding-top:30px;}
+.pad-l35{ padding-top:35px;}
+.pad-l40{ padding-top:40px;}
+.pad-l45{ padding-top:45px;}
+.pad-l50{ padding-top:50px;}
+
+.pad-r10{ padding-right:10px;}
+.pad-r15{ padding-right:15px !important;}
+.pad-r20{ padding-top:20px;}
+.pad-r25{ padding-top:25px;}
+.pad-r30{ padding-top:30px;}
+.pad-r35{ padding-top:35px;}
+.pad-r40{ padding-top:40px;}
+.pad-r45{ padding-top:45px;}
+.pad-r50{ padding-top:50px;}
+
+.pad-b10{ padding-right:10px;}
+.pad-b15{ padding-bottom:15px !important;}
+.pad-b20{ padding-top:20px;}
+.pad-b25{ padding-top:25px;}
+.pad-b30{ padding-top:30px;}
+.pad-b35{ padding-top:35px;}
+.pad-b40{ padding-top:40px;}
+.pad-b45{ padding-top:45px;}
+.pad-b50{ padding-top:50px;}
+
+.pad-10{ padding:10px;}
+.pad-15{ padding:15px !important;}
+.pad-20{ padding:20px;}
+.pad-25{ padding:25px;}
+.pad-30{ padding:30px;}
+.pad-35{ padding:35px;}
+.pad-40{ padding:40px;}
+.pad-45{ padding:45px;}
+.pad-50{ padding:50px;}
+
+.col-100{ width:100%; display: inline-block;}
+.col-50{}
+
+.form-50 .form_labels{
+	width:50%;
+	float:left;
+	padding-right:25px;
+	margin-right:0;
+}
+.form-50 .form_details{
+	width:50%;
+	float:left;
+}
+
+@media (max-width: 47.9375em){
+.form-50 .form_labels{
+	width:100%;
+	padding:0.62em 0;
+}
+.form-50 .form_details{
+	width:100%;
+}
+.pad-30{ padding:10px;}
+}

@@ -7,10 +7,8 @@
 		<title>Site Structure</title>
 		<link rel="stylesheet" href="../css/reset.css">
 		<link rel="stylesheet" href="../css/brand-mr2.css">
-		<link rel="stylesheet" href="../css/pattern-lib.css">
-		<link rel="stylesheet" href="../css/fonticon.css">
-		<script data-main="js/app" src="js/jquery-1.9.1.js"></script>
-		<script data-main="js/app" src="js/custom.js"></script>
+		<script data-main="js/app" src="../js/jquery-1.9.1.js"></script>
+		<script data-main="js/app" src="../js/custom.js"></script>
 		<script data-main="js/app" src="js/mask.js"></script>
 		<script data-main="js/app" src="js/modrenizr.js"></script>
 		<script data-main="js/app" src="js/hammer.js"></script>
@@ -136,9 +134,8 @@
 				</div>
 				<!-- Save data -->
 				<div class="form2_fields save_profile l_col s_row">
-					<label>
-					<input class="save_profile__check f_left" type="checkbox" data-rv-checked="user.saveSettings">
-					<span class="save_profile__text" data-rv-text="config.app.message.Label.authentication.identification.saveData">Save this information for the next time you log in</span>
+					<input class="css-checkbox" type="checkbox" id="yash" name="yash">
+					<label class="css-label" for="yash"><span class="save_profile__text" data-rv-text="config.app.message.Label.authentication.identification.saveData">Save this information for the next time you log in</span>
 					</label>
 					<span class="fontcon-attention help_icon exp">
 						<p class="tooltip_secondary" data-rv-text="config.app.message.Label.authentication.identification.toolTipSave">TBD Tooltip text save</p>

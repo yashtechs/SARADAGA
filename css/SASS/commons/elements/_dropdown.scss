@@ -1,0 +1,192 @@
+.default_input_field {
+	 &.has-options.has-items > input {
+		 width: 0.125em !important;
+		 max-width:0.125em !important;
+		 min-width:0.125em !important;
+	}
+	 &.custom_dropdown {
+	 padding: 0.65em;
+	 > input {
+		 width: auto;
+		 padding: 0;
+		 height: 1.38em;
+		 line-height: 1.38em;
+		 max-width: 18.75em;
+		 min-width: 16.25em;
+	  }
+	}
+ &.dropdown_arrow {
+	 background: url(./images/dropdown_strip.png) no-repeat right center, unquote($white-clr);
+	 padding-right: 2.5em;
+}
+}
+.dropdown_arrow::after, .widget .header_l2:after {
+	border-color: $default-clr-icon transparent transparent transparent;
+	position: absolute;
+	top: 50%;
+	right: 0.94em;
+	display: block;
+	width: 0;
+	height: 0;
+	margin-top: -0.19em;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
+	content: '';
+}
+.dropdown-active:after, .widget .header_l2.dropdown-active:after {
+	border-color: transparent transparent $default-clr-icon transparent;
+	margin-top: -0.25em;
+	border-width: 0 6px 6px 6px;
+}
+.dropdown-active::before {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	height: 0.06em;
+	content: ' ';
+}
+.dropdown_seleted_item {
+	padding-top: 0.25em;
+}
+
+// Custom Dropdown box
+
+.default_dropdown_box {
+ 	background: unquote($white-bg);
+	border: 1px solid $default-border-clr;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 10%/100%);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 10%/100%);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 10%/100%);
+	margin: -0.06em 0 0 0;
+ 	color: $select-color;
+	line-height: 1.38em;
+	position: absolute;
+	z-index: 999;
+	@include border-radius-all($glb-tleft-radius,$glb-tleft-radius,$glb-bleft-radius,$glb-bright-radius);
+	-webkit-box-shadow:0 8px 12px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+	
+	[data-selectable] {
+		 border-bottom: 1px solid $default-border-clr;
+		 cursor: pointer;
+		 padding: 0.50em 0.75em;
+	}
+}
+.dropdown_wrapper {
+	max-height: 15em;
+	overflow: hidden;
+	position: relative;
+	pointer-events: auto;
+ 	@include touch-action(none);
+}
+.default_dropdown_box .list_item__header {
+	padding: 0;
+	display: table;
+ 	width: $default-width;
+}
+
+// Dropbox groups and Highlight
+
+.highlight {
+ 	background: $highlight-comp-bg;
+ 	@include regular;
+}
+.option.active, .list_item.active {
+ 	background: $component-bg;
+}
+.main-group {
+ 	background:#e5e9ef;
+ 	border-bottom: 1px solid $default-border-clr;
+	padding: 0.5em 0.75em 0.38em 0.75em;
+	font-size: 1em;
+	text-transform: uppercase;
+ 	color: $default-color;
+ 	@include regular;
+}
+
+// optgroups Dropdown
+
+.optgroup:first-child {
+	border-top: 0 none;
+}
+.optgroup-header {
+ 	color: $optgroup-header;
+ 	border-bottom: 1px solid $default-border-clr;
+	font-size: 1em;
+	text-transform: uppercase;
+	cursor: default;
+	padding: 0.63em 0.50em 0.38em 0.50em;
+	text-transform: uppercase;
+	background:#f4f5f6;
+ 	@include regular;
+}
+div[data-group="CURRENT_ACCOUNTS"] .optgroup-header, div[data-group="SAVING_ACCOUNTS"] .optgroup-header, div[data-group="Favourites"] .main-group{
+	padding-left:40px;
+}
+%groupHeaderIcon{
+	font-family:'bnpiconfont';
+	font-size:1.25em;
+	position:absolute;
+	left:0.62em;
+}
+div[data-group="CURRENT_ACCOUNTS"] .optgroup-header:before{
+	content: "\e604";
+	@extend %groupHeaderIcon;
+}
+div[data-group="SAVING_ACCOUNTS"] .optgroup-header:before{
+	content: "\e603";
+	@extend %groupHeaderIcon;
+}
+%favHeaderIcon{
+	font-family: 'bnpiconfont';
+	font-size: 1.25em !important;
+	top: 6px;
+	position: absolute;
+	left: 12px;
+}
+div[data-group="Favourites"] .main-group:before{
+	content: "\e61e";
+	color: $fav-icon-default;
+	@extend %favHeaderIcon;
+}
+div[data-group="Favourites"] .main-group:after{
+	content: "\e61f";
+	color: $fav-icon-selected;
+	@extend %favHeaderIcon;
+}
+
+
+
+.optgroup-option {
+	padding: 0;
+}
+.optgroup-iban {
+	float: left;
+}
+.optgroup-option .listiban_group h3, .optgroup-amount h3 {
+	font-size: 1em;
+}
+.optgroup_field {
+ 	.optgroup {
+ 		padding: 0;
+	}
+	.optgroup-header {
+		padding-left: 0.75em;
+	}
+	.default_dropdown_box [data-selectable] {
+		padding-left: 1.25em;
+	}
+}
+
+
+// 479
+
+@media all and (max-width: 29.9375em) {
+	.default_input_field.custom_dropdown > input {
+	  max-width: 13.75em;
+      min-width: 12.5em;
+	}
+}
