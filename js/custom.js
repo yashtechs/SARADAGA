@@ -8,6 +8,9 @@ $(document).ready(function () {
 		target.checked = !target.checked;
 		e.preventDefault();
 	});
+	$('.yashu').on('click', function(e){
+		alert(2);
+	});
 	//cover = $('<div class="cover"/>');
 //	$('.canvas_container').find('.main_wrapper').append(cover);
 //	
@@ -86,6 +89,11 @@ function iCheck(){
 			$('.option_transaction').toggleClass('show_active');
 			$('.filter_values').css('position', 'initial');
 		});
+		$('.raja').click(function(){
+			$('.option_period').removeClass('show_active');
+			$('.filter_values').css('position', 'initial');
+		});
+		
 	customPrint =  function (event) {
 		$('<div>').addClass('printbabes').appendTo('body');
 		
