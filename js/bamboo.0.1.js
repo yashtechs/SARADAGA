@@ -23,8 +23,14 @@ var menuSwipe = (function(window, document) {
                 breakpoint: 1024,
                 menuWidth: 265,
                 headerHeight: 50,
-                snapThreshold: null,
-                resize: null,
+                snapThreshold: 1,
+                resize:function(){
+						$('html').removeClass('canvas_opened');
+						container.css({
+							height: $(window).height(),
+							'margin':'0'
+						});
+					},
                 offsetMenuClass: '',
 				animationSpeed: 500,
 				direction: 'right',
@@ -78,6 +84,7 @@ var menuSwipe = (function(window, document) {
 		
         // function to resize site
         resizeSite: function() {
+			
             // get page sizes	
             this.info.docHeight = $(window).height();
             this.info.docWidth = $(window).width();
@@ -249,7 +256,7 @@ var menuSwipe = (function(window, document) {
             this.info.docWidth = $(window).width();
             if (to > this.options.menuWidth - 50) {
                 cover.show();
-                $('body').addClass('canvas_opened');
+                $('html').addClass('canvas_opened');
                 container.css({
                     width: this.info.docHeight,
                     height: this.info.docHeight
@@ -257,18 +264,14 @@ var menuSwipe = (function(window, document) {
 
             } else {
                 cover.hide();
-                $('body').removeClass('canvas_opened');
+                $('html').removeClass('canvas_opened');
                 container.css({
                     width: 'auto',
                     height: '100%'
                 });
             }
 
-            $(window).on('resize', function() {
-                container.css({
-                    height: $(window).height()
-                });
-            });
+            
         }
 
     };

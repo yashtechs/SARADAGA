@@ -8,9 +8,7 @@ $(document).ready(function () {
 		target.checked = !target.checked;
 		e.preventDefault();
 	});
-	$('.yashu').on('click', function(e){
-		alert(2);
-	});
+	
 	//cover = $('<div class="cover"/>');
 //	$('.canvas_container').find('.main_wrapper').append(cover);
 //	

@@ -452,16 +452,6 @@ html {
 }
 
 body {
-  width: 100%;
-  height: auto;
-  background: #dde3e6;
-  background: -moz-linear-gradient(top, #dde3e6 0%, #eef1f5 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dde3e6), color-stop(100%, #eef1f5));
-  background: -webkit-linear-gradient(top, #dde3e6 0%, #eef1f5 100%);
-  background: -o-linear-gradient(top, #dde3e6 0%, #eef1f5 100%);
-  background: -ms-linear-gradient(top, #dde3e6 0%, #eef1f5 100%);
-  background: linear-gradient(to bottom, #dde3e6 0%, #eef1f5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dde3e6', endColorstr='#eef1f5',GradientType=0 );
   position: relative;
 }
 body:before, body:after {
@@ -473,8 +463,6 @@ body:after {
 }
 
 .portal_wrapper {
-  width: 100%;
-  height: 100%;
   font-size: 1em;
   line-height: 1.12em;
   color: #252429;
@@ -1652,7 +1640,6 @@ div[data-group="Favourites"] .main-group:after {
   background: linear-gradient(to bottom, #dde3e6 0%, #eef1f5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dde3e6', endColorstr='#eef1f5',GradientType=0 );
   width: 100% !important;
-  height: 100% !important;
 }
 
 .canvas_opened {
@@ -5237,20 +5224,8 @@ div[data-group="Favourites"] .main-group:after {
   float: left;
   text-align: center;
   margin-left: 0.62em;
-}
-.module_steps_block li:first-child {
-  margin: 0;
-}
-
-.module_steps__digit {
-  color: #ffffff;
-  font-size: 1.25em;
-  font-family: 'regular', arial;
-  border: 2px solid #ffffff;
-  text-align: center;
-  display: inline-block;
-  padding: 0.62em 0.75em;
-  -webkit-border-top-left-radius: 2.14em;
+  background-color:#ffffff;
+   -webkit-border-top-left-radius: 2.14em;
   -webkit-border-top-right-radius: 2.14em;
   -webkit-border-bottom-right-radius: 2.14em;
   -webkit-border-bottom-left-radius: 0;
@@ -5262,20 +5237,61 @@ div[data-group="Favourites"] .main-group:after {
   border-top-right-radius: 2.14em;
   border-bottom-right-radius: 2.14em;
   border-bottom-left-radius: 2.14em;
+  width:50px;
+  height:50px;
+  padding:2px;
+}
+.module_steps_block li:first-child {
+  margin: 0;
+}
+
+.module_steps__digit {
+  color: #ffffff;
+  font-size: 1.25em;
+  font-family: 'regular', arial;
+  background-color:#861a61;
+  
+  text-align: center;
+  display: inline-block;
+   -webkit-border-top-left-radius: 2.14em;
+  -webkit-border-top-right-radius: 2.14em;
+  -webkit-border-bottom-right-radius: 2.14em;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 2.14em;
+  -moz-border-radius-topright: 2.14em;
+  -moz-border-radius-bottomright: 2.14em;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 2.14em;
+  border-top-right-radius: 2.14em;
+  border-bottom-right-radius: 2.14em;
+  border-bottom-left-radius: 2.14em;
+  width:46px;
+  height:46px;
+  padding:15px;
+
+ 
+
+ 
+  
 }
 .module_steps__digit.active {
   color: #861a61;
-  background: #ffffff;
+  background-color:#ffffff;
 }
 
 @media all and (max-width: 47.9375em) {
   .module_steps__block {
     float: right;
   }
-
+.module_steps_block li{
+	width:40px;
+	height:40px;
+}
   .module_steps__digit {
-    padding: 0.62em 1em;
-    font-size: 0.87em;
+	  width:36px;
+	  height:36px;
+    font-size: 0.94em;
+	padding:11px;
   }
 }
 /* MR2 V2 Login */
@@ -8194,12 +8210,12 @@ ul.table_switch li:first-child {
   }
 }
 @media all and (min-width: 80em) {
-  body, .site_header__inner, #siteHeaderErrorInner {
+  .portal_wrapper, .site_header__inner, #siteHeaderErrorInner {
     max-width: 80em;
     margin: 0 auto;
   }
 
-  body {
+  .portal_wrapper {
     -webkit-box-shadow: 0px 0px 2px 0px #76767b;
     -moz-box-shadow: 0px 0px 2px 0px #76767b;
     box-shadow: 0px 0px 2px 0px #76767b;
@@ -8242,11 +8258,11 @@ ul.table_switch li:first-child {
 }
 
 
-input[type=checkbox].css-checkbox {
+input[type=checkbox].css-checkbox, input[type=radio].css-checkbox {
 							position:absolute; z-index:-1000; top:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
 						}
 
-						input[type=checkbox].css-checkbox + label.css-label {
+						input[type=checkbox].css-checkbox + label.css-label, input[type=radio].css-checkbox + label.css-label {
 							padding-left:27px;
 							height:20px; 
 							display:inline-block;
@@ -8256,6 +8272,7 @@ input[type=checkbox].css-checkbox {
 							font-size:16px;
 							vertical-align:middle;
 							cursor:pointer;
+							position:relative
 
 						}
 
@@ -8266,11 +8283,33 @@ input[type=checkbox].css-checkbox {
 							left:0;
 							top:0;
 						}
+						input[type=radio].css-checkbox:checked + label.css-label:after {
+							font-family: 'bnpiconfont';
+							content: "\e63f";
+							position:absolute;
+							left:0;
+							top:0;
+						}
 						label.css-label:before {
 								font-family: 'bnpiconfont';
 						content: "\e63c";
 						color:#999;
 						background:white;
+						position:absolute;
+						left:0;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			label.css-label.radio:before {
+								font-family: 'bnpiconfont';
+						content: "\e63e";
+						color:#999;
+						background:white;
+						border-radius:10px;
 						position:absolute;
 						left:0;
 				-webkit-touch-callout: none;
