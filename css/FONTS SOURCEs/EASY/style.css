@@ -119,7 +119,7 @@
 .fontcon-fav-default:before {
 	content: "\e61e";
 }
-.fontcon-fav-select:before {
+.fontcon-fav-select:after {
 	content: "\e61f";
 }
 .fontcon-reload:before {
@@ -202,4 +202,31 @@
 }
 .fontcon-discover:before {
 	content: "\e63b";
+}
+.fontcon-header-discover:before {
+	content: "\e63d";
+}
+.fontcon-checkbox-unchecked:before {
+	content: "\e63c";
+}
+.fontcon-radio-unchecked:before {
+	content: "\e63e";
+}
+.fontcon-radio-checked:before {
+	content: "\e63f";
+}
+.fontcon-add-thin:before {
+	content: "\e640";
+}
+.fontcon-arrow-left-thin:before {
+	content: "\e641";
+}
+.fontcon-arrow-right-thin:before {
+	content: "\e642";
+}
+.fontcon-direction-arrow:before {
+	content: "\e643";
+}
+.fontcon-play:before {
+	content: "\e644";
 }

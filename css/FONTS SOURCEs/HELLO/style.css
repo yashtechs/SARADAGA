@@ -227,3 +227,6 @@
 .fontcon-direction-arrow:before {
 	content: "\e643";
 }
+.fontcon-play:before {
+	content: "\e644";
+}
